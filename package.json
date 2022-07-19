@@ -1,0 +1,27 @@
+{
+  "name": "api-see-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --config ./webpack.dev.config.js",
+    "poststart": "antm-api-ui start",
+    "api:start": "antm-api-ui start",
+    "api:build": "antm-api-ui build",
+    "api:action": "antm-api-ui action"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-typescript": "^7.18.6",
+    "api-see": "^0.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}
