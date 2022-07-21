@@ -1,7 +1,7 @@
 import { IResponse } from "../commonTypes/response.d";
 
 /**
- * 获取角色列表
+ * 获取角色列表111
  * @url /z/common/1.0/role/list
  * @method GET
  */
@@ -11,7 +11,7 @@ export type getRoleList = {
     Array<{
       /**
        * 名称
-       * @value ['角色AA ', '角色BB']
+       * @value ['角色AA11 ', '角色BB11']
        * @rule +1
        */
       name: string;

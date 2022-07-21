@@ -1,7 +1,10 @@
+// @ts-nocheck
 import React from "react";
-import { createRoot } from "react-dom/client";
-import { collectionListAction } from "./action/personal";
-import { collectionList } from "./action/types/personal";
+import { render } from "react-dom";
+import { collectionListAction } from "./actions/personal";
+import { collectionList } from "./actions/types/personal";
+import { ApiUi } from "api-see";
+import "api-see/ui/app.less";
 
 function App() {
   const [data, setData] = React.useState<collectionList["response"]["data"]>(
@@ -50,14 +53,12 @@ function App() {
       </a>
 
       <div style={{ paddingTop: 30 }}>数据： {JSON.stringify(data)}</div>
+
+      <ApiUi />
     </div>
   );
 }
 
 const dom = document.getElementById("root");
 
-if (dom) {
-  const root = createRoot(dom);
-
-  root.render(<App />);
-}
+render(<App />, dom);

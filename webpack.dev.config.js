@@ -26,9 +26,6 @@ module.exports = {
     host: "localhost",
     hot: true,
     open: true,
-    static: {
-      directory: path.join(__dirname, "./build"),
-    },
     proxy,
   },
 
@@ -37,7 +34,7 @@ module.exports = {
       {
         test: /\.js|\.ts|\.tsx$/,
         loader: require.resolve("babel-loader"),
-        exclude: /node_modules/,
+        exclude: /node_modules\/(?!api-see)/,
         options: {
           presets: [
             [
