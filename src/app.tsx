@@ -1,9 +1,10 @@
 // @ts-nocheck
 import React from "react";
 import { render } from "react-dom";
-import { collectionListAction } from "./actions/personal";
+import { collectionListPersonal } from "./actions/personal";
 import { collectionList } from "./actions/types/personal";
 import { ApiUi } from "api-see";
+import apiData from "../.cache/api-ui-data.json";
 import "api-see/ui/app.less";
 
 function App() {
@@ -37,10 +38,9 @@ function App() {
   return (
     <div>
       <h1>api-ui-demo</h1>
-      <p>api文档代码和业务代码一起打包</p>
-      <a style={{ color: "blue" }} onClick={goApi}>
-        查看接口文档 地址
-      </a>
+      <h2 style={{ color: "blue" }} onClick={goApi}>
+        (1) 单独启动的服务，点击查看接口文档 地址
+      </h2>
       <a href="https://github.com/zuolung/api-ui-demo">查看github代码</a>
       <p>mock服务默认端口10099，文档服务7878会根据路径mock做代理</p>
       <p>统一路径1：http://localhost:10099</p>
@@ -52,9 +52,12 @@ function App() {
         点击请求/z/personal/1.0/collection/list的数据
       </a>
 
-      <div style={{ paddingTop: 30 }}>数据： {JSON.stringify(data)}</div>
+      <div style={{ paddingTop: 30 }}>
+        请求到的数据结果数据： {JSON.stringify(data)}
+      </div>
 
-      <ApiUi />
+      <h2 style={{ color: "blue" }}>(2)作为组件在页面里面引用</h2>
+      <ApiUi mockPort={10099} apiData={apiData} />
     </div>
   );
 }

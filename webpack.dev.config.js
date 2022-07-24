@@ -32,19 +32,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js|\.ts|\.tsx$/,
+        test: /\.ts|\.tsx$/,
         loader: require.resolve("babel-loader"),
         exclude: /node_modules\/(?!api-see)/,
         options: {
           presets: [
-            [
-              require.resolve("@babel/preset-env"),
-              {
-                targets: {
-                  esmodules: false,
-                },
-              },
-            ],
+            require.resolve("@babel/preset-env"),
             [
               "@babel/preset-typescript",
               {

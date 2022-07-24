@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build1": "api-see file && webpack",
+    "build2": "api-see build && webpack",
     "start": "webpack-dev-server --config ./webpack.dev.config.js",
-    "api:watch": "api-see watch --server true --mock true",
-    "api:build": "api-see build",
-    "api:action": "api-see action --path ./src/actions/types"
+    "mock": "api-see watch --mock true --action true",
+    "api": "api-see watch --server true"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,7 @@
     "@babel/preset-env": "^7.18.6",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
-    "api-see": "^1.0.0",
+    "api-see": "^1.1.1",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
