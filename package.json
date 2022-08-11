@@ -8,7 +8,8 @@
     "build2": "api-see build && webpack",
     "start": "webpack-dev-server --config ./webpack.dev.config.js",
     "mock": "api-see watch --mock true --action true",
-    "api": "api-see watch --server true"
+    "api": "api-see watch --server true",
+    "swagger": "api-see swagger --url https://scapi.lsmart.wang/v2/api-docs"
   },
   "keywords": [],
   "author": "",
