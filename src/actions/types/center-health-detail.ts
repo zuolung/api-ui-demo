@@ -5,7 +5,7 @@ import {
   健康状况日报VO,
   健康状况登记地区统计VOroute,
   SelectResult_1,
-} from "../baseTypes";
+} from '../baseTypes'
 
 /**
  * 分页查询健康状况日汇总
@@ -19,51 +19,41 @@ export type IdetailDay = {
      * 日期 yyyy-MM-dd
      * @value
      */
-    day?: string;
+    day?: string
 
     /**
      * 学生日报统计类型 1按院系2按专业3按班级4按部门 不传默认按院系
-     * @value #integer(32)
+     * @value
      */
-    groupByType?: number;
+    groupByType?: number
 
     /**
      * 身份类型 1学生2教职工
-     * @value #integer(32)
+     * @value
      */
-    identityType?: number;
+    identityType?: number
 
     /**
      * 平台
      * @value
      */
-    platform?: string;
+    platform?: string
 
     /**
      * 加密后的用户ID
      * @value
      */
-    uuToken?: string;
+    uuToken?: string
 
     /**
      *
      * @value
      */
-    classCodes?: string[];
-  };
+    classCodes?: string[]
+  }
 
-  reponse: {
-    /**
-     * @value 200
-     */
-    code: number;
-    /**
-     * @value success
-     */
-    success: boolean;
-    data: 健康状况登记地区统计VO_1;
-  };
-};
+  response: 健康状况登记地区统计VO_1
+}
 
 /**
  * 打卡信息备注
@@ -75,29 +65,19 @@ export type IdetailDoRemark = {
   request: {
     /**
      * id
-     * @value #integer(64)
+     * @value
      */
-    id?: number;
+    id?: number
 
     /**
      * remark
      * @value
      */
-    remark?: string;
-  };
+    remark?: string
+  }
 
-  reponse: {
-    /**
-     * @value 200
-     */
-    code: number;
-    /**
-     * @value success
-     */
-    success: boolean;
-    data: CommResponse;
-  };
-};
+  response: CommResponse
+}
 
 /**
  * 修改健康状况日报
@@ -111,399 +91,389 @@ export type IdetailDoUpdate = {
      * 返还地-市
      * @value
      */
-    backCity?: string;
+    backCity?: string
 
     /**
      * 返还地-市编码
-     * @value #integer(64)
+     * @value
      */
-    backCityCode?: number;
+    backCityCode?: number
 
     /**
      * 返还地-区/县
      * @value
      */
-    backDistrict?: string;
+    backDistrict?: string
 
     /**
      * 返还地-区/县编码
-     * @value #integer(64)
+     * @value
      */
-    backDistrictCode?: number;
+    backDistrictCode?: number
 
     /**
      * 返还地-省份
      * @value
      */
-    backProvince?: string;
+    backProvince?: string
 
     /**
      * 返还地-省份编码
-     * @value #integer(64)
+     * @value
      */
-    backProvinceCode?: number;
+    backProvinceCode?: number
 
     /**
      * 返校备注：车次或航班号
      * @value
      */
-    backRemark?: string;
+    backRemark?: string
 
     /**
      * 返校方式 1火车 2飞机 3轮渡 4拼车 5出租车 6自驾 7其他
-     * @value #integer(32)
+     * @value
      */
-    backWay?: number;
+    backWay?: number
 
     /**
      * 市
      * @value
      */
-    city?: string;
+    city?: string
 
     /**
      * 市编码
-     * @value #integer(64)
+     * @value
      */
-    cityCode?: number;
+    cityCode?: number
 
     /**
      * 班级/部门编码
      * @value
      */
-    classCode?: string;
+    classCode?: string
 
     /**
      * 班级/部门
      * @value
      */
-    className?: string;
+    className?: string
 
     /**
      * 是否接触过高发地区 0是1否
-     * @value #integer(32)
+     * @value
      */
-    contactArea?: number;
+    contactArea?: number
 
     /**
      * 接触日期
      * @value #datetime()
      */
-    contactDate?: string;
+    contactDate?: string
 
     /**
      * 是否接触过确诊者 0是1否
-     * @value #integer(32)
+     * @value
      */
-    contactPatient?: number;
+    contactPatient?: number
 
     /**
      * 国家
      * @value
      */
-    country?: string;
+    country?: string
 
     /**
      * 院系
      * @value
      */
-    department?: string;
+    department?: string
 
     /**
      * 院系编码
      * @value
      */
-    departmentCode?: string;
+    departmentCode?: string
 
     /**
      * 设备id
      * @value
      */
-    deviceId?: string;
+    deviceId?: string
 
     /**
      * 区/县
      * @value
      */
-    district?: string;
+    district?: string
 
     /**
      * 区/县编码
-     * @value #integer(64)
+     * @value
      */
-    districtCode?: number;
+    districtCode?: number
 
     /**
      * 招生年份（年级）
-     * @value #integer(32)
+     * @value
      */
-    entranceYear?: number;
+    entranceYear?: number
 
     /**
      * 拓展字段
      * @value
      */
-    extField?: string;
+    extField?: string
 
     /**
      * 是否全日制 0是1否
-     * @value #integer(32)
+     * @value
      */
-    fullTimeFlag?: number;
+    fullTimeFlag?: number
 
     /**
      * 健康情况 1正常2发烧3咳嗽4乏力5腹泻6头晕头痛
      * @value
      */
-    healthStatusNew?: string;
+    healthStatusNew?: string
 
     /**
      * 是否春节期间在校 0是1否
-     * @value #integer(32)
+     * @value
      */
-    holidayInSchool?: number;
+    holidayInSchool?: number
 
     /**
      * id
-     * @value #integer(64)
+     * @value
      */
-    id?: number;
+    id?: number
 
     /**
      * 身份二级分类 11内地学生12港澳台学生13留学生14实习生15应征入伍16延期毕业 21内地教职工22港澳台教职工23外籍教职工24离退休教职工
      * @value
      */
-    identitySecondType?: string;
+    identitySecondType?: string
 
     /**
      * 身份类型 1学生2教职工
-     * @value #integer(32)
+     * @value
      */
-    identityType?: number;
+    identityType?: number
 
     /**
      * 是否政府定点集中隔离 0是1否
-     * @value #integer(32)
+     * @value
      */
-    inGovQuarantine?: number;
+    inGovQuarantine?: number
 
     /**
      * 是否居家健康监测或隔离 0是1否
-     * @value #integer(32)
+     * @value
      */
-    inHomeQuarantine?: number;
+    inHomeQuarantine?: number
 
     /**
      * 是否在校 0是1否
-     * @value #integer(32)
+     * @value
      */
-    inSchool?: number;
+    inSchool?: number
 
     /**
      * 是否校内集中隔离 0是1否
-     * @value #integer(32)
+     * @value
      */
-    inSchoolQuarantine?: number;
+    inSchoolQuarantine?: number
 
     /**
      * 居住区是否有确诊、无症状、疑似 0是 1否
-     * @value #integer(32)
+     * @value
      */
-    isCommunityPatient?: number;
+    isCommunityPatient?: number
 
     /**
      * 家庭成员是否有确诊、疑似、感染者 0是 1否
-     * @value #integer(32)
+     * @value
      */
-    isFamiliyPatient?: number;
+    isFamiliyPatient?: number
 
     /**
      * 今日是否在实习单位 0是 1否
-     * @value #integer(32)
+     * @value
      */
-    isInCompany?: number;
+    isInCompany?: number
 
     /**
      * 是否确诊、无症状 0是1否
-     * @value #integer(32)
+     * @value
      */
-    isPatient?: number;
+    isPatient?: number
 
     /**
      * 是否为疑似病例 0是1否
-     * @value #integer(32)
+     * @value
      */
-    isSuspected?: number;
+    isSuspected?: number
 
     /**
      * 今日是否返校 0是 1否
-     * @value #integer(32)
+     * @value
      */
-    isTodayBack?: number;
+    isTodayBack?: number
 
     /**
      * 隔离地点
      * @value
      */
-    isolatedPlace?: string;
+    isolatedPlace?: string
 
     /**
      * 学工号
      * @value
      */
-    jobNo?: string;
+    jobNo?: string
 
     /**
      * 最近一次核酸检测日期（yyyy-MM-dd）
      * @value
      */
-    lastNucleicAcidDate?: string;
+    lastNucleicAcidDate?: string
 
     /**
      * 现在联系方式
      * @value
      */
-    linkPhone?: string;
+    linkPhone?: string
 
     /**
      * 登录手机号
      * @value
      */
-    mobilePhone?: string;
+    mobilePhone?: string
 
     /**
      * 姓名
      * @value
      */
-    name?: string;
+    name?: string
 
     /**
      * 未接种疫苗原因 1未到年龄2与其他疫苗冲突3未到接种时间4身体抱恙无法接种
      * @value
      */
-    noVaccineReason?: string;
+    noVaccineReason?: string
 
     /**
      * 近七日是否有核酸检测 0是1否
-     * @value #integer(32)
+     * @value
      */
-    nucleicAcidFlag?: number;
+    nucleicAcidFlag?: number
 
     /**
      * 家长联系方式
      * @value
      */
-    parentsPhone?: string;
+    parentsPhone?: string
 
     /**
      * 就诊医院
      * @value
      */
-    patientHospital?: string;
+    patientHospital?: string
 
     /**
      * 平台
      * @value
      */
-    platform?: string;
+    platform?: string
 
     /**
      * 省
      * @value
      */
-    province?: string;
+    province?: string
 
     /**
      * 省编码
-     * @value #integer(64)
+     * @value
      */
-    provinceCode?: number;
+    provinceCode?: number
 
     /**
      * remark
      * @value
      */
-    remark?: string;
+    remark?: string
 
     /**
      * 共同居住人员健康情况 1正常2发烧3咳嗽4乏力5腹泻6头晕头痛7出疹8水疱9其它
      * @value
      */
-    roommateHealthStatus?: string;
+    roommateHealthStatus?: string
 
     /**
      * 专业
      * @value
      */
-    specialities?: string;
+    specialities?: string
 
     /**
      * 专业编码
      * @value
      */
-    specialitiesCode?: string;
+    specialitiesCode?: string
 
     /**
      * 今日体温
      * @value
      */
-    temperature?: string;
+    temperature?: string
 
     /**
      * 今日下午体温
      * @value
      */
-    temperatureAfter?: string;
+    temperatureAfter?: string
 
     /**
      * 用户id
-     * @value #integer(64)
+     * @value
      */
-    userId?: number;
+    userId?: number
 
     /**
      * 加密后的用户ID
      * @value
      */
-    uuToken?: string;
+    uuToken?: string
 
     /**
      * 疫苗第一针接种时间（yyyy-MM-dd HH:mm:ss）
      * @value
      */
-    vaccineOneTime?: string;
+    vaccineOneTime?: string
 
     /**
      * 疫苗接种情况 0未接种1已接种一针2已接种两针3已接种三针
      * @value
      */
-    vaccineStatus?: string;
+    vaccineStatus?: string
 
     /**
      * 疫苗第三针接种时间（yyyy-MM-dd HH:mm:ss）
      * @value
      */
-    vaccineThreeTime?: string;
+    vaccineThreeTime?: string
 
     /**
      * 疫苗第二针接种时间（yyyy-MM-dd HH:mm:ss）
      * @value
      */
-    vaccineTwoTime?: string;
-  };
+    vaccineTwoTime?: string
+  }
 
-  reponse: {
-    /**
-     * @value 200
-     */
-    code: number;
-    /**
-     * @value success
-     */
-    success: boolean;
-    data: CommResponse;
-  };
-};
+  response: CommResponse
+}
 
 /**
  * 导出
@@ -515,365 +485,355 @@ export type IdetailExportData = {
   request: {
     /**
      * 返校方式 1火车 2飞机 3轮渡 4拼车 5出租车 6自驾 7其他
-     * @value #integer(32)
+     * @value
      */
-    backWay?: number;
+    backWay?: number
 
     /**
      * 楼栋
      * @value
      */
-    building?: string;
+    building?: string
 
     /**
      * 上报时间结束
      * @value
      */
-    createTimeEnd?: string;
+    createTimeEnd?: string
 
     /**
      * 上报时间开始
      * @value
      */
-    createTimeStart?: string;
+    createTimeStart?: string
 
     /**
      * 当前页,从1开始(默认1)
-     * @value #integer(32)
+     * @value
      */
-    currentPage?: number;
+    currentPage?: number
 
     /**
      * 用户是否自定义limit最大值,默认：false，部分下载场景下需要自定义
      * @value
      */
-    customLimit?: boolean;
+    customLimit?: boolean
 
     /**
      * 招生年份（年级）
-     * @value #integer(32)
+     * @value
      */
-    entranceYear?: number;
+    entranceYear?: number
 
     /**
      * 房间号
      * @value
      */
-    floor?: string;
+    floor?: string
 
     /**
      * 是否全日制 0是1否
-     * @value #integer(32)
+     * @value
      */
-    fullTimeFlag?: number;
+    fullTimeFlag?: number
 
     /**
      * 健康情况 1正常2发烧3咳嗽4乏力5腹泻6头晕头痛
      * @value
      */
-    healthStatusNew?: string;
+    healthStatusNew?: string
 
     /**
      * 是否春节期间在校 0是1否
-     * @value #integer(32)
+     * @value
      */
-    holidayInSchool?: number;
+    holidayInSchool?: number
 
     /**
      * 身份证号
      * @value
      */
-    identity?: string;
+    identity?: string
 
     /**
      * 身份二级分类 11内地学生12港澳台学生13留学生14实习生15应征入伍16延期毕业 21内地教职工22港澳台教职工23外籍教职工24离退休教职工
      * @value
      */
-    identitySecondType?: string;
+    identitySecondType?: string
 
     /**
      * 身份类型 1学生2教职工
-     * @value #integer(32)
+     * @value
      */
-    identityType?: number;
+    identityType?: number
 
     /**
      * 是否政府定点集中隔离 0是1否
-     * @value #integer(32)
+     * @value
      */
-    inGovQuarantine?: number;
+    inGovQuarantine?: number
 
     /**
      * 是否居家健康监测或隔离 0是1否
-     * @value #integer(32)
+     * @value
      */
-    inHomeQuarantine?: number;
+    inHomeQuarantine?: number
 
     /**
      * 是否在校 0是1否
-     * @value #integer(32)
+     * @value
      */
-    inSchool?: number;
+    inSchool?: number
 
     /**
      * 是否校内集中隔离 0是1否
-     * @value #integer(32)
+     * @value
      */
-    inSchoolQuarantine?: number;
+    inSchoolQuarantine?: number
 
     /**
      * 居住区是否有确诊、无症状、疑似 0是 1否
-     * @value #integer(32)
+     * @value
      */
-    isCommunityPatient?: number;
+    isCommunityPatient?: number
 
     /**
      * 家庭成员是否有确诊、疑似、感染者 0是 1否
-     * @value #integer(32)
+     * @value
      */
-    isFamiliyPatient?: number;
+    isFamiliyPatient?: number
 
     /**
      * 今日是否在实习单位 0是 1否
-     * @value #integer(32)
+     * @value
      */
-    isInCompany?: number;
+    isInCompany?: number
 
     /**
      * 是否确诊、无症状 0是1否
-     * @value #integer(32)
+     * @value
      */
-    isPatient?: number;
+    isPatient?: number
 
     /**
      * 是否为疑似病例 0是1否
-     * @value #integer(32)
+     * @value
      */
-    isSuspected?: number;
+    isSuspected?: number
 
     /**
      * 今日是否返校 0是 1否
-     * @value #integer(32)
+     * @value
      */
-    isTodayBack?: number;
+    isTodayBack?: number
 
     /**
      * 学工号
      * @value
      */
-    jobNo?: string;
+    jobNo?: string
 
     /**
      * 登录手机号
      * @value
      */
-    mobilePhone?: string;
+    mobilePhone?: string
 
     /**
      * 姓名
      * @value
      */
-    name?: string;
+    name?: string
 
     /**
      * 未接种疫苗原因 1未到年龄2与其他疫苗冲突3未到接种时间4身体抱恙无法接种
      * @value
      */
-    noVaccineReason?: string;
+    noVaccineReason?: string
 
     /**
      * 近七日是否有核酸检测 0是1否
-     * @value #integer(32)
+     * @value
      */
-    nucleicAcidFlag?: number;
+    nucleicAcidFlag?: number
 
     /**
      * 分页大小(默认10)
-     * @value #integer(32)
+     * @value
      */
-    pageSize?: number;
+    pageSize?: number
 
     /**
      * 共同居住人员健康情况 1正常2发烧3咳嗽4乏力5腹泻6头晕头痛7出疹8水疱9其它
      * @value
      */
-    roommateHealthStatus?: string;
+    roommateHealthStatus?: string
 
     /**
      * 用户ID
-     * @value #integer(64)
+     * @value
      */
-    userId?: number;
+    userId?: number
 
     /**
      * 疫苗接种情况 0未接种1已接种一针2已接种两针3已接种三针
      * @value
      */
-    vaccineStatus?: string;
+    vaccineStatus?: string
 
     /**
      *
      * @value
      */
-    classCode?: string;
+    classCode?: string
 
     /**
      *
      * @value
      */
-    classCodes?: string[];
+    classCodes?: string[]
 
     /**
      *
      * @value
      */
-    className?: string;
-
-    /**
-     *
-     * @value #integer(32)
-     */
-    contactArea?: number;
-
-    /**
-     *
-     * @value #integer(32)
-     */
-    contactPatient?: number;
+    className?: string
 
     /**
      *
      * @value
      */
-    department?: string;
+    contactArea?: number
 
     /**
      *
      * @value
      */
-    departmentCode?: string;
+    contactPatient?: number
 
     /**
      *
      * @value
      */
-    district?: string;
-
-    /**
-     *
-     * @value #integer(64)
-     */
-    districtCode?: number;
-
-    /**
-     *
-     * @value #integer(32)
-     */
-    healthStatus?: number;
+    department?: string
 
     /**
      *
      * @value
      */
-    healthStatusNewList?: string[];
-
-    /**
-     *
-     * @value #integer(64)
-     */
-    id?: number;
+    departmentCode?: string
 
     /**
      *
      * @value
      */
-    isSearchCount?: boolean;
+    district?: string
 
     /**
      *
      * @value
      */
-    linkPhone?: string;
+    districtCode?: number
 
     /**
      *
      * @value
      */
-    locationInfo?: string;
+    healthStatus?: number
 
     /**
      *
      * @value
      */
-    longitudeAndLatitude?: string;
+    healthStatusNewList?: string[]
 
     /**
      *
      * @value
      */
-    order?: string;
+    id?: number
 
     /**
      *
      * @value
      */
-    parentsPhone?: string;
+    isSearchCount?: boolean
 
     /**
      *
      * @value
      */
-    roommateHealthStatusList?: string[];
+    linkPhone?: string
 
     /**
      *
      * @value
      */
-    schoolCode?: string;
+    locationInfo?: string
 
     /**
      *
      * @value
      */
-    sort?: string;
+    longitudeAndLatitude?: string
 
     /**
      *
      * @value
      */
-    specialities?: string;
+    order?: string
 
     /**
      *
      * @value
      */
-    specialitiesCode?: string;
+    parentsPhone?: string
 
     /**
      *
      * @value
      */
-    updateTimeEnd?: string;
+    roommateHealthStatusList?: string[]
 
     /**
      *
      * @value
      */
-    updateTimeStart?: string;
-  };
+    schoolCode?: string
 
-  reponse: {
     /**
-     * @value 200
+     *
+     * @value
      */
-    code: number;
+    sort?: string
+
     /**
-     * @value success
+     *
+     * @value
      */
-    success: boolean;
-    data: CommResponseobject;
-  };
-};
+    specialities?: string
+
+    /**
+     *
+     * @value
+     */
+    specialitiesCode?: string
+
+    /**
+     *
+     * @value
+     */
+    updateTimeEnd?: string
+
+    /**
+     *
+     * @value
+     */
+    updateTimeStart?: string
+  }
+
+  response: CommResponseobject
+}
 
 /**
  * 导出学生日汇总
@@ -887,51 +847,41 @@ export type IdetailExportStudentDailyStats = {
      * 日期 yyyy-MM-dd
      * @value
      */
-    day?: string;
+    day?: string
 
     /**
      * 学生日报统计类型 1按院系2按专业3按班级4按部门 不传默认按院系
-     * @value #integer(32)
+     * @value
      */
-    groupByType?: number;
+    groupByType?: number
 
     /**
      * 身份类型 1学生2教职工
-     * @value #integer(32)
+     * @value
      */
-    identityType?: number;
+    identityType?: number
 
     /**
      * 平台
      * @value
      */
-    platform?: string;
+    platform?: string
 
     /**
      * 加密后的用户ID
      * @value
      */
-    uuToken?: string;
+    uuToken?: string
 
     /**
      *
      * @value
      */
-    classCodes?: string[];
-  };
+    classCodes?: string[]
+  }
 
-  reponse: {
-    /**
-     * @value 200
-     */
-    code: number;
-    /**
-     * @value success
-     */
-    success: boolean;
-    data: CommResponseobject;
-  };
-};
+  response: CommResponseobject
+}
 
 /**
  * 导出教职工日汇总
@@ -945,51 +895,41 @@ export type IdetailExportTeacherDailyStats = {
      * 日期 yyyy-MM-dd
      * @value
      */
-    day?: string;
+    day?: string
 
     /**
      * 学生日报统计类型 1按院系2按专业3按班级4按部门 不传默认按院系
-     * @value #integer(32)
+     * @value
      */
-    groupByType?: number;
+    groupByType?: number
 
     /**
      * 身份类型 1学生2教职工
-     * @value #integer(32)
+     * @value
      */
-    identityType?: number;
+    identityType?: number
 
     /**
      * 平台
      * @value
      */
-    platform?: string;
+    platform?: string
 
     /**
      * 加密后的用户ID
      * @value
      */
-    uuToken?: string;
+    uuToken?: string
 
     /**
      *
      * @value
      */
-    classCodes?: string[];
-  };
+    classCodes?: string[]
+  }
 
-  reponse: {
-    /**
-     * @value 200
-     */
-    code: number;
-    /**
-     * @value success
-     */
-    success: boolean;
-    data: CommResponseobject;
-  };
-};
+  response: CommResponseobject
+}
 
 /**
  * 根据id查询信息
@@ -1001,23 +941,13 @@ export type IdetailGetById = {
   request: {
     /**
      * id
-     * @value #integer(64)
+     * @value
      */
-    id?: number;
-  };
+    id?: number
+  }
 
-  reponse: {
-    /**
-     * @value 200
-     */
-    code: number;
-    /**
-     * @value success
-     */
-    success: boolean;
-    data: 健康状况日报VO;
-  };
-};
+  response: 健康状况日报VO
+}
 
 /**
  * 分页查询健康状况日报
@@ -1029,365 +959,355 @@ export type IdetailListData = {
   request: {
     /**
      * 返校方式 1火车 2飞机 3轮渡 4拼车 5出租车 6自驾 7其他
-     * @value #integer(32)
+     * @value
      */
-    backWay?: number;
+    backWay?: number
 
     /**
      * 楼栋
      * @value
      */
-    building?: string;
+    building?: string
 
     /**
      * 上报时间结束
      * @value
      */
-    createTimeEnd?: string;
+    createTimeEnd?: string
 
     /**
      * 上报时间开始
      * @value
      */
-    createTimeStart?: string;
+    createTimeStart?: string
 
     /**
      * 当前页,从1开始(默认1)
-     * @value #integer(32)
+     * @value
      */
-    currentPage?: number;
+    currentPage?: number
 
     /**
      * 用户是否自定义limit最大值,默认：false，部分下载场景下需要自定义
      * @value
      */
-    customLimit?: boolean;
+    customLimit?: boolean
 
     /**
      * 招生年份（年级）
-     * @value #integer(32)
+     * @value
      */
-    entranceYear?: number;
+    entranceYear?: number
 
     /**
      * 房间号
      * @value
      */
-    floor?: string;
+    floor?: string
 
     /**
      * 是否全日制 0是1否
-     * @value #integer(32)
+     * @value
      */
-    fullTimeFlag?: number;
+    fullTimeFlag?: number
 
     /**
      * 健康情况 1正常2发烧3咳嗽4乏力5腹泻6头晕头痛
      * @value
      */
-    healthStatusNew?: string;
+    healthStatusNew?: string
 
     /**
      * 是否春节期间在校 0是1否
-     * @value #integer(32)
+     * @value
      */
-    holidayInSchool?: number;
+    holidayInSchool?: number
 
     /**
      * 身份证号
      * @value
      */
-    identity?: string;
+    identity?: string
 
     /**
      * 身份二级分类 11内地学生12港澳台学生13留学生14实习生15应征入伍16延期毕业 21内地教职工22港澳台教职工23外籍教职工24离退休教职工
      * @value
      */
-    identitySecondType?: string;
+    identitySecondType?: string
 
     /**
      * 身份类型 1学生2教职工
-     * @value #integer(32)
+     * @value
      */
-    identityType?: number;
+    identityType?: number
 
     /**
      * 是否政府定点集中隔离 0是1否
-     * @value #integer(32)
+     * @value
      */
-    inGovQuarantine?: number;
+    inGovQuarantine?: number
 
     /**
      * 是否居家健康监测或隔离 0是1否
-     * @value #integer(32)
+     * @value
      */
-    inHomeQuarantine?: number;
+    inHomeQuarantine?: number
 
     /**
      * 是否在校 0是1否
-     * @value #integer(32)
+     * @value
      */
-    inSchool?: number;
+    inSchool?: number
 
     /**
      * 是否校内集中隔离 0是1否
-     * @value #integer(32)
+     * @value
      */
-    inSchoolQuarantine?: number;
+    inSchoolQuarantine?: number
 
     /**
      * 居住区是否有确诊、无症状、疑似 0是 1否
-     * @value #integer(32)
+     * @value
      */
-    isCommunityPatient?: number;
+    isCommunityPatient?: number
 
     /**
      * 家庭成员是否有确诊、疑似、感染者 0是 1否
-     * @value #integer(32)
+     * @value
      */
-    isFamiliyPatient?: number;
+    isFamiliyPatient?: number
 
     /**
      * 今日是否在实习单位 0是 1否
-     * @value #integer(32)
+     * @value
      */
-    isInCompany?: number;
+    isInCompany?: number
 
     /**
      * 是否确诊、无症状 0是1否
-     * @value #integer(32)
+     * @value
      */
-    isPatient?: number;
+    isPatient?: number
 
     /**
      * 是否为疑似病例 0是1否
-     * @value #integer(32)
+     * @value
      */
-    isSuspected?: number;
+    isSuspected?: number
 
     /**
      * 今日是否返校 0是 1否
-     * @value #integer(32)
+     * @value
      */
-    isTodayBack?: number;
+    isTodayBack?: number
 
     /**
      * 学工号
      * @value
      */
-    jobNo?: string;
+    jobNo?: string
 
     /**
      * 登录手机号
      * @value
      */
-    mobilePhone?: string;
+    mobilePhone?: string
 
     /**
      * 姓名
      * @value
      */
-    name?: string;
+    name?: string
 
     /**
      * 未接种疫苗原因 1未到年龄2与其他疫苗冲突3未到接种时间4身体抱恙无法接种
      * @value
      */
-    noVaccineReason?: string;
+    noVaccineReason?: string
 
     /**
      * 近七日是否有核酸检测 0是1否
-     * @value #integer(32)
+     * @value
      */
-    nucleicAcidFlag?: number;
+    nucleicAcidFlag?: number
 
     /**
      * 分页大小(默认10)
-     * @value #integer(32)
+     * @value
      */
-    pageSize?: number;
+    pageSize?: number
 
     /**
      * 共同居住人员健康情况 1正常2发烧3咳嗽4乏力5腹泻6头晕头痛7出疹8水疱9其它
      * @value
      */
-    roommateHealthStatus?: string;
+    roommateHealthStatus?: string
 
     /**
      * 用户ID
-     * @value #integer(64)
+     * @value
      */
-    userId?: number;
+    userId?: number
 
     /**
      * 疫苗接种情况 0未接种1已接种一针2已接种两针3已接种三针
      * @value
      */
-    vaccineStatus?: string;
+    vaccineStatus?: string
 
     /**
      *
      * @value
      */
-    classCode?: string;
+    classCode?: string
 
     /**
      *
      * @value
      */
-    classCodes?: string[];
+    classCodes?: string[]
 
     /**
      *
      * @value
      */
-    className?: string;
-
-    /**
-     *
-     * @value #integer(32)
-     */
-    contactArea?: number;
-
-    /**
-     *
-     * @value #integer(32)
-     */
-    contactPatient?: number;
+    className?: string
 
     /**
      *
      * @value
      */
-    department?: string;
+    contactArea?: number
 
     /**
      *
      * @value
      */
-    departmentCode?: string;
+    contactPatient?: number
 
     /**
      *
      * @value
      */
-    district?: string;
-
-    /**
-     *
-     * @value #integer(64)
-     */
-    districtCode?: number;
-
-    /**
-     *
-     * @value #integer(32)
-     */
-    healthStatus?: number;
+    department?: string
 
     /**
      *
      * @value
      */
-    healthStatusNewList?: string[];
-
-    /**
-     *
-     * @value #integer(64)
-     */
-    id?: number;
+    departmentCode?: string
 
     /**
      *
      * @value
      */
-    isSearchCount?: boolean;
+    district?: string
 
     /**
      *
      * @value
      */
-    linkPhone?: string;
+    districtCode?: number
 
     /**
      *
      * @value
      */
-    locationInfo?: string;
+    healthStatus?: number
 
     /**
      *
      * @value
      */
-    longitudeAndLatitude?: string;
+    healthStatusNewList?: string[]
 
     /**
      *
      * @value
      */
-    order?: string;
+    id?: number
 
     /**
      *
      * @value
      */
-    parentsPhone?: string;
+    isSearchCount?: boolean
 
     /**
      *
      * @value
      */
-    roommateHealthStatusList?: string[];
+    linkPhone?: string
 
     /**
      *
      * @value
      */
-    schoolCode?: string;
+    locationInfo?: string
 
     /**
      *
      * @value
      */
-    sort?: string;
+    longitudeAndLatitude?: string
 
     /**
      *
      * @value
      */
-    specialities?: string;
+    order?: string
 
     /**
      *
      * @value
      */
-    specialitiesCode?: string;
+    parentsPhone?: string
 
     /**
      *
      * @value
      */
-    updateTimeEnd?: string;
+    roommateHealthStatusList?: string[]
 
     /**
      *
      * @value
      */
-    updateTimeStart?: string;
-  };
+    schoolCode?: string
 
-  reponse: {
     /**
-     * @value 200
+     *
+     * @value
      */
-    code: number;
+    sort?: string
+
     /**
-     * @value success
+     *
+     * @value
      */
-    success: boolean;
-    data: 健康状况日报VO;
-  };
-};
+    specialities?: string
+
+    /**
+     *
+     * @value
+     */
+    specialitiesCode?: string
+
+    /**
+     *
+     * @value
+     */
+    updateTimeEnd?: string
+
+    /**
+     *
+     * @value
+     */
+    updateTimeStart?: string
+  }
+
+  response: 健康状况日报VO
+}
 
 /**
  * 分页查询健康状况日汇总(route)
@@ -1401,75 +1321,65 @@ export type IrouteDay = {
      * 日期 yyyy-MM-dd
      * @value
      */
-    day?: string;
+    day?: string
 
     /**
      * 学生日报统计类型 1按院系2按专业3按班级4按部门 不传默认按院系
-     * @value #integer(32)
+     * @value
      */
-    groupByType?: number;
+    groupByType?: number
 
     /**
      * 身份类型 1学生2教职工
-     * @value #integer(32)
+     * @value
      */
-    identityType?: number;
+    identityType?: number
 
     /**
      * 平台
      * @value
      */
-    platform?: string;
+    platform?: string
 
     /**
      * 加密后的用户ID
      * @value
      */
-    uuToken?: string;
+    uuToken?: string
 
     /**
      *
      * @value
      */
-    classCodes?: string[];
+    classCodes?: string[]
 
     /**
      * schoolCode
      * @value
      */
-    schoolCode?: string;
+    schoolCode?: string
 
     /**
      * schoolName
      * @value
      */
-    schoolName?: string;
+    schoolName?: string
 
     /**
      * userId
-     * @value #integer(64)
+     * @value
      */
-    userId?: number;
+    userId?: number
 
     /**
      * userName
      * @value
      */
-    userName?: string;
-  };
+    userName?: string
+  }
 
-  reponse: {
-    /**
-     * @value 200
-     */
-    code: number;
-    /**
-     * @value success
-     */
-    success: boolean;
-    data: 健康状况登记地区统计VOroute;
-  };
-};
+  response: 健康状况登记地区统计VOroute
+}
 
 /**
  * 获取用户需要分组统计的类型列表(route)
@@ -1483,36 +1393,26 @@ export type IrouteGetGroupByTypeList = {
      * schoolCode
      * @value
      */
-    schoolCode?: string;
+    schoolCode?: string
 
     /**
      * schoolName
      * @value
      */
-    schoolName?: string;
+    schoolName?: string
 
     /**
      * userId
-     * @value #integer(64)
+     * @value
      */
-    userId?: number;
+    userId?: number
 
     /**
      * userName
      * @value
      */
-    userName?: string;
-  };
+    userName?: string
+  }
 
-  reponse: {
-    /**
-     * @value 200
-     */
-    code: number;
-    /**
-     * @value success
-     */
-    success: boolean;
-    data: SelectResult_1;
-  };
-};
+  response: SelectResult_1
+}

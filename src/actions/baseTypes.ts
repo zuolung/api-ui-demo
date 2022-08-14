@@ -6,20 +6,20 @@ export type ApiElectricAreaVO = {
    * 校区编码
    * @value
    */
-  areaId: string;
+  areaId: string
 
   /**
    * 校区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-};
+  schoolName: string
+}
 
 /**
  * --
@@ -29,26 +29,26 @@ export type ApiElectricBuildingVO = {
    * 校区编码
    * @value
    */
-  areaId: string;
+  areaId: string
 
   /**
    * 楼栋编码
    * @value
    */
-  buildingCode: string;
+  buildingCode: string
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-};
+  schoolName: string
+}
 
 /**
  * --
@@ -58,32 +58,32 @@ export type ApiElectricFloorVO = {
    * 校区编码
    * @value
    */
-  areaId: string;
+  areaId: string
 
   /**
    * 楼栋编码
    * @value
    */
-  buildingCode: string;
+  buildingCode: string
 
   /**
    * 楼层编码
    * @value
    */
-  floorCode: string;
+  floorCode: string
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-};
+  schoolName: string
+}
 
 /**
  * --
@@ -91,16 +91,16 @@ export type ApiElectricFloorVO = {
 export type ApiElectricOrderBackVO = {
   /**
    * 订单号状态  0、处理中 1、已完成
-   * @value #integer(32)
+   * @value
    */
-  orderStatus: number;
+  orderStatus: number
 
   /**
    * 订单号状态提示信息
    * @value
    */
-  orderStatusMsg: string;
-};
+  orderStatusMsg: string
+}
 
 /**
  * --
@@ -108,88 +108,88 @@ export type ApiElectricOrderBackVO = {
 export type ApiElectricOrderVO = {
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  areaId: number;
+  areaId: number
 
   /**
    * 校区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 楼栋编码
    * @value
    */
-  buildingCode: string;
+  buildingCode: string
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 第三方支付单号
    * @value
    */
-  cpPayNo: string;
+  cpPayNo: string
 
   /**
    * 楼层编码
    * @value
    */
-  floorCode: string;
+  floorCode: string
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    * 电费订单号
    * @value
    */
-  orderCode: string;
+  orderCode: string
 
   /**
    * 订单状态 0、处理中  1、已完成
-   * @value #integer(32)
+   * @value
    */
-  orderStatus: number;
+  orderStatus: number
 
   /**
    * 充值金额
-   * @value #integer(double)
+   * @value
    */
-  rechargeAmount: number;
+  rechargeAmount: number
 
   /**
    * 房间编码
    * @value
    */
-  roomCode: string;
+  roomCode: string
 
   /**
    * 房间名称
    * @value
    */
-  roomName: string;
+  roomName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-};
+  schoolName: string
+}
 
 /**
  * --
@@ -199,8 +199,8 @@ export type ApiElectricPreOrderVO = {
    * 电费订单号
    * @value
    */
-  orderCode: string;
-};
+  orderCode: string
+}
 
 /**
  * --
@@ -210,14 +210,14 @@ export type ApiElectricRoomRechargeTypeVO = {
    * 充值类型名称
    * @value
    */
-  rechargeName: string;
+  rechargeName: string
 
   /**
    * 充值类型
    * @value
    */
-  rechargeType: string;
-};
+  rechargeType: string
+}
 
 /**
  * --
@@ -225,70 +225,70 @@ export type ApiElectricRoomRechargeTypeVO = {
 export type ApiElectricRoomSurplusBaseVO = {
   /**
    * 校区编码
-   * @value #integer(64)
+   * @value
    */
-  areaId: number;
+  areaId: number
 
   /**
    * 校区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 楼栋编码
    * @value
    */
-  buildingCode: string;
+  buildingCode: string
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 楼层编码
    * @value
    */
-  floorCode: string;
+  floorCode: string
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    * 充值类型列表
    * @rule 2
    */
-  rechargeTypeList: ApiElectricRoomRechargeTypeVO[];
+  rechargeTypeList: ApiElectricRoomRechargeTypeVO[]
 
   /**
    * 房间编码
    * @value
    */
-  roomCode: string;
+  roomCode: string
 
   /**
    * 房间名称
    * @value
    */
-  roomName: string;
+  roomName: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 剩余量列表
    * @rule 2
    */
-  surplusList: ApiElectricRoomSurplusVO[];
-};
+  surplusList: ApiElectricRoomSurplusVO[]
+}
 
 /**
  * --
@@ -296,34 +296,34 @@ export type ApiElectricRoomSurplusBaseVO = {
 export type ApiElectricRoomSurplusVO = {
   /**
    * 剩余金额
-   * @value #integer(double)
+   * @value
    */
-  amount: number;
+  amount: number
 
   /**
    * 剩余补助
-   * @value #integer(double)
+   * @value
    */
-  subsidy: number;
+  subsidy: number
 
   /**
    * 剩余补助金额
-   * @value #integer(double)
+   * @value
    */
-  subsidyAmount: number;
+  subsidyAmount: number
 
   /**
    * 剩余量
-   * @value #integer(double)
+   * @value
    */
-  surplus: number;
+  surplus: number
 
   /**
    * 类型名称
    * @value
    */
-  typeName: string;
-};
+  typeName: string
+}
 
 /**
  * --
@@ -333,38 +333,38 @@ export type ApiElectricRoomVO = {
    * 校区编码
    * @value
    */
-  areaId: string;
+  areaId: string
 
   /**
    * 楼栋编码
    * @value
    */
-  buildingCode: string;
+  buildingCode: string
 
   /**
    * 楼层编码
    * @value
    */
-  floorCode: string;
+  floorCode: string
 
   /**
    * 房间编码
    * @value
    */
-  roomCode: string;
+  roomCode: string
 
   /**
    * 房间名称
    * @value
    */
-  roomName: string;
+  roomName: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-};
+  schoolName: string
+}
 
 /**
  * --
@@ -374,92 +374,92 @@ export type ApiPayCenterListVO = {
    * 批次
    * @value
    */
-  batchNum: string;
+  batchNum: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 名单id
-   * @value #integer(64)
+   * @value
    */
-  listId: number;
+  listId: number
 
   /**
    * 缴费金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 项目编码
-   * @value #integer(64)
+   * @value
    */
-  proId: number;
+  proId: number
 
   /**
    * 项目名称
    * @value
    */
-  proName: string;
+  proName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 状态0未缴纳 2缴纳中 1已缴纳
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 班级
    * @value
    */
-  userClass: string;
+  userClass: string
 
   /**
    * 年级
    * @value
    */
-  userGrade: string;
+  userGrade: string
 
   /**
    * 身份证
    * @value
    */
-  userIdCard: string;
+  userIdCard: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 学号
    * @value
    */
-  userNo: string;
+  userNo: string
 
   /**
    * 院系
    * @value
    */
-  userXi: string;
+  userXi: string
 
   /**
    * 专业
    * @value
    */
-  userZhuan: string;
-};
+  userZhuan: string
+}
 
 /**
  * --
@@ -469,26 +469,26 @@ export type ApiQueryOrderByNoVO = {
    * 订单号
    * @value
    */
-  orderNo: string;
+  orderNo: string
 
   /**
    * 缴费状态 1等待支付 2支付成功 3支付失败 4订单关闭
    * @value
    */
-  orderStatus: string;
+  orderStatus: string
 
   /**
    * 支付单号
    * @value
    */
-  payOrder: string;
+  payOrder: string
 
   /**
    * 支付时间
    * @value
    */
-  payTime: string;
-};
+  payTime: string
+}
 
 /**
  * --
@@ -498,98 +498,98 @@ export type ApiQueryOrderPageVO = {
    * 账户id
    * @value
    */
-  accId: string;
+  accId: string
 
   /**
    * 缴费期间编码
    * @value
    */
-  durationCode: string;
+  durationCode: string
 
   /**
    * 缴费期间名称
    * @value
    */
-  durationName: string;
+  durationName: string
 
   /**
    * 订单号
    * @value
    */
-  orderNo: string;
+  orderNo: string
 
   /**
    * 缴费状态 1等待支付 2支付成功 3支付失败 4订单关闭
    * @value
    */
-  orderStatus: string;
+  orderStatus: string
 
   /**
    * 缴费金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 支付方式
    * @value
    */
-  payMethod: string;
+  payMethod: string
 
   /**
    * 支付单号
    * @value
    */
-  payOrder: string;
+  payOrder: string
 
   /**
    * 支付时间
    * @value
    */
-  payTime: string;
+  payTime: string
 
   /**
    * 缴费项目ID
    * @value
    */
-  proId: string;
+  proId: string
 
   /**
    * 缴费项目名称
    * @value
    */
-  proName: string;
+  proName: string
 
   /**
    * 第三方待缴订单编号
    * @value
    */
-  thirdSeqNo: string;
+  thirdSeqNo: string
 
   /**
    * 缴费年份
    * @value
    */
-  thirdYear: string;
+  thirdYear: string
 
   /**
    * 身份证号
    * @value
    */
-  userIdCard: string;
+  userIdCard: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 学号
    * @value
    */
-  userNo: string;
-};
+  userNo: string
+}
 
 /**
  * --
@@ -599,32 +599,32 @@ export type AppJiaofeiListStatVO = {
    * 类型[院系、专业、班级]名称
    * @value
    */
-  levelName: string;
+  levelName: string
 
   /**
    * 已缴人数
-   * @value #integer(32)
+   * @value
    */
-  paidPerson: number;
+  paidPerson: number
 
   /**
    * 已缴完成率字符串
    * @value
    */
-  recordRateStr: string;
+  recordRateStr: string
 
   /**
    * 总人数
-   * @value #integer(32)
+   * @value
    */
-  totalPerson: number;
+  totalPerson: number
 
   /**
    * 未缴人数
-   * @value #integer(32)
+   * @value
    */
-  unPayPerson: number;
-};
+  unPayPerson: number
+}
 
 /**
  * --
@@ -634,86 +634,86 @@ export type AppJiaofeiPayListVO = {
    * 批次
    * @value
    */
-  batchNum: string;
+  batchNum: string
 
   /**
    * 是否合并支付 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isMergePay: number;
+  isMergePay: number
 
   /**
    * 是否分批支付 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isSplitPay: number;
+  isSplitPay: number
 
   /**
    * 名单id
-   * @value #integer(64)
+   * @value
    */
-  listId: number;
+  listId: number
 
   /**
    * 订单号
-   * @value #integer(64)
+   * @value
    */
-  orderId: number;
+  orderId: number
 
   /**
    * 支付状态  0等待支付、2支付成功、3支付失败、-1订单关闭
-   * @value #integer(32)
+   * @value
    */
-  orderStatus: number;
+  orderStatus: number
 
   /**
    * 支付状态
    * @value
    */
-  orderStatusStr: string;
+  orderStatusStr: string
 
   /**
    * 缴费金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 支付时间
    * @value #datetime()
    */
-  payTime: string;
+  payTime: string
 
   /**
    * 缴费项目名称
    * @value
    */
-  proName: string;
+  proName: string
 
   /**
    * 身份证号
    * @value
    */
-  userIdCard: string;
+  userIdCard: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 学号
    * @value
    */
-  userNo: string;
+  userNo: string
 
   /**
    * 手机号
    * @value
    */
-  userPhone: string;
-};
+  userPhone: string
+}
 
 /**
  * --
@@ -721,52 +721,52 @@ export type AppJiaofeiPayListVO = {
 export type AppJiaofeiProjectStatVO = {
   /**
    * 全部人数
-   * @value #integer(32)
+   * @value
    */
-  allPerson: number;
+  allPerson: number
 
   /**
    * 是否有数据权限 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isOrganization: number;
+  isOrganization: number
 
   /**
    * 已缴金额
    * @value
    */
-  paidAmount: number;
+  paidAmount: number
 
   /**
    * 已缴人数
-   * @value #integer(32)
+   * @value
    */
-  paidPerson: number;
+  paidPerson: number
 
   /**
    * 项目id
-   * @value #integer(64)
+   * @value
    */
-  projectId: number;
+  projectId: number
 
   /**
    * 项目名称
    * @value
    */
-  projectName: string;
+  projectName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 未缴人数
-   * @value #integer(32)
+   * @value
    */
-  unPayPerson: number;
-};
+  unPayPerson: number
+}
 
 /**
  * --
@@ -776,68 +776,68 @@ export type AuthJSAppParam = {
    * 应用id
    * @value
    */
-  appid: string;
+  appid: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 接口方法集合
    * @value
    */
-  jsApiList: string;
+  jsApiList: string
 
   /**
    * 随机数
    * @value
    */
-  nonceStr: string;
+  nonceStr: string
 
   /**
    * 内部鉴权token
    * @value
    */
-  routeToken: string;
+  routeToken: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 密钥
    * @value
    */
-  secret: string;
+  secret: string
 
   /**
    * shiroJID
    * @value
    */
-  shiroJID: string;
+  shiroJID: string
 
   /**
    * appid 的签名
    * @value
    */
-  signature: string;
+  signature: string
 
   /**
    * 当前时间戳
    * @value
    */
-  timestamp: string;
+  timestamp: string
 
   /**
    * 页面url
    * @value
    */
-  url: string;
-};
+  url: string
+}
 
 /**
  * --
@@ -847,26 +847,26 @@ export type AuthOrgVO = {
    *
    * @value
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
    * @value
    */
-  mobilePhone: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  userId: number;
+  mobilePhone: string
 
   /**
    *
    * @value
    */
-  userName: string;
-};
+  userId: number
+
+  /**
+   *
+   * @value
+   */
+  userName: string
+}
 
 /**
  * --
@@ -876,38 +876,38 @@ export type AuthUserParam = {
    * 平台
    * @value
    */
-  platform: string;
+  platform: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 第三方id
    * @value
    */
-  thirdOpenid: string;
+  thirdOpenid: string
 
   /**
    * 加密后的用户ID
    * @value
    */
-  uuToken: string;
+  uuToken: string
 
   /**
    * token
    * @value
    */
-  ymToken: string;
+  ymToken: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  ymUserId: number;
-};
+  ymUserId: number
+}
 
 /**
  * --
@@ -917,74 +917,74 @@ export type AuthWechatmsgPushApiVO = {
    * 内容
    * @value
    */
-  content: string;
+  content: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value
    */
-  createTimeStr: string;
+  createTimeStr: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 发送时间
    * @value
    */
-  sendTimeStr: string;
+  sendTimeStr: string
 
   /**
    * 推送方式
    * @value
    */
-  sendTypeStr: string;
+  sendTypeStr: string
 
   /**
    * 推送状态
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 标题
    * @value
    */
-  title: string;
+  title: string
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 微信模板id
    * @value
    */
-  wechatTemplateId: string;
-};
+  wechatTemplateId: string
+}
 
 /**
  * --
@@ -994,50 +994,50 @@ export type AuthWechatmsgSchoolApiVO = {
    * 详细内容
    * @value
    */
-  content: string;
+  content: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 行业
    * @value
    */
-  industry: string;
+  industry: string
 
   /**
    * 示例图片
    * @value
    */
-  logo: string;
+  logo: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 标题
    * @value
    */
-  title: string;
+  title: string
 
   /**
    * 微信模板id
    * @value
    */
-  wechatTemplateId: string;
-};
+  wechatTemplateId: string
+}
 
 /**
  * --
@@ -1047,38 +1047,38 @@ export type BaseDataAppVO = {
    * 分类
    * @value
    */
-  classifyCode: string;
+  classifyCode: string
 
   /**
    * 描述
    * @value
    */
-  description: string;
+  description: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * key
    * @value
    */
-  optionCode: string;
+  optionCode: string
 
   /**
    * value
    * @value
    */
-  optionName: string;
+  optionName: string
 
   /**
    * 排序
-   * @value #integer(32)
+   * @value
    */
-  sort: number;
-};
+  sort: number
+}
 
 /**
  * --
@@ -1088,92 +1088,92 @@ export type BaseDataDO = {
    *
    * @value
    */
-  classifyCode: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  createId: number;
+  classifyCode: string
 
   /**
    *
    * @value
    */
-  createName: string;
+  createId: number
+
+  /**
+   *
+   * @value
+   */
+  createName: string
 
   /**
    *
    * @value #datetime()
    */
-  createTime: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  deleteFlag: number;
+  createTime: string
 
   /**
    *
    * @value
    */
-  description: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isDefault: number;
+  deleteFlag: number
 
   /**
    *
    * @value
    */
-  optionCode: string;
+  description: string
 
   /**
    *
    * @value
    */
-  optionName: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  optionNameType: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  sort: number;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  updateId: number;
+  id: number
 
   /**
    *
    * @value
    */
-  updateName: string;
+  isDefault: number
+
+  /**
+   *
+   * @value
+   */
+  optionCode: string
+
+  /**
+   *
+   * @value
+   */
+  optionName: string
+
+  /**
+   *
+   * @value
+   */
+  optionNameType: number
+
+  /**
+   *
+   * @value
+   */
+  sort: number
+
+  /**
+   *
+   * @value
+   */
+  updateId: number
+
+  /**
+   *
+   * @value
+   */
+  updateName: string
 
   /**
    *
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * 月对账报表明细返回数据参数
@@ -1181,136 +1181,136 @@ export type BaseDataDO = {
 export type BillMonthReportInfoVO = {
   /**
    * 对账日期
-   * @value #integer(32)
+   * @value
    */
-  billDate: number;
+  billDate: number
 
   /**
    * 一卡通到帐时间
    * @value #datetime()
    */
-  billTime: string;
+  billTime: string
 
   /**
    * 一卡通订单号
    * @value
    */
-  cardNo: string;
+  cardNo: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 操作员
    * @value
    */
-  optnum: string;
+  optnum: string
 
   /**
    * 支付时间
    * @value #datetime()
    */
-  payTime: string;
+  payTime: string
 
   /**
    * 支付方式
    * @value
    */
-  payType: string;
+  payType: string
 
   /**
    * 支付方式
    * @value
    */
-  payTypeName: string;
+  payTypeName: string
 
   /**
    * 平台
    * @value
    */
-  platform: string;
+  platform: string
 
   /**
    * 平台
    * @value
    */
-  platformName: string;
+  platformName: string
 
   /**
    * 对账结果描述
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCodeName: string;
-
-  /**
-   * 状态
-   * @value #integer(32)
-   */
-  status: number;
+  schoolCodeName: string
 
   /**
    * 状态
    * @value
    */
-  statusName: string;
+  status: number
+
+  /**
+   * 状态
+   * @value
+   */
+  statusName: string
 
   /**
    * 微信等第三方订单号
    * @value
    */
-  topNo: string;
-
-  /**
-   * 支付金额
-   * @value #integer(64)
-   */
-  tranMoney: number;
+  topNo: string
 
   /**
    * 支付金额
    * @value
    */
-  tranMoneyStr: string;
+  tranMoney: number
+
+  /**
+   * 支付金额
+   * @value
+   */
+  tranMoneyStr: string
 
   /**
    * 支付订单号
    * @value
    */
-  tranNo: string;
+  tranNo: string
 
   /**
    * 一卡通账号
    * @value
    */
-  userIdcard: string;
+  userIdcard: string
 
   /**
    * 用户姓名
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * 日月账单分析汇总信息VO
@@ -1320,26 +1320,26 @@ export type BillReportDetailVO = {
    * 账单详情
    * @rule
    */
-  billReport: BillReportVO;
+  billReport: BillReportVO
 
   /**
    * 账单分析结论
    * @rule
    */
-  cardBillReportDetail: CardBillReportDetail;
+  cardBillReportDetail: CardBillReportDetail
 
   /**
    * 支付渠道汇总
    * @rule 2
    */
-  payVOList: BillReportPayVO[];
+  payVOList: BillReportPayVO[]
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-};
+  schoolName: string
+}
 
 /**
  * 对账报表明细返回数据参数
@@ -1347,148 +1347,148 @@ export type BillReportDetailVO = {
 export type BillReportInfoVO = {
   /**
    * 对账日期
-   * @value #integer(32)
+   * @value
    */
-  billDate: number;
+  billDate: number
 
   /**
    * 一卡通到帐时间
    * @value #datetime()
    */
-  billTime: string;
+  billTime: string
 
   /**
    * 一卡通订单号
    * @value
    */
-  cardNo: string;
+  cardNo: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 操作员
    * @value
    */
-  optnum: string;
+  optnum: string
 
   /**
    * 支付时间
    * @value #datetime()
    */
-  payTime: string;
+  payTime: string
 
   /**
    * 支付方式
    * @value
    */
-  payType: string;
+  payType: string
 
   /**
    * 支付方式
    * @value
    */
-  payTypeName: string;
+  payTypeName: string
 
   /**
    * 平台
    * @value
    */
-  platform: string;
+  platform: string
 
   /**
    * 平台
    * @value
    */
-  platformName: string;
+  platformName: string
 
   /**
    * 一卡通流水
-   * @value #integer(64)
+   * @value
    */
-  recid: number;
+  recid: number
 
   /**
    * 对账结果描述
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 报表id
-   * @value #integer(64)
+   * @value
    */
-  reportId: number;
+  reportId: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolCodeName: string;
-
-  /**
-   * 状态
-   * @value #integer(32)
-   */
-  status: number;
+  schoolCodeName: string
 
   /**
    * 状态
    * @value
    */
-  statusName: string;
+  status: number
+
+  /**
+   * 状态
+   * @value
+   */
+  statusName: string
 
   /**
    * 微信等第三方订单号
    * @value
    */
-  topNo: string;
-
-  /**
-   * 支付金额
-   * @value #integer(64)
-   */
-  tranMoney: number;
+  topNo: string
 
   /**
    * 支付金额
    * @value
    */
-  tranMoneyStr: string;
+  tranMoney: number
+
+  /**
+   * 支付金额
+   * @value
+   */
+  tranMoneyStr: string
 
   /**
    * 支付订单号
    * @value
    */
-  tranNo: string;
+  tranNo: string
 
   /**
    * 一卡通账号
    * @value
    */
-  userIdcard: string;
+  userIdcard: string
 
   /**
    * 用户姓名
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * 对账报表付款方式返回数据参数
@@ -1496,40 +1496,40 @@ export type BillReportInfoVO = {
 export type BillReportPayVO = {
   /**
    * 金额
-   * @value #integer(64)
+   * @value
    */
-  amount: number;
+  amount: number
 
   /**
    * 金额
    * @value
    */
-  amountStr: string;
+  amountStr: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 数量
-   * @value #integer(32)
+   * @value
    */
-  num: number;
+  num: number
 
   /**
    * 支付方式
    * @value
    */
-  payType: string;
+  payType: string
 
   /**
    * 支付方式
    * @value
    */
-  payTypeName: string;
-};
+  payTypeName: string
+}
 
 /**
  * 对账报表返回数据参数
@@ -1537,160 +1537,160 @@ export type BillReportPayVO = {
 export type BillReportVO = {
   /**
    * 支付宝交易额
-   * @value #integer(64)
+   * @value
    */
-  alipay: number;
+  alipay: number
 
   /**
    * 支付宝交易额
    * @value
    */
-  alipayStr: string;
-
-  /**
-   * 交易总金额
-   * @value #integer(64)
-   */
-  amount: number;
+  alipayStr: string
 
   /**
    * 交易总金额
    * @value
    */
-  amountStr: string;
+  amount: number
+
+  /**
+   * 交易总金额
+   * @value
+   */
+  amountStr: string
 
   /**
    * 日期
-   * @value #integer(32)
+   * @value
    */
-  billDate: number;
+  billDate: number
 
   /**
    * 账单状态
    * @value
    */
-  billStatusName: string;
-
-  /**
-   * 一卡通入账金额
-   * @value #integer(64)
-   */
-  cardAmount: number;
+  billStatusName: string
 
   /**
    * 一卡通入账金额
    * @value
    */
-  cardAmountStr: string;
+  cardAmount: number
+
+  /**
+   * 一卡通入账金额
+   * @value
+   */
+  cardAmountStr: string
 
   /**
    * 一卡通订单数
-   * @value #integer(32)
+   * @value
    */
-  cardNum: number;
+  cardNum: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 账单结束日期
-   * @value #integer(32)
+   * @value
    */
-  endDate: number;
-
-  /**
-   * 易校园钱包交易额
-   * @value #integer(64)
-   */
-  epay: number;
+  endDate: number
 
   /**
    * 易校园钱包交易额
    * @value
    */
-  epayStr: string;
+  epay: number
+
+  /**
+   * 易校园钱包交易额
+   * @value
+   */
+  epayStr: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
-
-  /**
-   * 差额
-   * @value #integer(64)
-   */
-  lessAmount: number;
+  id: number
 
   /**
    * 差额
    * @value
    */
-  lessAmountStr: string;
+  lessAmount: number
+
+  /**
+   * 差额
+   * @value
+   */
+  lessAmountStr: string
 
   /**
    * 交易订单数
-   * @value #integer(32)
+   * @value
    */
-  num: number;
+  num: number
 
   /**
    * 其他交易额
-   * @value #integer(64)
+   * @value
    */
-  other: number;
+  other: number
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 账单开始日期
-   * @value #integer(32)
+   * @value
    */
-  startDate: number;
+  startDate: number
 
   /**
    * 状态
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 账单生成状态
    * @value
    */
-  statusName: string;
-
-  /**
-   * 微信交易额
-   * @value #integer(64)
-   */
-  weixin: number;
+  statusName: string
 
   /**
    * 微信交易额
    * @value
    */
-  weixinStr: string;
-};
+  weixin: number
+
+  /**
+   * 微信交易额
+   * @value
+   */
+  weixinStr: string
+}
 
 /**
  * --
@@ -1700,14 +1700,14 @@ export type BunkInfoVO = {
    * 床位编号
    * @value
    */
-  bunkName: string;
+  bunkName: string
 
   /**
    * 是否已住人 0: 正常未住人  1:已住人
-   * @value #integer(32)
+   * @value
    */
-  status: number;
-};
+  status: number
+}
 
 /**
  * --
@@ -1717,104 +1717,104 @@ export type CCBElectricApiRoomSurplusVO = {
    * 校区编码
    * @value
    */
-  areaId: string;
+  areaId: string
 
   /**
    * 校区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 欠款金额
-   * @value #integer(double)
+   * @value
    */
-  arrearsAmount: number;
+  arrearsAmount: number
 
   /**
    * 欠款显示名
    * @value
    */
-  arrearsName: string;
+  arrearsName: string
 
   /**
    * 楼栋编码
    * @value
    */
-  buildingCode: string;
+  buildingCode: string
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 楼层编码
    * @value
    */
-  floorCode: string;
+  floorCode: string
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    *
    * @value
    */
-  msg: string;
+  msg: string
 
   /**
    * 充值类型列表
    * @rule 2
    */
-  rechargeTypeList: ApiElectricRoomRechargeTypeVO[];
+  rechargeTypeList: ApiElectricRoomRechargeTypeVO[]
 
   /**
    * 房间编码
    * @value
    */
-  roomCode: string;
+  roomCode: string
 
   /**
    * 房间名称
    * @value
    */
-  roomName: string;
+  roomName: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    *
    * @value
    */
-  sign: string;
+  sign: string
 
   /**
    *
    * @value
    */
-  signType: string;
+  signType: string
 
   /**
    *
    * @value
    */
-  status: string;
+  status: string
 
   /**
    * 剩余量列表
    * @rule 2
    */
-  surplusList: ApiElectricRoomSurplusVO[];
-};
+  surplusList: ApiElectricRoomSurplusVO[]
+}
 
 /**
  * --
@@ -1824,33 +1824,33 @@ export type CCBElectricApiVO = {
    *
    * @value
    */
-  msg: string;
-  rows: {}[];
+  msg: string
+  rows: {}[]
 
   /**
    *
    * @value
    */
-  sign: string;
+  sign: string
 
   /**
    *
    * @value
    */
-  signType: string;
+  signType: string
 
   /**
    *
    * @value
    */
-  status: string;
+  status: string
 
   /**
    *
    * @value
    */
-  total: string;
-};
+  total: string
+}
 
 /**
  * --
@@ -1860,56 +1860,56 @@ export type CCBElectricRechargeVOResponse = {
    *
    * @value
    */
-  cpPayNo: string;
+  cpPayNo: string
 
   /**
    *
    * @value
    */
-  msg: string;
+  msg: string
 
   /**
    *
    * @value
    */
-  orderCode: string;
+  orderCode: string
 
   /**
    *
    * @value
    */
-  orderStatus: string;
+  orderStatus: string
 
   /**
    *
    * @value
    */
-  orderStatusMsg: string;
+  orderStatusMsg: string
 
   /**
    *
    * @value
    */
-  sign: string;
+  sign: string
 
   /**
    *
    * @value
    */
-  signType: string;
+  signType: string
 
   /**
    *
    * @value
    */
-  status: string;
+  status: string
 
   /**
    *
    * @value
    */
-  tranNo: string;
-};
+  tranNo: string
+}
 
 /**
  * 一卡通对账结果
@@ -1917,94 +1917,94 @@ export type CCBElectricRechargeVOResponse = {
 export type CardBillReportDetail = {
   /**
    * 重复充值金额
-   * @value #integer(64)
+   * @value
    */
-  dupAmount: number;
+  dupAmount: number
 
   /**
    * 重复充值金额
    * @value
    */
-  dupAmountStr: string;
+  dupAmountStr: string
 
   /**
    * 重复充值数量
-   * @value #integer(32)
+   * @value
    */
-  dupNum: number;
-
-  /**
-   * 异常充值金额
-   * @value #integer(64)
-   */
-  errorAmount: number;
+  dupNum: number
 
   /**
    * 异常充值金额
    * @value
    */
-  errorAmountStr: string;
+  errorAmount: number
+
+  /**
+   * 异常充值金额
+   * @value
+   */
+  errorAmountStr: string
 
   /**
    * 异常充值数量
-   * @value #integer(32)
+   * @value
    */
-  errorNum: number;
-
-  /**
-   * 未到帐金额
-   * @value #integer(64)
-   */
-  noAmount: number;
+  errorNum: number
 
   /**
    * 未到帐金额
    * @value
    */
-  noAmountStr: string;
+  noAmount: number
+
+  /**
+   * 未到帐金额
+   * @value
+   */
+  noAmountStr: string
 
   /**
    * 未到帐数量
-   * @value #integer(32)
+   * @value
    */
-  noNum: number;
-
-  /**
-   * 正常金额
-   * @value #integer(64)
-   */
-  normalAmount: number;
+  noNum: number
 
   /**
    * 正常金额
    * @value
    */
-  normalAmountStr: string;
+  normalAmount: number
+
+  /**
+   * 正常金额
+   * @value
+   */
+  normalAmountStr: string
 
   /**
    * 正常数量
-   * @value #integer(32)
+   * @value
    */
-  normalNum: number;
-
-  /**
-   * 跨天账金额
-   * @value #integer(64)
-   */
-  spanAmount: number;
+  normalNum: number
 
   /**
    * 跨天账金额
    * @value
    */
-  spanAmountStr: string;
+  spanAmount: number
+
+  /**
+   * 跨天账金额
+   * @value
+   */
+  spanAmountStr: string
 
   /**
    * 跨天账数量
-   * @value #integer(32)
+   * @value
    */
-  spanNum: number;
-};
+  spanNum: number
+}
 
 /**
  * --
@@ -2014,104 +2014,104 @@ export type CardInfoVO = {
    * 是否允许消费：1允许 0不允许
    * @value
    */
-  allowPayment: string;
+  allowPayment: string
 
   /**
    * 是否允许查询：1允许 0不允许
    * @value
    */
-  allowQuery: string;
+  allowQuery: string
 
   /**
    * 是否允许充值：1允许 0不允许
    * @value
    */
-  allowRecharge: string;
+  allowRecharge: string
 
   /**
    * 账户余额
    * @value
    */
-  cardMoney: string;
+  cardMoney: string
 
   /**
    * 卡状态1正常，2挂失，3冻结
    * @value
    */
-  cardState: string;
+  cardState: string
 
   /**
    * 身份名称
    * @value
    */
-  clsName: string;
+  clsName: string
 
   /**
    * 班级
    * @value
    */
-  grade: string;
+  grade: string
 
   /**
    * 身份证
    * @value
    */
-  idCard: string;
+  idCard: string
 
   /**
    * 手机号
    * @value
    */
-  phone: string;
+  phone: string
 
   /**
    * 真实姓名
    * @value
    */
-  realName: string;
+  realName: string
 
   /**
    * 可充值金额,格式是XX.XX元
    * @value
    */
-  rechargeableAmount: string;
+  rechargeableAmount: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 返回状态
    * @value
    */
-  resultCode: string;
+  resultCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 性别
    * @value
    */
-  sex: string;
+  sex: string
 
   /**
    * 学号
    * @value
    */
-  studentNumber: string;
+  studentNumber: string
 
   /**
    * 一卡通卡号
    * @value
    */
-  userCard: string;
-};
+  userCard: string
+}
 
 /**
  * --
@@ -2121,74 +2121,74 @@ export type CenterAllDashboardVO = {
    * 今日打卡情况
    * @value
    */
-  clockInStr: string;
+  clockInStr: string
 
   /**
    * 是否展示教职工模块 0:是 1:否
-   * @value #integer(32)
+   * @value
    */
-  isShowStaffDepartment: number;
+  isShowStaffDepartment: number
 
   /**
    * 学生人数地区分布
    * @value
    */
-  schoolAreaStr: string;
+  schoolAreaStr: string
 
   /**
    * 今日健康状况
    * @value
    */
-  schoolHealthStr: string;
+  schoolHealthStr: string
 
   /**
    * 师生总数
    * @value
    */
-  schoolTotalNumStr: string;
+  schoolTotalNumStr: string
 
   /**
    * 本校疫情看盘
    * @value
    */
-  schoolYiqingStr: string;
+  schoolYiqingStr: string
 
   /**
    * 学生部门打卡率
    * @value
    */
-  studentDepartClockRatioStr: string;
+  studentDepartClockRatioStr: string
 
   /**
    * 学生部门疫情
    * @value
    */
-  studentDepartYiqingStr: string;
+  studentDepartYiqingStr: string
 
   /**
    * 职工部门打卡率
    * @value
    */
-  teacherDepartClockRatioStr: string;
+  teacherDepartClockRatioStr: string
 
   /**
    * 职工部门疫情
    * @value
    */
-  teacherDepartYiqingStr: string;
+  teacherDepartYiqingStr: string
 
   /**
    * 每日打卡数据
    * @value
    */
-  totalClockInStr: string;
+  totalClockInStr: string
 
   /**
    * 每日趋势图
    * @value
    */
-  totalYiqingStr: string;
-};
+  totalYiqingStr: string
+}
 
 /**
  * --
@@ -2198,20 +2198,20 @@ export type CenterAppJiaofeiAmountVO = {
    * 未缴金额
    * @value
    */
-  arrearageAmount: number;
+  arrearageAmount: number
 
   /**
    * 已缴金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 应收金额
    * @value
    */
-  receivableAmount: number;
-};
+  receivableAmount: number
+}
 
 /**
  * --
@@ -2221,230 +2221,230 @@ export type CenterAppJiaofeiDetialVO = {
    * 缴费开始时间
    * @value #datetime()
    */
-  beginDate: string;
+  beginDate: string
 
   /**
    * 自定义缴费方式,二级分类不为空时，可能存在金额分配信息
    * @rule 2
    */
-  centerJiaofeiProDicVo: CenterJiaofeiProDicVO[];
+  centerJiaofeiProDicVo: CenterJiaofeiProDicVO[]
 
   /**
    * 关闭原因
    * @value
    */
-  closeTips: string;
+  closeTips: string
 
   /**
    * 部门ID
-   * @value #integer(64)
+   * @value
    */
-  deptId: number;
+  deptId: number
 
   /**
    * 二级分类ID
-   * @value #integer(64)
+   * @value
    */
-  dicId: number;
+  dicId: number
 
   /**
    * 缴费结束时间
    * @value #datetime()
    */
-  endDate: string;
+  endDate: string
 
   /**
    * 顶部图片链接
    * @value
    */
-  headPicLink: string;
+  headPicLink: string
 
   /**
    * 顶部图片
    * @value
    */
-  headPicUrl: string;
+  headPicUrl: string
 
   /**
    * 导入名单用户证件号 0身份证 1学号
-   * @value #integer(32)
+   * @value
    */
-  importUserType: number;
+  importUserType: number
 
   /**
    * 是否可多次提交 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isMorePay: number;
+  isMorePay: number
 
   /**
    * 是否需要班级 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedClass: number;
+  isNeedClass: number
 
   /**
    * 是否需要身份证号 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedIdcard: number;
+  isNeedIdcard: number
 
   /**
    * 是否需要姓名 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedName: number;
+  isNeedName: number
 
   /**
    * 是否需要手机号 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedPhone: number;
+  isNeedPhone: number
 
   /**
    * 是否需要协议 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedProtocol: number;
+  isNeedProtocol: number
 
   /**
    * 备注是否必填 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedRemark: number;
+  isNeedRemark: number
 
   /**
    * 是否需要学号 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedUserno: number;
+  isNeedUserno: number
 
   /**
    * 无需支付 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNoPay: number;
+  isNoPay: number
 
   /**
    * 是否允许充值0否1是
-   * @value #integer(32)
+   * @value
    */
-  isOpen: number;
+  isOpen: number
 
   /**
    * 是否分批支付 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isSplitPay: number;
+  isSplitPay: number
 
   /**
    * 缴费方式 0自定义 1导入
-   * @value #integer(32)
+   * @value
    */
-  jiaofeiMethod: number;
+  jiaofeiMethod: number
 
   /**
    * 最大金额
-   * @value #integer(32)
+   * @value
    */
-  maxAmount: number;
+  maxAmount: number
 
   /**
    * 最小金额
-   * @value #integer(32)
+   * @value
    */
-  minAmount: number;
+  minAmount: number
 
   /**
    * 公告
    * @value
    */
-  notice: string;
+  notice: string
 
   /**
    * 英文公告
    * @value
    */
-  noticeEn: string;
+  noticeEn: string
 
   /**
    * 缴费金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 项目ID
-   * @value #integer(64)
+   * @value
    */
-  projectId: number;
+  projectId: number
 
   /**
    * 项目名称
    * @value
    */
-  projectName: string;
+  projectName: string
 
   /**
    * 项目英文名称
    * @value
    */
-  projectNameEn: string;
+  projectNameEn: string
 
   /**
    * 协议内容
    * @value
    */
-  protocolContent: string;
+  protocolContent: string
 
   /**
    * 协议标题
    * @value
    */
-  protocolTitle: string;
+  protocolTitle: string
 
   /**
    * 协议标题英文
    * @value
    */
-  protocolTitleEn: string;
+  protocolTitleEn: string
 
   /**
    * 备注提示语
    * @value
    */
-  remarkMsg: string;
+  remarkMsg: string
 
   /**
    * 备注提示语英文
    * @value
    */
-  remarkMsgEn: string;
+  remarkMsgEn: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 温馨提示
    * @value
    */
-  tips: string;
+  tips: string
 
   /**
    * 英文温馨提示
    * @value
    */
-  tipsEn: string;
+  tipsEn: string
 
   /**
    * 分类ID
-   * @value #integer(64)
+   * @value
    */
-  typeId: number;
-};
+  typeId: number
+}
 
 /**
  * --
@@ -2454,194 +2454,194 @@ export type CenterAppJiaofeiListVO = {
    * 未缴金额
    * @value
    */
-  arrearageAmount: number;
+  arrearageAmount: number
 
   /**
    * 批次
    * @value
    */
-  batchNum: string;
+  batchNum: string
 
   /**
    * 部门id
-   * @value #integer(64)
+   * @value
    */
-  deptId: number;
+  deptId: number
 
   /**
    * 部门名称
    * @value
    */
-  deptName: string;
+  deptName: string
 
   /**
    * 部门名称英文
    * @value
    */
-  deptNameEn: string;
+  deptNameEn: string
 
   /**
    * 二级分类费用
    * @rule 2
    */
-  dicList: CenterJiaofeiProDicVO[];
+  dicList: CenterJiaofeiProDicVO[]
 
   /**
    * 学历
    * @value
    */
-  education: string;
+  education: string
 
   /**
    * 缴费名单ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证)
    * @value
    */
-  idCard: string;
+  idCard: string
 
   /**
    * 是否分批支付 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isSplitPay: number;
+  isSplitPay: number
 
   /**
    * 是否过期 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isTimeOut: number;
+  isTimeOut: number
 
   /**
    * 最大金额
-   * @value #integer(32)
+   * @value
    */
-  maxAmount: number;
+  maxAmount: number
 
   /**
    * 最小金额
-   * @value #integer(32)
+   * @value
    */
-  minAmount: number;
+  minAmount: number
 
   /**
    * 缴费金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 项目图标
    * @value
    */
-  projectIcon: string;
+  projectIcon: string
 
   /**
    * 项目编码
-   * @value #integer(64)
+   * @value
    */
-  projectId: number;
+  projectId: number
 
   /**
    * 项目名称
    * @value
    */
-  projectName: string;
+  projectName: string
 
   /**
    * 项目英文名称
    * @value
    */
-  projectNameEn: string;
+  projectNameEn: string
 
   /**
    * 应收金额
    * @value
    */
-  receivableAmount: number;
+  receivableAmount: number
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 性别
    * @value
    */
-  sex: string;
+  sex: string
 
   /**
    * 状态0未缴纳 2缴纳中 1已缴纳
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 学制
-   * @value #integer(32)
+   * @value
    */
-  studyCount: number;
+  studyCount: number
 
   /**
    * 入学年份
    * @value
    */
-  studyYear: string;
+  studyYear: string
 
   /**
    * 班级
    * @value
    */
-  userClass: string;
+  userClass: string
 
   /**
    * 年级
    * @value
    */
-  userGrade: string;
+  userGrade: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 学号
    * @value
    */
-  userNo: string;
+  userNo: string
 
   /**
    * 手机号
    * @value
    */
-  userPhone: string;
+  userPhone: string
 
   /**
    * 院系
    * @value
    */
-  userXi: string;
+  userXi: string
 
   /**
    * 专业
    * @value
    */
-  userZhuan: string;
-};
+  userZhuan: string
+}
 
 /**
  * --
@@ -2651,14 +2651,14 @@ export type CenterAppJiaofeiPayableVO = {
    * 导入名单
    * @rule 2
    */
-  importPayableList: CenterAppJiaofeiListVO[];
+  importPayableList: CenterAppJiaofeiListVO[]
 
   /**
    * 第三方应付款列表
    * @rule 2
    */
-  thirdPayableList: CenterAppJiaofeiThirdPayableVO[];
-};
+  thirdPayableList: CenterAppJiaofeiThirdPayableVO[]
+}
 
 /**
  * --
@@ -2668,128 +2668,128 @@ export type CenterAppJiaofeiThirdPayableVO = {
    * 易达帐户ID
    * @value
    */
-  accId: string;
+  accId: string
 
   /**
    * 友财入账银行卡号
    * @value
    */
-  bankAccount: string;
+  bankAccount: string
 
   /**
    * 收费期间代码
    * @value
    */
-  durationCode: string;
+  durationCode: string
 
   /**
    * 收费期间名称
    * @value
    */
-  durationName: string;
+  durationName: string
 
   /**
    * 扩展字段
    * @value
    */
-  extJson: string;
+  extJson: string
 
   /**
    * 友财费用Id
    * @value
    */
-  feeId: string;
+  feeId: string
 
   /**
    * 友财费用类型 0:必收 1:选收 2:学分学费
-   * @value #integer(32)
+   * @value
    */
-  feeType: number;
+  feeType: number
 
   /**
    * 友财是否允许部分缴费
    * @value
    */
-  isAllowPartPay: boolean;
+  isAllowPartPay: boolean
 
   /**
    * 是否合并缴费
    * @value
    */
-  isMergePay: boolean;
+  isMergePay: boolean
 
   /**
    * 友财是否必缴项目
    * @value
    */
-  isMustPay: boolean;
+  isMustPay: boolean
 
   /**
    * 友财已缴金额
    * @value
    */
-  paid: number;
+  paid: number
 
   /**
    * 缴费金额
    * @value
    */
-  payAmount: string;
+  payAmount: string
 
   /**
    * 项目编码
    * @value
    */
-  proId: string;
+  proId: string
 
   /**
    * 项目名称
    * @value
    */
-  proName: string;
+  proName: string
 
   /**
    * 项目图标
    * @value
    */
-  projectIcon: string;
+  projectIcon: string
 
   /**
    * 接口类型 0贵阳易达恒志 1兰大缴费 2工贸缴费 3天津学院友财缴费
-   * @value #integer(32)
+   * @value
    */
-  thirdType: number;
+  thirdType: number
 
   /**
    * 统一接口id
-   * @value #integer(64)
+   * @value
    */
-  unifiedApiId: number;
+  unifiedApiId: number
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 学生号
    * @value
    */
-  userNo: string;
+  userNo: string
 
   /**
    *
    * @value
    */
-  verificationCode: string;
+  verificationCode: string
 
   /**
    * 友财收费年度
    * @value
    */
-  year: string;
-};
+  year: string
+}
 
 /**
  * --
@@ -2799,14 +2799,14 @@ export type CenterAppJiaofeiUnpayVO = {
    * 金额
    * @value
    */
-  amount: number;
+  amount: number
 
   /**
    * 笔数
-   * @value #integer(32)
+   * @value
    */
-  count: number;
-};
+  count: number
+}
 
 /**
  * --
@@ -2816,14 +2816,14 @@ export type CenterAppJiaofeiUserVO = {
    * 姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 证件号
    * @value
    */
-  userNo: string;
-};
+  userNo: string
+}
 
 /**
  * --
@@ -2833,56 +2833,56 @@ export type CenterCpBillCheckResultVO = {
    * 差额
    * @value
    */
-  balance: string;
+  balance: string
 
   /**
    * 差额标志（大于0则账单总金额比实际总金额大，反之则反之）
-   * @value #integer(32)
+   * @value
    */
-  balanceFlag: number;
+  balanceFlag: number
 
   /**
    * 平台交易金额
    * @value
    */
-  billAmount: string;
+  billAmount: string
 
   /**
    * 平台交易笔数
-   * @value #integer(32)
+   * @value
    */
-  billCount: number;
+  billCount: number
 
   /**
    * 对账总单ID
-   * @value #integer(64)
+   * @value
    */
-  billId: number;
+  billId: number
 
   /**
    * 对账类型
    * @value
    */
-  checkBillTypeStr: string;
+  checkBillTypeStr: string
 
   /**
    * 异常账单笔数
-   * @value #integer(32)
+   * @value
    */
-  errorBillCount: number;
+  errorBillCount: number
 
   /**
    * 实际交易金额
    * @value
    */
-  realBillAmount: string;
+  realBillAmount: string
 
   /**
    * 实际交易笔数
-   * @value #integer(32)
+   * @value
    */
-  realBillCount: number;
-};
+  realBillCount: number
+}
 
 /**
  * --
@@ -2890,46 +2890,46 @@ export type CenterCpBillCheckResultVO = {
 export type CenterCpBillDetailImportVO = {
   /**
    * 上传失败条数
-   * @value #integer(32)
+   * @value
    */
-  errorCount: number;
+  errorCount: number
 
   /**
    * 详细错误信息
    * @value
    */
-  errorMsg: string[];
+  errorMsg: string[]
 
   /**
    * 缓存key
    * @value
    */
-  key: string;
+  key: string
 
   /**
    * 错误提示
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
+  success: boolean
 
   /**
    * 总条数
-   * @value #integer(32)
+   * @value
    */
-  totalCount: number;
+  totalCount: number
 
   /**
    * 实际交易金额
    * @value
    */
-  totalMoney: string;
-};
+  totalMoney: string
+}
 
 /**
  * --
@@ -2939,74 +2939,74 @@ export type CenterCpBillDetailVO = {
    * 对账结果
    * @value
    */
-  checkResult: string;
+  checkResult: string
 
   /**
    * 商户名称
    * @value
    */
-  cpName: string;
+  cpName: string
 
   /**
    * 错误类别，枚举
-   * @value #integer(32)
+   * @value
    */
-  errorType: number;
+  errorType: number
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 实际交易金额
    * @value
    */
-  realTranMoney: string;
+  realTranMoney: string
 
   /**
    * 状态，0正常，1异常，2异常已处理
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 官方订单编号
    * @value
    */
-  topTranNo: string;
+  topTranNo: string
 
   /**
    * 交易金额
    * @value
    */
-  tranMoney: string;
+  tranMoney: string
 
   /**
    * 交易订单编号
    * @value
    */
-  tranNo: string;
+  tranNo: string
 
   /**
    * 学生姓名
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * --
@@ -3016,20 +3016,20 @@ export type CenterCpBillPayTypeVO = {
    * 支付方式
    * @value
    */
-  id: string;
+  id: string
 
   /**
    * 是否支持导入对账（0是1否）
-   * @value #integer(32)
+   * @value
    */
-  spImport: number;
+  spImport: number
 
   /**
    * 支付方式名称
    * @value
    */
-  text: string;
-};
+  text: string
+}
 
 /**
  * --
@@ -3039,56 +3039,56 @@ export type CenterCustomConfigVO = {
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 类型1 、电费 2、水费 3、常工应用 4、网费 5、生活缴费
-   * @value #integer(32)
+   * @value
    */
-  customType: number;
+  customType: number
 
   /**
    * 类型
    * @value
    */
-  customTypeStr: string;
+  customTypeStr: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否自定义金额  0、是 1、否
-   * @value #integer(32)
+   * @value
    */
-  isCustomAmount: number;
+  isCustomAmount: number
 
   /**
    * 是否自定义金额
    * @value
    */
-  isCustomAmountStr: string;
+  isCustomAmountStr: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -3098,104 +3098,104 @@ export type CenterCustomElectricConfigVO = {
    * 楼栋显示名
    * @value
    */
-  buildingShowName: string;
+  buildingShowName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 充值金额起始（元）
    * @value
    */
-  customAmountBegin: number;
+  customAmountBegin: number
 
   /**
    * 充值金额结束（元）
    * @value
    */
-  customAmountEnd: number;
-
-  /**
-   * 自定义类型1、电费   2、水费 3、常工应用 4、网费 5、应用缴费
-   * @value #integer(32)
-   */
-  customType: number;
+  customAmountEnd: number
 
   /**
    * 自定义类型1、电费   2、水费 3、常工应用 4、网费 5、应用缴费
    * @value
    */
-  customTypeStr: string;
+  customType: number
+
+  /**
+   * 自定义类型1、电费   2、水费 3、常工应用 4、网费 5、应用缴费
+   * @value
+   */
+  customTypeStr: string
 
   /**
    * 楼层显示名
    * @value
    */
-  floorShowName: string;
+  floorShowName: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否自定义金额 0、是 1、否
-   * @value #integer(32)
+   * @value
    */
-  isCustomAmount: number;
+  isCustomAmount: number
 
   /**
    * 是否自定义金额
    * @value
    */
-  isCustomAmountStr: string;
+  isCustomAmountStr: string
 
   /**
    * 公告
    * @value
    */
-  notice: string;
+  notice: string
 
   /**
    * 充值金额10|100|200
    * @value
    */
-  rechargeAmount: string;
+  rechargeAmount: string
 
   /**
    * 房间显示名
    * @value
    */
-  roomShowName: string;
+  roomShowName: string
 
   /**
    * 状态： 0、未启用 2、已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 标题显示名称
    * @value
    */
-  titleShowName: string;
+  titleShowName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 校区显示名
    * @value
    */
-  zoneShowName: string;
-};
+  zoneShowName: string
+}
 
 /**
  * --
@@ -3205,56 +3205,56 @@ export type CenterIndexTotalDataVO = {
    * 平均交易金额
    * @value
    */
-  avgTranMoney: string;
+  avgTranMoney: string
 
   /**
    * 日期,yyyy-MM-dd
    * @value
    */
-  day: string;
+  day: string
 
   /**
    * 交易总笔数
-   * @value #integer(32)
+   * @value
    */
-  totalCount: number;
+  totalCount: number
 
   /**
    *  费率总金额
    * @value
    */
-  totalFeeMoney: string;
+  totalFeeMoney: string
 
   /**
    * 支付总金额
    * @value
    */
-  totalRealMoney: string;
+  totalRealMoney: string
 
   /**
    * 红包总金额
    * @value
    */
-  totalRedbagMoney: string;
+  totalRedbagMoney: string
 
   /**
    * 退款笔数
-   * @value #integer(32)
+   * @value
    */
-  totalRefundCount: number;
+  totalRefundCount: number
 
   /**
    * 退款金额
    * @value
    */
-  totalRefundMoney: string;
+  totalRefundMoney: string
 
   /**
    * 交易总金额
    * @value
    */
-  totalTranMoney: string;
-};
+  totalTranMoney: string
+}
 
 /**
  * --
@@ -3264,14 +3264,14 @@ export type CenterJiaofeiAddedValueVO = {
    * 编码
    * @value
    */
-  code: string;
+  code: string
 
   /**
    * 名称
    * @value
    */
-  name: string;
-};
+  name: string
+}
 
 /**
  * --
@@ -3281,62 +3281,62 @@ export type CenterJiaofeiBatchRefundFormVO = {
    * 批量退款详情
    * @value
    */
-  batchInfo: string;
+  batchInfo: string
 
   /**
    * 退款名称
    * @value
    */
-  batchName: string;
-
-  /**
-   * 处理状态
-   * @value #integer(32)
-   */
-  batchStatus: number;
+  batchName: string
 
   /**
    * 处理状态
    * @value
    */
-  batchStatusStr: string;
+  batchStatus: number
+
+  /**
+   * 处理状态
+   * @value
+   */
+  batchStatusStr: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 退款总金额
    * @value
    */
-  totalAmount: string;
+  totalAmount: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -3344,190 +3344,190 @@ export type CenterJiaofeiBatchRefundFormVO = {
 export type CenterJiaofeiBatchRefundVO = {
   /**
    * 批量退款单id
-   * @value #integer(64)
+   * @value
    */
-  batchFormId: number;
+  batchFormId: number
 
   /**
    * 批量退款单名称
    * @value
    */
-  batchFormName: string;
+  batchFormName: string
 
   /**
    * 批次
    * @value
    */
-  batchNum: string;
+  batchNum: string
 
   /**
    * 生成退款单 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  billStatus: number;
+  billStatus: number
 
   /**
    *
    * @value
    */
-  billStatusName: string;
+  billStatusName: string
 
   /**
    * 创建人
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建人名称
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 部门编码
-   * @value #integer(64)
+   * @value
    */
-  deptId: number;
+  deptId: number
 
   /**
    * 部门名称
    * @value
    */
-  deptName: string;
+  deptName: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证号
    * @value
    */
-  idCard: string;
+  idCard: string
 
   /**
    * 名单id
-   * @value #integer(64)
+   * @value
    */
-  listId: number;
+  listId: number
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 项目编号
-   * @value #integer(64)
+   * @value
    */
-  projectId: number;
+  projectId: number
 
   /**
    * 缴费项目
    * @value
    */
-  projectName: string;
+  projectName: string
 
   /**
    * 退款金额
    * @value
    */
-  refundAmount: number;
+  refundAmount: number
 
   /**
    * 退款方式
    * @value
    */
-  refundMethod: string;
+  refundMethod: string
 
   /**
    * 退款方式
    * @value
    */
-  refundMethodStr: string;
+  refundMethodStr: string
 
   /**
    * 退款时间
    * @value #datetime()
    */
-  refundTime: string;
+  refundTime: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 退款状态0待处理 1退款失败 2退款成功
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 退款状态
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 修改人
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 学号
    * @value
    */
-  userNo: string;
+  userNo: string
 
   /**
    * 手机号
    * @value
    */
-  userPhone: string;
-};
+  userPhone: string
+}
 
 /**
  * --
@@ -3537,116 +3537,116 @@ export type CenterJiaofeiBillCustomVO = {
    * 项目批次
    * @value
    */
-  batchNum: string;
+  batchNum: string
 
   /**
    * 票据样式:common、通用样式 xiaolongren、小龙人
    * @value
    */
-  billStyle: string;
+  billStyle: string
 
   /**
    * 票据样式
    * @value
    */
-  billStyleName: string;
+  billStyleName: string
 
   /**
    * 自定义票据编码
    * @value
    */
-  billTemplateCode: string;
+  billTemplateCode: string
 
   /**
    * 自定义票据模板id
-   * @value #integer(64)
+   * @value
    */
-  billTemplateId: number;
+  billTemplateId: number
 
   /**
    * 开票时间
    * @value #datetime()
    */
-  billingDate: string;
+  billingDate: string
 
   /**
    * 缴费时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 缴费金额(大写)
    * @value
    */
-  payAmountZW: string;
+  payAmountZW: string
 
   /**
    * 支付方式
    * @value
    */
-  payMethodStr: string;
+  payMethodStr: string
 
   /**
    * 缴费项目名称
    * @value
    */
-  proName: string;
+  proName: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 班级
    * @value
    */
-  userClass: string;
+  userClass: string
 
   /**
    * 身份证
    * @value
    */
-  userIdCard: string;
+  userIdCard: string
 
   /**
    * 交款人姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 学号
    * @value
    */
-  userNo: string;
-};
+  userNo: string
+}
 
 /**
  * --
@@ -3656,92 +3656,92 @@ export type CenterJiaofeiBillItemVO = {
    * 批次
    * @value
    */
-  batchNum: string;
+  batchNum: string
 
   /**
    * 票据id
-   * @value #integer(64)
+   * @value
    */
-  billId: number;
+  billId: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证号
    * @value
    */
-  idCard: string;
+  idCard: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  orderId: number;
+  orderId: number
 
   /**
    * 金额
    * @value
    */
-  paymentAmount: number;
+  paymentAmount: number
 
   /**
    *
    * @value
    */
-  paymentAmountZn: string;
+  paymentAmountZn: string
 
   /**
    * 项目id
    * @value
    */
-  proId: string;
+  proId: string
 
   /**
    *
    * @value
    */
-  proName: string;
+  proName: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-};
+  schoolName: string
+}
 
 /**
  * --
@@ -3751,56 +3751,56 @@ export type CenterJiaofeiBillTemplateVO = {
    * 票据内容
    * @value
    */
-  content: string;
+  content: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 高度:cm
-   * @value #integer(double)
+   * @value
    */
-  height: number;
+  height: number
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 比例
-   * @value #integer(double)
+   * @value
    */
-  scale: number;
+  scale: number
 
   /**
    * 状态：0、未启用 1、已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 模板名称
    * @value
    */
-  templateName: string;
+  templateName: string
 
   /**
    * 宽度:cm
-   * @value #integer(double)
+   * @value
    */
-  width: number;
-};
+  width: number
+}
 
 /**
  * --
@@ -3810,146 +3810,146 @@ export type CenterJiaofeiBillVO = {
    * 会计
    * @value
    */
-  accountant: string;
+  accountant: string
 
   /**
    * 票据编号
    * @value
    */
-  billNo: string;
+  billNo: string
 
   /**
    * 票据样式:common、通用样式 xiaolongren、小龙人
    * @value
    */
-  billStyle: string;
+  billStyle: string
 
   /**
    * 票据样式
    * @value
    */
-  billStyleName: string;
+  billStyleName: string
 
   /**
    * 自定义票据编码
    * @value
    */
-  billTemplateCode: string;
+  billTemplateCode: string
 
   /**
    * 自定义票据模板id
-   * @value #integer(64)
+   * @value
    */
-  billTemplateId: number;
+  billTemplateId: number
 
   /**
    * 自定义票据模板名称
    * @value
    */
-  billTemplateName: string;
+  billTemplateName: string
 
   /**
    * 开票时间
    * @value #datetime()
    */
-  billingDate: string;
+  billingDate: string
 
   /**
    * 出纳
    * @value
    */
-  cashier: string;
+  cashier: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份号
    * @value
    */
-  idCard: string;
+  idCard: string
 
   /**
    * 项目列表
    * @rule 2
    */
-  items: CenterJiaofeiBillItemVO[];
+  items: CenterJiaofeiBillItemVO[]
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 金额
    * @value
    */
-  paymentAmount: number;
+  paymentAmount: number
 
   /**
    * 金额中文
    * @value
    */
-  paymentAmountZn: string;
+  paymentAmountZn: string
 
   /**
    * 交款人
    * @value
    */
-  paymentUnit: string;
+  paymentUnit: string
 
   /**
    * 项目名称
    * @value
    */
-  proName: string;
+  proName: string
 
   /**
    * 经办人
    * @value
    */
-  receivingPerson: string;
+  receivingPerson: string
 
   /**
    * 收款单位
    * @value
    */
-  receivingUnit: string;
+  receivingUnit: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 班级
    * @value
    */
-  userClass: string;
-};
+  userClass: string
+}
 
 /**
  * --
@@ -3959,164 +3959,164 @@ export type CenterJiaofeiConfigVO = {
    * 支付商户编码
    * @value
    */
-  cpCode: string;
+  cpCode: string
 
   /**
    * 支付商户密钥
    * @value
    */
-  cpKey: string;
+  cpKey: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 部门id
-   * @value #integer(64)
+   * @value
    */
-  deptId: number;
+  deptId: number
 
   /**
    *
    * @value
    */
-  deptName: string;
+  deptName: string
 
   /**
    * 收费项目id
    * @value
    */
-  feeItemId: string;
+  feeItemId: string
 
   /**
    * 查找项值
    * @value
    */
-  findKey: string;
+  findKey: string
 
   /**
    * 缴费配置ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否合并缴费
-   * @value #integer(32)
+   * @value
    */
-  isMergePay: number;
+  isMergePay: number
 
   /**
    * 易达 多accid 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isMultiAccid: number;
+  isMultiAccid: number
 
   /**
    * 操作权限
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作权限
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 支付方式
    * @value
    */
-  payMethod: string;
+  payMethod: string
 
   /**
    * 缴费类型
-   * @value #integer(32)
+   * @value
    */
-  paymentType: number;
+  paymentType: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态 0:禁用 1:启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 商户编码
    * @value
    */
-  thirdCode: string;
+  thirdCode: string
 
   /**
    * ID
    * @value
    */
-  thirdId: string;
+  thirdId: string
 
   /**
    * 密钥
    * @value
    */
-  thirdKey: string;
+  thirdKey: string
 
   /**
    * 商户名称
    * @value
    */
-  thirdName: string;
+  thirdName: string
 
   /**
    * 端口
    * @value
    */
-  thirdPort: string;
+  thirdPort: string
 
   /**
    * 密码
    * @value
    */
-  thirdPwd: string;
+  thirdPwd: string
 
   /**
    * 接口地址
    * @value
    */
-  thirdUrl: string;
+  thirdUrl: string
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -4126,26 +4126,26 @@ export type CenterJiaofeiDeptLinkProjectVO = {
    * 部门名称
    * @value
    */
-  deptName: string;
+  deptName: string
 
   /**
    * 有权限
    * @value
    */
-  hasRight: boolean;
+  hasRight: boolean
 
   /**
    * 部门id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 项目集合
    * @rule 2
    */
-  projectList: CenterJiaofeiLinkProjectVO[];
-};
+  projectList: CenterJiaofeiLinkProjectVO[]
+}
 
 /**
  * --
@@ -4155,122 +4155,122 @@ export type CenterJiaofeiDeptVO = {
    * 商户编号
    * @value
    */
-  cpCode: string;
+  cpCode: string
 
   /**
    * 商户密钥
    * @value
    */
-  cpKey: string;
+  cpKey: string
 
   /**
    * 商户名称
    * @value
    */
-  cpName: string;
-
-  /**
-   * 创建人
-   * @value #integer(64)
-   */
-  createId: number;
+  cpName: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createId: number
+
+  /**
+   * 创建人
+   * @value
+   */
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 部门负责人姓名
    * @value
    */
-  deptHeads: string;
+  deptHeads: string
 
   /**
    * 部门负责人手机号
    * @value
    */
-  deptHeadsTel: string;
+  deptHeadsTel: string
 
   /**
    * 部门名称
    * @value
    */
-  deptName: string;
+  deptName: string
 
   /**
    * 部门名称英文
    * @value
    */
-  deptNameEn: string;
+  deptNameEn: string
 
   /**
    * 部门ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 模式：1、迎新
-   * @value #integer(32)
+   * @value
    */
-  mode: number;
+  mode: number
 
   /**
    * 模式
    * @value
    */
-  modeStr: string;
+  modeStr: string
 
   /**
    * 操作权限
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 部门状态 0:禁用 1:启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
-
-  /**
-   * 修改人
-   * @value #integer(64)
-   */
-  updateId: number;
+  status: number
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateId: number
+
+  /**
+   * 修改人
+   * @value
+   */
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -4280,20 +4280,20 @@ export type CenterJiaofeiDictionarySonVO = {
    * 二级分类名称
    * @value
    */
-  dicName: string;
+  dicName: string
 
   /**
    * 英文名称
    * @value
    */
-  dicNameEn: string;
+  dicNameEn: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
-};
+  id: number
+}
 
 /**
  * --
@@ -4303,92 +4303,92 @@ export type CenterJiaofeiDictionaryVO = {
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 副选项数量
-   * @value #integer(32)
+   * @value
    */
-  dicCount: number;
+  dicCount: number
 
   /**
    * 二级分类名称
    * @value
    */
-  dicName: string;
+  dicName: string
 
   /**
    * 二级分类英文名称
    * @value
    */
-  dicNameEn: string;
+  dicNameEn: string
 
   /**
    * 二级分类ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 操作权限
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作权限
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 二级分类父ID
-   * @value #integer(64)
+   * @value
    */
-  parentId: number;
+  parentId: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    *
    * @rule 2
    */
-  sonDictionaryDo: CenterJiaofeiDictionarySonVO[];
+  sonDictionaryDo: CenterJiaofeiDictionarySonVO[]
 
   /**
    * 二级分类状态 0:禁用 1:启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -4398,146 +4398,146 @@ export type CenterJiaofeiInvoiceCodeVO = {
    * 增值税特殊管理
    * @value
    */
-  addedValueTax: string;
+  addedValueTax: string
 
   /**
    * 创建人
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 含税标识 0不含税 1含税
-   * @value #integer(32)
+   * @value
    */
-  hasTax: number;
+  hasTax: number
 
   /**
    * 含税标识
    * @value
    */
-  hasTaxName: string;
+  hasTaxName: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 开票信息id
-   * @value #integer(64)
+   * @value
    */
-  invoiceInfoId: number;
+  invoiceInfoId: number
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 优惠政策 0不使用 1使用
-   * @value #integer(32)
+   * @value
    */
-  policyFlag: number;
+  policyFlag: number
 
   /**
    * 优惠政策
    * @value
    */
-  policyFlagName: string;
+  policyFlagName: string
 
   /**
    * 项目编号
    * @value
    */
-  proId: string;
+  proId: string
 
   /**
    * 商品名称
    * @value
    */
-  proName: string;
+  proName: string
 
   /**
    * 项目来源
    * @value
    */
-  proSource: string;
+  proSource: string
 
   /**
    * 项目来源
    * @value
    */
-  proSourceName: string;
+  proSourceName: string
 
   /**
    * 商品税务编码
    * @value
    */
-  proTaxCode: string;
+  proTaxCode: string
 
   /**
    * 项目名称
    * @value
    */
-  projectName: string;
+  projectName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 税率
-   * @value #integer(double)
+   * @value
    */
-  taxRate: number;
+  taxRate: number
 
   /**
    * 开票类别编码
    * @value
    */
-  taxTypeCode: string;
+  taxTypeCode: string
 
   /**
    * 开票类别名称
    * @value
    */
-  taxTypeName: string;
+  taxTypeName: string
 
   /**
    * 修改人
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -4547,104 +4547,104 @@ export type CenterJiaofeiInvoiceConfigVO = {
    * appid
    * @value
    */
-  appId: string;
+  appId: string
 
   /**
    * 秘钥
    * @value
    */
-  appKey: string;
+  appKey: string
 
   /**
    * 创建人
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 开票期间（天）
-   * @value #integer(32)
+   * @value
    */
-  invoiceDay: number;
+  invoiceDay: number
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态 0禁用 1启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 开票系统 0航天 1百旺 3 博思
-   * @value #integer(32)
+   * @value
    */
-  thirdType: number;
+  thirdType: number
 
   /**
    * 开票系统名称
    * @value
    */
-  thirdTypeName: string;
+  thirdTypeName: string
 
   /**
    * 修改人
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 请求地址
    * @value
    */
-  url: string;
-};
+  url: string
+}
 
 /**
  * --
@@ -4654,104 +4654,104 @@ export type CenterJiaofeiInvoiceInfoDO = {
    * 地址
    * @value
    */
-  address: string;
+  address: string
 
   /**
    * 开户行
    * @value
    */
-  bank: string;
+  bank: string
 
   /**
    * 银行账号
    * @value
    */
-  bankAccount: string;
+  bankAccount: string
 
   /**
    * 创建人
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 删除标识 0正常 1删除
-   * @value #integer(32)
+   * @value
    */
-  deleteFlag: number;
+  deleteFlag: number
 
   /**
    * 开票人
    * @value
    */
-  drawer: string;
+  drawer: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 开票限额
-   * @value #integer(32)
+   * @value
    */
-  invoiceLimit: number;
+  invoiceLimit: number
 
   /**
    * 收款人
    * @value
    */
-  payee: string;
+  payee: string
 
   /**
    * 电话
    * @value
    */
-  phone: string;
+  phone: string
 
   /**
    * 复核人
    * @value
    */
-  reviewer: string;
+  reviewer: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 纳税人识别号
    * @value
    */
-  taxpayerId: string;
+  taxpayerId: string
 
   /**
    * 修改人
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -4761,116 +4761,116 @@ export type CenterJiaofeiInvoiceInfoVO = {
    * 地址
    * @value
    */
-  address: string;
+  address: string
 
   /**
    * 开户行
    * @value
    */
-  bank: string;
+  bank: string
 
   /**
    * 银行账号
    * @value
    */
-  bankAccount: string;
+  bankAccount: string
 
   /**
    * 创建人
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 开票人
    * @value
    */
-  drawer: string;
+  drawer: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
-
-  /**
-   * 开票限额
-   * @value #integer(32)
-   */
-  invoiceLimit: number;
+  id: number
 
   /**
    * 开票限额
    * @value
    */
-  invoiceLimitName: string;
+  invoiceLimit: number
+
+  /**
+   * 开票限额
+   * @value
+   */
+  invoiceLimitName: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 收款人
    * @value
    */
-  payee: string;
+  payee: string
 
   /**
    * 电话
    * @value
    */
-  phone: string;
+  phone: string
 
   /**
    * 复核人
    * @value
    */
-  reviewer: string;
+  reviewer: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 纳税人识别号
    * @value
    */
-  taxpayerId: string;
+  taxpayerId: string
 
   /**
    * 修改人
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -4880,170 +4880,170 @@ export type CenterJiaofeiInvoiceItemVO = {
    * 增值税特殊管理
    * @value
    */
-  addedValueTax: string;
+  addedValueTax: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 扣除额
    * @value
    */
-  deduction: string;
-
-  /**
-   * 含税标志
-   * @value #integer(32)
-   */
-  hasTax: number;
+  deduction: string
 
   /**
    * 含税标志
    * @value
    */
-  hasTaxName: string;
+  hasTax: number
+
+  /**
+   * 含税标志
+   * @value
+   */
+  hasTaxName: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 发票id
-   * @value #integer(64)
+   * @value
    */
-  invoiceId: number;
+  invoiceId: number
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    *  订单id
-   * @value #integer(64)
+   * @value
    */
-  orderId: number;
-
-  /**
-   * 优惠政策标识
-   * @value #integer(32)
-   */
-  policyFlag: number;
+  orderId: number
 
   /**
    * 优惠政策标识
    * @value
    */
-  policyFlagName: string;
+  policyFlag: number
+
+  /**
+   * 优惠政策标识
+   * @value
+   */
+  policyFlagName: string
 
   /**
    * 商品金额
    * @value
    */
-  proAmount: number;
+  proAmount: number
 
   /**
    * 商品价税金额
    * @value
    */
-  proAmountTax: number;
+  proAmountTax: number
 
   /**
    * 商品编码
    * @value
    */
-  proCode: string;
+  proCode: string
 
   /**
    * 商品折扣行编号
    * @value
    */
-  proDiscountCode: string;
+  proDiscountCode: string
 
   /**
    * 商品名称
    * @value
    */
-  proName: string;
+  proName: string
 
   /**
    * 商品行性质
    * @value
    */
-  proNature: string;
+  proNature: string
 
   /**
    * 商品行性质
    * @value
    */
-  proNatureName: string;
+  proNatureName: string
 
   /**
    * 商品数量
-   * @value #integer(32)
+   * @value
    */
-  proNum: number;
+  proNum: number
 
   /**
    * 商品单价
    * @value
    */
-  proPrice: number;
+  proPrice: number
 
   /**
    * 商品税率
    * @value
    */
-  proRate: number;
+  proRate: number
 
   /**
    * 商品简码
    * @value
    */
-  proSimpleCode: string;
+  proSimpleCode: string
 
   /**
    * 商品规格型号
    * @value
    */
-  proSpecification: string;
+  proSpecification: string
 
   /**
    * 商品税额
    * @value
    */
-  proTax: number;
+  proTax: number
 
   /**
    * 商品计量单位
    * @value
    */
-  proUnit: string;
+  proUnit: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 零税率标识
-   * @value #integer(32)
+   * @value
    */
-  zeroRateFlag: number;
-};
+  zeroRateFlag: number
+}
 
 /**
  * --
@@ -5053,296 +5053,296 @@ export type CenterJiaofeiInvoiceOrderVO = {
    * 购买方
    * @value
    */
-  buyer: string;
+  buyer: string
 
   /**
    * 购买方地址
    * @value
    */
-  buyerAddress: string;
+  buyerAddress: string
 
   /**
    * 购买方开户行
    * @value
    */
-  buyerBank: string;
+  buyerBank: string
 
   /**
    * 购买方银行账号
    * @value
    */
-  buyerBankAccount: string;
+  buyerBankAccount: string
 
   /**
    * 购买方识别号
    * @value
    */
-  buyerDuty: string;
+  buyerDuty: string
 
   /**
    * 购买方电话
    * @value
    */
-  buyerPhone: string;
-
-  /**
-   * 购买方类型
-   * @value #integer(32)
-   */
-  buyerType: number;
+  buyerPhone: string
 
   /**
    * 购买方类型
    * @value
    */
-  buyerTypeName: string;
+  buyerType: number
+
+  /**
+   * 购买方类型
+   * @value
+   */
+  buyerTypeName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 开票人
    * @value
    */
-  drawer: string;
+  drawer: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 校验码
    * @value
    */
-  invoiceCheckCode: string;
+  invoiceCheckCode: string
 
   /**
    * 发票代码
    * @value
    */
-  invoiceCode: string;
-
-  /**
-   * 发票类型
-   * @value #integer(32)
-   */
-  invoiceFlag: number;
+  invoiceCode: string
 
   /**
    * 发票类型
    * @value
    */
-  invoiceFlagName: string;
+  invoiceFlag: number
+
+  /**
+   * 发票类型
+   * @value
+   */
+  invoiceFlagName: string
 
   /**
    * 发票号码
    * @value
    */
-  invoiceNo: string;
+  invoiceNo: string
 
   /**
    * 发票密文
    * @value
    */
-  invoiceSign: string;
+  invoiceSign: string
 
   /**
    * 签章日期
    * @value #datetime()
    */
-  invoiceSignTime: string;
+  invoiceSignTime: string
 
   /**
    * 开票时间
    * @value #datetime()
    */
-  invoiceTime: string;
+  invoiceTime: string
 
   /**
    * 下载地址
    * @value
    */
-  invoiceUrl: string;
+  invoiceUrl: string
 
   /**
    * 发票过期 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isOverTime: number;
+  isOverTime: number
 
   /**
    * 明细数量
-   * @value #integer(32)
+   * @value
    */
-  itemCount: number;
+  itemCount: number
 
   /**
    * 明细
    * @rule 2
    */
-  itemList: CenterJiaofeiInvoiceItemVO[];
+  itemList: CenterJiaofeiInvoiceItemVO[]
 
   /**
    * 明细名称
    * @value
    */
-  itemName: string;
+  itemName: string
 
   /**
    * 机器编码
    * @value
    */
-  machineCode: string;
+  machineCode: string
 
   /**
    * openid
    * @value
    */
-  openId: string;
+  openId: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 收款人
    * @value
    */
-  payee: string;
+  payee: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 复核人
    * @value
    */
-  reviewer: string;
+  reviewer: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 销售方
    * @value
    */
-  seller: string;
+  seller: string
 
   /**
    * 销售人地址
    * @value
    */
-  sellerAddress: string;
+  sellerAddress: string
 
   /**
    * 销售方开户行
    * @value
    */
-  sellerBank: string;
+  sellerBank: string
 
   /**
    * 销售方银行账号
    * @value
    */
-  sellerBankAccount: string;
+  sellerBankAccount: string
 
   /**
    * 纳税人识别号
    * @value
    */
-  sellerDuty: string;
+  sellerDuty: string
 
   /**
    * 销售方电话
    * @value
    */
-  sellerPhone: string;
-
-  /**
-   * 状态
-   * @value #integer(32)
-   */
-  status: number;
+  sellerPhone: string
 
   /**
    * 状态
    * @value
    */
-  statusName: string;
+  status: number
 
   /**
-   * 开票系统
-   * @value #integer(32)
+   * 状态
+   * @value
    */
-  thirdType: number;
+  statusName: string
 
   /**
    * 开票系统
    * @value
    */
-  thirdTypeName: string;
+  thirdType: number
+
+  /**
+   * 开票系统
+   * @value
+   */
+  thirdTypeName: string
 
   /**
    * 总金额
    * @value
    */
-  totalAmount: number;
+  totalAmount: number
 
   /**
    * 价税合计
    * @value
    */
-  totalAmountTax: number;
+  totalAmountTax: number
 
   /**
    * 价税合计中文
    * @value
    */
-  totalAmountTaxZn: string;
+  totalAmountTaxZn: string
 
   /**
    * 总税额
    * @value
    */
-  totalTax: number;
+  totalTax: number
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
-};
+  userId: number
+}
 
 /**
  * --
@@ -5352,14 +5352,14 @@ export type CenterJiaofeiInvoiceSourceVO = {
    * 编码
    * @value
    */
-  code: string;
+  code: string
 
   /**
    * 名称
    * @value
    */
-  name: string;
-};
+  name: string
+}
 
 /**
  * --
@@ -5369,14 +5369,14 @@ export type CenterJiaofeiInvoiceTotalVO = {
    * 总金额
    * @value
    */
-  totalAmount: number;
+  totalAmount: number
 
   /**
    * 总税额
    * @value
    */
-  totalTax: number;
-};
+  totalTax: number
+}
 
 /**
  * --
@@ -5386,140 +5386,140 @@ export type CenterJiaofeiInvoiceTypeVO = {
    * 地址
    * @value
    */
-  address: string;
+  address: string
 
   /**
    * 开户行
    * @value
    */
-  bank: string;
+  bank: string
 
   /**
    * 银行账号
    * @value
    */
-  bankAccount: string;
+  bankAccount: string
 
   /**
    * 创建人
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 税号
    * @value
    */
-  dutyNum: string;
+  dutyNum: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
-
-  /**
-   * 发票类型
-   * @value #integer(32)
-   */
-  invoiceFlag: number;
+  id: number
 
   /**
    * 发票类型
    * @value
    */
-  invoiceFlagName: string;
+  invoiceFlag: number
 
   /**
-   * 是否默认
-   * @value #integer(32)
+   * 发票类型
+   * @value
    */
-  isDefault: number;
+  invoiceFlagName: string
 
   /**
    * 是否默认
    * @value
    */
-  isDefaultName: string;
+  isDefault: number
+
+  /**
+   * 是否默认
+   * @value
+   */
+  isDefaultName: string
 
   /**
    * openid
    * @value
    */
-  openId: string;
+  openId: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 电话
    * @value
    */
-  phone: string;
+  phone: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 修改人
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 发票抬头
    * @value
    */
-  userName: string;
-
-  /**
-   * 抬头类型
-   * @value #integer(32)
-   */
-  userType: number;
+  userName: string
 
   /**
    * 抬头类型
    * @value
    */
-  userTypeName: string;
-};
+  userType: number
+
+  /**
+   * 抬头类型
+   * @value
+   */
+  userTypeName: string
+}
 
 /**
  * --
@@ -5529,20 +5529,20 @@ export type CenterJiaofeiLinkProjectVO = {
    * 有权限
    * @value
    */
-  hasRight: boolean;
+  hasRight: boolean
 
   /**
    * 缴费项目ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 项目名称
    * @value
    */
-  projectName: string;
-};
+  projectName: string
+}
 
 /**
  * --
@@ -5550,28 +5550,28 @@ export type CenterJiaofeiLinkProjectVO = {
 export type CenterJiaofeiListCountVO = {
   /**
    * 已支付
-   * @value #integer(32)
+   * @value
    */
-  payed: number;
+  payed: number
 
   /**
    * 支付中
-   * @value #integer(32)
+   * @value
    */
-  paying: number;
+  paying: number
 
   /**
    * 总数
-   * @value #integer(32)
+   * @value
    */
-  total: number;
+  total: number
 
   /**
    * 未支付
-   * @value #integer(32)
+   * @value
    */
-  unPay: number;
-};
+  unPay: number
+}
 
 /**
  * --
@@ -5579,22 +5579,22 @@ export type CenterJiaofeiListCountVO = {
 export type CenterJiaofeiListReductionVO = {
   /**
    * 数量
-   * @value #integer(32)
+   * @value
    */
-  count: number;
+  count: number
 
   /**
    * 金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 优惠类型 0无优惠 1减免 2助学贷款
-   * @value #integer(32)
+   * @value
    */
-  reductionType: number;
-};
+  reductionType: number
+}
 
 /**
  * --
@@ -5604,296 +5604,296 @@ export type CenterJiaofeiListVO = {
    * 未缴金额
    * @value
    */
-  arrearageAmount: number;
+  arrearageAmount: number
 
   /**
    * 批次
    * @value
    */
-  batchNum: string;
+  batchNum: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 是否删除 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  deleteFlag: number;
+  deleteFlag: number
 
   /**
    * 部门名称
    * @value
    */
-  deptName: string;
+  deptName: string
 
   /**
    * 学历
    * @value
    */
-  education: string;
+  education: string
 
   /**
    * 缴费名单ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证
    * @value
    */
-  idCard: string;
+  idCard: string
 
   /**
    * 导入状态0异常 1正常 2重复
-   * @value #integer(32)
+   * @value
    */
-  importStatus: number;
+  importStatus: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  listSource: number;
+  listSource: number
 
   /**
    * 贷款金额
    * @value
    */
-  loanAmount: number;
+  loanAmount: number
 
   /**
    * 邮箱
    * @value
    */
-  mail: string;
+  mail: string
 
   /**
    * 操作权限
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 权限操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 原金额
    * @value
    */
-  originalAmount: number;
+  originalAmount: number
 
   /**
    * 已缴金额
    * @value
    */
-  paidAmount: number;
+  paidAmount: number
 
   /**
    * 缴费金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 支付方式
    * @value
    */
-  payMethod: string;
+  payMethod: string
 
   /**
    * 支付方式
    * @value
    */
-  payMethodStr: string;
+  payMethodStr: string
 
   /**
    * 支付时间
    * @value #datetime()
    */
-  payTime: string;
+  payTime: string
 
   /**
    * 项目编码
-   * @value #integer(64)
+   * @value
    */
-  projectId: number;
+  projectId: number
 
   /**
    * 项目名称
    * @value
    */
-  projectName: string;
+  projectName: string
 
   /**
    * 减免金额
    * @value
    */
-  reductionAmount: number;
+  reductionAmount: number
 
   /**
    * 优惠类型 0无优惠 1减免 2助学贷款
-   * @value #integer(32)
+   * @value
    */
-  reductionType: number;
+  reductionType: number
 
   /**
    * 优惠类型
    * @value
    */
-  reductionTypeStr: string;
+  reductionTypeStr: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 性别
    * @value
    */
-  sex: string;
+  sex: string
 
   /**
    * 状态0未缴纳 2缴纳中 1已缴纳
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  studentId: number;
+  studentId: number
 
   /**
    * 学制
-   * @value #integer(32)
+   * @value
    */
-  studyCount: number;
+  studyCount: number
 
   /**
    * 入学年份
    * @value
    */
-  studyYear: string;
-
-  /**
-   * 学期
-   * @value #integer(32)
-   */
-  term: number;
+  studyYear: string
 
   /**
    * 学期
    * @value
    */
-  termStr: string;
+  term: number
+
+  /**
+   * 学期
+   * @value
+   */
+  termStr: string
 
   /**
    * 证件号码
    * @value
    */
-  uniqueId: string;
+  uniqueId: string
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 班级
    * @value
    */
-  userClass: string;
+  userClass: string
 
   /**
    * 基础权限-班级ID
    * @value
    */
-  userClassId: string;
+  userClassId: string
 
   /**
    * 年级
    * @value
    */
-  userGrade: string;
+  userGrade: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 学号
    * @value
    */
-  userNo: string;
+  userNo: string
 
   /**
    * 手机号
    * @value
    */
-  userPhone: string;
+  userPhone: string
 
   /**
    * 院系
    * @value
    */
-  userXi: string;
+  userXi: string
 
   /**
    * 专业
    * @value
    */
-  userZhuan: string;
+  userZhuan: string
 
   /**
    *
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -5903,464 +5903,464 @@ export type CenterJiaofeiOrderVO = {
    * 账户id
    * @value
    */
-  accId: string;
+  accId: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  apiId: number;
+  apiId: number
 
   /**
    * 未交金额
    * @value
    */
-  arrearageAmount: number;
+  arrearageAmount: number
 
   /**
    * 批次
    * @value
    */
-  batchNum: string;
+  batchNum: string
 
   /**
    * 票据编号
    * @value
    */
-  billNo: string;
+  billNo: string
 
   /**
    * 创建人名称
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 部门ID
-   * @value #integer(64)
+   * @value
    */
-  deptId: number;
+  deptId: number
 
   /**
    * 部门名称
    * @value
    */
-  deptName: string;
+  deptName: string
 
   /**
    * 二级分类ID
-   * @value #integer(64)
+   * @value
    */
-  dicId: number;
+  dicId: number
 
   /**
    * 二级分类名称
    * @value
    */
-  dicName: string;
+  dicName: string
 
   /**
    * 二级分类副选项ID
-   * @value #integer(64)
+   * @value
    */
-  dicSonId: number;
+  dicSonId: number
 
   /**
    * 二级分类副选项名称
    * @value
    */
-  dicSonName: string;
+  dicSonName: string
 
   /**
    * 二级分类副选项英文名称
    * @value
    */
-  dicSonNameEn: string;
+  dicSonNameEn: string
 
   /**
    * 缴费期间编码
    * @value
    */
-  durationCode: string;
+  durationCode: string
 
   /**
    * 缴费期间名称
    * @value
    */
-  durationName: string;
+  durationName: string
 
   /**
    * 支付结束时间
    * @value #datetime()
    */
-  endTime: string;
+  endTime: string
 
   /**
    * 支付订单号
    * @value
    */
-  foreighCode: string;
+  foreighCode: string
 
   /**
    * 开票信息id
-   * @value #integer(64)
+   * @value
    */
-  invoiceInfoId: number;
+  invoiceInfoId: number
 
   /**
    * 开票信息名称
    * @value
    */
-  invoiceInfoName: string;
+  invoiceInfoName: string
 
   /**
    * 开票限额
-   * @value #integer(32)
+   * @value
    */
-  invoiceLimitAmount: number;
+  invoiceLimitAmount: number
 
   /**
    * 是否开票 0开票中 1开票成功 2开票失败
-   * @value #integer(32)
+   * @value
    */
-  invoiceStatus: number;
+  invoiceStatus: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  isMergePay: number;
+  isMergePay: number
 
   /**
    * 是否消息通知 0否1是
-   * @value #integer(32)
+   * @value
    */
-  isMessageNotify: number;
+  isMessageNotify: number
 
   /**
    * 是否可多次提交 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isMorePay: number;
+  isMorePay: number
 
   /**
    * 是否回调 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNoticed: number;
+  isNoticed: number
 
   /**
    * 是否退款 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isRefund: number;
+  isRefund: number
 
   /**
    * 是否分批支付 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isSplitPay: number;
+  isSplitPay: number
 
   /**
    * 缴费方式0自定义 1导入 2接口
-   * @value #integer(32)
+   * @value
    */
-  jiaofeiMethod: number;
+  jiaofeiMethod: number
 
   /**
    * 缴费名单id
-   * @value #integer(64)
+   * @value
    */
-  listId: number;
+  listId: number
 
   /**
    * 名单来源：0excel导入 1迎新系统 2外部系统
-   * @value #integer(32)
+   * @value
    */
-  listSource: number;
+  listSource: number
 
   /**
    * 贷款金额
    * @value
    */
-  loanAmount: number;
+  loanAmount: number
 
   /**
    * 回调时间
    * @value #datetime()
    */
-  noticeTime: string;
+  noticeTime: string
 
   /**
    * openId
    * @value
    */
-  openId: string;
+  openId: string
 
   /**
    * 操作权限
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作权限
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 订单号
-   * @value #integer(64)
+   * @value
    */
-  orderId: number;
+  orderId: number
 
   /**
    * 支付状态  0等待支付、2支付成功、3支付失败、-1订单关闭
-   * @value #integer(32)
+   * @value
    */
-  orderStatus: number;
+  orderStatus: number
 
   /**
    * 支付状态
    * @value
    */
-  orderStatusStr: string;
+  orderStatusStr: string
 
   /**
    * 原金额
    * @value
    */
-  originalAmount: number;
+  originalAmount: number
 
   /**
    * 父级订单号
-   * @value #integer(64)
+   * @value
    */
-  parentOrder: number;
+  parentOrder: number
 
   /**
    * 缴费金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 支付方式
    * @value
    */
-  payMethod: string;
+  payMethod: string
 
   /**
    * 支付方式
    * @value
    */
-  payMethodStr: string;
+  payMethodStr: string
 
   /**
    * 缴费项目ID
    * @value
    */
-  proId: string;
+  proId: string
 
   /**
    * 缴费项目名称
    * @value
    */
-  proName: string;
+  proName: string
 
   /**
    * 缴费项目图标
    * @value
    */
-  projectIcon: string;
+  projectIcon: string
 
   /**
    * 项目英文名称
    * @value
    */
-  projectNameEn: string;
+  projectNameEn: string
 
   /**
    * 应收金额
    * @value
    */
-  receivableAmount: number;
+  receivableAmount: number
 
   /**
    * 减免金额
    * @value
    */
-  reductionAmount: number;
+  reductionAmount: number
 
   /**
    * 优惠类型 0无优惠 1减免 2助学贷款 3减免+贷款
-   * @value #integer(32)
+   * @value
    */
-  reductionType: number;
+  reductionType: number
 
   /**
    * 优惠类型
    * @value
    */
-  reductionTypeStr: string;
+  reductionTypeStr: string
 
   /**
    * 退款金额
    * @value
    */
-  refundAmount: number;
+  refundAmount: number
 
   /**
    * 退款
    * @value
    */
-  refundFlag: string;
+  refundFlag: string
 
   /**
    * 退款英文
    * @value
    */
-  refundFlagEn: string;
+  refundFlagEn: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 来源 WX公众号 APP
    * @value
    */
-  source: string;
+  source: string
 
   /**
    * 第三方订单编号
    * @value
    */
-  thirdOrderCode: string;
+  thirdOrderCode: string
 
   /**
    *
    * @value
    */
-  thirdPayNo: string;
+  thirdPayNo: string
 
   /**
    *
    * @value
    */
-  thirdPayable: string;
+  thirdPayable: string
 
   /**
    *
    * @value
    */
-  thirdPreorder: string;
+  thirdPreorder: string
 
   /**
    * 第三方待缴订单编号
    * @value
    */
-  thirdSeqNo: string;
+  thirdSeqNo: string
 
   /**
    * 0:未充值、1:充值中、2:充值成功、3:充值失败、4:充值关闭
-   * @value #integer(32)
+   * @value
    */
-  thirdTradeStatus: number;
+  thirdTradeStatus: number
 
   /**
    * 三方0贵阳易达恒志 1兰大
-   * @value #integer(32)
+   * @value
    */
-  thirdType: number;
+  thirdType: number
 
   /**
    * 年
    * @value
    */
-  thirdYear: string;
+  thirdYear: string
 
   /**
    * 分类ID
-   * @value #integer(64)
+   * @value
    */
-  typeId: number;
+  typeId: number
 
   /**
    * 分类名称
    * @value
    */
-  typeName: string;
+  typeName: string
 
   /**
    * 支付金额
    * @value
    */
-  unifiedPayAmount: number;
+  unifiedPayAmount: number
 
   /**
    * 红包金额
    * @value
    */
-  unifiedRedbagAmount: number;
+  unifiedRedbagAmount: number
 
   /**
    * 班级
    * @value
    */
-  userClass: string;
+  userClass: string
 
   /**
    * app.user_id
    * @value
    */
-  userId: string;
+  userId: string
 
   /**
    * 身份证号
    * @value
    */
-  userIdCard: string;
+  userIdCard: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 学号
    * @value
    */
-  userNo: string;
+  userNo: string
 
   /**
    * 手机号
    * @value
    */
-  userPhone: string;
-};
+  userPhone: string
+}
 
 /**
  * --
@@ -6368,124 +6368,154 @@ export type CenterJiaofeiOrderVO = {
 export type CenterJiaofeiOrderVO_1 = {
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  apiId: number;
+  apiId: number
 
   /**
    * 批次
    * @value
    */
-  batchNum: string;
+  batchNum: string
 
   /**
    * 部门ID
-   * @value #integer(64)
+   * @value
    */
-  deptId: number;
+  deptId: number
 
   /**
    * 部门名称
    * @value
    */
-  deptName: string;
+  deptName: string
 
   /**
    * 缴费期间编码
    * @value
    */
-  durationCode: string;
+  durationCode: string
 
   /**
    * 缴费期间名称
    * @value
    */
-  durationName: string;
+  durationName: string
 
   /**
    * 缴费方式0自定义 1导入 2接口
-   * @value #integer(32)
+   * @value
    */
-  jiaofeiMethod: number;
+  jiaofeiMethod: number
+
+  /**
+   * 贷款金额
+   * @value
+   */
+  loanAmount: number
 
   /**
    * 操作权限
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作权限
    * @value
    */
-  operation: string;
+  operation: string
+
+  /**
+   *
+   * @value
+   */
+  paidNum: number
 
   /**
    * 支付方式
    * @value
    */
-  payMethod: string;
+  payMethod: string
 
   /**
    * 项目创建时间
    * @value #datetime()
    */
-  proCreateTime: string;
+  proCreateTime: string
 
   /**
    * 缴费项目ID
    * @value
    */
-  proId: string;
+  proId: string
 
   /**
    * 缴费项目名称
    * @value
    */
-  proName: string;
+  proName: string
+
+  /**
+   * 减免金额
+   * @value
+   */
+  reductionAmount: number
 
   /**
    * 退款金额
    * @value
    */
-  refundAmount: number;
+  refundAmount: number
 
   /**
    * 退款数量
-   * @value #integer(32)
+   * @value
    */
-  refundCount: number;
+  refundCount: number
 
   /**
    * 缴费金额
    * @value
    */
-  reportAmountCount: number;
+  reportAmountCount: number
 
   /**
    * 缴费笔数
-   * @value #integer(32)
+   * @value
    */
-  reportCount: number;
+  reportCount: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 三方厂家
-   * @value #integer(32)
+   * @value
    */
-  thirdType: number;
-};
+  thirdType: number
+
+  /**
+   *
+   * @value
+   */
+  totalNum: number
+
+  /**
+   *
+   * @value
+   */
+  unpaidNum: number
+}
 
 /**
  * --
@@ -6493,40 +6523,40 @@ export type CenterJiaofeiOrderVO_1 = {
 export type CenterJiaofeiPaymentVO = {
   /**
    * 缴费名单ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 已缴金额
    * @value
    */
-  paidAmount: number;
+  paidAmount: number
 
   /**
    * 应缴金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 缴费时间
    * @value
    */
-  payTime: string;
+  payTime: string
 
   /**
    * 项目id
-   * @value #integer(64)
+   * @value
    */
-  projectId: number;
+  projectId: number
 
   /**
    * 项目名称
    * @value
    */
-  projectName: string;
-};
+  projectName: string
+}
 
 /**
  * --
@@ -6534,88 +6564,88 @@ export type CenterJiaofeiPaymentVO = {
 export type CenterJiaofeiPermissionsVO = {
   /**
    * 创建人
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 手机号
    * @value
    */
-  phone: string;
+  phone: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态 0禁用 1启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 修改人
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * --
@@ -6625,92 +6655,92 @@ export type CenterJiaofeiProBatchVO = {
    * 批次
    * @value
    */
-  batchNum: string;
+  batchNum: string
 
   /**
    * 创建人
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 删除标识 0正常 1删除
-   * @value #integer(32)
+   * @value
    */
-  deleteFlag: number;
+  deleteFlag: number
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 项目id
-   * @value #integer(64)
+   * @value
    */
-  projectId: number;
+  projectId: number
 
   /**
    * 项目名称
    * @value
    */
-  projectName: string;
+  projectName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态 0禁用 1启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 修改人
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -6718,70 +6748,70 @@ export type CenterJiaofeiProBatchVO = {
 export type CenterJiaofeiProDicVO = {
   /**
    * 二级分类Id
-   * @value #integer(64)
+   * @value
    */
-  dicId: number;
+  dicId: number
 
   /**
    * 二级分类名称
    * @value
    */
-  dicName: string;
+  dicName: string
 
   /**
    * 二级分类英文名称
    * @value
    */
-  dicNameEn: string;
+  dicNameEn: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 操作权限
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作权限
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 缴费金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 项目Id
-   * @value #integer(64)
+   * @value
    */
-  proId: number;
+  proId: number
 
   /**
    * 项目名称
    * @value
    */
-  proName: string;
+  proName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-};
+  schoolName: string
+}
 
 /**
  * --
@@ -6791,26 +6821,26 @@ export type CenterJiaofeiProjectTypeVO = {
    * 缴费项目信息
    * @rule 2
    */
-  centerJiaofeiProjectVo: CenterSchoolJiaofeiProjectVO[];
+  centerJiaofeiProjectVo: CenterSchoolJiaofeiProjectVO[]
 
   /**
    * 分类ID
-   * @value #integer(64)
+   * @value
    */
-  typeId: number;
+  typeId: number
 
   /**
    * 分类名称
    * @value
    */
-  typeName: string;
+  typeName: string
 
   /**
    * 分类英文名称
    * @value
    */
-  typeNameEn: string;
-};
+  typeNameEn: string
+}
 
 /**
  * --
@@ -6820,422 +6850,422 @@ export type CenterJiaofeiProjectVO = {
    * 批次
    * @value
    */
-  batchNum: string;
+  batchNum: string
 
   /**
    * 缴费开始时间
    * @value #datetime()
    */
-  beginDate: string;
+  beginDate: string
 
   /**
    * 审核备注
    * @value
    */
-  checkRemark: string;
-
-  /**
-   * 审批状态
-   * @value #integer(32)
-   */
-  checkStatus: number;
+  checkRemark: string
 
   /**
    * 审批状态
    * @value
    */
-  checkStatusStr: string;
+  checkStatus: number
+
+  /**
+   * 审批状态
+   * @value
+   */
+  checkStatusStr: string
 
   /**
    * 审核时间
    * @value #datetime()
    */
-  checkTime: string;
+  checkTime: string
 
   /**
    * 审核人id
-   * @value #integer(64)
+   * @value
    */
-  checkUserId: number;
+  checkUserId: number
 
   /**
    * 审核人
    * @value
    */
-  checkUserName: string;
+  checkUserName: string
 
   /**
    * 点击数
-   * @value #integer(32)
+   * @value
    */
-  clickCount: number;
+  clickCount: number
 
   /**
    * 关闭原因
    * @value
    */
-  closeTips: string;
-
-  /**
-   * 创建人
-   * @value #integer(64)
-   */
-  createId: number;
+  closeTips: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createId: number
+
+  /**
+   * 创建人
+   * @value
+   */
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 是否删除 0未删除 1删除
-   * @value #integer(32)
+   * @value
    */
-  deleteFlag: number;
+  deleteFlag: number
 
   /**
    * 部门ID
-   * @value #integer(64)
+   * @value
    */
-  deptId: number;
+  deptId: number
 
   /**
    * 部门名称
    * @value
    */
-  deptName: string;
+  deptName: string
 
   /**
    * 二级分类ID
-   * @value #integer(64)
+   * @value
    */
-  dicId: number;
+  dicId: number
 
   /**
    * 二级分类名称
    * @value
    */
-  dicName: string;
+  dicName: string
 
   /**
    * 缴费结束时间
    * @value #datetime()
    */
-  endDate: string;
+  endDate: string
 
   /**
    * 顶部图片跳转链接
    * @value
    */
-  headPicLink: string;
+  headPicLink: string
 
   /**
    * 顶部图片
    * @value
    */
-  headPicUrl: string;
+  headPicUrl: string
 
   /**
    * 图标链接
    * @value
    */
-  iconLink: string;
+  iconLink: string
 
   /**
    * 缴费项目ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否可多次提交 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isMorePay: number;
+  isMorePay: number
 
   /**
    * 是否需要班级 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedClass: number;
+  isNeedClass: number
 
   /**
    * 是否需要身份证号 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedIdcard: number;
+  isNeedIdcard: number
 
   /**
    * 是否需要姓名 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedName: number;
+  isNeedName: number
 
   /**
    * 是否需要手机号 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedPhone: number;
+  isNeedPhone: number
 
   /**
    * 是否需要协议 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedProtocol: number;
+  isNeedProtocol: number
 
   /**
    * 备注是否必填 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedRemark: number;
+  isNeedRemark: number
 
   /**
    * 是否需要学号 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedUserno: number;
+  isNeedUserno: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  isNoPay: number;
+  isNoPay: number
 
   /**
    * 是否允许充值
-   * @value #integer(32)
+   * @value
    */
-  isOpen: number;
+  isOpen: number
 
   /**
    * 是否过期 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isOverTime: number;
+  isOverTime: number
 
   /**
    * 是否推荐 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isRecommend: number;
+  isRecommend: number
 
   /**
    * 是否显示 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isShow: number;
+  isShow: number
 
   /**
    * 是否分批支付 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isSplitPay: number;
+  isSplitPay: number
 
   /**
    * 缴费方式0自定义式 1导入式
-   * @value #integer(32)
+   * @value
    */
-  jiaofeiMethod: number;
+  jiaofeiMethod: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  listSource: number;
+  listSource: number
 
   /**
    * 最大金额
-   * @value #integer(32)
+   * @value
    */
-  maxAmount: number;
+  maxAmount: number
 
   /**
    * 最小金额
-   * @value #integer(32)
+   * @value
    */
-  minAmount: number;
+  minAmount: number
 
   /**
    * 公告
    * @value
    */
-  notice: string;
+  notice: string
 
   /**
    * 通知 0不通知 1短信 2信息
-   * @value #integer(32)
+   * @value
    */
-  noticeBack: number;
+  noticeBack: number
 
   /**
    * 英文公告
    * @value
    */
-  noticeEn: string;
+  noticeEn: string
 
   /**
    * 当前时间
    * @value #datetime()
    */
-  nowDate: string;
+  nowDate: string
 
   /**
    * 操作权限
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作权限
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 外部链接
    * @value
    */
-  outLink: string;
+  outLink: string
 
   /**
    * 缴费金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 排序
-   * @value #integer(32)
+   * @value
    */
-  proSort: number;
+  proSort: number
 
   /**
    * 缴费项目图标
    * @value
    */
-  projectIcon: string;
+  projectIcon: string
 
   /**
    * 项目名称
    * @value
    */
-  projectName: string;
+  projectName: string
 
   /**
    * 项目英文名称
    * @value
    */
-  projectNameEn: string;
+  projectNameEn: string
 
   /**
    * 协议内容
    * @value
    */
-  protocolContent: string;
+  protocolContent: string
 
   /**
    * 协议标题
    * @value
    */
-  protocolTitle: string;
+  protocolTitle: string
 
   /**
    * 协议标题
    * @value
    */
-  protocolTitleEn: string;
+  protocolTitleEn: string
 
   /**
    * 推荐排序
-   * @value #integer(32)
+   * @value
    */
-  recommendSort: number;
+  recommendSort: number
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 备注提示语
    * @value
    */
-  remarkMsg: string;
+  remarkMsg: string
 
   /**
    * 备注提示语
    * @value
    */
-  remarkMsgEn: string;
+  remarkMsgEn: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 项目状态 0:禁用 1:启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 温馨提示
    * @value
    */
-  tips: string;
+  tips: string
 
   /**
    * 英文温馨提示
    * @value
    */
-  tipsEn: string;
+  tipsEn: string
 
   /**
    * 分类ID
-   * @value #integer(64)
+   * @value
    */
-  typeId: number;
+  typeId: number
 
   /**
    * 分类名称
    * @value
    */
-  typeName: string;
-
-  /**
-   * 修改人
-   * @value #integer(64)
-   */
-  updateId: number;
+  typeName: string
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateId: number
+
+  /**
+   * 修改人
+   * @value
+   */
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -7243,226 +7273,351 @@ export type CenterJiaofeiProjectVO = {
 export type CenterJiaofeiRefundVO = {
   /**
    * 批量退款id
-   * @value #integer(64)
+   * @value
    */
-  batchRefundId: number;
-
-  /**
-   * 审核人
-   * @value #integer(64)
-   */
-  checkId: number;
+  batchRefundId: number
 
   /**
    * 审核人
    * @value
    */
-  checkName: string;
+  checkId: number
+
+  /**
+   * 审核人
+   * @value
+   */
+  checkName: string
 
   /**
    * 审核备注
    * @value
    */
-  checkRemark: string;
+  checkRemark: string
 
   /**
    * 审核时间
    * @value #datetime()
    */
-  checkTime: string;
+  checkTime: string
 
   /**
    * 创建人id
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 部门id
-   * @value #integer(64)
+   * @value
    */
-  deptId: number;
+  deptId: number
 
   /**
    * 部门名称
    * @value
    */
-  deptName: string;
+  deptName: string
 
   /**
    * 退款id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 订单id
-   * @value #integer(64)
+   * @value
    */
-  orderId: number;
+  orderId: number
 
   /**
    * 相关缴费订单
    * @rule 2
    */
-  orderList: CenterJiaofeiOrderVO[];
+  orderList: CenterJiaofeiOrderVO[]
 
   /**
    * 支付金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 支付方式
    * @value
    */
-  payMethod: string;
+  payMethod: string
 
   /**
    * 支付方式
    * @value
    */
-  payMethodStr: string;
+  payMethodStr: string
 
   /**
    * 支付订单
-   * @value #integer(64)
+   * @value
    */
-  payNo: number;
+  payNo: number
 
   /**
    * 支付退款订单
-   * @value #integer(64)
+   * @value
    */
-  payRefundNo: number;
+  payRefundNo: number
 
   /**
    * 支付退款备注
    * @value
    */
-  payRefundRemark: string;
+  payRefundRemark: string
 
   /**
    * 支付时间
    * @value #datetime()
    */
-  payTime: string;
+  payTime: string
 
   /**
    * 项目名称
    * @value
    */
-  projectName: string;
+  projectName: string
 
   /**
    * 退款金额
    * @value
    */
-  refundAmount: number;
+  refundAmount: number
 
   /**
    * 退款原因
    * @value
    */
-  refundRemark: string;
-
-  /**
-   * 退款状态
-   * @value #integer(32)
-   */
-  refundStatus: number;
+  refundRemark: string
 
   /**
    * 退款状态
    * @value
    */
-  refundStatusStr: string;
+  refundStatus: number
+
+  /**
+   * 退款状态
+   * @value
+   */
+  refundStatusStr: string
 
   /**
    * 退款时间
    * @value #datetime()
    */
-  refundTime: string;
+  refundTime: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-
-  /**
-   * 修改人
-   * @value #integer(64)
-   */
-  updateId: number;
+  schoolName: string
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateId: number
+
+  /**
+   * 修改人
+   * @value
+   */
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 身份证号
    * @value
    */
-  userIdCard: string;
+  userIdCard: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 学号
    * @value
    */
-  userNo: string;
+  userNo: string
 
   /**
    * 手机号
    * @value
    */
-  userPhone: string;
-};
+  userPhone: string
+}
+
+/**
+ * --
+ */
+export type CenterJiaofeiReportExportVO = {
+  /**
+   * 批次
+   * @value
+   */
+  batchNum: string
+
+  /**
+   * 批次跨列
+   * @value
+   */
+  batchNumRowspan: number
+
+  /**
+   *
+   * @value
+   */
+  deptName: string
+
+  /**
+   *
+   * @value
+   */
+  deptNameRowspan: number
+
+  /**
+   *
+   * @value
+   */
+  jiaofeiMethod: string
+
+  /**
+   * 贷款金额
+   * @value
+   */
+  loanAmount: number
+
+  /**
+   *
+   * @value
+   */
+  paidNum: number
+
+  /**
+   * 支付方式
+   * @value
+   */
+  payMethod: string
+
+  /**
+   *
+   * @value
+   */
+  proCreateTime: string
+
+  /**
+   *
+   * @value
+   */
+  proId: string
+
+  /**
+   *
+   * @value
+   */
+  proName: string
+
+  /**
+   *
+   * @value
+   */
+  proNameRowspan: number
+
+  /**
+   * 减免金额
+   * @value
+   */
+  reductionAmount: number
+
+  /**
+   *
+   * @value
+   */
+  refundAmountCount: string
+
+  /**
+   *
+   * @value
+   */
+  refundCount: string
+
+  /**
+   *
+   * @value
+   */
+  reportAmountCount: string
+
+  /**
+   *
+   * @value
+   */
+  reportCount: string
+
+  /**
+   *
+   * @value
+   */
+  schoolName: string
+
+  /**
+   *
+   * @value
+   */
+  totalNum: number
+
+  /**
+   *
+   * @value
+   */
+  unpaidNum: number
+}
 
 /**
  * --
@@ -7470,22 +7625,22 @@ export type CenterJiaofeiRefundVO = {
 export type CenterJiaofeiSchoolConfigVO = {
   /**
    * 缴费配置ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 状态 0:禁用 1:启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 商户名称
    * @value
    */
-  thirdName: string;
-};
+  thirdName: string
+}
 
 /**
  * --
@@ -7495,128 +7650,128 @@ export type CenterJiaofeiSchoolShowConfigVO = {
    * 接口配置
    * @rule 2
    */
-  configList: CenterJiaofeiSchoolConfigVO[];
+  configList: CenterJiaofeiSchoolConfigVO[]
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份号显示名
    * @value
    */
-  idCard: string;
+  idCard: string
 
   /**
    * 英文身份号显示名
    * @value
    */
-  idCardEn: string;
+  idCardEn: string
 
   /**
    * 身份输入框英文显示
    * @value
    */
-  idCardEnRemark: string;
+  idCardEnRemark: string
 
   /**
    * 身份输入框显示
    * @value
    */
-  idCardRemark: string;
+  idCardRemark: string
 
   /**
    * 是否代人缴费 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isAgentPay: number;
+  isAgentPay: number
 
   /**
    * 是否通知提醒 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNotice: number;
+  isNotice: number
 
   /**
    * 项目是否需要审批 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isProCheck: number;
+  isProCheck: number
 
   /**
    * 通知人
    * @value
    */
-  notifyList: string;
+  notifyList: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态 0禁用 1启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 温馨提示
    * @value
    */
-  tips: string;
+  tips: string
 
   /**
    * 英文温馨提示
    * @value
    */
-  tipsEn: string;
+  tipsEn: string
 
   /**
    * 标题显示名
    * @value
    */
-  titleName: string;
+  titleName: string
 
   /**
    * 标题英文显示名
    * @value
    */
-  titleNameEn: string;
+  titleNameEn: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 英文姓名
    * @value
    */
-  userNameEn: string;
+  userNameEn: string
 
   /**
    * web图标
    * @value
    */
-  webIcon: string;
-};
+  webIcon: string
+}
 
 /**
  * --
@@ -7624,214 +7779,214 @@ export type CenterJiaofeiSchoolShowConfigVO = {
 export type CenterJiaofeiShowConfigVO = {
   /**
    * 是否校验一卡通信息 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  checkCardInfo: number;
+  checkCardInfo: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份号显示名
    * @value
    */
-  idCard: string;
+  idCard: string
 
   /**
    * 英文身份号显示名
    * @value
    */
-  idCardEn: string;
+  idCardEn: string
 
   /**
    * 身份输入框英文显示
    * @value
    */
-  idCardEnRemark: string;
+  idCardEnRemark: string
 
   /**
    * 身份输入框显示
    * @value
    */
-  idCardRemark: string;
+  idCardRemark: string
 
   /**
    * 证件号类型
-   * @value #integer(32)
+   * @value
    */
-  idCardType: number;
+  idCardType: number
 
   /**
    * 证件号值
    * @value
    */
-  idCardValue: string;
+  idCardValue: string
 
   /**
    * 身份证号
    * @value
    */
-  idNumber: string;
+  idNumber: string
 
   /**
    * 开票期间（天）
-   * @value #integer(32)
+   * @value
    */
-  invoiceDay: number;
-
-  /**
-   * 是否代人缴费
-   * @value #integer(32)
-   */
-  isAgentPay: number;
+  invoiceDay: number
 
   /**
    * 是否代人缴费
    * @value
    */
-  isAgentPayStr: string;
+  isAgentPay: number
+
+  /**
+   * 是否代人缴费
+   * @value
+   */
+  isAgentPayStr: string
 
   /**
    * 是否根据绑卡信息自动查询 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isAutoSearch: number;
+  isAutoSearch: number
 
   /**
    * 是否自定义发票抬头 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isCustomInvoiceType: number;
-
-  /**
-   * 是否开启发票功能
-   * @value #integer(32)
-   */
-  isInvoice: number;
+  isCustomInvoiceType: number
 
   /**
    * 是否开启发票功能
    * @value
    */
-  isInvoiceName: string;
+  isInvoice: number
+
+  /**
+   * 是否开启发票功能
+   * @value
+   */
+  isInvoiceName: string
 
   /**
    * 是否通知提醒
-   * @value #integer(32)
+   * @value
    */
-  isNotice: number;
+  isNotice: number
 
   /**
    * 项目是否需要审批
-   * @value #integer(32)
+   * @value
    */
-  isProCheck: number;
+  isProCheck: number
 
   /**
    * 是否同步建行 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isSyncCcb: number;
+  isSyncCcb: number
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 父级学校编码
    * @value
    */
-  parentSchoolCode: string;
+  parentSchoolCode: string
 
   /**
    * 父级学校名称
    * @value
    */
-  parentSchoolName: string;
+  parentSchoolName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态 0禁用 1启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 温馨提示
    * @value
    */
-  tips: string;
+  tips: string
 
   /**
    * 英文温馨提示
    * @value
    */
-  tipsEn: string;
+  tipsEn: string
 
   /**
    * 标题显示名
    * @value
    */
-  titleName: string;
+  titleName: string
 
   /**
    * 标题英文显示名
    * @value
    */
-  titleNameEn: string;
+  titleNameEn: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 英文姓名
    * @value
    */
-  userNameEn: string;
+  userNameEn: string
 
   /**
    * 姓名值
    * @value
    */
-  userNameValue: string;
+  userNameValue: string
 
   /**
    * web图标
    * @value
    */
-  webIcon: string;
-};
+  webIcon: string
+}
 
 /**
  * --
@@ -7841,86 +7996,86 @@ export type CenterJiaofeiTypeVO = {
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 分类ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否显示 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isShow: number;
+  isShow: number
 
   /**
    * 模式：1、迎新
-   * @value #integer(32)
+   * @value
    */
-  mode: number;
+  mode: number
 
   /**
    * 分类备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 分类状态 0:禁用 1:启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 分类名称
    * @value
    */
-  typeName: string;
+  typeName: string
 
   /**
    * 分类英文名称
    * @value
    */
-  typeNameEn: string;
+  typeNameEn: string
 
   /**
    * 分类排序
-   * @value #integer(32)
+   * @value
    */
-  typeSort: number;
+  typeSort: number
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -7930,110 +8085,110 @@ export type CenterJiaofeiTypeVO_1 = {
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 分类ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isShow: number;
+  id: number
 
   /**
    *
    * @value
    */
-  isShowStr: string;
+  isShow: number
+
+  /**
+   *
+   * @value
+   */
+  isShowStr: string
 
   /**
    * 模式：1、迎新
-   * @value #integer(32)
+   * @value
    */
-  mode: number;
+  mode: number
 
   /**
    * 模式：迎新
    * @value
    */
-  modeStr: string;
+  modeStr: string
 
   /**
    * 操作权限
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作权限
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 分类备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 分类状态 0:禁用 1:启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 分类名称
    * @value
    */
-  typeName: string;
+  typeName: string
 
   /**
    * 分类英文名称
    * @value
    */
-  typeNameEn: string;
+  typeNameEn: string
 
   /**
    * 分类排序
-   * @value #integer(32)
+   * @value
    */
-  typeSort: number;
+  typeSort: number
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -8043,74 +8198,74 @@ export type CenterNetOperatorVO = {
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 运营商名称
    * @value
    */
-  operatorName: string;
+  operatorName: string
 
   /**
    * 支付商户编码
    * @value
    */
-  payCpCode: string;
+  payCpCode: string
 
   /**
    * 支付商户密钥
    * @value
    */
-  payCpSecret: string;
+  payCpSecret: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-
-  /**
-   * 状态
-   * @value #integer(32)
-   */
-  status: number;
+  schoolName: string
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  status: number
+
+  /**
+   * 状态
+   * @value
+   */
+  statusStr: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 校区id
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -8120,80 +8275,80 @@ export type CenterNetPackageVO = {
    * 添加时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 运营商id
-   * @value #integer(64)
+   * @value
    */
-  operatorId: number;
+  operatorId: number
 
   /**
    * 运营商名称
    * @value
    */
-  operatorName: string;
+  operatorName: string
 
   /**
    * 套餐id
    * @value
    */
-  packageId: string;
+  packageId: string
 
   /**
    * 套餐名称
    * @value
    */
-  packageName: string;
+  packageName: string
 
   /**
    * 套餐金额  金额为0 表示可以自己输入
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-
-  /**
-   * 状态 1、启用 0、禁用
-   * @value #integer(32)
-   */
-  status: number;
+  schoolName: string
 
   /**
    * 状态 1、启用 0、禁用
    * @value
    */
-  statusStr: string;
+  status: number
+
+  /**
+   * 状态 1、启用 0、禁用
+   * @value
+   */
+  statusStr: string
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -8201,46 +8356,46 @@ export type CenterNetPackageVO = {
 export type CenterNetZoneVO = {
   /**
    * 校区id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 网费协议 0深澜 1城市热点
-   * @value #integer(32)
+   * @value
    */
-  protocol: number;
+  protocol: number
 
   /**
    * 厂商协议
    * @value
    */
-  protocolStr: string;
+  protocolStr: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态 0禁用 1启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -8250,194 +8405,194 @@ export type CenterOrderNetVO = {
    * 充值账号
    * @value
    */
-  account: string;
+  account: string
 
   /**
    * 套餐配置id
-   * @value #integer(64)
+   * @value
    */
-  centerPackageId: number;
+  centerPackageId: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 费率金额
    * @value
    */
-  feeMoney: number;
+  feeMoney: number
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 手机号
    * @value
    */
-  mobilePhone: string;
+  mobilePhone: string
 
   /**
    * 运营商id
-   * @value #integer(64)
+   * @value
    */
-  operatorId: number;
+  operatorId: number
 
   /**
    * 运营商名称
    * @value
    */
-  operatorName: string;
-
-  /**
-   * 外部充值状态
-   * @value #integer(32)
-   */
-  outTradeStatus: number;
+  operatorName: string
 
   /**
    * 外部充值状态
    * @value
    */
-  outTradeStatusStr: string;
+  outTradeStatus: number
+
+  /**
+   * 外部充值状态
+   * @value
+   */
+  outTradeStatusStr: string
 
   /**
    * 套餐名称
    * @value
    */
-  packageName: string;
+  packageName: string
 
   /**
    * 支付金额
    * @value
    */
-  payMoney: number;
+  payMoney: number
 
   /**
    * 支付单号
    * @value
    */
-  payNo: string;
-
-  /**
-   * 支付状态
-   * @value #integer(32)
-   */
-  payStatus: number;
+  payNo: string
 
   /**
    * 支付状态
    * @value
    */
-  payStatusStr: string;
+  payStatus: number
+
+  /**
+   * 支付状态
+   * @value
+   */
+  payStatusStr: string
 
   /**
    * 支付时间
    * @value #datetime()
    */
-  payTime: string;
+  payTime: string
 
   /**
    *
    * @value
    */
-  payType: string;
+  payType: string
 
   /**
    * 支付方式
    * @value
    */
-  payTypeStr: string;
+  payTypeStr: string
 
   /**
    *
    * @value
    */
-  rechargeInfo: string;
+  rechargeInfo: string
 
   /**
    * 红包金额
    * @value
    */
-  redbagMoney: number;
+  redbagMoney: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    *
    * @value
    */
-  source: string;
+  source: string
 
   /**
    * 平台
    * @value
    */
-  sourceStr: string;
-
-  /**
-   * 订单状态 0处理中 1已完成
-   * @value #integer(32)
-   */
-  status: number;
+  sourceStr: string
 
   /**
    * 订单状态 0处理中 1已完成
    * @value
    */
-  statusStr: string;
+  status: number
+
+  /**
+   * 订单状态 0处理中 1已完成
+   * @value
+   */
+  statusStr: string
 
   /**
    * 到账金额
    * @value
    */
-  totalMoney: number;
+  totalMoney: number
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 校区编码
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -8447,182 +8602,182 @@ export type CenterOrderSpecialVO = {
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 费率金额
    * @value
    */
-  feeMoney: number;
+  feeMoney: number
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 手机号
    * @value
    */
-  mobilePhone: string;
-
-  /**
-   * 外部充值状态
-   * @value #integer(32)
-   */
-  outTradeStatus: number;
+  mobilePhone: string
 
   /**
    * 外部充值状态
    * @value
    */
-  outTradeStatusStr: string;
+  outTradeStatus: number
+
+  /**
+   * 外部充值状态
+   * @value
+   */
+  outTradeStatusStr: string
 
   /**
    * 支付金额
    * @value
    */
-  payMoney: string;
+  payMoney: string
 
   /**
    * 支付订单号
    * @value
    */
-  payNo: string;
-
-  /**
-   * 支付状态
-   * @value #integer(32)
-   */
-  payStatus: number;
+  payNo: string
 
   /**
    * 支付状态
    * @value
    */
-  payStatusStr: string;
+  payStatus: number
+
+  /**
+   * 支付状态
+   * @value
+   */
+  payStatusStr: string
 
   /**
    * 支付时间
    * @value #datetime()
    */
-  payTime: string;
+  payTime: string
 
   /**
    * 支付方式
    * @value
    */
-  payType: string;
+  payType: string
 
   /**
    * 支付方式
    * @value
    */
-  payTypeStr: string;
+  payTypeStr: string
 
   /**
    *
    * @value
    */
-  platform: string;
+  platform: string
 
   /**
    * 平台
    * @value
    */
-  platformStr: string;
+  platformStr: string
 
   /**
    * 商品名
    * @value
    */
-  prodName: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  protocol: number;
+  prodName: string
 
   /**
    *
    * @value
    */
-  protocolStr: string;
+  protocol: number
+
+  /**
+   *
+   * @value
+   */
+  protocolStr: string
 
   /**
    * 充值账号/卡号
    * @value
    */
-  rechargeAccount: string;
+  rechargeAccount: string
 
   /**
    * 充值名称
    * @value
    */
-  rechargeName: string;
+  rechargeName: string
 
   /**
    * 红包金额
    * @value
    */
-  redbagMoney: number;
+  redbagMoney: number
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-
-  /**
-   * 订单状态 0处理中 1已完成
-   * @value #integer(32)
-   */
-  status: number;
+  schoolName: string
 
   /**
    * 订单状态 0处理中 1已完成
    * @value
    */
-  statusStr: string;
+  status: number
+
+  /**
+   * 订单状态 0处理中 1已完成
+   * @value
+   */
+  statusStr: string
 
   /**
    * 到账金额
    * @value
    */
-  totalMoney: string;
+  totalMoney: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * --
@@ -8632,44 +8787,44 @@ export type CenterOrderStatsVO = {
    * 交易笔数
    * @value
    */
-  count: string;
+  count: string
 
   /**
    * 主商户名称
    * @value
    */
-  cpMainName: string;
+  cpMainName: string
 
   /**
    * 商户名称
    * @value
    */
-  cpName: string;
+  cpName: string
 
   /**
    * 支付渠道
    * @value
    */
-  payTypeName: string;
+  payTypeName: string
 
   /**
    * 退款总笔数
-   * @value #integer(64)
+   * @value
    */
-  refundCount: number;
+  refundCount: number
 
   /**
    * 退款总金额
    * @value
    */
-  refundMoney: string;
+  refundMoney: string
 
   /**
    * 交易金额
    * @value
    */
-  tranMoney: string;
-};
+  tranMoney: string
+}
 
 /**
  * --
@@ -8679,86 +8834,86 @@ export type CenterPincardConfigVO = {
    * 受理时间
    * @value #datetime()
    */
-  acceptTimeEnd: string;
+  acceptTimeEnd: string
 
   /**
    * 受理时间
    * @value #datetime()
    */
-  acceptTimeStart: string;
+  acceptTimeStart: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  isProtocol: number;
+  isProtocol: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  needBindCard: number;
+  needBindCard: number
 
   /**
    * 温馨提示
    * @value
    */
-  notice: string;
+  notice: string
 
   /**
    * 易通webapi 一卡通webapi 一卡通35
    * @value
    */
-  pincardVersion: string;
+  pincardVersion: string
 
   /**
    * 销卡等待天数
-   * @value #integer(32)
+   * @value
    */
-  pincardWaitingDay: number;
+  pincardWaitingDay: number
 
   /**
    * 公告
    * @value
    */
-  prompt: string;
+  prompt: string
 
   /**
    *
    * @value
    */
-  protocolContent: string;
+  protocolContent: string
 
   /**
    *
    * @value
    */
-  protocolTitle: string;
+  protocolTitle: string
 
   /**
    * 可办理的学生范围 0000格式(每位01) 毕业生办理  是 0 否 1
    * @value
    */
-  studentRange: string;
+  studentRange: string
 
   /**
    * 转账(退款)款项json  押金,卡费,存款手续费,搭伙费
    * @value
    */
-  transferSelect: string;
+  transferSelect: string
 
   /**
    * 转账(退款)方式  0:人工转账 1:自动批量转账
-   * @value #integer(32)
+   * @value
    */
-  transferWay: number;
-};
+  transferWay: number
+}
 
 /**
  * --
@@ -8766,28 +8921,28 @@ export type CenterPincardConfigVO = {
 export type CenterPincardSubsidyVO = {
   /**
    * 打款人数
-   * @value #integer(32)
+   * @value
    */
-  subsidyCount: number;
+  subsidyCount: number
 
   /**
    * 打款金额
-   * @value #integer(64)
+   * @value
    */
-  subsidyMoney: number;
+  subsidyMoney: number
 
   /**
    *
    * @value
    */
-  subsidyMoneyStr: string;
+  subsidyMoneyStr: string
 
   /**
    * 项目名称
    * @value
    */
-  subsidyName: string;
-};
+  subsidyName: string
+}
 
 /**
  * --
@@ -8797,284 +8952,284 @@ export type CenterPincardVO = {
    * 受理人姓名
    * @value
    */
-  acceptName: string;
+  acceptName: string
 
   /**
    * 受理人手机号
    * @value
    */
-  acceptPhone: string;
+  acceptPhone: string
 
   /**
    * 转账(退款)账户用户名
    * @value
    */
-  accountName: string;
+  accountName: string
 
   /**
    * 申请失败原因
    * @value
    */
-  applyforFailedReason: string;
+  applyforFailedReason: string
 
   /**
    * 卡库余额
    * @value
    */
-  cardMoney: string;
+  cardMoney: string
 
   /**
    * 班级id
-   * @value #integer(64)
+   * @value
    */
-  classId: number;
+  classId: number
 
   /**
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 确认状态
-   * @value #integer(32)
+   * @value
    */
-  confirmStatus: number;
+  confirmStatus: number
 
   /**
    *
    * @value
    */
-  confirmStatusName: string;
+  confirmStatusName: string
 
   /**
    * 受理人姓名
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 受理人手机号
    * @value
    */
-  createPhone: string;
+  createPhone: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 部门名称
    * @value
    */
-  department: string;
+  department: string
 
   /**
    * 部门id
-   * @value #integer(64)
+   * @value
    */
-  departmentId: number;
+  departmentId: number
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证
    * @value
    */
-  identityId: string;
+  identityId: string
 
   /**
    * 收款用户身份证号码
    * @value
    */
-  incomeIdentityId: string;
+  incomeIdentityId: string
 
   /**
    * 收款用户姓名
    * @value
    */
-  incomeUserName: string;
+  incomeUserName: string
 
   /**
    * 打款项目ID
-   * @value #integer(64)
+   * @value
    */
-  itemId: number;
+  itemId: number
 
   /**
    * 打款项目名称
    * @value
    */
-  itemName: string;
+  itemName: string
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 支付渠道编码
    * @value
    */
-  payCode: string;
+  payCode: string
 
   /**
    *
    * @value
    */
-  payCodeName: string;
+  payCodeName: string
 
   /**
    * 支付渠道分类：1-资金代发，2-直接打款
-   * @value #integer(32)
+   * @value
    */
-  payType: number;
+  payType: number
 
   /**
    *
    * @value
    */
-  payTypeName: string;
+  payTypeName: string
 
   /**
    * 销户状态  0:待销户 1:已销户 2:销户失败
-   * @value #integer(32)
+   * @value
    */
-  pincardStatus: number;
+  pincardStatus: number
 
   /**
    *
    * @value
    */
-  pincardStatusStr: string;
+  pincardStatusStr: string
 
   /**
    * 销户申请时间(预撤户)
    * @value #datetime()
    */
-  preRecallTime: string;
+  preRecallTime: string
 
   /**
    * 拒绝或同意原因
    * @value
    */
-  reason: string;
+  reason: string
 
   /**
    * 真实撤户时间
    * @value #datetime()
    */
-  recallTime: string;
+  recallTime: string
 
   /**
    * 申请备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 专业名称
    * @value
    */
-  specialities: string;
+  specialities: string
 
   /**
    * 专业id
-   * @value #integer(64)
+   * @value
    */
-  specialitiesId: number;
+  specialitiesId: number
 
   /**
    * 转账(退款)账号
    * @value
    */
-  transferAccount: string;
+  transferAccount: string
 
   /**
    * 申请转账(退款)原因
    * @value
    */
-  transferApplyfor: string;
+  transferApplyfor: string
 
   /**
    *
    * @value
    */
-  transferApplyforStr: string;
+  transferApplyforStr: string
 
   /**
    * 转账(退款)渠道
    * @value
    */
-  transferChannelStr: string;
+  transferChannelStr: string
 
   /**
    * 可退金额
    * @value
    */
-  transferMoney: string;
+  transferMoney: string
 
   /**
    * 转账(退款)状态 0:待打款 1:已打款 2:打款失败
-   * @value #integer(32)
+   * @value
    */
-  transferStatus: number;
+  transferStatus: number
 
   /**
    *
    * @value
    */
-  transferStatusStr: string;
+  transferStatusStr: string
 
   /**
    * 受理转账(退款)时间
    * @value #datetime()
    */
-  transferTime: string;
+  transferTime: string
 
   /**
    * 修改人姓名
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改人手机号
    * @value
    */
-  updatePhone: string;
+  updatePhone: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 一卡通账号
    * @value
    */
-  userIdcard: string;
+  userIdcard: string
 
   /**
    * 学生姓名
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * --
@@ -9084,134 +9239,134 @@ export type CenterSchoolAreaVO = {
    * 校区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 校区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 绑定房间数量
-   * @value #integer(32)
+   * @value
    */
-  bindRoomNum: number;
+  bindRoomNum: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 校区id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否充值后绑定 0、是 1、否
-   * @value #integer(32)
+   * @value
    */
-  isBindAfterRecharge: number;
+  isBindAfterRecharge: number
 
   /**
    * 是否正常使用过 0、是 1、否
-   * @value #integer(32)
+   * @value
    */
-  isUsed: number;
+  isUsed: number
 
   /**
    * 最低充值金额(元)
    * @value
    */
-  minAmount: number;
+  minAmount: number
 
   /**
    * 电费价格（元/度）
    * @value
    */
-  price: number;
+  price: number
 
   /**
    * 厂商编号
-   * @value #integer(32)
+   * @value
    */
-  protocol: number;
+  protocol: number
 
   /**
    * 厂商名称
    * @value
    */
-  protocolStr: string;
+  protocolStr: string
 
   /**
    * 温馨提示
    * @value
    */
-  remind: string;
+  remind: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 排序
-   * @value #integer(32)
+   * @value
    */
-  sort: number;
+  sort: number
 
   /**
    * 状态
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态名
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 类型：1、电费 2、水费 3、常工应用
-   * @value #integer(32)
+   * @value
    */
-  type: number;
+  type: number
 
   /**
    * 类型名
    * @value
    */
-  typeStr: string;
+  typeStr: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 版本：1、version-1 2、version-2
-   * @value #integer(32)
+   * @value
    */
-  version: number;
+  version: number
 
   /**
    * 版本名
    * @value
    */
-  versionStr: string;
-};
+  versionStr: string
+}
 
 /**
  * --
@@ -9221,74 +9376,74 @@ export type CenterSchoolBuildingVO = {
    * 校区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  areaId: number;
+  areaId: number
 
   /**
    * 校区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 楼栋编码
    * @value
    */
-  buildingCode: string;
+  buildingCode: string
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 楼栋id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 类型：1、电费 2、水费 3、常工应用
-   * @value #integer(32)
+   * @value
    */
-  type: number;
+  type: number
 
   /**
    * 类型名
    * @value
    */
-  typeStr: string;
+  typeStr: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -9298,92 +9453,92 @@ export type CenterSchoolFloorVO = {
    * 校区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 校区id
-   * @value #integer(64)
+   * @value
    */
-  areaId: number;
+  areaId: number
 
   /**
    * 校区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 楼栋编码
    * @value
    */
-  buildingCode: string;
+  buildingCode: string
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 楼层编码
    * @value
    */
-  floorCode: string;
+  floorCode: string
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    * 楼层id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 类型：1、电费 2、水费 3、常工应用
-   * @value #integer(32)
+   * @value
    */
-  type: number;
+  type: number
 
   /**
    * 类型名
    * @value
    */
-  typeStr: string;
+  typeStr: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -9393,104 +9548,104 @@ export type CenterSchoolJiaofeiConfigVO = {
    * 支付商户编码
    * @value
    */
-  cpCode: string;
+  cpCode: string
 
   /**
    * 支付商户密钥
    * @value
    */
-  cpKey: string;
+  cpKey: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 缴费配置ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态 0:禁用 1:启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 商户编码
    * @value
    */
-  thirdCode: string;
+  thirdCode: string
 
   /**
    * ID
    * @value
    */
-  thirdId: string;
+  thirdId: string
 
   /**
    * 密钥
    * @value
    */
-  thirdKey: string;
+  thirdKey: string
 
   /**
    * 商户名称
    * @value
    */
-  thirdName: string;
+  thirdName: string
 
   /**
    * 端口
    * @value
    */
-  thirdPort: string;
+  thirdPort: string
 
   /**
    * 密码
    * @value
    */
-  thirdPwd: string;
+  thirdPwd: string
 
   /**
    * 接口地址
    * @value
    */
-  thirdUrl: string;
+  thirdUrl: string
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -9500,86 +9655,86 @@ export type CenterSchoolJiaofeiDeptVO = {
    * 商户编号
    * @value
    */
-  cpCode: string;
+  cpCode: string
 
   /**
    * 商户密钥
    * @value
    */
-  cpKey: string;
+  cpKey: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 部门负责人姓名
    * @value
    */
-  deptHeads: string;
+  deptHeads: string
 
   /**
    * 部门负责人手机号
    * @value
    */
-  deptHeadsTel: string;
+  deptHeadsTel: string
 
   /**
    * 部门名称
    * @value
    */
-  deptName: string;
+  deptName: string
 
   /**
    * 部门ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 模式：1、迎新
-   * @value #integer(32)
+   * @value
    */
-  mode: number;
+  mode: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 部门状态 0:禁用 1:启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -9589,20 +9744,20 @@ export type CenterSchoolJiaofeiDictionarySonVO = {
    * 二级分类名称
    * @value
    */
-  dicName: string;
+  dicName: string
 
   /**
    * 二级分类英文名称
    * @value
    */
-  dicNameEn: string;
+  dicNameEn: string
 
   /**
    * 二级分类ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
-};
+  id: number
+}
 
 /**
  * --
@@ -9612,80 +9767,80 @@ export type CenterSchoolJiaofeiDictionaryVO = {
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 副选项数量
-   * @value #integer(32)
+   * @value
    */
-  dicCount: number;
+  dicCount: number
 
   /**
    * 二级分类名称
    * @value
    */
-  dicName: string;
+  dicName: string
 
   /**
    * 二级分类英文名称
    * @value
    */
-  dicNameEn: string;
+  dicNameEn: string
 
   /**
    * 二级分类ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 二级分类父ID
-   * @value #integer(64)
+   * @value
    */
-  parentId: number;
+  parentId: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 副选项信息
    * @rule 2
    */
-  sonDictionaryVo: CenterSchoolJiaofeiDictionarySonVO[];
+  sonDictionaryVo: CenterSchoolJiaofeiDictionarySonVO[]
 
   /**
    * 二级分类状态 0:禁用 1:启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -9695,374 +9850,374 @@ export type CenterSchoolJiaofeiOrderVO = {
    * 账户id
    * @value
    */
-  accId: string;
+  accId: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  apiId: number;
+  apiId: number
 
   /**
    * 未交金额
    * @value
    */
-  arrearageAmount: number;
+  arrearageAmount: number
 
   /**
    * 批次
    * @value
    */
-  batchNum: string;
+  batchNum: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 部门ID
-   * @value #integer(64)
+   * @value
    */
-  deptId: number;
+  deptId: number
 
   /**
    * 部门名称
    * @value
    */
-  deptName: string;
+  deptName: string
 
   /**
    * 二级分类ID
-   * @value #integer(64)
+   * @value
    */
-  dicId: number;
+  dicId: number
 
   /**
    * 二级分类名称
    * @value
    */
-  dicName: string;
+  dicName: string
 
   /**
    * 二级分类副选项ID
-   * @value #integer(64)
+   * @value
    */
-  dicSonId: number;
+  dicSonId: number
 
   /**
    * 二级分类副选项名称
    * @value
    */
-  dicSonName: string;
+  dicSonName: string
 
   /**
    * 缴费期间编码
    * @value
    */
-  durationCode: string;
+  durationCode: string
 
   /**
    * 缴费期间名称
    * @value
    */
-  durationName: string;
+  durationName: string
 
   /**
    * 支付结束时间
    * @value #datetime()
    */
-  endTime: string;
+  endTime: string
 
   /**
    * 支付订单号
    * @value
    */
-  foreighCode: string;
+  foreighCode: string
 
   /**
    * 开票状态 0开票中 1开票成功 2开票失败
-   * @value #integer(32)
+   * @value
    */
-  invoiceStatus: number;
+  invoiceStatus: number
 
   /**
    * 开票状态
    * @value
    */
-  invoiceStatusName: string;
+  invoiceStatusName: string
 
   /**
    * 是否全额退款
    * @value
    */
-  isFullRefund: boolean;
+  isFullRefund: boolean
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  isMergePay: number;
+  isMergePay: number
 
   /**
    * 是否消息通知 0否1是
-   * @value #integer(32)
+   * @value
    */
-  isMessageNotify: number;
+  isMessageNotify: number
 
   /**
    * 是否回调 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNoticed: number;
+  isNoticed: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  isRefund: number;
+  isRefund: number
 
   /**
    * 是否分批支付 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isSplitPay: number;
+  isSplitPay: number
 
   /**
    * 缴费方式0自定义 1导入 2接口
-   * @value #integer(32)
+   * @value
    */
-  jiaofeiMethod: number;
+  jiaofeiMethod: number
 
   /**
    * 缴费名单id
-   * @value #integer(64)
+   * @value
    */
-  listId: number;
+  listId: number
 
   /**
    * 贷款金额
    * @value
    */
-  loanAmount: number;
+  loanAmount: number
 
   /**
    * 合并支付金额
    * @value
    */
-  mergePayAmount: number;
+  mergePayAmount: number
 
   /**
    * 合并缴费项目名称
    * @value
    */
-  mergeProNames: string;
+  mergeProNames: string
 
   /**
    * 回调时间
    * @value #datetime()
    */
-  noticeTime: string;
+  noticeTime: string
 
   /**
    * openId
    * @value
    */
-  openId: string;
+  openId: string
 
   /**
    * 订单号
-   * @value #integer(64)
+   * @value
    */
-  orderId: number;
+  orderId: number
 
   /**
    * 支付状态  0等待支付、2支付成功、3支付失败、-1订单关闭
-   * @value #integer(32)
+   * @value
    */
-  orderStatus: number;
+  orderStatus: number
 
   /**
    * 支付状态
    * @value
    */
-  orderStatusStr: string;
+  orderStatusStr: string
 
   /**
    * 原金额
    * @value
    */
-  originalAmount: number;
+  originalAmount: number
 
   /**
    * 父级订单号
-   * @value #integer(64)
+   * @value
    */
-  parentOrder: number;
+  parentOrder: number
 
   /**
    * 缴费金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 支付方式
    * @value
    */
-  payMethod: string;
+  payMethod: string
 
   /**
    * 支付方式
    * @value
    */
-  payMethodStr: string;
+  payMethodStr: string
 
   /**
    * 缴费项目ID
    * @value
    */
-  proId: string;
+  proId: string
 
   /**
    * 缴费项目名称
    * @value
    */
-  proName: string;
+  proName: string
 
   /**
    * 应收金额
    * @value
    */
-  receivableAmount: number;
+  receivableAmount: number
 
   /**
    * 减免金额
    * @value
    */
-  reductionAmount: number;
+  reductionAmount: number
 
   /**
    *
    * @value
    */
-  refundAmount: number;
+  refundAmount: number
 
   /**
    * 退款订单
    * @rule 2
    */
-  refundOrder: CenterJiaofeiRefundVO[];
+  refundOrder: CenterJiaofeiRefundVO[]
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 合并支付订单
    * @rule 2
    */
-  siblingsList: CenterJiaofeiOrderVO[];
+  siblingsList: CenterJiaofeiOrderVO[]
 
   /**
    * 来源 WX公众号 APP
    * @value
    */
-  source: string;
+  source: string
 
   /**
    * 第三方订单编号
    * @value
    */
-  thirdOrderCode: string;
+  thirdOrderCode: string
 
   /**
    * 0:未充值、1:充值中、2:充值成功、3:充值失败、4:充值关闭
-   * @value #integer(32)
+   * @value
    */
-  thirdTradeStatus: number;
+  thirdTradeStatus: number
 
   /**
    * 三方0贵阳易达恒志 1兰大
-   * @value #integer(32)
+   * @value
    */
-  thirdType: number;
+  thirdType: number
 
   /**
    * 分类ID
-   * @value #integer(64)
+   * @value
    */
-  typeId: number;
+  typeId: number
 
   /**
    * 分类名称
    * @value
    */
-  typeName: string;
+  typeName: string
 
   /**
    *
    * @value
    */
-  unifiedPayAmount: number;
+  unifiedPayAmount: number
 
   /**
    * 红包金额
    * @value
    */
-  unifiedRedbagAmount: number;
+  unifiedRedbagAmount: number
 
   /**
    * app.user_id
    * @value
    */
-  userId: string;
+  userId: string
 
   /**
    * 身份证号
    * @value
    */
-  userIdCard: string;
+  userIdCard: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 学号
    * @value
    */
-  userNo: string;
+  userNo: string
 
   /**
    * 手机号
    * @value
    */
-  userPhone: string;
-};
+  userPhone: string
+}
 
 /**
  * --
@@ -10070,52 +10225,52 @@ export type CenterSchoolJiaofeiOrderVO = {
 export type CenterSchoolJiaofeiProDicVO = {
   /**
    * 二级分类Id
-   * @value #integer(64)
+   * @value
    */
-  dicId: number;
+  dicId: number
 
   /**
    * 二级分类名称
    * @value
    */
-  dicName: string;
+  dicName: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 缴费金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 项目Id
-   * @value #integer(64)
+   * @value
    */
-  proId: number;
+  proId: number
 
   /**
    * 项目名称
    * @value
    */
-  projectName: string;
+  projectName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-};
+  schoolName: string
+}
 
 /**
  * --
@@ -10125,38 +10280,38 @@ export type CenterSchoolJiaofeiProjectAndAmountVO = {
    * 二级分类费用
    * @value
    */
-  dicFullStr: string;
+  dicFullStr: string
 
   /**
    * 二级分类id
-   * @value #integer(64)
+   * @value
    */
-  dicId: number;
+  dicId: number
 
   /**
    * 项目id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 项目名称
    * @value
    */
-  projectName: string;
+  projectName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
-};
+  schoolCode: string
+}
 
 /**
  * --
@@ -10166,20 +10321,20 @@ export type CenterSchoolJiaofeiProjectUrlVO = {
    * 缴费h5url
    * @value
    */
-  pathH5Url: string;
+  pathH5Url: string
 
   /**
    * 缴费url
    * @value
    */
-  pathUrl: string;
+  pathUrl: string
 
   /**
    * 二维码缴费url
    * @value
    */
-  qrcodeUrl: string;
-};
+  qrcodeUrl: string
+}
 
 /**
  * --
@@ -10189,362 +10344,362 @@ export type CenterSchoolJiaofeiProjectVO = {
    * 缴费开始时间
    * @value #datetime()
    */
-  beginDate: string;
+  beginDate: string
 
   /**
    * 审核备注
    * @value
    */
-  checkRemark: string;
-
-  /**
-   * 审批状态
-   * @value #integer(32)
-   */
-  checkStatus: number;
+  checkRemark: string
 
   /**
    * 审批状态
    * @value
    */
-  checkStatusStr: string;
+  checkStatus: number
+
+  /**
+   * 审批状态
+   * @value
+   */
+  checkStatusStr: string
 
   /**
    * 审核时间
    * @value #datetime()
    */
-  checkTime: string;
+  checkTime: string
 
   /**
    * 审核人id
-   * @value #integer(64)
+   * @value
    */
-  checkUserId: number;
+  checkUserId: number
 
   /**
    * 审核人
    * @value
    */
-  checkUserName: string;
+  checkUserName: string
 
   /**
    * 关闭原因
    * @value
    */
-  closeTips: string;
+  closeTips: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 部门ID
-   * @value #integer(64)
+   * @value
    */
-  deptId: number;
+  deptId: number
 
   /**
    * 部门名称
    * @value
    */
-  deptName: string;
+  deptName: string
 
   /**
    * 二级分类ID
-   * @value #integer(64)
+   * @value
    */
-  dicId: number;
+  dicId: number
 
   /**
    * 二级分类名称
    * @value
    */
-  dicName: string;
+  dicName: string
 
   /**
    * 缴费结束时间
    * @value #datetime()
    */
-  endDate: string;
+  endDate: string
 
   /**
    * 顶部图片
    * @value
    */
-  headPicUrl: string;
+  headPicUrl: string
 
   /**
    * 图标链接
    * @value
    */
-  iconLink: string;
+  iconLink: string
 
   /**
    * 缴费项目ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否可多次提交 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isMorePay: number;
+  isMorePay: number
 
   /**
    * 是否需要班级 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedClass: number;
+  isNeedClass: number
 
   /**
    * 是否需要身份证号 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedIdcard: number;
+  isNeedIdcard: number
 
   /**
    * 是否需要姓名 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedName: number;
+  isNeedName: number
 
   /**
    * 是否需要手机号 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedPhone: number;
+  isNeedPhone: number
 
   /**
    * 是否需要协议 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedProtocol: number;
+  isNeedProtocol: number
 
   /**
    * 备注是否必填 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedRemark: number;
+  isNeedRemark: number
 
   /**
    * 是否需要学号 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNeedUserno: number;
+  isNeedUserno: number
 
   /**
    * 无需支付 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isNoPay: number;
+  isNoPay: number
 
   /**
    * 是否允许充值0否1是
-   * @value #integer(32)
+   * @value
    */
-  isOpen: number;
+  isOpen: number
 
   /**
    * 是否推荐 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isRecommend: number;
+  isRecommend: number
 
   /**
    * 是否显示 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isShow: number;
+  isShow: number
 
   /**
    * 是否分批支付 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isSplitPay: number;
+  isSplitPay: number
 
   /**
    * 缴费方式0自定义式 1导入式
-   * @value #integer(32)
+   * @value
    */
-  jiaofeiMethod: number;
+  jiaofeiMethod: number
 
   /**
    * 名单来源：0excel导入 1迎新系统 2外部系统
-   * @value #integer(32)
+   * @value
    */
-  listSource: number;
+  listSource: number
 
   /**
    * 最大金额
-   * @value #integer(32)
+   * @value
    */
-  maxAmount: number;
+  maxAmount: number
 
   /**
    * 最小金额
-   * @value #integer(32)
+   * @value
    */
-  minAmount: number;
+  minAmount: number
 
   /**
    * 公告
    * @value
    */
-  notice: string;
+  notice: string
 
   /**
    * 英文公告
    * @value
    */
-  noticeEn: string;
+  noticeEn: string
 
   /**
    * 当前时间
    * @value #datetime()
    */
-  nowDate: string;
+  nowDate: string
 
   /**
    * 外部链接
    * @value
    */
-  outLink: string;
+  outLink: string
 
   /**
    * 缴费金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 排序
-   * @value #integer(32)
+   * @value
    */
-  proSort: number;
+  proSort: number
 
   /**
    * 缴费项目图标
    * @value
    */
-  projectIcon: string;
+  projectIcon: string
 
   /**
    * 项目名称
    * @value
    */
-  projectName: string;
+  projectName: string
 
   /**
    * 项目英文名称
    * @value
    */
-  projectNameEn: string;
+  projectNameEn: string
 
   /**
    * 协议内容
    * @value
    */
-  protocolContent: string;
+  protocolContent: string
 
   /**
    * 协议标题
    * @value
    */
-  protocolTitle: string;
+  protocolTitle: string
 
   /**
    * 协议标题英文
    * @value
    */
-  protocolTitleEn: string;
+  protocolTitleEn: string
 
   /**
    * 推荐排序
-   * @value #integer(32)
+   * @value
    */
-  recommendSort: number;
+  recommendSort: number
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 备注提示语
    * @value
    */
-  remarkMsg: string;
+  remarkMsg: string
 
   /**
    * 备注提示语英文
    * @value
    */
-  remarkMsgEn: string;
+  remarkMsgEn: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 项目状态 0:禁用 1:启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 温馨提示
    * @value
    */
-  tips: string;
+  tips: string
 
   /**
    * 英文温馨提示
    * @value
    */
-  tipsEn: string;
+  tipsEn: string
 
   /**
    * 分类ID
-   * @value #integer(64)
+   * @value
    */
-  typeId: number;
+  typeId: number
 
   /**
    * 分类名称
    * @value
    */
-  typeName: string;
+  typeName: string
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -10554,56 +10709,56 @@ export type CenterSchoolJiaofeiReportVO = {
    * 缴费总和
    * @value
    */
-  amountCount: number;
+  amountCount: number
 
   /**
    * 当日缴费金额总和
    * @value
    */
-  nowDateAmountCount: number;
+  nowDateAmountCount: number
 
   /**
    * 当月缴费金额总和
    * @value
    */
-  nowMonthAmountCount: number;
+  nowMonthAmountCount: number
 
   /**
    * 分页缴费统计数据
    * @rule
    */
-  page: PageResultCenterJiaofeiOrderVO_1;
+  page: PageResultCenterJiaofeiOrderVO_1
 
   /**
    * 退款总和
    * @value
    */
-  refundTotalAmount: number;
+  refundTotalAmount: number
 
   /**
    * 列表退款金额
    * @value
    */
-  tableRefundAmount: number;
+  tableRefundAmount: number
 
   /**
    * 列表退款笔数
-   * @value #integer(32)
+   * @value
    */
-  tableRefundCount: number;
+  tableRefundCount: number
 
   /**
    * 列表数据缴费金额总和
    * @value
    */
-  tableReportAmountCount: number;
+  tableReportAmountCount: number
 
   /**
    * 列表数据缴费笔数总和
-   * @value #integer(32)
+   * @value
    */
-  tableReportCount: number;
-};
+  tableReportCount: number
+}
 
 /**
  * --
@@ -10611,118 +10766,118 @@ export type CenterSchoolJiaofeiReportVO = {
 export type CenterSchoolRoomUserVO = {
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  areaId: number;
+  areaId: number
 
   /**
    * 校区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 楼栋编码
    * @value
    */
-  buildingCode: string;
+  buildingCode: string
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 楼栋编码
    * @value
    */
-  floorCode: string;
+  floorCode: string
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
-
-  /**
-   * 是否使用过
-   * @value #integer(32)
-   */
-  isUsed: number;
+  id: number
 
   /**
    * 是否使用过
    * @value
    */
-  isUsedStr: string;
+  isUsed: number
+
+  /**
+   * 是否使用过
+   * @value
+   */
+  isUsedStr: string
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 手机号
    * @value
    */
-  mobilePhone: string;
+  mobilePhone: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 房间编码
    * @value
    */
-  roomCode: string;
+  roomCode: string
 
   /**
    * 房间名称
    * @value
    */
-  roomName: string;
+  roomName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * --
@@ -10732,134 +10887,134 @@ export type CenterSchoolRoomVO = {
    *
    * @value
    */
-  amount: number;
+  amount: number
 
   /**
    * 校区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 校区id
-   * @value #integer(64)
+   * @value
    */
-  areaId: number;
+  areaId: number
 
   /**
    * 校区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 楼栋编码
    * @value
    */
-  buildingCode: string;
+  buildingCode: string
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 楼层编码
    * @value
    */
-  floorCode: string;
+  floorCode: string
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    * 房间id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 昵称
    * @value
    */
-  nickName: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  origin: number;
+  nickName: string
 
   /**
    *
    * @value
    */
-  originStr: string;
+  origin: number
+
+  /**
+   *
+   * @value
+   */
+  originStr: string
 
   /**
    *
    * @value #datetime()
    */
-  recordTime: string;
+  recordTime: string
 
   /**
    * 房间编码
    * @value
    */
-  roomCode: string;
+  roomCode: string
 
   /**
    * 房间名称
    * @value
    */
-  roomName: string;
+  roomName: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    *
    * @value
    */
-  surplus: number;
+  surplus: number
 
   /**
    * 类型：1、电费 2、水费 3、常工应用
-   * @value #integer(32)
+   * @value
    */
-  type: number;
+  type: number
 
   /**
    * 类型
    * @value
    */
-  typeStr: string;
+  typeStr: string
 
   /**
    * 修改人姓名
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -10869,56 +11024,56 @@ export type CenterSpecialConfigVO = {
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  firm: number;
+  firm: number
 
   /**
    * 厂商
    * @value
    */
-  firmStr: string;
+  firmStr: string
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-
-  /**
-   * 状态
-   * @value #integer(32)
-   */
-  status: number;
+  schoolName: string
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  status: number
+
+  /**
+   * 状态
+   * @value
+   */
+  statusStr: string
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -10926,10 +11081,10 @@ export type CenterSpecialConfigVO = {
 export type CenterSysLoginQrCodeStatusVO = {
   /**
    * 二维码状态 0、生成 1、 扫码中  2、扫码成功  -1、已失效
-   * @value #integer(32)
+   * @value
    */
-  status: number;
-};
+  status: number
+}
 
 /**
  * --
@@ -10939,98 +11094,98 @@ export type CenterSysMenuTree4LoginVO = {
    *
    * @rule 2
    */
-  childMenus: CenterSysMenuTree4LoginVO[];
+  childMenus: CenterSysMenuTree4LoginVO[]
 
   /**
    *
    * @value
    */
-  code: string;
+  code: string
 
   /**
    * 企业别名
    * @value
    */
-  enterpriseName: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  fatherId: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  flag: number;
+  enterpriseName: string
 
   /**
    *
    * @value
    */
-  iconChecked: string;
+  fatherId: number
 
   /**
    *
    * @value
    */
-  iconUnchecked: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isMenu: number;
+  flag: number
 
   /**
    *
    * @value
    */
-  isMenuStr: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  menuLevel: number;
+  iconChecked: string
 
   /**
    *
    * @value
    */
-  name: string;
+  iconUnchecked: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  id: number
+
+  /**
+   *
+   * @value
+   */
+  isMenu: number
+
+  /**
+   *
+   * @value
+   */
+  isMenuStr: string
+
+  /**
+   *
+   * @value
+   */
+  menuLevel: number
+
+  /**
+   *
+   * @value
+   */
+  name: string
+
+  /**
+   *
+   * @value
+   */
+  operates: string[]
 
   /**
    * 菜单前缀,一般为平台编码
    * @value
    */
-  preCode: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  sort: number;
+  preCode: string
 
   /**
    *
    * @value
    */
-  url: string;
-};
+  sort: number
+
+  /**
+   *
+   * @value
+   */
+  url: string
+}
 
 /**
  * --
@@ -11040,32 +11195,32 @@ export type CenterSysMenuTreeVO = {
    *
    * @rule 2
    */
-  children: CenterSysMenuTreeVO[];
+  children: CenterSysMenuTreeVO[]
 
   /**
    *
    * @value
    */
-  enterpriseName: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isMenu: number;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  key: number;
+  enterpriseName: string
 
   /**
    *
    * @value
    */
-  title: string;
-};
+  isMenu: number
+
+  /**
+   *
+   * @value
+   */
+  key: number
+
+  /**
+   *
+   * @value
+   */
+  title: string
+}
 
 /**
  * --
@@ -11075,170 +11230,170 @@ export type CenterSysMenuVO = {
    *
    * @value
    */
-  checked: boolean;
+  checked: boolean
 
   /**
    *
    * @rule 2
    */
-  childMenus: SysMenuVO[];
+  childMenus: SysMenuVO[]
 
   /**
    *
    * @value
    */
-  code: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  defaultSelect: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  deleteFlag: number;
+  code: string
 
   /**
    *
    * @value
    */
-  description: string;
+  defaultSelect: number
 
   /**
    *
    * @value
    */
-  enterpriseName: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  fatherId: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  flag: number;
+  deleteFlag: number
 
   /**
    *
    * @value
    */
-  iconChecked: string;
+  description: string
 
   /**
    *
    * @value
    */
-  iconComChecked: string;
+  enterpriseName: string
 
   /**
    *
    * @value
    */
-  iconComUnchecked: string;
+  fatherId: number
 
   /**
    *
    * @value
    */
-  iconUnchecked: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isMenu: number;
+  flag: number
 
   /**
    *
    * @value
    */
-  isMenuStr: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isRoute: number;
+  iconChecked: string
 
   /**
    *
    * @value
    */
-  isRouteStr: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  menuLevel: number;
+  iconComChecked: string
 
   /**
    *
    * @value
    */
-  name: string;
+  iconComUnchecked: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  iconUnchecked: string
 
   /**
    *
    * @value
    */
-  preCode: string;
+  id: number
 
   /**
    *
    * @value
    */
-  preCodeStr: string;
+  isMenu: number
 
   /**
    *
    * @value
    */
-  schoolClasses: string;
+  isMenuStr: string
 
   /**
    *
    * @value
    */
-  schoolCode: string;
+  isRoute: number
 
   /**
    *
    * @value
    */
-  schoolNature: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  sort: number;
+  isRouteStr: string
 
   /**
    *
    * @value
    */
-  url: string;
-};
+  menuLevel: number
+
+  /**
+   *
+   * @value
+   */
+  name: string
+
+  /**
+   *
+   * @value
+   */
+  operates: string[]
+
+  /**
+   *
+   * @value
+   */
+  preCode: string
+
+  /**
+   *
+   * @value
+   */
+  preCodeStr: string
+
+  /**
+   *
+   * @value
+   */
+  schoolClasses: string
+
+  /**
+   *
+   * @value
+   */
+  schoolCode: string
+
+  /**
+   *
+   * @value
+   */
+  schoolNature: string
+
+  /**
+   *
+   * @value
+   */
+  sort: number
+
+  /**
+   *
+   * @value
+   */
+  url: string
+}
 
 /**
  * --
@@ -11248,104 +11403,104 @@ export type CenterSysRoleDO = {
    *
    * @value
    */
-  code: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  createId: number;
+  code: string
 
   /**
    *
    * @value
    */
-  createName: string;
+  createId: number
+
+  /**
+   *
+   * @value
+   */
+  createName: string
 
   /**
    *
    * @value #datetime()
    */
-  createTime: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  deleteFlag: number;
+  createTime: string
 
   /**
    *
    * @value
    */
-  description: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
+  deleteFlag: number
 
   /**
    *
    * @value
    */
-  image: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isDefault: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isSuperAdmin: number;
+  description: string
 
   /**
    *
    * @value
    */
-  name: string;
+  id: number
 
   /**
    *
    * @value
    */
-  schoolCode: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  status: number;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  updateId: number;
+  image: string
 
   /**
    *
    * @value
    */
-  updateName: string;
+  isDefault: number
+
+  /**
+   *
+   * @value
+   */
+  isSuperAdmin: number
+
+  /**
+   *
+   * @value
+   */
+  name: string
+
+  /**
+   *
+   * @value
+   */
+  schoolCode: string
+
+  /**
+   *
+   * @value
+   */
+  status: number
+
+  /**
+   *
+   * @value
+   */
+  updateId: number
+
+  /**
+   *
+   * @value
+   */
+  updateName: string
 
   /**
    *
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  userNum: number;
-};
+  userNum: number
+}
 
 /**
  * --
@@ -11355,56 +11510,56 @@ export type CenterSysRoleListVO = {
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 角色图片
    * @value
    */
-  image: string;
+  image: string
 
   /**
    * 是否为默认角色 0：是  1：否
-   * @value #integer(32)
+   * @value
    */
-  isDefault: number;
+  isDefault: number
 
   /**
    * 角色名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 状态
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态名称
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 角色用户人数
-   * @value #integer(32)
+   * @value
    */
-  userNum: number;
-};
+  userNum: number
+}
 
 /**
  * --
@@ -11412,64 +11567,64 @@ export type CenterSysRoleListVO = {
 export type CenterSysRoleVO = {
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  checkedMenuIds: number[];
+  checkedMenuIds: number[]
 
   /**
    *
    * @value #datetime()
    */
-  createTime: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
+  createTime: string
 
   /**
    *
    * @value
    */
-  image: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isDefault: number;
-
-  /**
-   *
-   * @rule 2
-   */
-  menuList: CenterSysMenuVO[];
-
-  /**
-   *
-   * @rule 2
-   */
-  menuTreeList: CenterSysMenuTreeVO[];
+  id: number
 
   /**
    *
    * @value
    */
-  name: string;
+  image: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  isDefault: number
+
+  /**
+   *
+   * @rule 2
+   */
+  menuList: CenterSysMenuVO[]
+
+  /**
+   *
+   * @rule 2
+   */
+  menuTreeList: CenterSysMenuTreeVO[]
+
+  /**
+   *
+   * @value
+   */
+  name: string
+
+  /**
+   *
+   * @value
+   */
+  status: number
 
   /**
    *
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -11479,14 +11634,14 @@ export type CenterSysScanLoginQrCodeVO = {
    * 二维码
    * @value
    */
-  qrCode: string;
+  qrCode: string
 
   /**
    * 二维码标识
    * @value
    */
-  qrticket: string;
-};
+  qrticket: string
+}
 
 /**
  * --
@@ -11496,14 +11651,14 @@ export type CenterSysSchoolManagerUserVO = {
    *
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
-};
+  userId: number
+}
 
 /**
  * --
@@ -11513,32 +11668,32 @@ export type CenterSysSchoolVO = {
    * 学校校徽
    * @value
    */
-  schoolBadgeImg: string;
+  schoolBadgeImg: string
 
   /**
    * 学校类别(1.学校 2.企业 3.医院 4.政府)
-   * @value #integer(32)
+   * @value
    */
-  schoolClasses: number;
+  schoolClasses: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 学校性质 1.学校-易校园 2.学校-K12 3.数智小二
-   * @value #integer(32)
+   * @value
    */
-  schoolNature: number;
-};
+  schoolNature: number
+}
 
 /**
  * 用户功能权限查看VO
@@ -11546,22 +11701,22 @@ export type CenterSysSchoolVO = {
 export type CenterSysUserMenuListVO = {
   /**
    * 已选中的菜单ids
-   * @value #integer(64)
+   * @value
    */
-  checkedMenuIds: number[];
+  checkedMenuIds: number[]
 
   /**
    * 菜单列表
    * @rule 2
    */
-  menuList: CenterSysMenuVO[];
+  menuList: CenterSysMenuVO[]
 
   /**
    * 菜单树
    * @rule 2
    */
-  menuTreeList: CenterSysMenuTreeVO[];
-};
+  menuTreeList: CenterSysMenuTreeVO[]
+}
 
 /**
  * --
@@ -11571,20 +11726,20 @@ export type CenterSysUserSchoolListVO = {
    * id、学校编码
    * @value
    */
-  id: string;
+  id: string
 
   /**
    * 学校类别(1.学校 2.企业 3.医院 政府)
-   * @value #integer(32)
+   * @value
    */
-  schoolClasses: number;
+  schoolClasses: number
 
   /**
    * text、学校名称
    * @value
    */
-  text: string;
-};
+  text: string
+}
 
 /**
  * --
@@ -11594,74 +11749,74 @@ export type CenterSysUserVO = {
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否平台用户 0是 1否
-   * @value #integer(32)
+   * @value
    */
-  isPlatformUser: number;
+  isPlatformUser: number
 
   /**
    *
    * @value
    */
-  isPlatformUserStr: string;
+  isPlatformUserStr: string
 
   /**
    * 手机号
    * @value
    */
-  mobilePhone: string;
+  mobilePhone: string
 
   /**
    * 角色id列表
    * @value
    */
-  roleIds: string[];
+  roleIds: string[]
 
   /**
    * 角色名称[多个以、分割]
    * @value
    */
-  roleName: string;
+  roleName: string
 
   /**
    * 角色名称列表
    * @value
    */
-  roleNames: string[];
+  roleNames: string[]
 
   /**
    * 状态 0未启用,1已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * --
@@ -11671,92 +11826,92 @@ export type CenterTaskVO = {
    * 业务类型名称
    * @value
    */
-  bizName: string;
+  bizName: string
 
   /**
    * 业务类型
    * @value
    */
-  bizType: string;
+  bizType: string
 
   /**
    * 是否能下载 0是1否
-   * @value #integer(32)
+   * @value
    */
-  canDownload: number;
+  canDownload: number
 
   /**
    * 是否能发短信 0是1否
-   * @value #integer(32)
+   * @value
    */
-  canSendMsg: number;
+  canSendMsg: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 失效时间
    * @value #datetime()
    */
-  expiresTime: string;
+  expiresTime: string
 
   /**
    * 失败下载key
    * @value
    */
-  failKey: string;
+  failKey: string
 
   /**
    * 失败提示
    * @value
    */
-  failMsg: string;
+  failMsg: string
 
   /**
    * 文件名
    * @value
    */
-  fileName: string;
+  fileName: string
 
   /**
    * 文件大小(Byte)
-   * @value #integer(64)
+   * @value
    */
-  fileSize: number;
+  fileSize: number
 
   /**
    * 文件大小
    * @value
    */
-  fileSizeStr: string;
+  fileSizeStr: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 任务状态 1执行中2执行成功3执行部分成功4执行失败5已失效
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 任务类型 1下载2上传
-   * @value #integer(32)
+   * @value
    */
-  type: number;
+  type: number
 
   /**
    * 任务类型
    * @value
    */
-  typeStr: string;
-};
+  typeStr: string
+}
 
 /**
  * --
@@ -11764,214 +11919,214 @@ export type CenterTaskVO = {
 export type CenterUserVO = {
   /**
    * 绑卡状态 1已经绑卡 0未绑卡
-   * @value #integer(32)
+   * @value
    */
-  bindCardStatus: number;
+  bindCardStatus: number
 
   /**
    * 绑卡状态
    * @value
    */
-  bindCardStatusStr: string;
+  bindCardStatusStr: string
 
   /**
    * 绑卡时间
    * @value #datetime()
    */
-  bindCardTime: string;
+  bindCardTime: string
 
   /**
    *
    * @value
    */
-  extJson: string;
+  extJson: string
 
   /**
    * 头像
    * @value
    */
-  headImg: string;
+  headImg: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 默认身份身份证号
    * @value
    */
-  identityCard: string;
+  identityCard: string
 
   /**
    * 默认身份id
-   * @value #integer(64)
+   * @value
    */
-  identityId: number;
+  identityId: number
 
   /**
    * 默认身份手机号
    * @value
    */
-  identityMobilePhone: string;
+  identityMobilePhone: string
 
   /**
    * 默认身份姓名
    * @value
    */
-  identityName: string;
+  identityName: string
 
   /**
    * 身份证号
    * @value
    */
-  identityNo: string;
+  identityNo: string
 
   /**
    * 默认身份关系
    * @value
    */
-  identityRelationship: string;
+  identityRelationship: string
 
   /**
    * 默认身份类型 1家长 2老师
-   * @value #integer(32)
+   * @value
    */
-  identityType: number;
+  identityType: number
 
   /**
    * 学号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 最后登录时间
    * @value #datetime()
    */
-  lastLogin: string;
+  lastLogin: string
 
   /**
    * 手机号
    * @value
    */
-  mobilePhone: string;
+  mobilePhone: string
 
   /**
    * 用户学校月绑卡次数
    * @value
    */
-  monthBindCount: string;
+  monthBindCount: string
 
   /**
    * 可操作权限集合
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    *
    * @value
    */
-  payOpenid: string;
+  payOpenid: string
 
   /**
    * 所属平台
    * @value
    */
-  platform: string;
+  platform: string
 
   /**
    * 是否实名
    * @value
    */
-  realNameStatus: string;
+  realNameStatus: string
 
   /**
    * 是否实名
    * @value
    */
-  realNameStatusStr: string;
+  realNameStatusStr: string
 
   /**
    * 注册时间
    * @value #datetime()
    */
-  regiserTime: string;
+  regiserTime: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 性别 1男，2女，3空 没有值表示男
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
+  sex: number
 
   /**
    * 性别
    * @value
    */
-  sexStr: string;
+  sexStr: string
 
   /**
    * 状态中文
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 是否测试账户
    * @value
    */
-  testAccountStr: string;
+  testAccountStr: string
 
   /**
    * 班级
    * @value
    */
-  userClass: string;
+  userClass: string
 
   /**
    * 一卡通号
    * @value
    */
-  userIdcard: string;
+  userIdcard: string
 
   /**
    * 用户姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 用户类型
    * @value
    */
-  userType: string;
+  userType: string
 
   /**
    * 用户类型中文
    * @value
    */
-  userTypeStr: string;
-};
+  userTypeStr: string
+}
 
 /**
  * --
@@ -11981,110 +12136,110 @@ export type CenterWaterConfigVO = {
    *
    * @value
    */
-  businessCode: string;
+  businessCode: string
 
   /**
    *
    * @value
    */
-  controllerTitle: string;
+  controllerTitle: string
 
   /**
    *
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
    * @value
    */
-  entryCode: string;
+  entryCode: string
 
   /**
    *
    * @value
    */
-  entryName: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isCardWithhold: number;
+  entryName: string
 
   /**
    *
    * @value
    */
-  mode: string;
+  id: number
 
   /**
    *
    * @value
    */
-  operates: string[];
+  isCardWithhold: number
 
   /**
    *
    * @value
    */
-  operation: string;
+  mode: string
 
   /**
    *
    * @value
    */
-  payMethod: string;
+  operates: string[]
 
   /**
    *
    * @value
    */
-  protocol: string;
+  operation: string
 
   /**
    *
    * @value
    */
-  protocolStr: string;
+  payMethod: string
 
   /**
    *
    * @value
    */
-  remarks: string;
+  protocol: string
 
   /**
    *
    * @value
    */
-  schoolCode: string;
+  protocolStr: string
 
   /**
    *
    * @value
    */
-  schoolName: string;
+  remarks: string
 
   /**
    *
    * @value
    */
-  serverAddress: string;
+  schoolCode: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  status: number;
-};
+  schoolName: string
+
+  /**
+   *
+   * @value
+   */
+  serverAddress: string
+
+  /**
+   *
+   * @value
+   */
+  status: number
+}
 
 /**
  * --
@@ -12092,35 +12247,35 @@ export type CenterWaterConfigVO = {
 export type CommResponse = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12128,40 +12283,40 @@ export type CommResponse = {
 export type CommResponseCenterJiaofeiInvoiceOrderVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: CenterJiaofeiInvoiceOrderVO;
+  data: CenterJiaofeiInvoiceOrderVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12169,40 +12324,40 @@ export type CommResponseCenterJiaofeiInvoiceOrderVO = {
 export type CommResponseCenterJiaofeiInvoiceTotalVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: CenterJiaofeiInvoiceTotalVO;
+  data: CenterJiaofeiInvoiceTotalVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12210,40 +12365,40 @@ export type CommResponseCenterJiaofeiInvoiceTotalVO = {
 export type CommResponseCenterJiaofeiListVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: CenterJiaofeiListVO;
+  data: CenterJiaofeiListVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12251,40 +12406,40 @@ export type CommResponseCenterJiaofeiListVO = {
 export type CommResponseCenterPincardConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: CenterPincardConfigVO;
+  data: CenterPincardConfigVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12292,40 +12447,40 @@ export type CommResponseCenterPincardConfigVO = {
 export type CommResponseCenterPincardSubsidyVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: CenterPincardSubsidyVO;
+  data: CenterPincardSubsidyVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12333,40 +12488,40 @@ export type CommResponseCenterPincardSubsidyVO = {
 export type CommResponseCenterPincardVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: CenterPincardVO;
+  data: CenterPincardVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12374,40 +12529,40 @@ export type CommResponseCenterPincardVO = {
 export type CommResponseCenterWaterConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: CenterWaterConfigVO;
+  data: CenterWaterConfigVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12415,40 +12570,40 @@ export type CommResponseCenterWaterConfigVO = {
 export type CommResponseDonateItemVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: DonateItemVO;
+  data: DonateItemVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12456,40 +12611,40 @@ export type CommResponseDonateItemVO = {
 export type CommResponseDonateOrderTotalVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: DonateOrderTotalVO;
+  data: DonateOrderTotalVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12497,40 +12652,40 @@ export type CommResponseDonateOrderTotalVO = {
 export type CommResponseDonateUserOrderVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: DonateUserOrderVO;
+  data: DonateUserOrderVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12538,40 +12693,40 @@ export type CommResponseDonateUserOrderVO = {
 export type CommResponseDonateUserVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: DonateUserVO;
+  data: DonateUserVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12579,40 +12734,40 @@ export type CommResponseDonateUserVO = {
 export type CommResponseOperationLogVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: OperationLogVO;
+  data: OperationLogVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12620,40 +12775,40 @@ export type CommResponseOperationLogVO = {
 export type CommResponseSubsidyItemListTotalMoneyVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: SubsidyItemListTotalMoneyVO;
+  data: SubsidyItemListTotalMoneyVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12661,40 +12816,40 @@ export type CommResponseSubsidyItemListTotalMoneyVO = {
 export type CommResponseSubsidyItemListVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: SubsidyItemListVO;
+  data: SubsidyItemListVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12702,40 +12857,40 @@ export type CommResponseSubsidyItemListVO = {
 export type CommResponseSubsidyItemVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: SubsidyItemVO;
+  data: SubsidyItemVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12743,40 +12898,40 @@ export type CommResponseSubsidyItemVO = {
 export type CommResponseSubsidyNoticeVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: SubsidyNoticeVO;
+  data: SubsidyNoticeVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12784,40 +12939,40 @@ export type CommResponseSubsidyNoticeVO = {
 export type CommResponseWnApplicationConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnApplicationConfigVO;
+  data: WnApplicationConfigVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12825,40 +12980,40 @@ export type CommResponseWnApplicationConfigVO = {
 export type CommResponseWnBatchVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnBatchVO;
+  data: WnBatchVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12866,40 +13021,40 @@ export type CommResponseWnBatchVO = {
 export type CommResponseWnBuildingVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnBuildingVO;
+  data: WnBuildingVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12907,40 +13062,40 @@ export type CommResponseWnBuildingVO = {
 export type CommResponseWnDeviceCheckInfoVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnDeviceCheckInfoVO;
+  data: WnDeviceCheckInfoVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12948,40 +13103,40 @@ export type CommResponseWnDeviceCheckInfoVO = {
 export type CommResponseWnFloorVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnFloorVO;
+  data: WnFloorVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -12989,40 +13144,40 @@ export type CommResponseWnFloorVO = {
 export type CommResponseWnFormUserApiVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnFormUserApiVO;
+  data: WnFormUserApiVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13030,40 +13185,40 @@ export type CommResponseWnFormUserApiVO = {
 export type CommResponseWnGenerateStudentNoVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnGenerateStudentNoVO;
+  data: WnGenerateStudentNoVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13071,40 +13226,40 @@ export type CommResponseWnGenerateStudentNoVO = {
 export type CommResponseWnHallFormVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnHallFormVO;
+  data: WnHallFormVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13112,40 +13267,40 @@ export type CommResponseWnHallFormVO = {
 export type CommResponseWnHallVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnHallVO;
+  data: WnHallVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13153,40 +13308,40 @@ export type CommResponseWnHallVO = {
 export type CommResponseWnInStudentRoomVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnInStudentRoomVO;
+  data: WnInStudentRoomVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13194,40 +13349,40 @@ export type CommResponseWnInStudentRoomVO = {
 export type CommResponseWnInStudentVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnInStudentVO;
+  data: WnInStudentVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13235,40 +13390,40 @@ export type CommResponseWnInStudentVO = {
 export type CommResponseWnMajorStudentCountVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnMajorStudentCountVO;
+  data: WnMajorStudentCountVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13276,40 +13431,40 @@ export type CommResponseWnMajorStudentCountVO = {
 export type CommResponseWnPayConfigDetailVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnPayConfigDetailVO;
+  data: WnPayConfigDetailVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13317,40 +13472,40 @@ export type CommResponseWnPayConfigDetailVO = {
 export type CommResponseWnProcessConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnProcessConfigVO;
+  data: WnProcessConfigVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13358,40 +13513,40 @@ export type CommResponseWnProcessConfigVO = {
 export type CommResponseWnProductVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnProductVO;
+  data: WnProductVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13399,40 +13554,40 @@ export type CommResponseWnProductVO = {
 export type CommResponseWnReceiveNumberTotalVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnReceiveNumberTotalVO;
+  data: WnReceiveNumberTotalVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13440,40 +13595,40 @@ export type CommResponseWnReceiveNumberTotalVO = {
 export type CommResponseWnReceiveOrderVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnReceiveOrderVO;
+  data: WnReceiveOrderVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13481,40 +13636,40 @@ export type CommResponseWnReceiveOrderVO = {
 export type CommResponseWnRoomAccommodateCountShowVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnRoomAccommodateCountShowVO;
+  data: WnRoomAccommodateCountShowVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13522,40 +13677,40 @@ export type CommResponseWnRoomAccommodateCountShowVO = {
 export type CommResponseWnRoomFeeConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnRoomFeeConfigVO;
+  data: WnRoomFeeConfigVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13563,40 +13718,40 @@ export type CommResponseWnRoomFeeConfigVO = {
 export type CommResponseWnRoomVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnRoomVO;
+  data: WnRoomVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13604,40 +13759,40 @@ export type CommResponseWnRoomVO = {
 export type CommResponseWnSchoolAllDashboardVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnSchoolAllDashboardVO;
+  data: WnSchoolAllDashboardVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13645,40 +13800,40 @@ export type CommResponseWnSchoolAllDashboardVO = {
 export type CommResponseWnSelectPhoneOrderVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnSelectPhoneOrderVO;
+  data: WnSelectPhoneOrderVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13686,40 +13841,40 @@ export type CommResponseWnSelectPhoneOrderVO = {
 export type CommResponseWnSelectPhonePackageVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnSelectPhonePackageVO;
+  data: WnSelectPhonePackageVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13727,40 +13882,40 @@ export type CommResponseWnSelectPhonePackageVO = {
 export type CommResponseWnSelectPhoneVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnSelectPhoneVO;
+  data: WnSelectPhoneVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13768,40 +13923,81 @@ export type CommResponseWnSelectPhoneVO = {
 export type CommResponseWnStudentBaseApiVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnStudentBaseApiVO;
+  data: WnStudentBaseApiVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
+
+/**
+ * --
+ */
+export type CommResponseWnStudentBaseVO = {
+  /**
+   *
+   * @value
+   */
+  alertType: number
+
+  /**
+   *
+   * @value
+   */
+  bizCode: string
+
+  /**
+   *
+   * @rule
+   */
+  data: WnStudentBaseVO
+
+  /**
+   *
+   * @value
+   */
+  message: string
+
+  /**
+   *
+   * @value
+   */
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13809,40 +14005,40 @@ export type CommResponseWnStudentBaseApiVO = {
 export type CommResponseWnStudentDashboardViewVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnStudentDashboardViewVO;
+  data: WnStudentDashboardViewVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13850,40 +14046,40 @@ export type CommResponseWnStudentDashboardViewVO = {
 export type CommResponseWnStudentRegisterBaseApiVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnStudentRegisterBaseApiVO;
+  data: WnStudentRegisterBaseApiVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13891,40 +14087,40 @@ export type CommResponseWnStudentRegisterBaseApiVO = {
 export type CommResponseWnStudentToClassVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnStudentToClassVO;
+  data: WnStudentToClassVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13932,40 +14128,40 @@ export type CommResponseWnStudentToClassVO = {
 export type CommResponseWnUnitVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: WnUnitVO;
+  data: WnUnitVO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -13973,40 +14169,40 @@ export type CommResponseWnUnitVO = {
 export type CommResponseboolean = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @value
    */
-  data: boolean;
+  data: boolean
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -14014,35 +14210,35 @@ export type CommResponseboolean = {
 export type CommResponseobject = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -14050,40 +14246,40 @@ export type CommResponseobject = {
 export type CommResponsestring = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @value
    */
-  data: string;
+  data: string
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -14091,40 +14287,40 @@ export type CommResponsestring = {
 export type CommResponse文章返回参数 = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: 文章返回参数;
+  data: 文章返回参数
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -14132,40 +14328,40 @@ export type CommResponse文章返回参数 = {
 export type CommResponse获取预览信息返回VO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    *
    * @rule
    */
-  data: 获取预览信息返回VO;
+  data: 获取预览信息返回VO
 
   /**
    *
    * @value
    */
-  message: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
 
   /**
    *
    * @value
    */
-  success: boolean;
-};
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+}
 
 /**
  * --
@@ -14175,134 +14371,134 @@ export type CompusArticleFaqVO = {
    * 内容
    * @value
    */
-  articleText: string;
+  articleText: string
 
   /**
    * 作者/来源
    * @value
    */
-  author: string;
+  author: string
 
   /**
    * 分类编码
    * @value
    */
-  code: string;
+  code: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 图片地址
    * @value
    */
-  imageUrl: string;
-
-  /**
-   * 是否热门问题
-   * @value #integer(32)
-   */
-  isHot: number;
+  imageUrl: string
 
   /**
    * 是否热门问题
    * @value
    */
-  isHotStr: string;
+  isHot: number
+
+  /**
+   * 是否热门问题
+   * @value
+   */
+  isHotStr: string
 
   /**
    * 开户行
    * @value
    */
-  openBank: string;
+  openBank: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 平台
    * @value
    */
-  platform: string;
+  platform: string
 
   /**
    *
    * @value
    */
-  platformStr: string;
+  platformStr: string
 
   /**
    * 排序
    * @value
    */
-  sortNo: string;
+  sortNo: string
 
   /**
    * 状态
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态 0未启用,1已启用
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 分类ID
-   * @value #integer(64)
+   * @value
    */
-  tagsId: number;
+  tagsId: number
 
   /**
    * 分类标题
    * @value
    */
-  tagsName: string;
+  tagsName: string
 
   /**
    * 标题
    * @value
    */
-  title: string;
+  title: string
 
   /**
    * 更新人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -14312,200 +14508,200 @@ export type CompusAssociationActivityDO = {
    *
    * @value
    */
-  activityAddress: string;
+  activityAddress: string
 
   /**
    *
    * @value #datetime()
    */
-  activityEndTime: string;
+  activityEndTime: string
 
   /**
    *
    * @value
    */
-  activityIntro: string;
+  activityIntro: string
 
   /**
    *
    * @value
    */
-  activityName: string;
+  activityName: string
 
   /**
    *
    * @value
    */
-  activityRule: string;
+  activityRule: string
 
   /**
    *
    * @value #datetime()
    */
-  activityStartTime: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  activityStatus: number;
+  activityStartTime: string
 
   /**
    *
    * @value
    */
-  associationCode: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  associationId: number;
+  activityStatus: number
 
   /**
    *
    * @value
    */
-  associationName: string;
+  associationCode: string
 
   /**
    *
    * @value
    */
-  bgImage: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  createId: number;
+  associationId: number
 
   /**
    *
    * @value
    */
-  createName: string;
+  associationName: string
+
+  /**
+   *
+   * @value
+   */
+  bgImage: string
+
+  /**
+   *
+   * @value
+   */
+  createId: number
+
+  /**
+   *
+   * @value
+   */
+  createName: string
 
   /**
    *
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  deleteFlag: number;
+  deleteFlag: number
 
   /**
    *
    * @value #datetime()
    */
-  enrollEndTime: string;
+  enrollEndTime: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  enrollNum: number;
+  enrollNum: number
 
   /**
    *
    * @value #datetime()
    */
-  enrollStartTime: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  enrollStatus: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  hotSort: number;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isHot: number;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  managerId: number;
+  enrollStartTime: string
 
   /**
    *
    * @value
    */
-  picName: string;
+  enrollStatus: number
 
   /**
    *
    * @value
    */
-  picPhone: string;
+  hotSort: number
 
   /**
    *
    * @value
    */
-  schoolCode: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  schoolId: number;
+  id: number
 
   /**
    *
    * @value
    */
-  schoolName: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  status: number;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  typeId: number;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  updateId: number;
+  isHot: number
 
   /**
    *
    * @value
    */
-  updateName: string;
+  managerId: number
+
+  /**
+   *
+   * @value
+   */
+  picName: string
+
+  /**
+   *
+   * @value
+   */
+  picPhone: string
+
+  /**
+   *
+   * @value
+   */
+  schoolCode: string
+
+  /**
+   *
+   * @value
+   */
+  schoolId: number
+
+  /**
+   *
+   * @value
+   */
+  schoolName: string
+
+  /**
+   *
+   * @value
+   */
+  status: number
+
+  /**
+   *
+   * @value
+   */
+  typeId: number
+
+  /**
+   *
+   * @value
+   */
+  updateId: number
+
+  /**
+   *
+   * @value
+   */
+  updateName: string
 
   /**
    *
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -14515,50 +14711,50 @@ export type CompusAssociationActivityTypeVO = {
    *
    * @value #datetime()
    */
-  createTime: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
+  createTime: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  id: number
 
   /**
    *
    * @value
    */
-  operation: string;
+  operates: string[]
 
   /**
    *
    * @value
    */
-  schoolName: string;
+  operation: string
 
   /**
    *
    * @value
    */
-  statusStr: string;
+  schoolName: string
 
   /**
    *
    * @value
    */
-  typeName: string;
+  statusStr: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  typeSort: number;
-};
+  typeName: string
+
+  /**
+   *
+   * @value
+   */
+  typeSort: number
+}
 
 /**
  * --
@@ -14568,56 +14764,56 @@ export type CompusAssociationActivityUserVO = {
    *
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
    * @value
    */
-  headImg: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
+  headImg: string
 
   /**
    *
    * @value
    */
-  jobNo: string;
+  id: number
 
   /**
    *
    * @value
    */
-  mobilePhone: string;
+  jobNo: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  mobilePhone: string
 
   /**
    *
    * @value
    */
-  userClass: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  userId: number;
+  operates: string[]
 
   /**
    *
    * @value
    */
-  userName: string;
-};
+  userClass: string
+
+  /**
+   *
+   * @value
+   */
+  userId: number
+
+  /**
+   *
+   * @value
+   */
+  userName: string
+}
 
 /**
  * --
@@ -14627,110 +14823,110 @@ export type CompusAssociationActivityVO = {
    *
    * @value
    */
-  activityName: string;
+  activityName: string
 
   /**
    *
    * @value
    */
-  activityStatusStr: string;
+  activityStatusStr: string
 
   /**
    *
    * @value
    */
-  activity_end_time: string;
+  activity_end_time: string
 
   /**
    *
    * @value
    */
-  activity_start_time: string;
+  activity_start_time: string
 
   /**
    *
    * @value
    */
-  associationCode: string;
+  associationCode: string
 
   /**
    *
    * @value
    */
-  associationName: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  enrollNum: number;
+  associationName: string
 
   /**
    *
    * @value
    */
-  enrollStatusStr: string;
+  enrollNum: number
 
   /**
    *
    * @value
    */
-  enroll_end_time: string;
+  enrollStatusStr: string
 
   /**
    *
    * @value
    */
-  enroll_start_time: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  hotSort: number;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
+  enroll_end_time: string
 
   /**
    *
    * @value
    */
-  isHotStr: string;
+  enroll_start_time: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  hotSort: number
 
   /**
    *
    * @value
    */
-  operation: string;
+  id: number
 
   /**
    *
    * @value
    */
-  schoolName: string;
+  isHotStr: string
 
   /**
    *
    * @value
    */
-  statusStr: string;
+  operates: string[]
 
   /**
    *
    * @value
    */
-  typeName: string;
-};
+  operation: string
+
+  /**
+   *
+   * @value
+   */
+  schoolName: string
+
+  /**
+   *
+   * @value
+   */
+  statusStr: string
+
+  /**
+   *
+   * @value
+   */
+  typeName: string
+}
 
 /**
  * --
@@ -14738,112 +14934,112 @@ export type CompusAssociationActivityVO = {
 export type CompusAssociationBannerVO = {
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  activityId: number;
+  activityId: number
 
   /**
    *
    * @value
    */
-  activityName: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  associationId: number;
+  activityName: string
 
   /**
    *
    * @value
    */
-  bannerImg: string;
+  associationId: number
+
+  /**
+   *
+   * @value
+   */
+  bannerImg: string
 
   /**
    *
    * @value #datetime()
    */
-  endTime: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
+  endTime: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  id: number
 
   /**
    *
    * @value
    */
-  operation: string;
+  operates: string[]
 
   /**
    *
    * @value
    */
-  outUrl: string;
+  operation: string
 
   /**
    *
    * @value
    */
-  positionCode: string;
+  outUrl: string
 
   /**
    *
    * @value
    */
-  positionStr: string;
+  positionCode: string
 
   /**
    *
    * @value
    */
-  schoolName: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  showSort: number;
+  positionStr: string
 
   /**
    *
    * @value
    */
-  showStr: string;
+  schoolName: string
+
+  /**
+   *
+   * @value
+   */
+  showSort: number
+
+  /**
+   *
+   * @value
+   */
+  showStr: string
 
   /**
    *
    * @value #datetime()
    */
-  startTime: string;
+  startTime: string
 
   /**
    *
    * @value
    */
-  statusStr: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  type: number;
+  statusStr: string
 
   /**
    *
    * @value
    */
-  typeStr: string;
-};
+  type: number
+
+  /**
+   *
+   * @value
+   */
+  typeStr: string
+}
 
 /**
  * --
@@ -14851,160 +15047,160 @@ export type CompusAssociationBannerVO = {
 export type CompusAssociationDO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  activityNum: number;
+  activityNum: number
 
   /**
    *
    * @value
    */
-  address: string;
+  address: string
 
   /**
    *
    * @value
    */
-  aim: string;
+  aim: string
 
   /**
    *
    * @value
    */
-  associationCode: string;
+  associationCode: string
 
   /**
    *
    * @value
    */
-  associationName: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  associationType: number;
+  associationName: string
 
   /**
    *
    * @value
    */
-  badgeImg: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  createId: number;
+  associationType: number
 
   /**
    *
    * @value
    */
-  createName: string;
+  badgeImg: string
+
+  /**
+   *
+   * @value
+   */
+  createId: number
+
+  /**
+   *
+   * @value
+   */
+  createName: string
 
   /**
    *
    * @value #datetime()
    */
-  createTime: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  deleteFlag: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  hotSort: number;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isAllowIn: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isHot: number;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  picId: number;
+  createTime: string
 
   /**
    *
    * @value
    */
-  propaganda: string;
+  deleteFlag: number
 
   /**
    *
    * @value
    */
-  schoolCode: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  schoolId: number;
+  hotSort: number
 
   /**
    *
    * @value
    */
-  schoolName: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  status: number;
+  id: number
 
   /**
    *
    * @value
    */
-  summary: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  updateId: number;
+  isAllowIn: number
 
   /**
    *
    * @value
    */
-  updateName: string;
+  isHot: number
+
+  /**
+   *
+   * @value
+   */
+  picId: number
+
+  /**
+   *
+   * @value
+   */
+  propaganda: string
+
+  /**
+   *
+   * @value
+   */
+  schoolCode: string
+
+  /**
+   *
+   * @value
+   */
+  schoolId: number
+
+  /**
+   *
+   * @value
+   */
+  schoolName: string
+
+  /**
+   *
+   * @value
+   */
+  status: number
+
+  /**
+   *
+   * @value
+   */
+  summary: string
+
+  /**
+   *
+   * @value
+   */
+  updateId: number
+
+  /**
+   *
+   * @value
+   */
+  updateName: string
 
   /**
    *
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  userNum: number;
-};
+  userNum: number
+}
 
 /**
  * --
@@ -15014,86 +15210,86 @@ export type CompusAssociationUserVO = {
    *
    * @value
    */
-  applyIntro: string;
+  applyIntro: string
 
   /**
    *
    * @value
    */
-  department: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
+  department: string
 
   /**
    *
    * @value
    */
-  mobilePhone: string;
+  id: number
 
   /**
    *
    * @value
    */
-  operates: string[];
+  mobilePhone: string
 
   /**
    *
    * @value
    */
-  operation: string;
+  operates: string[]
+
+  /**
+   *
+   * @value
+   */
+  operation: string
 
   /**
    *
    * @value #datetime()
    */
-  passTime: string;
+  passTime: string
 
   /**
    *
    * @value
    */
-  selfIntro: string;
+  selfIntro: string
 
   /**
    *
    * @value
    */
-  specialities: string;
+  specialities: string
 
   /**
    *
    * @value
    */
-  userClass: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  userId: number;
+  userClass: string
 
   /**
    *
    * @value
    */
-  userName: string;
+  userId: number
 
   /**
    *
    * @value
    */
-  userType: string;
+  userName: string
 
   /**
    *
    * @value
    */
-  userTypeStr: string;
-};
+  userType: string
+
+  /**
+   *
+   * @value
+   */
+  userTypeStr: string
+}
 
 /**
  * --
@@ -15101,154 +15297,154 @@ export type CompusAssociationUserVO = {
 export type CompusAssociationVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  activityNum: number;
+  activityNum: number
 
   /**
    *
    * @value
    */
-  address: string;
+  address: string
 
   /**
    *
    * @value
    */
-  aim: string;
+  aim: string
 
   /**
    *
    * @value
    */
-  associationCode: string;
+  associationCode: string
 
   /**
    *
    * @value
    */
-  associationName: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  associationType: number;
+  associationName: string
 
   /**
    *
    * @value
    */
-  associationTypeStr: string;
+  associationType: number
 
   /**
    *
    * @value
    */
-  badgeImg: string;
+  associationTypeStr: string
+
+  /**
+   *
+   * @value
+   */
+  badgeImg: string
 
   /**
    *
    * @value #datetime()
    */
-  createTime: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  hotSort: number;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isAllowIn: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isHot: number;
+  createTime: string
 
   /**
    *
    * @value
    */
-  isHotStr: string;
+  hotSort: number
 
   /**
    *
    * @value
    */
-  operation: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  picId: number;
+  id: number
 
   /**
    *
    * @value
    */
-  picName: string;
+  isAllowIn: number
 
   /**
    *
    * @value
    */
-  picPhone: string;
+  isHot: number
 
   /**
    *
    * @value
    */
-  picUserType: string;
+  isHotStr: string
 
   /**
    *
    * @value
    */
-  propaganda: string;
+  operation: string
 
   /**
    *
    * @value
    */
-  schoolName: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  status: number;
+  picId: number
 
   /**
    *
    * @value
    */
-  statusStr: string;
+  picName: string
 
   /**
    *
    * @value
    */
-  summary: string;
+  picPhone: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  userNum: number;
-};
+  picUserType: string
+
+  /**
+   *
+   * @value
+   */
+  propaganda: string
+
+  /**
+   *
+   * @value
+   */
+  schoolName: string
+
+  /**
+   *
+   * @value
+   */
+  status: number
+
+  /**
+   *
+   * @value
+   */
+  statusStr: string
+
+  /**
+   *
+   * @value
+   */
+  summary: string
+
+  /**
+   *
+   * @value
+   */
+  userNum: number
+}
 
 /**
  * --
@@ -15258,110 +15454,110 @@ export type CompusPushResponse = {
    * 新闻公告标题
    * @value
    */
-  articleTitle: string;
+  articleTitle: string
 
   /**
    * 内容
    * @value
    */
-  content: string;
+  content: string
 
   /**
    *
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 内部页面code
-   * @value #integer(32)
+   * @value
    */
-  innerPageCode: number;
+  innerPageCode: number
 
   /**
    * 内部页面名称
    * @value
    */
-  innerPageName: string;
+  innerPageName: string
 
   /**
    * 链接地址
    * @value
    */
-  linkAddress: string;
+  linkAddress: string
 
   /**
    * 链接类型  1内部，2外部
-   * @value #integer(32)
+   * @value
    */
-  linkType: number;
+  linkType: number
 
   /**
    *
    * @value
    */
-  linkTypeStr: string;
+  linkTypeStr: string
 
   /**
    * 接收人
    * @value
    */
-  receiver: string;
+  receiver: string
 
   /**
    *
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 定时发送时间
    * @value #datetime()
    */
-  sendTime: string;
+  sendTime: string
 
   /**
    * 发送方式 1立即发送  2定时发送
-   * @value #integer(32)
+   * @value
    */
-  sendType: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  status: number;
+  sendType: number
 
   /**
    *
    * @value
    */
-  statusStr: string;
+  status: number
+
+  /**
+   *
+   * @value
+   */
+  statusStr: string
 
   /**
    * 标题
    * @value
    */
-  title: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  type: number;
+  title: string
 
   /**
    *
    * @value
    */
-  typeStr: string;
-};
+  type: number
+
+  /**
+   *
+   * @value
+   */
+  typeStr: string
+}
 
 /**
  * --
@@ -15371,20 +15567,20 @@ export type CompusTagsResponse = {
    * 分类图标
    * @value
    */
-  icon: string;
+  icon: string
 
   /**
    * tagsId
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 标签名称
    * @value
    */
-  tagsTitle: string;
-};
+  tagsTitle: string
+}
 
 /**
  * --
@@ -15394,86 +15590,86 @@ export type CompusTagsVO = {
    * 编码
    * @value
    */
-  code: string;
+  code: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 分类名称
    * @value
    */
-  icon: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
+  icon: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  id: number
+
+  /**
+   *
+   * @value
+   */
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 平台
    * @value
    */
-  platform: string;
+  platform: string
 
   /**
    *
    * @value
    */
-  platformStr: string;
-
-  /**
-   * 状态 0未启用,1已启用
-   * @value #integer(32)
-   */
-  status: number;
+  platformStr: string
 
   /**
    * 状态 0未启用,1已启用
    * @value
    */
-  statusStr: string;
+  status: number
+
+  /**
+   * 状态 0未启用,1已启用
+   * @value
+   */
+  statusStr: string
 
   /**
    * 标签名称
    * @value
    */
-  tagsTitle: string;
+  tagsTitle: string
 
   /**
    * 更新人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -15483,134 +15679,134 @@ export type DonateItemVO = {
    * 捐赠书模板
    * @value
    */
-  certificateTemplate: string;
+  certificateTemplate: string
 
   /**
    * 子商户号
    * @value
    */
-  cpCode: string;
+  cpCode: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 结束时间
    * @value #datetime()
    */
-  endTime: string;
+  endTime: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 发票开具说明
    * @value
    */
-  invoiceExplain: string;
+  invoiceExplain: string
 
   /**
    * 项目主题颜色
    * @value
    */
-  itemColor: string;
+  itemColor: string
 
   /**
    * 项目简介
    * @value
    */
-  itemDetail: string;
+  itemDetail: string
 
   /**
    * 项目封面
    * @value
    */
-  itemFront: string;
+  itemFront: string
 
   /**
    * 项目logo
    * @value
    */
-  itemLogo: string;
+  itemLogo: string
 
   /**
    * 打款项名称
    * @value
    */
-  itemName: string;
+  itemName: string
 
   /**
    * 项目状态 0:未启用 1:进行中 2:暂停 3:已结束
-   * @value #integer(32)
+   * @value
    */
-  itemStatus: number;
+  itemStatus: number
 
   /**
    *
    * @value
    */
-  itemStatusStr: string;
+  itemStatusStr: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 页面跳转链接
    * @value
    */
-  pageUrl: string;
+  pageUrl: string
 
   /**
    * 学校账户
    * @value
    */
-  schoolAccount: string;
+  schoolAccount: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 开始时间
    * @value #datetime()
    */
-  startTime: string;
+  startTime: string
 
   /**
    * 累计捐款金额
-   * @value #integer(64)
+   * @value
    */
-  totalDonateMoney: number;
+  totalDonateMoney: number
 
   /**
    *
    * @value
    */
-  totalDonateMoneyStr: string;
+  totalDonateMoneyStr: string
 
   /**
    * 累计捐款人数
-   * @value #integer(32)
+   * @value
    */
-  totalDonateNum: number;
-};
+  totalDonateNum: number
+}
 
 /**
  * --
@@ -15620,74 +15816,74 @@ export type DonateOrderClientVO = {
    * 证书编号
    * @value
    */
-  certificateNo: string;
+  certificateNo: string
 
   /**
    * 证书页地址
    * @value
    */
-  certificateUrl: string;
+  certificateUrl: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 捐赠留言
    * @value
    */
-  donateRemark: string;
+  donateRemark: string
 
   /**
    * 头像
    * @value
    */
-  headPhoto: string;
+  headPhoto: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否匿名 0:是 1:否
-   * @value #integer(32)
+   * @value
    */
-  isAnonymous: number;
+  isAnonymous: number
 
   /**
    *
    * @value
    */
-  isAnonymousStr: string;
+  isAnonymousStr: string
 
   /**
    * 名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 捐赠金额
-   * @value #integer(64)
+   * @value
    */
-  orderMoney: number;
+  orderMoney: number
 
   /**
    *
    * @value
    */
-  orderMoneyStr: string;
+  orderMoneyStr: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-};
+  schoolName: string
+}
 
 /**
  * --
@@ -15695,28 +15891,28 @@ export type DonateOrderClientVO = {
 export type DonateOrderTotalVO = {
   /**
    * 项目id
-   * @value #integer(64)
+   * @value
    */
-  itemId: number;
+  itemId: number
 
   /**
    * 累计捐款金额
-   * @value #integer(64)
+   * @value
    */
-  totalDonateMoney: number;
+  totalDonateMoney: number
 
   /**
    *
    * @value
    */
-  totalDonateMoneyStr: string;
+  totalDonateMoneyStr: string
 
   /**
    * 累计捐款人数
-   * @value #integer(32)
+   * @value
    */
-  totalDonateNum: number;
-};
+  totalDonateNum: number
+}
 
 /**
  * --
@@ -15726,338 +15922,338 @@ export type DonateUserOrderVO = {
    * 校友会
    * @value
    */
-  alumniName: string;
+  alumniName: string
 
   /**
    * 证书编号
    * @value
    */
-  certificateNo: string;
+  certificateNo: string
 
   /**
    * 班级
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 开票税号
    * @value
    */
-  companyDuty: string;
+  companyDuty: string
 
   /**
    * 公司名称
    * @value
    */
-  companyName: string;
+  companyName: string
 
   /**
    * 联系邮箱
    * @value
    */
-  contactEmail: string;
+  contactEmail: string
 
   /**
    * 联系电话
    * @value
    */
-  contactPhone: string;
+  contactPhone: string
 
   /**
    * 联系人
    * @value
    */
-  contactUser: string;
+  contactUser: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 部门
    * @value
    */
-  departName: string;
+  departName: string
 
   /**
    * 捐赠留言
    * @value
    */
-  donateRemark: string;
+  donateRemark: string
 
   /**
    * 入学年份
    * @value
    */
-  entranceYear: string;
+  entranceYear: string
 
   /**
    * 毕业年份
    * @value
    */
-  graduateYear: string;
+  graduateYear: string
 
   /**
    * 头像
    * @value
    */
-  headPhoto: string;
+  headPhoto: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 发票类型 0:企业单位 1:个人
-   * @value #integer(32)
+   * @value
    */
-  invoiceType: number;
+  invoiceType: number
 
   /**
    *
    * @value
    */
-  invoiceTypeStr: string;
+  invoiceTypeStr: string
 
   /**
    * 是否匿名 0:是 1:否
-   * @value #integer(32)
+   * @value
    */
-  isAnonymous: number;
+  isAnonymous: number
 
   /**
    *
    * @value
    */
-  isAnonymousStr: string;
+  isAnonymousStr: string
 
   /**
    * 是否指定用途 0:是 1:否
-   * @value #integer(32)
+   * @value
    */
-  isAppoint: number;
+  isAppoint: number
 
   /**
    *
    * @value
    */
-  isAppointStr: string;
+  isAppointStr: string
 
   /**
    * 是否开发票 0:是 1:否
-   * @value #integer(32)
+   * @value
    */
-  isInvoice: number;
+  isInvoice: number
 
   /**
    *
    * @value
    */
-  isInvoiceStr: string;
+  isInvoiceStr: string
 
   /**
    * 项目id
-   * @value #integer(64)
+   * @value
    */
-  itemId: number;
+  itemId: number
 
   /**
    * 项目名称
    * @value
    */
-  itemName: string;
+  itemName: string
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 专业
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 姓名
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 第三方昵称
    * @value
    */
-  nickName: string;
+  nickName: string
 
   /**
    * 捐赠金额
-   * @value #integer(64)
+   * @value
    */
-  orderMoney: number;
+  orderMoney: number
 
   /**
    *
    * @value
    */
-  orderMoneyStr: string;
+  orderMoneyStr: string
 
   /**
    * 订单号
    * @value
    */
-  orderNo: string;
+  orderNo: string
 
   /**
    * 实付金额
-   * @value #integer(64)
+   * @value
    */
-  payMoney: number;
+  payMoney: number
 
   /**
    *
    * @value
    */
-  payMoneyStr: string;
+  payMoneyStr: string
 
   /**
    * 支付交易订单号
    * @value
    */
-  payNo: string;
+  payNo: string
 
   /**
    * 支付状态：1等待支付、2支付成功、3支付失败、4订单关闭
-   * @value #integer(32)
+   * @value
    */
-  payStatus: number;
+  payStatus: number
 
   /**
    *
    * @value
    */
-  payStatusStr: string;
+  payStatusStr: string
 
   /**
    * 支付时间
    * @value
    */
-  payTime: string;
+  payTime: string
 
   /**
    * 支付方式
    * @value
    */
-  payType: string;
+  payType: string
 
   /**
    *
    * @value
    */
-  payTypeStr: string;
+  payTypeStr: string
 
   /**
    * 手机号
    * @value
    */
-  phone: string;
+  phone: string
 
   /**
    * 平台
    * @value
    */
-  platform: string;
+  platform: string
 
   /**
    *
    * @value
    */
-  platformStr: string;
+  platformStr: string
 
   /**
    * 捐赠用途
-   * @value #integer(32)
+   * @value
    */
-  purpose: number;
+  purpose: number
 
   /**
    *
    * @value
    */
-  purposeStr: string;
+  purposeStr: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 性别 1:男 2:女
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
+  sex: number
 
   /**
    *
    * @value
    */
-  sexStr: string;
+  sexStr: string
 
   /**
    * 订单状态 0处理中 1已完成
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 第三方id
    * @value
    */
-  thirdId: string;
+  thirdId: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 与学校的关系
-   * @value #integer(32)
+   * @value
    */
-  userType: number;
+  userType: number
 
   /**
    *
    * @value
    */
-  userTypeStr: string;
+  userTypeStr: string
 
   /**
    * 工作单位
    * @value
    */
-  workUnit: string;
-};
+  workUnit: string
+}
 
 /**
  * --
@@ -16067,182 +16263,182 @@ export type DonateUserVO = {
    * 校友会
    * @value
    */
-  alumniName: string;
+  alumniName: string
 
   /**
    * 班级
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 部门
    * @value
    */
-  departName: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  donateAmount: number;
+  departName: string
 
   /**
    *
    * @value
    */
-  donateAmountStr: string;
+  donateAmount: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  donateNum: number;
+  donateAmountStr: string
+
+  /**
+   *
+   * @value
+   */
+  donateNum: number
 
   /**
    * 入学年份
    * @value
    */
-  entranceYear: string;
+  entranceYear: string
 
   /**
    * 毕业年份
    * @value
    */
-  graduateYear: string;
+  graduateYear: string
 
   /**
    * 头像
    * @value
    */
-  headPhoto: string;
+  headPhoto: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否匿名 0:是 1:否
-   * @value #integer(32)
+   * @value
    */
-  isAnonymous: number;
+  isAnonymous: number
 
   /**
    *
    * @value
    */
-  isAnonymousStr: string;
+  isAnonymousStr: string
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 专业
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 姓名
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 第三方昵称
    * @value
    */
-  nickName: string;
+  nickName: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 手机号
    * @value
    */
-  phone: string;
+  phone: string
 
   /**
    * 平台
    * @value
    */
-  platform: string;
+  platform: string
 
   /**
    *
    * @value
    */
-  platformStr: string;
+  platformStr: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 性别 1:男 2:女
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
+  sex: number
 
   /**
    *
    * @value
    */
-  sexStr: string;
+  sexStr: string
 
   /**
    * 第三方id
    * @value
    */
-  thirdId: string;
+  thirdId: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 与学校的关系
-   * @value #integer(32)
+   * @value
    */
-  userType: number;
+  userType: number
 
   /**
    *
    * @value
    */
-  userTypeStr: string;
+  userTypeStr: string
 
   /**
    * 工作单位
    * @value
    */
-  workUnit: string;
-};
+  workUnit: string
+}
 
 /**
  * --
@@ -16252,14 +16448,14 @@ export type EncryptKeyVO = {
    * 私钥
    * @value
    */
-  privateKey: string;
+  privateKey: string
 
   /**
    * 公钥
    * @value
    */
-  publicKey: string;
-};
+  publicKey: string
+}
 
 /**
  * --
@@ -16269,32 +16465,32 @@ export type FrontSchoolBuildingVO = {
    * 校区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  areaId: number;
+  areaId: number
 
   /**
    * 楼栋编码
    * @value
    */
-  buildingCode: string;
+  buildingCode: string
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
-};
+  schoolCode: string
+}
 
 /**
  * --
@@ -16304,38 +16500,38 @@ export type FrontSchoolFloorVO = {
    * 校区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  areaId: number;
+  areaId: number
 
   /**
    * 楼栋编码
    * @value
    */
-  buildingCode: string;
+  buildingCode: string
 
   /**
    * 楼层编号
    * @value
    */
-  floorCode: string;
+  floorCode: string
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
-};
+  schoolCode: string
+}
 
 /**
  * --
@@ -16345,44 +16541,44 @@ export type FrontSchoolRoomVO = {
    * 校区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  areaId: number;
+  areaId: number
 
   /**
    * 楼栋编码
    * @value
    */
-  buildingCode: string;
+  buildingCode: string
 
   /**
    * 楼层编码
    * @value
    */
-  floorCode: string;
+  floorCode: string
 
   /**
    * 房间编码
    * @value
    */
-  roomCode: string;
+  roomCode: string
 
   /**
    * 房间名称
    * @value
    */
-  roomName: string;
+  roomName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
-};
+  schoolCode: string
+}
 
 /**
  * --
@@ -16392,80 +16588,80 @@ export type KayRoadWaterOrderVO = {
    * 账户ID
    * @value
    */
-  accID: string;
+  accID: string
 
   /**
    * 房间名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 消费前赠送金额
    * @value
    */
-  befmoneygiven: string;
+  befmoneygiven: string
 
   /**
    * 消费前现金余额
    * @value
    */
-  befmoneyreal: string;
+  befmoneyreal: string
 
   /**
    * 下发时间
    * @value
    */
-  consumeDT: string;
+  consumeDT: string
 
   /**
    * 设备名称
    * @value
    */
-  devName: string;
+  devName: string
 
   /**
    * 备注，月卡消费!=0 其他消费=0
    * @value
    */
-  monthConSumeTimes: string;
+  monthConSumeTimes: string
 
   /**
    * 预扣金额
    * @value
    */
-  perMoney: string;
+  perMoney: string
 
   /**
    * 区域
    * @value
    */
-  quyu: string;
+  quyu: string
 
   /**
    * 手机号
    * @value
    */
-  telPhone: string;
+  telPhone: string
 
   /**
    * 上传时间
    * @value
    */
-  upDT: string;
+  upDT: string
 
   /**
    * 消费后余额
    * @value
    */
-  upLeadMoney: string;
+  upLeadMoney: string
 
   /**
    * 消费金额
    * @value
    */
-  upMoney: string;
-};
+  upMoney: string
+}
 
 /**
  * --
@@ -16473,94 +16669,94 @@ export type KayRoadWaterOrderVO = {
 export type KtClassTeacherVO = {
   /**
    * 班级ID
-   * @value #integer(64)
+   * @value
    */
-  classId: number;
+  classId: number
 
   /**
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否班主任 0是1否
-   * @value #integer(32)
+   * @value
    */
-  isSuper: number;
+  isSuper: number
 
   /**
    * 是否班主任
    * @value
    */
-  isSuperName: string;
+  isSuperName: string
 
   /**
    * 教职工工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 任课科目
    * @value
    */
-  subjects: string;
+  subjects: string
 
   /**
    * 老师ID
-   * @value #integer(64)
+   * @value
    */
-  teacherId: number;
+  teacherId: number
 
   /**
    * 教职工身份证号
    * @value
    */
-  teacherIdCard: string;
+  teacherIdCard: string
 
   /**
    * 教职工名称
    * @value
    */
-  teacherName: string;
+  teacherName: string
 
   /**
    * 教职工手机
    * @value
    */
-  teacherPhone: string;
+  teacherPhone: string
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -16570,50 +16766,50 @@ export type KtClassVO = {
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 年级名称
    * @value
    */
-  gradeName: string;
+  gradeName: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 班级名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 学年
    * @value
    */
-  schoolYear: string;
+  schoolYear: string
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -16623,56 +16819,56 @@ export type KtGradeVO = {
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 年级类型
    * @value
    */
-  gradeType: string;
+  gradeType: string
 
   /**
    * 年级类型
    * @value
    */
-  gradeTypeName: string;
+  gradeTypeName: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 年级名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -16680,100 +16876,100 @@ export type KtGradeVO = {
 export type KtStudentVO = {
   /**
    * 班级Id
-   * @value #integer(64)
+   * @value
    */
-  classId: number;
+  classId: number
 
   /**
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 学籍号
    * @value
    */
-  code: string;
+  code: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 家长手机
    * @value
    */
-  guardianPhone: string;
+  guardianPhone: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证
    * @value
    */
-  identityCard: string;
+  identityCard: string
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 姓名
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 性别
    * @value
    */
-  sex: string;
+  sex: string
 
   /**
    * 类型（0普通学生1借读生）
-   * @value #integer(32)
+   * @value
    */
-  type: number;
+  type: number
 
   /**
    * 类型
    * @value
    */
-  typeName: string;
+  typeName: string
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -16783,62 +16979,62 @@ export type KtTeacherVO = {
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证
    * @value
    */
-  identityCard: string;
+  identityCard: string
 
   /**
    * 工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 手机号
    * @value
    */
-  mobilePhone: string;
+  mobilePhone: string
 
   /**
    * 名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 性别
    * @value
    */
-  sex: string;
+  sex: string
 
   /**
    * 修改人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -16848,98 +17044,98 @@ export type KtUserIdentityVO = {
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 学籍号
    * @value
    */
-  code: string;
+  code: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 是否已注册 0是1否
-   * @value #integer(32)
+   * @value
    */
-  hasJoin: number;
+  hasJoin: number
 
   /**
    * 是否已注册
    * @value
    */
-  hasJoinStr: string;
+  hasJoinStr: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证
    * @value
    */
-  identityCard: string;
+  identityCard: string
 
   /**
    * 身份id
-   * @value #integer(64)
+   * @value
    */
-  identityId: number;
+  identityId: number
 
   /**
    * 身份姓名
    * @value
    */
-  identityName: string;
+  identityName: string
 
   /**
    * 是否家委会 0是1否
-   * @value #integer(32)
+   * @value
    */
-  inHomeCommittee: number;
+  inHomeCommittee: number
 
   /**
    * 是否家委会
    * @value
    */
-  inHomeCommitteeStr: string;
+  inHomeCommitteeStr: string
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 手机号
    * @value
    */
-  mobilePhone: string;
+  mobilePhone: string
 
   /**
    * 关系
    * @value
    */
-  relationship: string;
+  relationship: string
 
   /**
    * 关系
    * @value
    */
-  relationshipStr: string;
+  relationshipStr: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -16949,25 +17145,25 @@ export type LsCheckerVO = {
    * 发证人名称
    * @value
    */
-  checkerUserName: string;
+  checkerUserName: string
 
   /**
    * 发证人手机号
    * @value
    */
-  checkerUserPhone: string;
+  checkerUserPhone: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
-};
+  id: number
+}
 
 /**
  * --
  */
-export type Mapstringstring = {};
+export type Mapstringstring = {}
 
 /**
  * --
@@ -16977,56 +17173,56 @@ export type MarketingDutyUserVO = {
    * 部门存储json
    * @value
    */
-  departmentJson: string;
+  departmentJson: string
 
   /**
    * 关键字(院系/专业/部门/班级)
    * @value
    */
-  departmentName: string;
+  departmentName: string
 
   /**
    * 负责人部门类型 1院系2专业3班级4部门
    * @value
    */
-  departmentType: string;
+  departmentType: string
 
   /**
    *
    * @value
    */
-  departmentTypeStr: string;
+  departmentTypeStr: string
 
   /**
    * 职务ID
-   * @value #integer(64)
+   * @value
    */
-  dutyId: number;
+  dutyId: number
 
   /**
    * 职务名称
    * @value
    */
-  dutyName: string;
+  dutyName: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * --
@@ -17034,22 +17230,22 @@ export type MarketingDutyUserVO = {
 export type MarketingFormApplyVO = {
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 姓名
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 手机号
    * @value
    */
-  phone: string;
-};
+  phone: string
+}
 
 /**
  * --
@@ -17059,86 +17255,86 @@ export type MarketingFormDetailVO = {
    * 结束时间
    * @value
    */
-  endTime: string;
+  endTime: string
 
   /**
    * 填写结束时间限制（HH:mm）
    * @value
    */
-  enterTimeEndLimit: string;
+  enterTimeEndLimit: string
 
   /**
    * 填写开始时间限制（HH:mm）
    * @value
    */
-  enterTimeStartLimit: string;
+  enterTimeStartLimit: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 表单名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 是否需要审批 0是1否
-   * @value #integer(32)
+   * @value
    */
-  needCheck: number;
+  needCheck: number
 
   /**
    * 是否需要结束时间 0是1否
-   * @value #integer(32)
+   * @value
    */
-  needEndTime: number;
+  needEndTime: number
 
   /**
    * 是否需要限制填写时间 0是1否
-   * @value #integer(32)
+   * @value
    */
-  needEnterTimeLimit: number;
+  needEnterTimeLimit: number
 
   /**
    * 流程信息
    * @rule 2
    */
-  nodeList: MarketingFormNodeVO[];
+  nodeList: MarketingFormNodeVO[]
 
   /**
    * 预览地址
    * @value
    */
-  previewUrl: string;
+  previewUrl: string
 
   /**
    * 申请发布理由
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 状态 1已审核2待审核4已拒绝
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 总填写份数限制 0为不限*
-   * @value #integer(32)
+   * @value
    */
-  totalCountLimit: number;
-};
+  totalCountLimit: number
+}
 
 /**
  * --
@@ -17148,26 +17344,26 @@ export type MarketingFormNodeVO = {
    * 流程信息
    * @value
    */
-  dutyList: string[];
+  dutyList: string[]
 
   /**
    * 表单id
-   * @value #integer(64)
+   * @value
    */
-  formId: number;
+  formId: number
 
   /**
    * 节点名称
    * @value
    */
-  nodeName: string;
+  nodeName: string
 
   /**
    * 节点类型 1学生流程节点2教职工流程节点
-   * @value #integer(32)
+   * @value
    */
-  nodeType: number;
-};
+  nodeType: number
+}
 
 /**
  * --
@@ -17175,28 +17371,28 @@ export type MarketingFormNodeVO = {
 export type MarketingFormSchoolSettingVO = {
   /**
    * 申请发布人类型 0:指定人 1:所有人
-   * @value #integer(32)
+   * @value
    */
-  applyType: number;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
+  applyType: number
 
   /**
    *
    * @value
    */
-  operates: string[];
+  id: number
 
   /**
    *
    * @value
    */
-  operation: string;
-};
+  operates: string[]
+
+  /**
+   *
+   * @value
+   */
+  operation: string
+}
 
 /**
  * --
@@ -17206,68 +17402,68 @@ export type MarketingFormVO = {
    * 申请发布理由
    * @value
    */
-  applyRemark: string;
+  applyRemark: string
 
   /**
    * 申请时间
    * @value #datetime()
    */
-  applyTime: string;
+  applyTime: string
 
   /**
    * 申请手机号
    * @value
    */
-  createAccount: string;
+  createAccount: string
 
   /**
    * 申请人姓名
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 表单名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 是否需要审批 0是1否
-   * @value #integer(32)
+   * @value
    */
-  needCheck: number;
+  needCheck: number
 
   /**
    * 状态 1已审核2待审核4已拒绝
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 审核人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 审核时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -17277,656 +17473,656 @@ export type MarketingSchoolUserNewVO = {
    * 目前居住地
    * @value
    */
-  areaStr: string;
+  areaStr: string
 
   /**
    * 返还地
    * @value
    */
-  backAreaStr: string;
+  backAreaStr: string
 
   /**
    * 返还地-市
    * @value
    */
-  backCity: string;
+  backCity: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  backCityCode: number;
+  backCityCode: number
 
   /**
    * 返还地-区/县
    * @value
    */
-  backDistrict: string;
+  backDistrict: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  backDistrictCode: number;
+  backDistrictCode: number
 
   /**
    * 返还地-省份
    * @value
    */
-  backProvince: string;
+  backProvince: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  backProvinceCode: number;
+  backProvinceCode: number
 
   /**
    * 返校备注：车次或航班号
    * @value
    */
-  backRemark: string;
+  backRemark: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  backWay: number;
+  backWay: number
 
   /**
    * 返校方式
    * @value
    */
-  backWayStr: string;
+  backWayStr: string
 
   /**
    * 楼栋
    * @value
    */
-  building: string;
+  building: string
 
   /**
    * 后台备注
    * @value
    */
-  centerRemark: string;
+  centerRemark: string
 
   /**
    * 后台备注操作人
    * @value
    */
-  centerUpdateName: string;
+  centerUpdateName: string
 
   /**
    * 市
    * @value
    */
-  city: string;
+  city: string
 
   /**
    * 市编码
-   * @value #integer(64)
+   * @value
    */
-  cityCode: number;
+  cityCode: number
 
   /**
    * 班级/部门编码
    * @value
    */
-  classCode: string;
+  classCode: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  classId: number;
+  classId: number
 
   /**
    * 班级
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 是否接触过高发地区 0是1否
-   * @value #integer(32)
+   * @value
    */
-  contactArea: number;
+  contactArea: number
 
   /**
    * 是否去过高发地区
    * @value
    */
-  contactAreaStr: string;
+  contactAreaStr: string
 
   /**
    * 接触日期
    * @value #datetime()
    */
-  contactDate: string;
+  contactDate: string
 
   /**
    * 接触日期 yyyy-MM-dd
    * @value
    */
-  contactDateStr: string;
+  contactDateStr: string
 
   /**
    * 是否接触过确诊者 0是1否
-   * @value #integer(32)
+   * @value
    */
-  contactPatient: number;
+  contactPatient: number
 
   /**
    * 是否接触过确诊者
    * @value
    */
-  contactPatientStr: string;
+  contactPatientStr: string
 
   /**
    * 国家
    * @value
    */
-  country: string;
+  country: string
 
   /**
    * 查询日期 yyyy-MM-dd
    * @value
    */
-  createDate: string;
+  createDate: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 创建时间 yyyy-MM-dd HH:mm:ss
    * @value
    */
-  createTimeStr: string;
+  createTimeStr: string
 
   /**
    * 院系/部门
    * @value
    */
-  department: string;
+  department: string
 
   /**
    * 院系编码
    * @value
    */
-  departmentCode: string;
+  departmentCode: string
 
   /**
    * 区/县
    * @value
    */
-  district: string;
+  district: string
 
   /**
    * 区/县编码
-   * @value #integer(64)
+   * @value
    */
-  districtCode: number;
+  districtCode: number
 
   /**
    * 招生年份（年级）
-   * @value #integer(32)
+   * @value
    */
-  entranceYear: number;
+  entranceYear: number
 
   /**
    * 拓展字段
    * @value
    */
-  extField: string;
+  extField: string
 
   /**
    * 房间号
    * @value
    */
-  floor: string;
+  floor: string
 
   /**
    * 是否全日制 0是1否
-   * @value #integer(32)
+   * @value
    */
-  fullTimeFlag: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  hasTodayDetail: number;
+  fullTimeFlag: number
 
   /**
    *
    * @value
    */
-  hasTodayDetailExportStr: string;
+  hasTodayDetail: number
+
+  /**
+   *
+   * @value
+   */
+  hasTodayDetailExportStr: string
 
   /**
    * 今日是否打卡 0是1否
    * @value
    */
-  hasTodayDetailStr: string;
+  hasTodayDetailStr: string
 
   /**
    * 健康情况 1正常2发烧/咳嗽等症状3其它
-   * @value #integer(32)
+   * @value
    */
-  healthStatus: number;
+  healthStatus: number
 
   /**
    * 健康情况 1正常2发烧3咳嗽4乏力5腹泻6头晕头痛
    * @value
    */
-  healthStatusNew: string;
+  healthStatusNew: string
 
   /**
    * 健康情况new
    * @value
    */
-  healthStatusNewStr: string;
+  healthStatusNewStr: string
 
   /**
    * 健康情况
    * @value
    */
-  healthStatusStr: string;
+  healthStatusStr: string
 
   /**
    * 是否春节期间在校 0是1否
-   * @value #integer(32)
+   * @value
    */
-  holidayInSchool: number;
+  holidayInSchool: number
 
   /**
    * 是否春节期间在校
    * @value
    */
-  holidayInSchoolStr: string;
+  holidayInSchoolStr: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证号
    * @value
    */
-  identity: string;
+  identity: string
 
   /**
    * 身份二级分类 11内地学生12港澳台学生13留学生14实习生15应征入伍16延期毕业 21内地教职工22港澳台教职工23外籍教职工24离退休教职工
    * @value
    */
-  identitySecondType: string;
+  identitySecondType: string
 
   /**
    * 身份二级分类
    * @value
    */
-  identitySecondTypeStr: string;
+  identitySecondTypeStr: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  identityType: number;
+  identityType: number
 
   /**
    * 身份类型
    * @value
    */
-  identityTypeStr: string;
+  identityTypeStr: string
 
   /**
    * 是否政府定点集中隔离 0是1否
-   * @value #integer(32)
+   * @value
    */
-  inGovQuarantine: number;
+  inGovQuarantine: number
 
   /**
    *
    * @value
    */
-  inGovQuarantineStr: string;
+  inGovQuarantineStr: string
 
   /**
    * 是否居家健康监测或隔离 0是1否
-   * @value #integer(32)
+   * @value
    */
-  inHomeQuarantine: number;
+  inHomeQuarantine: number
 
   /**
    *
    * @value
    */
-  inHomeQuarantineStr: string;
+  inHomeQuarantineStr: string
 
   /**
    * 是否在校 0是1否
-   * @value #integer(32)
+   * @value
    */
-  inSchool: number;
+  inSchool: number
 
   /**
    * 是否校内集中隔离 0是1否
-   * @value #integer(32)
+   * @value
    */
-  inSchoolQuarantine: number;
+  inSchoolQuarantine: number
 
   /**
    *
    * @value
    */
-  inSchoolQuarantineStr: string;
+  inSchoolQuarantineStr: string
 
   /**
    * 是否在校
    * @value
    */
-  inSchoolStr: string;
+  inSchoolStr: string
 
   /**
    * 居住区是否有确诊、无症状、疑似 0是 1否
-   * @value #integer(32)
+   * @value
    */
-  isCommunityPatient: number;
+  isCommunityPatient: number
 
   /**
    * 居住区是否有确诊、无症状、疑似
    * @value
    */
-  isCommunityPatientStr: string;
+  isCommunityPatientStr: string
 
   /**
    * 家庭成员是否有确诊、疑似、感染者 0是 1否
-   * @value #integer(32)
+   * @value
    */
-  isFamiliyPatient: number;
+  isFamiliyPatient: number
 
   /**
    * 家庭成员是否有确诊、疑似、感染者
    * @value
    */
-  isFamiliyPatientStr: string;
+  isFamiliyPatientStr: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  isInCompany: number;
+  isInCompany: number
 
   /**
    * 今日是否在实习单位
    * @value
    */
-  isInCompanyStr: string;
+  isInCompanyStr: string
 
   /**
    * 是否确诊、无症状 0是1否
-   * @value #integer(32)
+   * @value
    */
-  isPatient: number;
+  isPatient: number
 
   /**
    * 是否确诊、无症状
    * @value
    */
-  isPatientStr: string;
+  isPatientStr: string
 
   /**
    * 是否为疑似病例 0是1否
-   * @value #integer(32)
+   * @value
    */
-  isSuspected: number;
+  isSuspected: number
 
   /**
    * 是否为疑似病例
    * @value
    */
-  isSuspectedStr: string;
+  isSuspectedStr: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  isTodayBack: number;
+  isTodayBack: number
 
   /**
    * 今日是否返校
    * @value
    */
-  isTodayBackStr: string;
+  isTodayBackStr: string
 
   /**
    * 隔离地点
    * @value
    */
-  isolatedPlace: string;
+  isolatedPlace: string
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    *
    * @value #datetime()
    */
-  lastDetailTime: string;
+  lastDetailTime: string
 
   /**
    * 最后打卡时间
    * @value
    */
-  lastDetailTimeStr: string;
+  lastDetailTimeStr: string
 
   /**
    * 最近一次核酸检测日期（yyyy-MM-dd）
    * @value
    */
-  lastNucleicAcidDate: string;
+  lastNucleicAcidDate: string
 
   /**
    * 现在联系方式
    * @value
    */
-  linkPhone: string;
+  linkPhone: string
 
   /**
    * 定位信息
    * @value
    */
-  locationInfo: string;
+  locationInfo: string
 
   /**
    * 经纬度
    * @value
    */
-  longitudeAndLatitude: string;
+  longitudeAndLatitude: string
 
   /**
    * 登录手机号
    * @value
    */
-  mobilePhone: string;
+  mobilePhone: string
 
   /**
    * 姓名
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 未接种疫苗原因
    * @value
    */
-  noVaccineReasonStr: string;
+  noVaccineReasonStr: string
 
   /**
    * 近七日是否有核酸检测 0是1否
-   * @value #integer(32)
+   * @value
    */
-  nucleicAcidFlag: number;
+  nucleicAcidFlag: number
 
   /**
    *
    * @value
    */
-  nucleicAcidFlagStr: string;
+  nucleicAcidFlagStr: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 家长联系方式
    * @value
    */
-  parentsPhone: string;
+  parentsPhone: string
 
   /**
    * 就诊医院
    * @value
    */
-  patientHospital: string;
+  patientHospital: string
 
   /**
    * 省
    * @value
    */
-  province: string;
+  province: string
 
   /**
    * 省编码
-   * @value #integer(64)
+   * @value
    */
-  provinceCode: number;
+  provinceCode: number
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 共同居住人员健康情况 1正常2发烧3咳嗽4乏力5腹泻6头晕头痛7出疹8水疱9其它
    * @value
    */
-  roommateHealthStatus: string;
+  roommateHealthStatus: string
 
   /**
    * 共同居住人员健康情况
    * @value
    */
-  roommateHealthStatusStr: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  rowId: number;
+  roommateHealthStatusStr: string
 
   /**
    *
    * @value
    */
-  schoolCode: string;
+  rowId: number
 
   /**
    *
    * @value
    */
-  schoolName: string;
+  schoolCode: string
+
+  /**
+   *
+   * @value
+   */
+  schoolName: string
 
   /**
    * 专业
    * @value
    */
-  specialities: string;
+  specialities: string
 
   /**
    * 专业编码
    * @value
    */
-  specialitiesCode: string;
+  specialitiesCode: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  specialitiesId: number;
+  specialitiesId: number
 
   /**
    * 今日体温
    * @value
    */
-  temperature: string;
+  temperature: string
 
   /**
    * 今日下午体温
    * @value
    */
-  temperatureAfter: string;
+  temperatureAfter: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 更新时间 yyyy-MM-dd HH:mm:ss
    * @value
    */
-  updateTimeStr: string;
+  updateTimeStr: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 疫苗第一针接种时间（yyyy-MM-dd HH:mm:ss）
    * @value
    */
-  vaccineOneTime: string;
+  vaccineOneTime: string
 
   /**
    * 疫苗接种情况
    * @value
    */
-  vaccineStatusStr: string;
+  vaccineStatusStr: string
 
   /**
    * 疫苗第三针接种时间（yyyy-MM-dd HH:mm:ss）
    * @value
    */
-  vaccineThreeTime: string;
+  vaccineThreeTime: string
 
   /**
    * 疫苗第二针接种时间（yyyy-MM-dd HH:mm:ss）
    * @value
    */
-  vaccineTwoTime: string;
-};
+  vaccineTwoTime: string
+}
 
 /**
  * --
@@ -17936,230 +18132,230 @@ export type MarketingSchoolUserVO = {
    * 楼栋
    * @value
    */
-  building: string;
+  building: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  classId: number;
+  classId: number
 
   /**
    * 班级
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 查询日期 yyyy-MM-dd
    * @value
    */
-  createDate: string;
+  createDate: string
 
   /**
    * 院系/部门
    * @value
    */
-  department: string;
+  department: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  departmentId: number;
+  departmentId: number
 
   /**
    * 学历 1研究生2本科3大专4中专5高中6中学7小学8幼儿园
    * @value
    */
-  eduBg: string;
+  eduBg: string
 
   /**
    * 学历
    * @value
    */
-  eduBgStr: string;
+  eduBgStr: string
 
   /**
    * 招生年份（年级）
-   * @value #integer(32)
+   * @value
    */
-  entranceYear: number;
+  entranceYear: number
 
   /**
    * 拓展字段
    * @value
    */
-  extField: string;
+  extField: string
 
   /**
    * 房间号
    * @value
    */
-  floor: string;
+  floor: string
 
   /**
    * 是否全日制 0是1否
-   * @value #integer(32)
+   * @value
    */
-  fullTimeFlag: number;
+  fullTimeFlag: number
 
   /**
    * 全日制类型
    * @value
    */
-  fullTimeFlagStr: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  hasTodayDetail: number;
+  fullTimeFlagStr: string
 
   /**
    *
    * @value
    */
-  hasTodayDetailExportStr: string;
+  hasTodayDetail: number
+
+  /**
+   *
+   * @value
+   */
+  hasTodayDetailExportStr: string
 
   /**
    * 今日是否打卡 0是1否
    * @value
    */
-  hasTodayDetailStr: string;
+  hasTodayDetailStr: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  identityType: number;
+  identityType: number
 
   /**
    * 身份类型
    * @value
    */
-  identityTypeStr: string;
+  identityTypeStr: string
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 最后打卡日期
    * @value #datetime()
    */
-  lastDetailDate: string;
+  lastDetailDate: string
 
   /**
    *
    * @value #datetime()
    */
-  lastDetailTime: string;
+  lastDetailTime: string
 
   /**
    * 最后打卡时间
    * @value
    */
-  lastDetailTimeStr: string;
+  lastDetailTimeStr: string
 
   /**
    * 姓名
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 未接种疫苗原因
    * @value
    */
-  noVaccineReasonStr: string;
+  noVaccineReasonStr: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  rowId: number;
+  remark: string
 
   /**
    *
    * @value
    */
-  schoolCode: string;
+  rowId: number
 
   /**
    *
    * @value
    */
-  schoolName: string;
+  schoolCode: string
+
+  /**
+   *
+   * @value
+   */
+  schoolName: string
 
   /**
    * 性别
    * @value
    */
-  sexStr: string;
+  sexStr: string
 
   /**
    * 专业
    * @value
    */
-  specialities: string;
+  specialities: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  specialitiesId: number;
+  specialitiesId: number
 
   /**
    * 疫苗第一针接种时间（yyyy-MM-dd HH:mm:ss）
    * @value
    */
-  vaccineOneTime: string;
+  vaccineOneTime: string
 
   /**
    * 疫苗接种情况
    * @value
    */
-  vaccineStatusStr: string;
+  vaccineStatusStr: string
 
   /**
    * 疫苗第三针接种时间（yyyy-MM-dd HH:mm:ss）
    * @value
    */
-  vaccineThreeTime: string;
+  vaccineThreeTime: string
 
   /**
    * 疫苗第二针接种时间（yyyy-MM-dd HH:mm:ss）
    * @value
    */
-  vaccineTwoTime: string;
-};
+  vaccineTwoTime: string
+}
 
 /**
  * --
@@ -18169,34 +18365,34 @@ export type ModelAndView = {
    *
    * @value
    */
-  empty: boolean;
-  model: {};
-  modelMap: {};
+  empty: boolean
+  model: {}
+  modelMap: {}
 
   /**
    *
    * @value
    */
-  reference: boolean;
+  reference: boolean
 
   /**
    *
    * @value [CONTINUE,SWITCHING_PROTOCOLS,PROCESSING,CHECKPOINT,OK,CREATED,ACCEPTED,NON_AUTHORITATIVE_INFORMATION,NO_CONTENT,RESET_CONTENT,PARTIAL_CONTENT,MULTI_STATUS,ALREADY_REPORTED,IM_USED,MULTIPLE_CHOICES,MOVED_PERMANENTLY,FOUND,MOVED_TEMPORARILY,SEE_OTHER,NOT_MODIFIED,USE_PROXY,TEMPORARY_REDIRECT,PERMANENT_REDIRECT,BAD_REQUEST,UNAUTHORIZED,PAYMENT_REQUIRED,FORBIDDEN,NOT_FOUND,METHOD_NOT_ALLOWED,NOT_ACCEPTABLE,PROXY_AUTHENTICATION_REQUIRED,REQUEST_TIMEOUT,CONFLICT,GONE,LENGTH_REQUIRED,PRECONDITION_FAILED,PAYLOAD_TOO_LARGE,REQUEST_ENTITY_TOO_LARGE,URI_TOO_LONG,REQUEST_URI_TOO_LONG,UNSUPPORTED_MEDIA_TYPE,REQUESTED_RANGE_NOT_SATISFIABLE,EXPECTATION_FAILED,I_AM_A_TEAPOT,INSUFFICIENT_SPACE_ON_RESOURCE,METHOD_FAILURE,DESTINATION_LOCKED,UNPROCESSABLE_ENTITY,LOCKED,FAILED_DEPENDENCY,TOO_EARLY,UPGRADE_REQUIRED,PRECONDITION_REQUIRED,TOO_MANY_REQUESTS,REQUEST_HEADER_FIELDS_TOO_LARGE,UNAVAILABLE_FOR_LEGAL_REASONS,INTERNAL_SERVER_ERROR,NOT_IMPLEMENTED,BAD_GATEWAY,SERVICE_UNAVAILABLE,GATEWAY_TIMEOUT,HTTP_VERSION_NOT_SUPPORTED,VARIANT_ALSO_NEGOTIATES,INSUFFICIENT_STORAGE,LOOP_DETECTED,BANDWIDTH_LIMIT_EXCEEDED,NOT_EXTENDED,NETWORK_AUTHENTICATION_REQUIRED]
    */
-  status: string;
+  status: string
 
   /**
    *
    * @rule
    */
-  view: View;
+  view: View
 
   /**
    *
    * @value
    */
-  viewName: string;
-};
+  viewName: string
+}
 
 /**
  * --
@@ -18206,87 +18402,87 @@ export type OperationLogVO = {
    * 时间
    * @value #datetime()
    */
-  activeTime: string;
+  activeTime: string
 
   /**
    * 项目名称
    * @value
    */
-  appName: string;
+  appName: string
 
   /**
    * 改变的数据
    * @value
    */
-  dataChanges: string;
-  dataId: {};
+  dataChanges: string
+  dataId: {}
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * ip
    * @value
    */
-  ip: string;
+  ip: string
 
   /**
    * 操作类型
    * @value
    */
-  operationType: string;
+  operationType: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * sessionId
    * @value
    */
-  sessionId: string;
+  sessionId: string
 
   /**
    * 表名
    * @value
    */
-  tableName: string;
+  tableName: string
 
   /**
    * url
    * @value
    */
-  url: string;
+  url: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 用户姓名
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * --
@@ -18294,47 +18490,47 @@ export type OperationLogVO = {
 export type PageResultApiElectricAreaVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: ApiElectricAreaVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: ApiElectricAreaVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -18342,47 +18538,47 @@ export type PageResultApiElectricAreaVO = {
 export type PageResultApiElectricBuildingVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: ApiElectricBuildingVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: ApiElectricBuildingVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -18390,47 +18586,47 @@ export type PageResultApiElectricBuildingVO = {
 export type PageResultApiElectricFloorVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: ApiElectricFloorVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: ApiElectricFloorVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -18438,47 +18634,47 @@ export type PageResultApiElectricFloorVO = {
 export type PageResultApiElectricRoomVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: ApiElectricRoomVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: ApiElectricRoomVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -18486,47 +18682,47 @@ export type PageResultApiElectricRoomVO = {
 export type PageResultApiPayCenterListVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: ApiPayCenterListVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: ApiPayCenterListVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -18534,47 +18730,47 @@ export type PageResultApiPayCenterListVO = {
 export type PageResultApiQueryOrderPageVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: ApiQueryOrderPageVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: ApiQueryOrderPageVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -18582,47 +18778,47 @@ export type PageResultApiQueryOrderPageVO = {
 export type PageResultAppJiaofeiListStatVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: AppJiaofeiListStatVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: AppJiaofeiListStatVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -18630,47 +18826,47 @@ export type PageResultAppJiaofeiListStatVO = {
 export type PageResultAppJiaofeiPayListVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: AppJiaofeiPayListVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: AppJiaofeiPayListVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -18678,47 +18874,47 @@ export type PageResultAppJiaofeiPayListVO = {
 export type PageResultAppJiaofeiProjectStatVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: AppJiaofeiProjectStatVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: AppJiaofeiProjectStatVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -18726,47 +18922,47 @@ export type PageResultAppJiaofeiProjectStatVO = {
 export type PageResultAuthOrgVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: AuthOrgVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: AuthOrgVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -18774,47 +18970,47 @@ export type PageResultAuthOrgVO = {
 export type PageResultAuthWechatmsgPushApiVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: AuthWechatmsgPushApiVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: AuthWechatmsgPushApiVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -18822,47 +19018,47 @@ export type PageResultAuthWechatmsgPushApiVO = {
 export type PageResultAuthWechatmsgSchoolApiVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: AuthWechatmsgSchoolApiVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: AuthWechatmsgSchoolApiVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -18870,47 +19066,47 @@ export type PageResultAuthWechatmsgSchoolApiVO = {
 export type PageResultBaseDataDO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: BaseDataDO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: BaseDataDO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -18918,47 +19114,47 @@ export type PageResultBaseDataDO = {
 export type PageResultBillMonthReportInfoVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: BillMonthReportInfoVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: BillMonthReportInfoVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -18966,47 +19162,47 @@ export type PageResultBillMonthReportInfoVO = {
 export type PageResultBillReportInfoVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: BillReportInfoVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: BillReportInfoVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19014,47 +19210,47 @@ export type PageResultBillReportInfoVO = {
 export type PageResultBillReportVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: BillReportVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: BillReportVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19062,47 +19258,47 @@ export type PageResultBillReportVO = {
 export type PageResultCenterCpBillDetailVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterCpBillDetailVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterCpBillDetailVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19110,47 +19306,47 @@ export type PageResultCenterCpBillDetailVO = {
 export type PageResultCenterCpBillPayTypeVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterCpBillPayTypeVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterCpBillPayTypeVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19158,47 +19354,47 @@ export type PageResultCenterCpBillPayTypeVO = {
 export type PageResultCenterCustomConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterCustomConfigVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterCustomConfigVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19206,47 +19402,47 @@ export type PageResultCenterCustomConfigVO = {
 export type PageResultCenterIndexTotalDataVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterIndexTotalDataVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterIndexTotalDataVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19254,47 +19450,47 @@ export type PageResultCenterIndexTotalDataVO = {
 export type PageResultCenterJiaofeiBatchRefundFormVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiBatchRefundFormVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiBatchRefundFormVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19302,47 +19498,47 @@ export type PageResultCenterJiaofeiBatchRefundFormVO = {
 export type PageResultCenterJiaofeiBatchRefundVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiBatchRefundVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiBatchRefundVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19350,47 +19546,47 @@ export type PageResultCenterJiaofeiBatchRefundVO = {
 export type PageResultCenterJiaofeiBillTemplateVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiBillTemplateVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiBillTemplateVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19398,47 +19594,47 @@ export type PageResultCenterJiaofeiBillTemplateVO = {
 export type PageResultCenterJiaofeiBillVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiBillVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiBillVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19446,47 +19642,47 @@ export type PageResultCenterJiaofeiBillVO = {
 export type PageResultCenterJiaofeiConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiConfigVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiConfigVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19494,47 +19690,47 @@ export type PageResultCenterJiaofeiConfigVO = {
 export type PageResultCenterJiaofeiDeptVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiDeptVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiDeptVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19542,47 +19738,47 @@ export type PageResultCenterJiaofeiDeptVO = {
 export type PageResultCenterJiaofeiDictionaryVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiDictionaryVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiDictionaryVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19590,47 +19786,47 @@ export type PageResultCenterJiaofeiDictionaryVO = {
 export type PageResultCenterJiaofeiInvoiceCodeVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiInvoiceCodeVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiInvoiceCodeVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19638,47 +19834,47 @@ export type PageResultCenterJiaofeiInvoiceCodeVO = {
 export type PageResultCenterJiaofeiInvoiceInfoDO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiInvoiceInfoDO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiInvoiceInfoDO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19686,47 +19882,47 @@ export type PageResultCenterJiaofeiInvoiceInfoDO = {
 export type PageResultCenterJiaofeiInvoiceInfoVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiInvoiceInfoVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiInvoiceInfoVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19734,47 +19930,47 @@ export type PageResultCenterJiaofeiInvoiceInfoVO = {
 export type PageResultCenterJiaofeiInvoiceOrderVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiInvoiceOrderVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiInvoiceOrderVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19782,47 +19978,47 @@ export type PageResultCenterJiaofeiInvoiceOrderVO = {
 export type PageResultCenterJiaofeiInvoiceTypeVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiInvoiceTypeVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiInvoiceTypeVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19830,47 +20026,47 @@ export type PageResultCenterJiaofeiInvoiceTypeVO = {
 export type PageResultCenterJiaofeiListVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiListVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiListVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19878,47 +20074,47 @@ export type PageResultCenterJiaofeiListVO = {
 export type PageResultCenterJiaofeiOrderVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiOrderVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiOrderVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19926,47 +20122,47 @@ export type PageResultCenterJiaofeiOrderVO = {
 export type PageResultCenterJiaofeiOrderVO_1 = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiOrderVO_1[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiOrderVO_1[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -19974,47 +20170,47 @@ export type PageResultCenterJiaofeiOrderVO_1 = {
 export type PageResultCenterJiaofeiPermissionsVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiPermissionsVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiPermissionsVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20022,47 +20218,47 @@ export type PageResultCenterJiaofeiPermissionsVO = {
 export type PageResultCenterJiaofeiProBatchVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiProBatchVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiProBatchVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20070,47 +20266,47 @@ export type PageResultCenterJiaofeiProBatchVO = {
 export type PageResultCenterJiaofeiProjectTypeVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiProjectTypeVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiProjectTypeVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20118,47 +20314,47 @@ export type PageResultCenterJiaofeiProjectTypeVO = {
 export type PageResultCenterJiaofeiProjectVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiProjectVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiProjectVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20166,47 +20362,95 @@ export type PageResultCenterJiaofeiProjectVO = {
 export type PageResultCenterJiaofeiRefundVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiRefundVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiRefundVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
+
+/**
+ * --
+ */
+export type PageResultCenterJiaofeiReportExportVO = {
+  /**
+   *
+   * @value
+   */
+  alertType: number
+
+  /**
+   *
+   * @value
+   */
+  bizCode: string
+  data: {}
+
+  /**
+   *
+   * @value
+   */
+  message: string
+
+  /**
+   *
+   * @rule 2
+   */
+  rows: CenterJiaofeiReportExportVO[]
+
+  /**
+   *
+   * @value
+   */
+  statusCode: number
+
+  /**
+   *
+   * @value
+   */
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20214,47 +20458,47 @@ export type PageResultCenterJiaofeiRefundVO = {
 export type PageResultCenterJiaofeiTypeVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterJiaofeiTypeVO_1[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterJiaofeiTypeVO_1[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20262,47 +20506,47 @@ export type PageResultCenterJiaofeiTypeVO = {
 export type PageResultCenterNetOperatorVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterNetOperatorVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterNetOperatorVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20310,47 +20554,47 @@ export type PageResultCenterNetOperatorVO = {
 export type PageResultCenterNetPackageVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterNetPackageVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterNetPackageVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20358,47 +20602,47 @@ export type PageResultCenterNetPackageVO = {
 export type PageResultCenterNetZoneVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterNetZoneVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterNetZoneVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20406,47 +20650,47 @@ export type PageResultCenterNetZoneVO = {
 export type PageResultCenterOrderNetVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterOrderNetVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterOrderNetVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20454,47 +20698,47 @@ export type PageResultCenterOrderNetVO = {
 export type PageResultCenterOrderSpecialVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterOrderSpecialVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterOrderSpecialVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20502,47 +20746,47 @@ export type PageResultCenterOrderSpecialVO = {
 export type PageResultCenterOrderStatsVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterOrderStatsVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterOrderStatsVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20550,47 +20794,47 @@ export type PageResultCenterOrderStatsVO = {
 export type PageResultCenterPincardVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterPincardVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterPincardVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20598,47 +20842,47 @@ export type PageResultCenterPincardVO = {
 export type PageResultCenterSchoolAreaVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterSchoolAreaVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterSchoolAreaVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20646,47 +20890,47 @@ export type PageResultCenterSchoolAreaVO = {
 export type PageResultCenterSchoolBuildingVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterSchoolBuildingVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterSchoolBuildingVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20694,47 +20938,47 @@ export type PageResultCenterSchoolBuildingVO = {
 export type PageResultCenterSchoolFloorVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterSchoolFloorVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterSchoolFloorVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20742,47 +20986,47 @@ export type PageResultCenterSchoolFloorVO = {
 export type PageResultCenterSchoolJiaofeiProjectVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterSchoolJiaofeiProjectVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterSchoolJiaofeiProjectVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20790,47 +21034,47 @@ export type PageResultCenterSchoolJiaofeiProjectVO = {
 export type PageResultCenterSchoolRoomUserVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterSchoolRoomUserVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterSchoolRoomUserVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20838,47 +21082,47 @@ export type PageResultCenterSchoolRoomUserVO = {
 export type PageResultCenterSchoolRoomVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterSchoolRoomVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterSchoolRoomVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20886,47 +21130,47 @@ export type PageResultCenterSchoolRoomVO = {
 export type PageResultCenterSpecialConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterSpecialConfigVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterSpecialConfigVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20934,47 +21178,47 @@ export type PageResultCenterSpecialConfigVO = {
 export type PageResultCenterSysSchoolVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterSysSchoolVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterSysSchoolVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -20982,47 +21226,47 @@ export type PageResultCenterSysSchoolVO = {
 export type PageResultCenterSysUserSchoolListVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterSysUserSchoolListVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterSysUserSchoolListVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21030,47 +21274,47 @@ export type PageResultCenterSysUserSchoolListVO = {
 export type PageResultCenterSysUserVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterSysUserVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterSysUserVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21078,47 +21322,47 @@ export type PageResultCenterSysUserVO = {
 export type PageResultCenterTaskVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterTaskVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterTaskVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21126,47 +21370,47 @@ export type PageResultCenterTaskVO = {
 export type PageResultCenterUserVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CenterUserVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CenterUserVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21174,47 +21418,47 @@ export type PageResultCenterUserVO = {
 export type PageResultCompusArticleFaqVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CompusArticleFaqVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CompusArticleFaqVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21222,47 +21466,47 @@ export type PageResultCompusArticleFaqVO = {
 export type PageResultCompusAssociationActivityTypeVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CompusAssociationActivityTypeVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CompusAssociationActivityTypeVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21270,47 +21514,47 @@ export type PageResultCompusAssociationActivityTypeVO = {
 export type PageResultCompusAssociationActivityUserVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CompusAssociationActivityUserVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CompusAssociationActivityUserVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21318,47 +21562,47 @@ export type PageResultCompusAssociationActivityUserVO = {
 export type PageResultCompusAssociationActivityVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CompusAssociationActivityVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CompusAssociationActivityVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21366,47 +21610,47 @@ export type PageResultCompusAssociationActivityVO = {
 export type PageResultCompusAssociationBannerVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CompusAssociationBannerVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CompusAssociationBannerVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21414,47 +21658,47 @@ export type PageResultCompusAssociationBannerVO = {
 export type PageResultCompusAssociationUserVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CompusAssociationUserVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CompusAssociationUserVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21462,47 +21706,47 @@ export type PageResultCompusAssociationUserVO = {
 export type PageResultCompusAssociationVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CompusAssociationVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CompusAssociationVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21510,47 +21754,47 @@ export type PageResultCompusAssociationVO = {
 export type PageResultCompusPushResponse = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CompusPushResponse[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CompusPushResponse[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21558,47 +21802,47 @@ export type PageResultCompusPushResponse = {
 export type PageResultCompusTagsResponse = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CompusTagsResponse[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CompusTagsResponse[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21606,47 +21850,47 @@ export type PageResultCompusTagsResponse = {
 export type PageResultCompusTagsVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: CompusTagsVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: CompusTagsVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21654,47 +21898,47 @@ export type PageResultCompusTagsVO = {
 export type PageResultDonateItemVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: DonateItemVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: DonateItemVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21702,47 +21946,47 @@ export type PageResultDonateItemVO = {
 export type PageResultDonateOrderClientVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: DonateOrderClientVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: DonateOrderClientVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21750,47 +21994,47 @@ export type PageResultDonateOrderClientVO = {
 export type PageResultDonateUserOrderVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: DonateUserOrderVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: DonateUserOrderVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21798,47 +22042,47 @@ export type PageResultDonateUserOrderVO = {
 export type PageResultDonateUserVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: DonateUserVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: DonateUserVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21846,47 +22090,47 @@ export type PageResultDonateUserVO = {
 export type PageResultFrontSchoolBuildingVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: FrontSchoolBuildingVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: FrontSchoolBuildingVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21894,47 +22138,47 @@ export type PageResultFrontSchoolBuildingVO = {
 export type PageResultFrontSchoolFloorVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: FrontSchoolFloorVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: FrontSchoolFloorVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21942,47 +22186,47 @@ export type PageResultFrontSchoolFloorVO = {
 export type PageResultFrontSchoolRoomVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: FrontSchoolRoomVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: FrontSchoolRoomVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -21990,47 +22234,47 @@ export type PageResultFrontSchoolRoomVO = {
 export type PageResultKayRoadWaterOrderVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: KayRoadWaterOrderVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: KayRoadWaterOrderVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22038,47 +22282,47 @@ export type PageResultKayRoadWaterOrderVO = {
 export type PageResultKtClassTeacherVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: KtClassTeacherVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: KtClassTeacherVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22086,47 +22330,47 @@ export type PageResultKtClassTeacherVO = {
 export type PageResultKtClassVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: KtClassVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: KtClassVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22134,47 +22378,47 @@ export type PageResultKtClassVO = {
 export type PageResultKtGradeVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: KtGradeVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: KtGradeVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22182,47 +22426,47 @@ export type PageResultKtGradeVO = {
 export type PageResultKtStudentVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: KtStudentVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: KtStudentVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22230,47 +22474,47 @@ export type PageResultKtStudentVO = {
 export type PageResultKtTeacherVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: KtTeacherVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: KtTeacherVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22278,47 +22522,47 @@ export type PageResultKtTeacherVO = {
 export type PageResultKtUserIdentityVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: KtUserIdentityVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: KtUserIdentityVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22326,47 +22570,47 @@ export type PageResultKtUserIdentityVO = {
 export type PageResultLsCheckerVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: LsCheckerVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: LsCheckerVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22374,47 +22618,47 @@ export type PageResultLsCheckerVO = {
 export type PageResultMarketingDutyUserVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: MarketingDutyUserVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: MarketingDutyUserVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22422,47 +22666,47 @@ export type PageResultMarketingDutyUserVO = {
 export type PageResultMarketingFormApplyVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: MarketingFormApplyVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: MarketingFormApplyVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22470,47 +22714,47 @@ export type PageResultMarketingFormApplyVO = {
 export type PageResultMarketingFormVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: MarketingFormVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: MarketingFormVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22518,47 +22762,47 @@ export type PageResultMarketingFormVO = {
 export type PageResultMarketingSchoolUserNewVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: MarketingSchoolUserNewVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: MarketingSchoolUserNewVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22566,47 +22810,47 @@ export type PageResultMarketingSchoolUserNewVO = {
 export type PageResultMarketingSchoolUserVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: MarketingSchoolUserVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: MarketingSchoolUserVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22614,47 +22858,47 @@ export type PageResultMarketingSchoolUserVO = {
 export type PageResultOperationLogVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: OperationLogVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: OperationLogVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22662,47 +22906,47 @@ export type PageResultOperationLogVO = {
 export type PageResultPlatformEacctOpenApplyVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: PlatformEacctOpenApplyVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: PlatformEacctOpenApplyVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22710,47 +22954,47 @@ export type PageResultPlatformEacctOpenApplyVO = {
 export type PageResultSchoolCenterImportRecordVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: SchoolCenterImportRecordVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: SchoolCenterImportRecordVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22758,47 +23002,47 @@ export type PageResultSchoolCenterImportRecordVO = {
 export type PageResultSelectResult = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: SelectResult[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: SelectResult[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22806,47 +23050,47 @@ export type PageResultSelectResult = {
 export type PageResultSelectResult_1 = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: SelectResult_1[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: SelectResult_1[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22854,47 +23098,47 @@ export type PageResultSelectResult_1 = {
 export type PageResultSfCampusSceneryTypeVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: SfCampusSceneryTypeVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: SfCampusSceneryTypeVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22902,47 +23146,47 @@ export type PageResultSfCampusSceneryTypeVO = {
 export type PageResultSfCampusSceneryVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: SfCampusSceneryVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: SfCampusSceneryVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22950,47 +23194,47 @@ export type PageResultSfCampusSceneryVO = {
 export type PageResultSfUserVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: SfUserVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: SfUserVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -22998,47 +23242,47 @@ export type PageResultSfUserVO = {
 export type PageResultSubsidyItemListVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: SubsidyItemListVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: SubsidyItemListVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23046,47 +23290,47 @@ export type PageResultSubsidyItemListVO = {
 export type PageResultSubsidyItemVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: SubsidyItemVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: SubsidyItemVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23094,47 +23338,47 @@ export type PageResultSubsidyItemVO = {
 export type PageResultSubsidyNoticeVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: SubsidyNoticeVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: SubsidyNoticeVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23142,47 +23386,47 @@ export type PageResultSubsidyNoticeVO = {
 export type PageResultSubsidyPushRecordVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: SubsidyPushRecordVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: SubsidyPushRecordVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23190,47 +23434,47 @@ export type PageResultSubsidyPushRecordVO = {
 export type PageResultSubsidySubItemVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: SubsidySubItemVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: SubsidySubItemVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23238,47 +23482,47 @@ export type PageResultSubsidySubItemVO = {
 export type PageResultUpCpAccountVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: UpCpAccountVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: UpCpAccountVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23286,47 +23530,47 @@ export type PageResultUpCpAccountVO = {
 export type PageResultUpCpMainVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: UpCpMainVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: UpCpMainVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23334,47 +23578,47 @@ export type PageResultUpCpMainVO = {
 export type PageResultUpCpVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: UpCpVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: UpCpVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23382,47 +23626,47 @@ export type PageResultUpCpVO = {
 export type PageResultUpRedbagAccountVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: UpRedbagAccountVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: UpRedbagAccountVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23430,47 +23674,47 @@ export type PageResultUpRedbagAccountVO = {
 export type PageResultUpRedbagBalanceVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: UpRedbagBalanceVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: UpRedbagBalanceVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23478,47 +23722,47 @@ export type PageResultUpRedbagBalanceVO = {
 export type PageResultUpRedbagBillVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: UpRedbagBillVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: UpRedbagBillVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23526,47 +23770,47 @@ export type PageResultUpRedbagBillVO = {
 export type PageResultUpRedbagConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: UpRedbagConfigVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: UpRedbagConfigVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23574,47 +23818,47 @@ export type PageResultUpRedbagConfigVO = {
 export type PageResultUpRedbagNodeVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: UpRedbagNodeVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: UpRedbagNodeVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23622,47 +23866,47 @@ export type PageResultUpRedbagNodeVO = {
 export type PageResultUpRedbagVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: UpRedbagVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: UpRedbagVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23670,47 +23914,47 @@ export type PageResultUpRedbagVO = {
 export type PageResultUpUserRedbagVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: UpUserRedbagVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: UpUserRedbagVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23718,47 +23962,47 @@ export type PageResultUpUserRedbagVO = {
 export type PageResultWnAcceptanceLetterVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnAcceptanceLetterVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnAcceptanceLetterVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23766,47 +24010,47 @@ export type PageResultWnAcceptanceLetterVO = {
 export type PageResultWnApplicationConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnApplicationConfigVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnApplicationConfigVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23814,47 +24058,47 @@ export type PageResultWnApplicationConfigVO = {
 export type PageResultWnBaseConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnBaseConfigVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnBaseConfigVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23862,47 +24106,47 @@ export type PageResultWnBaseConfigVO = {
 export type PageResultWnBatchVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnBatchVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnBatchVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23910,47 +24154,47 @@ export type PageResultWnBatchVO = {
 export type PageResultWnBuildingVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnBuildingVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnBuildingVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -23958,47 +24202,47 @@ export type PageResultWnBuildingVO = {
 export type PageResultWnDeviceVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnDeviceVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnDeviceVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24006,47 +24250,47 @@ export type PageResultWnDeviceVO = {
 export type PageResultWnFloorVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnFloorVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnFloorVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24054,47 +24298,47 @@ export type PageResultWnFloorVO = {
 export type PageResultWnFormTitleVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnFormTitleVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnFormTitleVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24102,47 +24346,47 @@ export type PageResultWnFormTitleVO = {
 export type PageResultWnFormUserVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnFormUserVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnFormUserVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24150,47 +24394,47 @@ export type PageResultWnFormUserVO = {
 export type PageResultWnGenerateStudentNoVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnGenerateStudentNoVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnGenerateStudentNoVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24198,47 +24442,47 @@ export type PageResultWnGenerateStudentNoVO = {
 export type PageResultWnHallApplicationConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnHallApplicationConfigVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnHallApplicationConfigVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24246,47 +24490,47 @@ export type PageResultWnHallApplicationConfigVO = {
 export type PageResultWnHallProcessConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnHallProcessConfigVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnHallProcessConfigVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24294,47 +24538,47 @@ export type PageResultWnHallProcessConfigVO = {
 export type PageResultWnInClassVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnInClassVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnInClassVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24342,47 +24586,47 @@ export type PageResultWnInClassVO = {
 export type PageResultWnInStudentVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnInStudentVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnInStudentVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24390,47 +24634,47 @@ export type PageResultWnInStudentVO = {
 export type PageResultWnOpenBankCardVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnOpenBankCardVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnOpenBankCardVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24438,47 +24682,47 @@ export type PageResultWnOpenBankCardVO = {
 export type PageResultWnPayConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnPayConfigVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnPayConfigVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24486,47 +24730,47 @@ export type PageResultWnPayConfigVO = {
 export type PageResultWnProcessConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnProcessConfigVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnProcessConfigVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24534,47 +24778,47 @@ export type PageResultWnProcessConfigVO = {
 export type PageResultWnProcessCountTableHeaderVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnProcessCountTableHeaderVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnProcessCountTableHeaderVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24582,47 +24826,47 @@ export type PageResultWnProcessCountTableHeaderVO = {
 export type PageResultWnProductAndPicVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnProductAndPicVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnProductAndPicVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24630,47 +24874,47 @@ export type PageResultWnProductAndPicVO = {
 export type PageResultWnReceiveOrderVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnReceiveOrderVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnReceiveOrderVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24678,47 +24922,47 @@ export type PageResultWnReceiveOrderVO = {
 export type PageResultWnRoomFeeConfigVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnRoomFeeConfigVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnRoomFeeConfigVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24726,47 +24970,47 @@ export type PageResultWnRoomFeeConfigVO = {
 export type PageResultWnRoomTreeVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnRoomTreeVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnRoomTreeVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24774,47 +25018,47 @@ export type PageResultWnRoomTreeVO = {
 export type PageResultWnRoomVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnRoomVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnRoomVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24822,47 +25066,47 @@ export type PageResultWnRoomVO = {
 export type PageResultWnSchoolOrganizationTreeVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnSchoolOrganizationTreeVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnSchoolOrganizationTreeVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24870,47 +25114,47 @@ export type PageResultWnSchoolOrganizationTreeVO = {
 export type PageResultWnSchoolOrganizationVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnSchoolOrganizationVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnSchoolOrganizationVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24918,47 +25162,47 @@ export type PageResultWnSchoolOrganizationVO = {
 export type PageResultWnSchoolZoneVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnSchoolZoneVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnSchoolZoneVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -24966,47 +25210,47 @@ export type PageResultWnSchoolZoneVO = {
 export type PageResultWnSelectPhoneOperatorVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnSelectPhoneOperatorVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnSelectPhoneOperatorVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25014,47 +25258,47 @@ export type PageResultWnSelectPhoneOperatorVO = {
 export type PageResultWnSelectPhoneOrderVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnSelectPhoneOrderVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnSelectPhoneOrderVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25062,47 +25306,47 @@ export type PageResultWnSelectPhoneOrderVO = {
 export type PageResultWnSelectPhonePackageVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnSelectPhonePackageVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnSelectPhonePackageVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25110,47 +25354,47 @@ export type PageResultWnSelectPhonePackageVO = {
 export type PageResultWnSelectPhoneVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnSelectPhoneVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnSelectPhoneVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25158,47 +25402,47 @@ export type PageResultWnSelectPhoneVO = {
 export type PageResultWnStudentBaseApiVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnStudentBaseApiVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnStudentBaseApiVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25206,47 +25450,47 @@ export type PageResultWnStudentBaseApiVO = {
 export type PageResultWnStudentImportVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnStudentImportVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnStudentImportVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25254,47 +25498,47 @@ export type PageResultWnStudentImportVO = {
 export type PageResultWnStudentInCountVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnStudentInCountVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnStudentInCountVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25302,47 +25546,47 @@ export type PageResultWnStudentInCountVO = {
 export type PageResultWnStudentLatestRegisterVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnStudentLatestRegisterVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnStudentLatestRegisterVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25350,47 +25594,47 @@ export type PageResultWnStudentLatestRegisterVO = {
 export type PageResultWnStudentProcessDetailVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnStudentProcessDetailVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnStudentProcessDetailVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25398,47 +25642,47 @@ export type PageResultWnStudentProcessDetailVO = {
 export type PageResultWnStudentRegisterBaseApiVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnStudentRegisterBaseApiVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnStudentRegisterBaseApiVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25446,47 +25690,47 @@ export type PageResultWnStudentRegisterBaseApiVO = {
 export type PageResultWnStudentReportNumCountVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnStudentReportNumCountVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnStudentReportNumCountVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25494,47 +25738,47 @@ export type PageResultWnStudentReportNumCountVO = {
 export type PageResultWnStudentReportSexCountVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnStudentReportSexCountVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnStudentReportSexCountVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25542,47 +25786,47 @@ export type PageResultWnStudentReportSexCountVO = {
 export type PageResultWnStudentToClassOrganizationVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnStudentToClassOrganizationVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnStudentToClassOrganizationVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25590,47 +25834,47 @@ export type PageResultWnStudentToClassOrganizationVO = {
 export type PageResultWnStudentToClassVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnStudentToClassVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnStudentToClassVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25638,47 +25882,47 @@ export type PageResultWnStudentToClassVO = {
 export type PageResultWnStudentTrafficCountVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnStudentTrafficCountVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnStudentTrafficCountVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25686,47 +25930,47 @@ export type PageResultWnStudentTrafficCountVO = {
 export type PageResultWnTeacherAppRoleVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnTeacherAppRoleVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnTeacherAppRoleVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25734,47 +25978,47 @@ export type PageResultWnTeacherAppRoleVO = {
 export type PageResultWnTeacherAppUserApiVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnTeacherAppUserApiVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnTeacherAppUserApiVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25782,47 +26026,47 @@ export type PageResultWnTeacherAppUserApiVO = {
 export type PageResultWnUnitVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnUnitVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnUnitVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25830,47 +26074,47 @@ export type PageResultWnUnitVO = {
 export type PageResultWnZoneRoomApiVO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: WnZoneRoomApiVO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: WnZoneRoomApiVO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25878,42 +26122,42 @@ export type PageResultWnZoneRoomApiVO = {
 export type PageResultobject = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
-  rows: {}[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  message: string
+  rows: {}[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25921,47 +26165,47 @@ export type PageResultobject = {
 export type PageResultstring = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @value
    */
-  rows: string[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: string[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -25969,47 +26213,47 @@ export type PageResultstring = {
 export type PageResult健康状况日报VO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: 健康状况日报VO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: 健康状况日报VO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -26017,47 +26261,47 @@ export type PageResult健康状况日报VO = {
 export type PageResult健康状况登记VO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: 健康状况登记VO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: 健康状况登记VO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -26065,47 +26309,47 @@ export type PageResult健康状况登记VO = {
 export type PageResult健康状况登记地区统计VOroute = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: 健康状况登记地区统计VOroute[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: 健康状况登记地区统计VOroute[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -26113,47 +26357,47 @@ export type PageResult健康状况登记地区统计VOroute = {
 export type PageResult健康状况登记地区统计VO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: 健康状况登记地区统计VO_1[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: 健康状况登记地区统计VO_1[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -26162,47 +26406,47 @@ export type PageResult手抄表账单返回数据这是rows里的内容外面还
   {
     /**
      *
-     * @value #integer(32)
+     * @value
      */
-    alertType: number;
+    alertType: number
 
     /**
      *
      * @value
      */
-    bizCode: string;
-    data: {};
+    bizCode: string
+    data: {}
 
     /**
      *
      * @value
      */
-    message: string;
+    message: string
 
     /**
      *
      * @rule 2
      */
-    rows: 手抄表账单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息[];
-
-    /**
-     *
-     * @value #integer(32)
-     */
-    statusCode: number;
+    rows: 手抄表账单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息[]
 
     /**
      *
      * @value
      */
-    success: boolean;
+    statusCode: number
 
     /**
      *
-     * @value #integer(32)
+     * @value
      */
-    total: number;
-  };
+    success: boolean
+
+    /**
+     *
+     * @value
+     */
+    total: number
+  }
 
 /**
  * --
@@ -26211,47 +26455,47 @@ export type PageResult支付订单返回数据这是rows里的内容外面还有
   {
     /**
      *
-     * @value #integer(32)
+     * @value
      */
-    alertType: number;
+    alertType: number
 
     /**
      *
      * @value
      */
-    bizCode: string;
-    data: {};
+    bizCode: string
+    data: {}
 
     /**
      *
      * @value
      */
-    message: string;
+    message: string
 
     /**
      *
      * @rule 2
      */
-    rows: 支付订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息[];
-
-    /**
-     *
-     * @value #integer(32)
-     */
-    statusCode: number;
+    rows: 支付订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息[]
 
     /**
      *
      * @value
      */
-    success: boolean;
+    statusCode: number
 
     /**
      *
-     * @value #integer(32)
+     * @value
      */
-    total: number;
-  };
+    success: boolean
+
+    /**
+     *
+     * @value
+     */
+    total: number
+  }
 
 /**
  * --
@@ -26260,47 +26504,47 @@ export type PageResult支付订单返回数据这是rows里的内容外面还有
   {
     /**
      *
-     * @value #integer(32)
+     * @value
      */
-    alertType: number;
+    alertType: number
 
     /**
      *
      * @value
      */
-    bizCode: string;
-    data: {};
+    bizCode: string
+    data: {}
 
     /**
      *
      * @value
      */
-    message: string;
+    message: string
 
     /**
      *
      * @rule 2
      */
-    rows: 支付订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息_1[];
-
-    /**
-     *
-     * @value #integer(32)
-     */
-    statusCode: number;
+    rows: 支付订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息_1[]
 
     /**
      *
      * @value
      */
-    success: boolean;
+    statusCode: number
 
     /**
      *
-     * @value #integer(32)
+     * @value
      */
-    total: number;
-  };
+    success: boolean
+
+    /**
+     *
+     * @value
+     */
+    total: number
+  }
 
 /**
  * --
@@ -26308,47 +26552,47 @@ export type PageResult支付订单返回数据这是rows里的内容外面还有
 export type PageResult文章返回参数 = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: 文章返回参数[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: 文章返回参数[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -26356,47 +26600,47 @@ export type PageResult文章返回参数 = {
 export type PageResult校区查询 = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: 校区查询[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: 校区查询[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -26404,47 +26648,47 @@ export type PageResult校区查询 = {
 export type PageResult用户角色VO = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: 用户角色VO[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: 用户角色VO[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -26452,47 +26696,47 @@ export type PageResult用户角色VO = {
 export type PageResult轮播图表返回数据参数 = {
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  alertType: number;
+  alertType: number
 
   /**
    *
    * @value
    */
-  bizCode: string;
-  data: {};
+  bizCode: string
+  data: {}
 
   /**
    *
    * @value
    */
-  message: string;
+  message: string
 
   /**
    *
    * @rule 2
    */
-  rows: 轮播图表返回数据参数[];
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  statusCode: number;
+  rows: 轮播图表返回数据参数[]
 
   /**
    *
    * @value
    */
-  success: boolean;
+  statusCode: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  total: number;
-};
+  success: boolean
+
+  /**
+   *
+   * @value
+   */
+  total: number
+}
 
 /**
  * --
@@ -26501,47 +26745,47 @@ export type PageResult退款订单返回数据这是rows里的内容外面还有
   {
     /**
      *
-     * @value #integer(32)
+     * @value
      */
-    alertType: number;
+    alertType: number
 
     /**
      *
      * @value
      */
-    bizCode: string;
-    data: {};
+    bizCode: string
+    data: {}
 
     /**
      *
      * @value
      */
-    message: string;
+    message: string
 
     /**
      *
      * @rule 2
      */
-    rows: 退款订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息[];
-
-    /**
-     *
-     * @value #integer(32)
-     */
-    statusCode: number;
+    rows: 退款订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息[]
 
     /**
      *
      * @value
      */
-    success: boolean;
+    statusCode: number
 
     /**
      *
-     * @value #integer(32)
+     * @value
      */
-    total: number;
-  };
+    success: boolean
+
+    /**
+     *
+     * @value
+     */
+    total: number
+  }
 
 /**
  * --
@@ -26551,86 +26795,86 @@ export type PlatformEacctOpenApplyVO = {
    *
    * @value
    */
-  applyFrom: string;
+  applyFrom: string
 
   /**
    * 用户id
    * @value
    */
-  corpCisNo: string;
+  corpCisNo: string
 
   /**
    * 申请时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 户名
    * @value
    */
-  custName: string;
+  custName: string
 
   /**
    * 性别,1男，2女
-   * @value #integer(32)
+   * @value
    */
-  gender: number;
+  gender: number
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 二类账号
    * @value
    */
-  mediumId: string;
+  mediumId: string
 
   /**
    * 手机号码
    * @value
    */
-  mobileNo: string;
+  mobileNo: string
 
   /**
    *
    * @value
    */
-  platform: string;
+  platform: string
 
   /**
    *
    * @value
    */
-  platformName: string;
+  platformName: string
 
   /**
    * 错误提示
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 账户状态，1申请中，2受理成功,3开户（绑卡）成功，4开户（绑卡）失败
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态名称
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 绑定时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -26638,52 +26882,52 @@ export type PlatformEacctOpenApplyVO = {
 export type RedBagExtendVO = {
   /**
    * 红包金额，单位分
-   * @value #integer(64)
+   * @value
    */
-  activityRedbagAmount: number;
+  activityRedbagAmount: number
 
   /**
    * 红包领取时间
    * @value
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 是否是新领红包\n 0:是  1：否
-   * @value #integer(32)
+   * @value
    */
-  isNew: number;
+  isNew: number
 
   /**
    * 红包金额，单位分
-   * @value #integer(64)
+   * @value
    */
-  redbagAmount: number;
+  redbagAmount: number
 
   /**
    * 使用红包的最低消费金额
-   * @value #integer(64)
+   * @value
    */
-  redbagMinPayment: number;
+  redbagMinPayment: number
 
   /**
    * 红包名称
    * @value
    */
-  redbagName: string;
+  redbagName: string
 
   /**
    * 红包使用说明，注意说明中的换行使用的是\n，请根据实际情况替换
    * @value
    */
-  redbagRemark: string;
+  redbagRemark: string
 
   /**
    * 领红包类型\n 1:开户红包
-   * @value #integer(32)
+   * @value
    */
-  type: number;
-};
+  type: number
+}
 
 /**
  * --
@@ -26693,62 +26937,62 @@ export type SchoolCenterImportRecordVO = {
    *
    * @value
    */
-  createMobilePhone: string;
+  createMobilePhone: string
 
   /**
    *
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    *
    * @value
    */
-  createNickName: string;
+  createNickName: string
 
   /**
    *
    * @value #datetime()
    */
-  createTime: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  importNumber: number;
+  createTime: string
 
   /**
    *
    * @value
    */
-  schoolCode: string;
+  id: number
 
   /**
    *
    * @value
    */
-  schoolName: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  type: number;
+  importNumber: number
 
   /**
    *
    * @value
    */
-  typeStr: string;
-};
+  schoolCode: string
+
+  /**
+   *
+   * @value
+   */
+  schoolName: string
+
+  /**
+   *
+   * @value
+   */
+  type: number
+
+  /**
+   *
+   * @value
+   */
+  typeStr: string
+}
 
 /**
  * --
@@ -26758,20 +27002,20 @@ export type SelectResult = {
    * key
    * @value
    */
-  id: string;
+  id: string
 
   /**
    * value
    * @value
    */
-  text: string;
+  text: string
 
   /**
    * url
    * @value
    */
-  url: string;
-};
+  url: string
+}
 
 /**
  * --
@@ -26781,14 +27025,14 @@ export type SelectResult_1 = {
    * key
    * @value
    */
-  id: string;
+  id: string
 
   /**
    * value
    * @value
    */
-  text: string;
-};
+  text: string
+}
 
 /**
  * --
@@ -26798,80 +27042,80 @@ export type SfCampusSceneryTypeVO = {
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
    * @value
    */
-  createTimeStr: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
+  createTimeStr: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  id: number
 
   /**
    *
    * @value
    */
-  operation: string;
+  operates: string[]
+
+  /**
+   *
+   * @value
+   */
+  operation: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态 0禁用 1启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 分类名称
    * @value
    */
-  typeName: string;
+  typeName: string
 
   /**
    * 排序
-   * @value #integer(32)
+   * @value
    */
-  typeSort: number;
+  typeSort: number
 
   /**
    *
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    *
    * @value
    */
-  updateTimeStr: string;
-};
+  updateTimeStr: string
+}
 
 /**
  * --
@@ -26881,122 +27125,122 @@ export type SfCampusSceneryVO = {
    *
    * @value
    */
-  content: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  createId: number;
+  content: string
 
   /**
    *
    * @value
    */
-  createName: string;
+  createId: number
+
+  /**
+   *
+   * @value
+   */
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
    * @value
    */
-  createTimeStr: string;
+  createTimeStr: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 图片，逗号隔开
    * @value
    */
-  images: string;
+  images: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态 0禁用 1启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 标题
    * @value
    */
-  title: string;
+  title: string
 
   /**
    * 分类id
-   * @value #integer(64)
+   * @value
    */
-  typeId: number;
+  typeId: number
 
   /**
    * 分类名称
    * @value
    */
-  typeName: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  updateId: number;
+  typeName: string
 
   /**
    *
    * @value
    */
-  updateName: string;
+  updateId: number
+
+  /**
+   *
+   * @value
+   */
+  updateName: string
 
   /**
    *
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    *
    * @value
    */
-  updateTimeStr: string;
-};
+  updateTimeStr: string
+}
 
 /**
  * --
@@ -27006,122 +27250,122 @@ export type SfUserVO = {
    * 地区详情
    * @value
    */
-  address: string;
+  address: string
 
   /**
    * 地区代码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 地区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 院系
    * @value
    */
-  department: string;
+  department: string
 
   /**
    * 学历
    * @value
    */
-  education: string;
+  education: string
 
   /**
    * 入学年份
-   * @value #integer(32)
+   * @value
    */
-  enrollmentYear: number;
+  enrollmentYear: number
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否实名认证 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isRealNameAuth: number;
+  isRealNameAuth: number
 
   /**
    * 邮箱
    * @value
    */
-  mail: string;
+  mail: string
 
   /**
    * 手机号
    * @value
    */
-  mobile: string;
+  mobile: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 校内身份类型 1学生 2教职工 4家长 8校友
-   * @value #integer(32)
+   * @value
    */
-  schoolIdentityType: number;
+  schoolIdentityType: number
 
   /**
    *
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 专业
    * @value
    */
-  specialities: string;
+  specialities: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 学校编码
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 学校名称
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * --
@@ -27131,26 +27375,26 @@ export type SubsidyItemListTotalMoneyVO = {
    * 项目名称
    * @value
    */
-  itemName: string;
+  itemName: string
 
   /**
    * 金额
-   * @value #integer(64)
+   * @value
    */
-  money: number;
+  money: number
 
   /**
    *
    * @value
    */
-  moneyStr: string;
+  moneyStr: string
 
   /**
    * 总人数
-   * @value #integer(32)
+   * @value
    */
-  userCount: number;
-};
+  userCount: number
+}
 
 /**
  * --
@@ -27158,250 +27402,250 @@ export type SubsidyItemListTotalMoneyVO = {
 export type SubsidyItemListVO = {
   /**
    * 清分账户ID
-   * @value #integer(64)
+   * @value
    */
-  accountId: number;
+  accountId: number
 
   /**
    * 绑定状态： 0-已绑定， 1-未绑定
-   * @value #integer(32)
+   * @value
    */
-  authStatus: number;
+  authStatus: number
 
   /**
    *
    * @value
    */
-  authStatusName: string;
+  authStatusName: string
 
   /**
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 院系部门
    * @value
    */
-  departmentName: string;
+  departmentName: string
 
   /**
    * 提现状态
    * @value
    */
-  extractStatusStr: string;
+  extractStatusStr: string
 
   /**
    * 提现时间
    * @value
    */
-  extractTime: string;
+  extractTime: string
 
   /**
    * 提现类型 1:手动提现 2:自动提现
-   * @value #integer(32)
+   * @value
    */
-  extractType: number;
+  extractType: number
 
   /**
    *
    * @value
    */
-  extractTypeStr: string;
+  extractTypeStr: string
 
   /**
    * 失败原因
    * @value
    */
-  failMsg: string;
+  failMsg: string
 
   /**
    * 发放类型
-   * @value #integer(32)
+   * @value
    */
-  grantType: number;
+  grantType: number
 
   /**
    *
    * @value
    */
-  grantTypeName: string;
+  grantTypeName: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证
    * @value
    */
-  identityId: string;
+  identityId: string
 
   /**
    * 项目id
-   * @value #integer(64)
+   * @value
    */
-  itemId: number;
+  itemId: number
 
   /**
    * 项目名称
    * @value
    */
-  itemName: string;
+  itemName: string
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 专业
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 金额
-   * @value #integer(64)
+   * @value
    */
-  money: number;
+  money: number
 
   /**
    *
    * @value
    */
-  moneyStr: string;
+  moneyStr: string
 
   /**
    * 姓名
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 付款通知书id
-   * @value #integer(64)
+   * @value
    */
-  noticeId: number;
+  noticeId: number
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 手机号
    * @value
    */
-  phone: string;
+  phone: string
 
   /**
    * 打款流水号
    * @value
    */
-  remitNo: string;
+  remitNo: string
 
   /**
    * 打款状态 0:未打款 1:待打款 2:打款中 3:打款成功 4:打款失败
-   * @value #integer(32)
+   * @value
    */
-  remitStatus: number;
+  remitStatus: number
 
   /**
    *
    * @value
    */
-  remitStatusStr: string;
+  remitStatusStr: string
 
   /**
    * 打款时间
    * @value
    */
-  remitTime: string;
+  remitTime: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 来源
    * @value
    */
-  source: string;
+  source: string
 
   /**
    *
    * @value
    */
-  sourceStr: string;
+  sourceStr: string
 
   /**
    * 状态，1启用，0禁用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 项目批次id
-   * @value #integer(64)
+   * @value
    */
-  subItemId: number;
+  subItemId: number
 
   /**
    * 订单号
    * @value
    */
-  subOrderNo: string;
+  subOrderNo: string
 
   /**
    * 第三方id
    * @value
    */
-  thirdId: string;
+  thirdId: string
 
   /**
    * 转账记录id
    * @value
    */
-  transferId: string;
+  transferId: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
-};
+  userId: number
+}
 
 /**
  * --
@@ -27409,148 +27653,148 @@ export type SubsidyItemListVO = {
 export type SubsidyItemVO = {
   /**
    * 学校账户id
-   * @value #integer(64)
+   * @value
    */
-  accountId: number;
+  accountId: number
 
   /**
    * 支付宝账号
    * @value
    */
-  alipayAccountNo: string;
+  alipayAccountNo: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 发放类型
-   * @value #integer(32)
+   * @value
    */
-  grantType: number;
+  grantType: number
 
   /**
    *
    * @value
    */
-  grantTypeName: string;
+  grantTypeName: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 项目总人数
-   * @value #integer(32)
+   * @value
    */
-  itemDetailSum: number;
+  itemDetailSum: number
 
   /**
    * 项目总金额
-   * @value #integer(64)
+   * @value
    */
-  itemMoney: number;
+  itemMoney: number
 
   /**
    *
    * @value
    */
-  itemMoneyStr: string;
+  itemMoneyStr: string
 
   /**
    * 打款项名称
    * @value
    */
-  itemName: string;
+  itemName: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 来源
    * @value
    */
-  source: string;
+  source: string
 
   /**
    *
    * @value
    */
-  sourceStr: string;
+  sourceStr: string
 
   /**
    * 状态，1启用，0禁用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 清分系统id
    * @value
    */
-  stlId: string;
+  stlId: string
 
   /**
    * 打款成功总金额
-   * @value #integer(64)
+   * @value
    */
-  successDetailAmount: number;
+  successDetailAmount: number
 
   /**
    *
    * @value
    */
-  successDetailAmountStr: string;
+  successDetailAmountStr: string
 
   /**
    * 打款成功人数
-   * @value #integer(32)
+   * @value
    */
-  successDetailSum: number;
+  successDetailSum: number
 
   /**
    * 是否支持导入名单 0:是 1:否
-   * @value #integer(32)
+   * @value
    */
-  supportImport: number;
+  supportImport: number
 
   /**
    *
    * @value
    */
-  supportImportStr: string;
-};
+  supportImportStr: string
+}
 
 /**
  * --
@@ -27560,152 +27804,152 @@ export type SubsidyNoticeVO = {
    * 账号
    * @value
    */
-  account: string;
+  account: string
 
   /**
    * 审核人
    * @value
    */
-  auditor: string;
+  auditor: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 用款部门
    * @value
    */
-  department: string;
+  department: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 通知书标题
    * @value
    */
-  noticeTitle: string;
+  noticeTitle: string
 
   /**
    * 开户银行
    * @value
    */
-  openBank: string;
+  openBank: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 经办人
    * @value
    */
-  operator: string;
+  operator: string
 
   /**
    * 单位名称
    * @value
    */
-  orgName: string;
+  orgName: string
 
   /**
    * 人数
-   * @value #integer(32)
+   * @value
    */
-  payCount: number;
+  payCount: number
 
   /**
    * 付款金额
-   * @value #integer(64)
+   * @value
    */
-  payMoney: number;
+  payMoney: number
 
   /**
    * 金额大写
    * @value
    */
-  payMoneyChinese: string;
+  payMoneyChinese: string
 
   /**
    *
    * @value
    */
-  payMoneyStr: string;
+  payMoneyStr: string
 
   /**
    * 款项用途
    * @value
    */
-  payPurpose: string;
+  payPurpose: string
 
   /**
    * 付款时间
    * @value #datetime()
    */
-  payTime: string;
+  payTime: string
 
   /**
    * 付款方式 1:电汇 2:承诺 3:转支 4:现金
-   * @value #integer(32)
+   * @value
    */
-  payType: number;
+  payType: number
 
   /**
    *
    * @value
    */
-  payTypeStr: string;
+  payTypeStr: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 打款状态 1:待打款 3:提交成功
-   * @value #integer(32)
+   * @value
    */
-  remitStatus: number;
+  remitStatus: number
 
   /**
    *
    * @value
    */
-  remitStatusStr: string;
+  remitStatusStr: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态，1启用，0禁用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusStr: string;
-};
+  statusStr: string
+}
 
 /**
  * --
@@ -27715,62 +27959,62 @@ export type SubsidyPushRecordVO = {
    * 内容
    * @value
    */
-  content: string;
+  content: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 项目名称
    * @value
    */
-  itemName: string;
-
-  /**
-   * 打款状态 0:全部 1:未打款 2:打款中 3:已打款
-   * @value #integer(32)
-   */
-  itemType: number;
+  itemName: string
 
   /**
    * 打款状态 0:全部 1:未打款 2:打款中 3:已打款
    * @value
    */
-  itemTypeStr: string;
+  itemType: number
+
+  /**
+   * 打款状态 0:全部 1:未打款 2:打款中 3:已打款
+   * @value
+   */
+  itemTypeStr: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 人数
-   * @value #integer(32)
+   * @value
    */
-  pushNum: number;
+  pushNum: number
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 标题
    * @value
    */
-  title: string;
-};
+  title: string
+}
 
 /**
  * --
@@ -27780,146 +28024,146 @@ export type SubsidySubItemVO = {
    * 外部批次号
    * @value
    */
-  batchTransId: string;
+  batchTransId: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
    * @value
    */
-  createTimeStr: string;
+  createTimeStr: string
 
   /**
    * 失效时间
    * @value #datetime()
    */
-  expireTime: string;
+  expireTime: string
 
   /**
    *
    * @value
    */
-  expireTimeStr: string;
+  expireTimeStr: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  grantType: number;
+  grantType: number
 
   /**
    * 打款方式
    * @value
    */
-  grantTypeName: string;
+  grantTypeName: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 所属项目
    * @value
    */
-  itemName: string;
+  itemName: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 支付链接
    * @value
    */
-  payUrl: string;
+  payUrl: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 订单标题
    * @value
    */
-  subName: string;
+  subName: string
 
   /**
    * 订单号
    * @value
    */
-  subOrderNo: string;
+  subOrderNo: string
 
   /**
    * 成功总金额
-   * @value #integer(64)
+   * @value
    */
-  successAmount: number;
+  successAmount: number
 
   /**
    *
    * @value
    */
-  successAmountStr: string;
+  successAmountStr: string
 
   /**
    * 成功人数
-   * @value #integer(32)
+   * @value
    */
-  successSum: number;
+  successSum: number
 
   /**
    * 总金额
-   * @value #integer(64)
+   * @value
    */
-  totalAmount: number;
+  totalAmount: number
 
   /**
    *
    * @value
    */
-  totalAmountStr: string;
+  totalAmountStr: string
 
   /**
    * 总人数
-   * @value #integer(32)
+   * @value
    */
-  totalSum: number;
-};
+  totalSum: number
+}
 
 /**
  * --
@@ -27929,86 +28173,86 @@ export type SysMenuVO = {
    *
    * @rule 2
    */
-  childMenus: SysMenuVO[];
+  childMenus: SysMenuVO[]
 
   /**
    *
    * @value
    */
-  code: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  fatherId: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  flag: number;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  isMenu: number;
+  code: string
 
   /**
    *
    * @value
    */
-  isMenuStr: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  menuLevel: number;
+  fatherId: number
 
   /**
    *
    * @value
    */
-  name: string;
+  flag: number
 
   /**
    *
    * @value
    */
-  operates: string[];
+  id: number
 
   /**
    *
    * @value
    */
-  platformCode: string;
+  isMenu: number
 
   /**
    *
    * @value
    */
-  platformCodeStr: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  sort: number;
+  isMenuStr: string
 
   /**
    *
    * @value
    */
-  url: string;
-};
+  menuLevel: number
+
+  /**
+   *
+   * @value
+   */
+  name: string
+
+  /**
+   *
+   * @value
+   */
+  operates: string[]
+
+  /**
+   *
+   * @value
+   */
+  platformCode: string
+
+  /**
+   *
+   * @value
+   */
+  platformCodeStr: string
+
+  /**
+   *
+   * @value
+   */
+  sort: number
+
+  /**
+   *
+   * @value
+   */
+  url: string
+}
 
 /**
  * --
@@ -28018,8 +28262,8 @@ export type Type = {
    *
    * @value
    */
-  typeName: string;
-};
+  typeName: string
+}
 
 /**
  * --
@@ -28029,99 +28273,99 @@ export type UpCpAccountVO = {
    * 账号名称
    * @value
    */
-  accountName: string;
+  accountName: string
 
   /**
    * 服务商code
    * @value
    */
-  channelCode: string;
+  channelCode: string
 
   /**
    * 服务商
    * @value
    */
-  channelName: string;
+  channelName: string
 
   /**
    * 主商户id
-   * @value #integer(64)
+   * @value
    */
-  cpMainId: number;
+  cpMainId: number
 
   /**
    * 主商户名称
    * @value
    */
-  cpMainName: string;
+  cpMainName: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
+  createTime: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  id: number
 
   /**
    *
    * @value
    */
-  operation: string;
-  payTypeList: {}[];
+  operates: string[]
+
+  /**
+   *
+   * @value
+   */
+  operation: string
+  payTypeList: {}[]
 
   /**
    * 付款方式
    * @value
    */
-  payTypes: string;
+  payTypes: string
 
   /**
    * 结算费率
    * @value
    */
-  settleFee: string;
+  settleFee: string
 
   /**
    * 状态 1启用，0禁用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态名称
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 更新人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -28131,86 +28375,86 @@ export type UpCpMainVO = {
    * 一卡通密钥
    * @value
    */
-  cardKey: string;
+  cardKey: string
 
   /**
    * 商户名称
    * @value
    */
-  cpName: string;
+  cpName: string
 
   /**
    * 商户类型
    * @value
    */
-  cpTypeName: string;
+  cpTypeName: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 联系地址
    * @value
    */
-  linkAddress: string;
+  linkAddress: string
 
   /**
    * 联系电话
    * @value
    */
-  linkPhone: string;
+  linkPhone: string
 
   /**
    * 联系人
    * @value
    */
-  linkUser: string;
+  linkUser: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 状态 1启用，0禁用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态名称
    * @value
    */
-  statusName: string;
-};
+  statusName: string
+}
 
 /**
  * --
@@ -28220,140 +28464,140 @@ export type UpCpVO = {
    * 一卡通商户号
    * @value
    */
-  cardPartner: string;
+  cardPartner: string
 
   /**
    * 商户使用收款账号id
-   * @value #integer(64)
+   * @value
    */
-  cpAccountId: number;
+  cpAccountId: number
 
   /**
    * 商户使用收款账号名称
    * @value
    */
-  cpAccountName: string;
+  cpAccountName: string
 
   /**
    * 商户编码
    * @value
    */
-  cpCode: string;
+  cpCode: string
 
   /**
    * 主商户id
-   * @value #integer(64)
+   * @value
    */
-  cpMainId: number;
+  cpMainId: number
 
   /**
    * 主商户名称
    * @value
    */
-  cpMainName: string;
+  cpMainName: string
 
   /**
    * 商户名称
    * @value
    */
-  cpName: string;
+  cpName: string
 
   /**
    * 状态，1启用，0禁用
-   * @value #integer(32)
+   * @value
    */
-  cpState: number;
+  cpState: number
 
   /**
    * 状态名称
    * @value
    */
-  cpStateName: string;
+  cpStateName: string
 
   /**
    * 商户类型
    * @value
    */
-  cpTypeName: string;
+  cpTypeName: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 商户是否支持易校园钱包
-   * @value #integer(32)
+   * @value
    */
-  eacctEnable: number;
+  eacctEnable: number
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 联系地址
    * @value
    */
-  linkAddress: string;
+  linkAddress: string
 
   /**
    * 联系电话
    * @value
    */
-  linkPhone: string;
+  linkPhone: string
 
   /**
    * 联系人
    * @value
    */
-  linkUser: string;
+  linkUser: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 商户是否支持红包
-   * @value #integer(32)
+   * @value
    */
-  redbagEnable: number;
+  redbagEnable: number
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 签名密钥
    * @value
    */
-  signKey: string;
+  signKey: string
 
   /**
    * 收款账户
    * @rule 2
    */
-  upCpAccountVOList: UpCpAccountVO[];
-};
+  upCpAccountVOList: UpCpAccountVO[]
+}
 
 /**
  * --
@@ -28363,110 +28607,110 @@ export type UpRedbagAccountVO = {
    * 收款账号
    * @value
    */
-  account: string;
+  account: string
 
   /**
    * 收款账号名称
    * @value
    */
-  accountName: string;
+  accountName: string
 
   /**
    * 地区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 开户城市
    * @value
    */
-  city: string;
+  city: string
 
   /**
    * cpcode
    * @value
    */
-  cpCode: string;
+  cpCode: string
 
   /**
    * 主商户
    * @value
    */
-  cpMainName: string;
+  cpMainName: string
 
   /**
    * 商户
    * @value
    */
-  cpName: string;
+  cpName: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 收款账户短信通知手机
    * @value
    */
-  mobileNo: string;
+  mobileNo: string
 
   /**
    * 自定义序号
-   * @value #integer(32)
+   * @value
    */
-  num: number;
+  num: number
 
   /**
    * 开户行
    * @value
    */
-  openBank: string;
+  openBank: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 开户省份
    * @value
    */
-  province: string;
+  province: string
 
   /**
    * 更新人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -28474,64 +28718,64 @@ export type UpRedbagAccountVO = {
 export type UpRedbagBalanceVO = {
   /**
    * 红包余额
-   * @value #integer(64)
+   * @value
    */
-  balance: number;
+  balance: number
 
   /**
    * 红包余额
    * @value
    */
-  balanceYuan: string;
+  balanceYuan: string
 
   /**
    * 主商户名称
    * @value
    */
-  cpMainName: string;
+  cpMainName: string
 
   /**
    * 首次领取时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 手机号码
    * @value
    */
-  mobileNo: string;
+  mobileNo: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * --
@@ -28539,106 +28783,106 @@ export type UpRedbagBalanceVO = {
 export type UpRedbagBillVO = {
   /**
    * 结算总金额
-   * @value #integer(64)
+   * @value
    */
-  amount: number;
+  amount: number
 
   /**
    * 结算总金额
    * @value
    */
-  amountYuan: string;
+  amountYuan: string
 
   /**
    * 日期
    * @value
    */
-  billDate: string;
+  billDate: string
 
   /**
    * 文件编码
    * @value
    */
-  billNo: string;
+  billNo: string
 
   /**
    * 商户名称
    * @value
    */
-  cpMainName: string;
+  cpMainName: string
 
   /**
    * 子商户名称
    * @value
    */
-  cpName: string;
+  cpName: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 导出时间
    * @value #datetime()
    */
-  exportTime: string;
+  exportTime: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否已导出
    * @value
    */
-  isExportName: string;
+  isExportName: string
 
   /**
    *
    * @value
    */
-  isRemitName: string;
+  isRemitName: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    *
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    *
    * @value #datetime()
    */
-  remitTime: string;
+  remitTime: string
 
   /**
    * 更新人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -28648,116 +28892,116 @@ export type UpRedbagConfigVO = {
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 截止时间
    * @value #datetime()
    */
-  finishTime: string;
+  finishTime: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 用户峰值
-   * @value #integer(64)
+   * @value
    */
-  maxMoney: number;
+  maxMoney: number
 
   /**
    * 活动名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 支付方式名称
    * @value
    */
-  payTypeName: string;
+  payTypeName: string
 
   /**
    * 发放红包节点
    * @rule 2
    */
-  redbagNodeVOList: UpRedbagNodeVO[];
+  redbagNodeVOList: UpRedbagNodeVO[]
 
   /**
    * 配置红包
    * @rule 2
    */
-  redbagVOList: UpRedbagVO[];
+  redbagVOList: UpRedbagVO[]
 
   /**
    * 状态 0启用，1禁用，2已结束
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态名称
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 总金额
-   * @value #integer(64)
+   * @value
    */
-  totalMoney: number;
+  totalMoney: number
 
   /**
    * 总数量
-   * @value #integer(64)
+   * @value
    */
-  totalNum: number;
+  totalNum: number
 
   /**
    * 折扣方式 1:单个红包抵扣 2:复合红包抵扣
-   * @value #integer(32)
+   * @value
    */
-  type: number;
+  type: number
 
   /**
    * 类别名称
    * @value
    */
-  typeName: string;
+  typeName: string
 
   /**
    * 更新人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -28767,116 +29011,116 @@ export type UpRedbagNodeVO = {
    *
    * @value
    */
-  check: boolean;
+  check: boolean
 
   /**
    * 编码
    * @value
    */
-  code: string;
+  code: string
 
   /**
    *
    * @value
    */
-  cpInfoStr: string;
+  cpInfoStr: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
    * @value
    */
-  disable: boolean;
+  disable: boolean
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 使用范围，1:全场通用红包，2:指定商户红包
-   * @value #integer(32)
+   * @value
    */
-  rangeType: number;
+  rangeType: number
 
   /**
    * 使用范围
    * @value
    */
-  rangeTypeName: string;
-
-  /**
-   * 状态
-   * @value #integer(32)
-   */
-  status: number;
+  rangeTypeName: string
 
   /**
    * 状态
    * @value
    */
-  statusName: string;
+  status: number
 
   /**
-   * 类别
-   * @value #integer(32)
+   * 状态
+   * @value
    */
-  type: number;
+  statusName: string
 
   /**
    * 类别
    * @value
    */
-  typeName: string;
+  type: number
+
+  /**
+   * 类别
+   * @value
+   */
+  typeName: string
 
   /**
    * 更新人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
-};
+  userId: number
+}
 
 /**
  * --
@@ -28884,196 +29128,196 @@ export type UpRedbagNodeVO = {
 export type UpRedbagVO = {
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  alarmAmount: number;
+  alarmAmount: number
 
   /**
    *
    * @value
    */
-  alarmMobile: string;
-
-  /**
-   * 金额区间开始
-   * @value #integer(64)
-   */
-  amountFrom: number;
+  alarmMobile: string
 
   /**
    * 金额区间开始
    * @value
    */
-  amountFromStr: string;
+  amountFrom: number
+
+  /**
+   * 金额区间开始
+   * @value
+   */
+  amountFromStr: string
 
   /**
    * 金额区间结束
-   * @value #integer(64)
+   * @value
    */
-  amountTo: number;
+  amountTo: number
 
   /**
    * 金额区间结束
    * @value
    */
-  amountToStr: string;
+  amountToStr: string
 
   /**
    *
    * @value
    */
-  code: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  configId: number;
+  code: string
 
   /**
    *
    * @value
    */
-  configName: string;
+  configId: number
+
+  /**
+   *
+   * @value
+   */
+  configName: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 截止时间
    * @value #datetime()
    */
-  finishTime: string;
+  finishTime: string
 
   /**
    * 规则id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 每人限领取数量
-   * @value #integer(32)
+   * @value
    */
-  maxNum: number;
+  maxNum: number
 
   /**
    * 最低消费金额
-   * @value #integer(64)
+   * @value
    */
-  minPayment: number;
+  minPayment: number
 
   /**
    * 红包名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 红包使用范围名称
    * @value
    */
-  rangeTypeName: string;
+  rangeTypeName: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 红包活动状态，0禁用，1启用，2已结束
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 总金额
-   * @value #integer(64)
+   * @value
    */
-  totalAmount: number;
+  totalAmount: number
 
   /**
    * 总发放数量
-   * @value #integer(64)
+   * @value
    */
-  totalNum: number;
+  totalNum: number
 
   /**
    * 红包类型
-   * @value #integer(32)
+   * @value
    */
-  type: number;
+  type: number
 
   /**
    * 红包类型名称
    * @value
    */
-  typeName: string;
+  typeName: string
 
   /**
    * 更新人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
-
-  /**
-   * 已发放金额
-   * @value #integer(64)
-   */
-  useAmount: number;
+  updateTime: string
 
   /**
    * 已发放金额
    * @value
    */
-  useAmountYuan: string;
+  useAmount: number
+
+  /**
+   * 已发放金额
+   * @value
+   */
+  useAmountYuan: string
 
   /**
    * 已发放红包数量
-   * @value #integer(64)
+   * @value
    */
-  useNum: number;
+  useNum: number
 
   /**
    * 有效时间天数
-   * @value #integer(32)
+   * @value
    */
-  validDays: number;
-};
+  validDays: number
+}
 
 /**
  * --
@@ -29081,148 +29325,148 @@ export type UpRedbagVO = {
 export type UpUserRedbagVO = {
   /**
    * 红包金额
-   * @value #integer(64)
+   * @value
    */
-  amount: number;
+  amount: number
 
   /**
    * 红包金额
    * @value
    */
-  amountYuan: string;
+  amountYuan: string
 
   /**
    *
    * @value
    */
-  cpMainName: string;
+  cpMainName: string
 
   /**
    * 创建人
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 领取时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 红包id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 红包有效期截止
    * @value #datetime()
    */
-  invalidTime: string;
+  invalidTime: string
 
   /**
    * 用户手机
    * @value
    */
-  mobileNo: string;
+  mobileNo: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 红包发放渠道
    * @value
    */
-  platform: string;
+  platform: string
 
   /**
    * 红包使用范围名称
    * @value
    */
-  rangeTypeName: string;
+  rangeTypeName: string
 
   /**
    * 发放节点
    * @value
    */
-  redbagName: string;
+  redbagName: string
 
   /**
    * 说明
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 红包状态，0未使用，1已使用，2已过期
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态名称
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  type: number;
+  type: number
 
   /**
    * 更新人
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 使用商户名称
    * @value
    */
-  useCpName: string;
+  useCpName: string
 
   /**
    * 使用时间
    * @value #datetime()
    */
-  useTime: string;
+  useTime: string
 
   /**
    * 使用的订单
    * @value
    */
-  useTranNo: string;
+  useTranNo: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * --
@@ -29232,32 +29476,32 @@ export type UserOrganizationDepartVO = {
    * 子集
    * @rule 2
    */
-  childList: UserOrganizationDepartVO[];
+  childList: UserOrganizationDepartVO[]
 
   /**
    * 权限id
    * @value
    */
-  departId: string;
+  departId: string
 
   /**
    * 权限名称
    * @value
    */
-  departName: string;
+  departName: string
 
   /**
    * 部门类型 1学生2教职工
    * @value
    */
-  departType: string;
+  departType: string
 
   /**
    * 是否选中 0选中 1不选中
-   * @value #integer(32)
+   * @value
    */
-  isChecked: number;
-};
+  isChecked: number
+}
 
 /**
  * --
@@ -29267,8 +29511,8 @@ export type View = {
    *
    * @value
    */
-  contentType: string;
-};
+  contentType: string
+}
 
 /**
  * --
@@ -29278,110 +29522,110 @@ export type WNWitnessCheckParamNew = {
    *
    * @value
    */
-  addTime: string;
+  addTime: string
 
   /**
    *
    * @value
    */
-  address: string;
+  address: string
 
   /**
    *
    * @value
    */
-  birth: string;
+  birth: string
 
   /**
    *
    * @value
    */
-  department: string;
+  department: string
 
   /**
    *
    * @value
    */
-  deviceId: string;
+  deviceId: string
 
   /**
    *
    * @value
    */
-  deviceMac: string;
+  deviceMac: string
 
   /**
    *
    * @value
    */
-  faceImageBase64: string;
+  faceImageBase64: string
 
   /**
    *
    * @value
    */
-  idCard: string;
+  idCard: string
 
   /**
    *
    * @value
    */
-  idCardType: string;
+  idCardType: string
 
   /**
    *
    * @value
    */
-  idImgBase64: string;
+  idImgBase64: string
 
   /**
    *
    * @value
    */
-  name: string;
+  name: string
 
   /**
    *
    * @value
    */
-  nation: string;
+  nation: string
 
   /**
    *
    * @value
    */
-  score: string;
+  score: string
 
   /**
    *
    * @value
    */
-  sex: string;
+  sex: string
 
   /**
    *
    * @value
    */
-  validEndDate: string;
+  validEndDate: string
 
   /**
    *
    * @value
    */
-  validStartDate: string;
+  validStartDate: string
 
   /**
    *
    * @value
    */
-  verifyResult: string;
+  verifyResult: string
 
   /**
    *
    * @value
    */
-  vernsionCode: string;
-};
+  vernsionCode: string
+}
 
 /**
  * --
@@ -29391,86 +29635,86 @@ export type WnAcceptanceLetterVO = {
    *
    * @value
    */
-  address: string;
+  address: string
 
   /**
    *
    * @value
    */
-  addressee: string;
+  addressee: string
 
   /**
    *
    * @value
    */
-  courierNumber: string;
+  courierNumber: string
 
   /**
    *
    * @value
    */
-  expressCompany: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
+  expressCompany: string
 
   /**
    *
    * @value
    */
-  identityId: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  noticeStatus: number;
+  id: number
 
   /**
    *
    * @value
    */
-  noticeStatusStr: string;
+  identityId: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  noticeStatus: number
 
   /**
    *
    * @value
    */
-  phone: string;
+  noticeStatusStr: string
 
   /**
    *
    * @value
    */
-  recruitYear: string;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  semester: number;
+  operates: string[]
 
   /**
    *
    * @value
    */
-  semesterStr: string;
+  phone: string
 
   /**
    *
    * @value
    */
-  studentName: string;
-};
+  recruitYear: string
+
+  /**
+   *
+   * @value
+   */
+  semester: number
+
+  /**
+   *
+   * @value
+   */
+  semesterStr: string
+
+  /**
+   *
+   * @value
+   */
+  studentName: string
+}
 
 /**
  * --
@@ -29480,170 +29724,170 @@ export type WnApplicationConfigVO = {
    * 应用链接
    * @value
    */
-  applicationUrl: string;
+  applicationUrl: string
 
   /**
    * 应用编码
    * @value
    */
-  code: string;
+  code: string
 
   /**
    * 创建姓名
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 是否默认应用：0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  defaultFlag: number;
+  defaultFlag: number
 
   /**
    *
    * @value
    */
-  defaultFlagName: string;
+  defaultFlagName: string
 
   /**
    * 删除状态 0未删除 1删除
-   * @value #integer(32)
+   * @value
    */
-  deleteFlag: number;
+  deleteFlag: number
 
   /**
    * 应用显示名称
    * @value
    */
-  displayName: string;
+  displayName: string
 
   /**
    * 显示端口
-   * @value #integer(32)
+   * @value
    */
-  displayType: number;
+  displayType: number
 
   /**
    *
    * @value
    */
-  displayTypeName: string;
+  displayTypeName: string
 
   /**
    * 表单id
-   * @value #integer(64)
+   * @value
    */
-  formId: number;
+  formId: number
 
   /**
    * 图标
    * @value
    */
-  iconUrl: string;
+  iconUrl: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 应用名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 开启条件
    * @value
    */
-  openCondition: string;
+  openCondition: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 排序
-   * @value #integer(32)
+   * @value
    */
-  sort: number;
+  sort: number
 
   /**
    * 类型：1-平台，2-学校
-   * @value #integer(32)
+   * @value
    */
-  source: number;
+  source: number
 
   /**
    *
    * @value
    */
-  sourceName: string;
+  sourceName: string
 
   /**
    * 状态
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 类型;1自定义表单, 2链接类型
-   * @value #integer(32)
+   * @value
    */
-  type: number;
+  type: number
 
   /**
    * 更新姓名
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -29653,92 +29897,92 @@ export type WnBaseConfigVO = {
    * 招生结束时间
    * @value
    */
-  admissionsEnd: string;
+  admissionsEnd: string
 
   /**
    * 招生开始时间
    * @value
    */
-  admissionsStart: string;
+  admissionsStart: string
 
   /**
    * 地区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 地区展示类型 0:全国 1:省份
-   * @value #integer(32)
+   * @value
    */
-  areaViewType: number;
+  areaViewType: number
 
   /**
    * 颜色
    * @value
    */
-  color: string;
+  color: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 经纬度
    * @value
    */
-  location: string;
+  location: string
 
   /**
    * 公告
    * @value
    */
-  notice: string;
+  notice: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 图片
    * @value
    */
-  picture: string;
+  picture: string
 
   /**
    * 提示
    * @value
    */
-  prompt: string;
+  prompt: string
 
   /**
    * 学校简称
    * @value
    */
-  schoolAbbreviation: string;
+  schoolAbbreviation: string
 
   /**
    *
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 状态
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 视图展示json
    * @value
    */
-  viewEnableJson: string;
-};
+  viewEnableJson: string
+}
 
 /**
  * --
@@ -29748,104 +29992,104 @@ export type WnBatchVO = {
    * 招生结束时间
    * @value #datetime()
    */
-  admissionsEnd: string;
+  admissionsEnd: string
 
   /**
    * 招生开始时间
    * @value #datetime()
    */
-  admissionsStart: string;
+  admissionsStart: string
 
   /**
    * 当前状态 1未开始, 2进行中, 3已完成
-   * @value #integer(32)
+   * @value
    */
-  batchStatus: number;
+  batchStatus: number
 
   /**
    *
    * @value
    */
-  batchStatusStr: string;
+  batchStatusStr: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否默认 0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  isDefault: number;
+  isDefault: number
 
   /**
    *
    * @value
    */
-  isDefaultStr: string;
+  isDefaultStr: string
 
   /**
    * 批次名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 纳新人数
-   * @value #integer(32)
+   * @value
    */
-  num: number;
+  num: number
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 招生年份
    * @value
    */
-  recruitYear: string;
+  recruitYear: string
 
   /**
    * 备注
    * @value
    */
-  remarks: string;
+  remarks: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -29855,62 +30099,62 @@ export type WnBuildingVO = {
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 入住人数
-   * @value #integer(64)
+   * @value
    */
-  checkInNumber: number;
+  checkInNumber: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态:0、未启用  1、已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态名
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -29920,62 +30164,62 @@ export type WnDeviceCheckInfoVO = {
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 院系名称
    * @value
    */
-  departName: string;
+  departName: string
 
   /**
    * 民族
    * @value
    */
-  ethnic: string;
+  ethnic: string
 
   /**
    * 身份证号
    * @value
    */
-  idCard: string;
+  idCard: string
 
   /**
    * 缴费状态(0-未缴费,1-部分缴费，2-全部缴费)
-   * @value #integer(32)
+   * @value
    */
-  jiaofeiStatus: number;
+  jiaofeiStatus: number
 
   /**
    * 专业名称
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 性别 1男，2女
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
+  sex: number
 
   /**
    * 登记状态(0-未登记,1-已登记)
-   * @value #integer(32)
+   * @value
    */
-  signStatus: number;
+  signStatus: number
 
   /**
    * 用户姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -29985,74 +30229,74 @@ export type WnDeviceVO = {
    * 院系名称
    * @value
    */
-  departmentName: string;
+  departmentName: string
 
   /**
    * 设备id编码
    * @value
    */
-  deviceCode: string;
+  deviceCode: string
 
   /**
    * 设备型号
    * @value
    */
-  deviceModel: string;
+  deviceModel: string
 
   /**
    * 设备名称
    * @value
    */
-  deviceName: string;
+  deviceName: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 设备主管人员
    * @value
    */
-  manageName: string;
+  manageName: string
 
   /**
    * 设备主管人员电话
    * @value
    */
-  managePhone: string;
+  managePhone: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态:0、未启用  1、已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
-};
+  statusStr: string
+}
 
 /**
  * --
@@ -30060,28 +30304,28 @@ export type WnDeviceVO = {
 export type WnFloorApiVO = {
   /**
    * 楼栋Id
-   * @value #integer(64)
+   * @value
    */
-  buildingId: number;
+  buildingId: number
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    * 楼层ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 房间列表
    * @rule 2
    */
-  roomList: 迎新房间[];
-};
+  roomList: 迎新房间[]
+}
 
 /**
  * --
@@ -30089,70 +30333,70 @@ export type WnFloorApiVO = {
 export type WnFloorVO = {
   /**
    * 楼栋Id
-   * @value #integer(64)
+   * @value
    */
-  buildingId: number;
+  buildingId: number
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态:0、未启用  1、已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -30162,80 +30406,80 @@ export type WnFormTitleVO = {
    * 启用/禁用：true-禁用，false-启用
    * @value
    */
-  disabled: boolean;
+  disabled: boolean
 
   /**
    * 字段固定：left, right
    * @value
    */
-  fixed: string;
+  fixed: string
 
   /**
    * 列表头是否隐藏：true-隐藏，false-不隐藏
    * @value
    */
-  hideInTable: boolean;
+  hideInTable: boolean
 
   /**
    * 旧的唯一标识字段
    * @value
    */
-  oldUniqueField: string;
+  oldUniqueField: string
 
   /**
    * 旧的唯一标识字段标题
    * @value
    */
-  oldUniqueFieldTitle: string;
+  oldUniqueFieldTitle: string
 
   /**
    * 选项内容
    * @value
    */
-  options: string;
+  options: string
 
   /**
    * 原字段
    * @value
    */
-  originalField: string;
+  originalField: string
 
   /**
    * 是否必填：0-必填，1-非必填
-   * @value #integer(32)
+   * @value
    */
-  required: number;
+  required: number
 
   /**
    * 标准字段
    * @value
    */
-  standardField: string;
+  standardField: string
 
   /**
    * 列表标题
    * @value
    */
-  title: string;
+  title: string
 
   /**
    * 字段类型: 单选Radio，图片Picture，填空Input，多选Checkbox，下拉Picker，日期DatePicker
    * @value
    */
-  type: string;
+  type: string
 
   /**
    * 是否唯一标识：0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  uniqueFlag: number;
+  uniqueFlag: number
 
   /**
    * 值展示字段
    * @value
    */
-  valueField: string;
-};
+  valueField: string
+}
 
 /**
  * --
@@ -30245,998 +30489,998 @@ export type WnFormUserApiVO = {
    * 详细地址
    * @value
    */
-  address: string;
+  address: string
 
   /**
    * 是否调剂：0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  adjustFlag: number;
+  adjustFlag: number
 
   /**
    *
    * @value
    */
-  adjustFlagName: string;
+  adjustFlagName: string
 
   /**
    * 准考生号
    * @value
    */
-  admissionNo: string;
+  admissionNo: string
 
   /**
    * 年龄
-   * @value #integer(32)
+   * @value
    */
-  age: number;
+  age: number
 
   /**
    * 区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 生日
    * @value #datetime()
    */
-  birthday: string;
+  birthday: string
 
   /**
    *
    * @value
    */
-  birthdayStr: string;
+  birthdayStr: string
 
   /**
    * 业务编码
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    * 业务ID
    * @value
    */
-  bizId: string;
+  bizId: string
 
   /**
    * 证件类型
    * @value
    */
-  certificateType: string;
+  certificateType: string
 
   /**
    *
    * @value
    */
-  certificateTypeName: string;
+  certificateTypeName: string
 
   /**
    * 市编码
    * @value
    */
-  cityCode: string;
+  cityCode: string
 
   /**
    * 市名称
    * @value
    */
-  cityName: string;
+  cityName: string
 
   /**
    * 班级编码
    * @value
    */
-  classCode: string;
+  classCode: string
 
   /**
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 创建人id
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建人姓名
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
    * @value
    */
-  createTimeStr: string;
+  createTimeStr: string
 
   /**
    * 删除状态 0 :正常 1 :删除
-   * @value #integer(32)
+   * @value
    */
-  deleteFlag: number;
+  deleteFlag: number
 
   /**
    * 院系编码
    * @value
    */
-  departmentCode: string;
+  departmentCode: string
 
   /**
    * 院系名称
    * @value
    */
-  departmentName: string;
+  departmentName: string
 
   /**
    * 学历
    * @value
    */
-  diploma: string;
+  diploma: string
 
   /**
    *
    * @value
    */
-  diplomaName: string;
+  diplomaName: string
 
   /**
    * 邮箱
    * @value
    */
-  email: string;
+  email: string
 
   /**
    * 考生号
    * @value
    */
-  examNo: string;
+  examNo: string
 
   /**
    * 考生类型
    * @value
    */
-  examineesType: string;
+  examineesType: string
 
   /**
    *
    * @value
    */
-  examineesTypeName: string;
+  examineesTypeName: string
 
   /**
    * 字符串拓展字段1
    * @value
    */
-  extChar1: string;
+  extChar1: string
 
   /**
    * 字符串拓展字段10
    * @value
    */
-  extChar10: string;
+  extChar10: string
 
   /**
    * 字符串拓展字段11
    * @value
    */
-  extChar11: string;
+  extChar11: string
 
   /**
    * 字符串拓展字段12
    * @value
    */
-  extChar12: string;
+  extChar12: string
 
   /**
    * 字符串拓展字段13
    * @value
    */
-  extChar13: string;
+  extChar13: string
 
   /**
    * 字符串拓展字段14
    * @value
    */
-  extChar14: string;
+  extChar14: string
 
   /**
    * 字符串拓展字段15
    * @value
    */
-  extChar15: string;
+  extChar15: string
 
   /**
    * 字符串拓展字段16
    * @value
    */
-  extChar16: string;
+  extChar16: string
 
   /**
    * 字符串拓展字段17
    * @value
    */
-  extChar17: string;
+  extChar17: string
 
   /**
    * 字符串拓展字段18
    * @value
    */
-  extChar18: string;
+  extChar18: string
 
   /**
    * 字符串拓展字段19
    * @value
    */
-  extChar19: string;
+  extChar19: string
 
   /**
    * 字符串拓展字段2
    * @value
    */
-  extChar2: string;
+  extChar2: string
 
   /**
    * 字符串拓展字段20
    * @value
    */
-  extChar20: string;
+  extChar20: string
 
   /**
    * 字符串拓展字段21
    * @value
    */
-  extChar21: string;
+  extChar21: string
 
   /**
    * 字符串拓展字段22
    * @value
    */
-  extChar22: string;
+  extChar22: string
 
   /**
    * 字符串拓展字段23
    * @value
    */
-  extChar23: string;
+  extChar23: string
 
   /**
    * 字符串拓展字段24
    * @value
    */
-  extChar24: string;
+  extChar24: string
 
   /**
    * 字符串拓展字段25
    * @value
    */
-  extChar25: string;
+  extChar25: string
 
   /**
    * 字符串拓展字段26
    * @value
    */
-  extChar26: string;
+  extChar26: string
 
   /**
    * 字符串拓展字段27
    * @value
    */
-  extChar27: string;
+  extChar27: string
 
   /**
    * 字符串拓展字段28
    * @value
    */
-  extChar28: string;
+  extChar28: string
 
   /**
    * 字符串拓展字段29
    * @value
    */
-  extChar29: string;
+  extChar29: string
 
   /**
    * 字符串拓展字段3
    * @value
    */
-  extChar3: string;
+  extChar3: string
 
   /**
    * 字符串拓展字段30
    * @value
    */
-  extChar30: string;
+  extChar30: string
 
   /**
    * 字符串拓展字段31
    * @value
    */
-  extChar31: string;
+  extChar31: string
 
   /**
    * 字符串拓展字段32
    * @value
    */
-  extChar32: string;
+  extChar32: string
 
   /**
    * 字符串拓展字段33
    * @value
    */
-  extChar33: string;
+  extChar33: string
 
   /**
    * 字符串拓展字段34
    * @value
    */
-  extChar34: string;
+  extChar34: string
 
   /**
    * 字符串拓展字段35
    * @value
    */
-  extChar35: string;
+  extChar35: string
 
   /**
    * 字符串拓展字段36
    * @value
    */
-  extChar36: string;
+  extChar36: string
 
   /**
    * 字符串拓展字段37
    * @value
    */
-  extChar37: string;
+  extChar37: string
 
   /**
    * 字符串拓展字段38
    * @value
    */
-  extChar38: string;
+  extChar38: string
 
   /**
    * 字符串拓展字段39
    * @value
    */
-  extChar39: string;
+  extChar39: string
 
   /**
    * 字符串拓展字段4
    * @value
    */
-  extChar4: string;
+  extChar4: string
 
   /**
    * 字符串拓展字段40
    * @value
    */
-  extChar40: string;
+  extChar40: string
 
   /**
    * 字符串拓展字段41
    * @value
    */
-  extChar41: string;
+  extChar41: string
 
   /**
    * 字符串拓展字段42
    * @value
    */
-  extChar42: string;
+  extChar42: string
 
   /**
    * 字符串拓展字段43
    * @value
    */
-  extChar43: string;
+  extChar43: string
 
   /**
    * 字符串拓展字段44
    * @value
    */
-  extChar44: string;
+  extChar44: string
 
   /**
    * 字符串拓展字段45
    * @value
    */
-  extChar45: string;
+  extChar45: string
 
   /**
    * 字符串拓展字段46
    * @value
    */
-  extChar46: string;
+  extChar46: string
 
   /**
    * 字符串拓展字段47
    * @value
    */
-  extChar47: string;
+  extChar47: string
 
   /**
    * 字符串拓展字段48
    * @value
    */
-  extChar48: string;
+  extChar48: string
 
   /**
    * 字符串拓展字段49
    * @value
    */
-  extChar49: string;
+  extChar49: string
 
   /**
    * 字符串拓展字段5
    * @value
    */
-  extChar5: string;
+  extChar5: string
 
   /**
    * 字符串拓展字段50
    * @value
    */
-  extChar50: string;
+  extChar50: string
 
   /**
    * 字符串拓展字段51
    * @value
    */
-  extChar51: string;
+  extChar51: string
 
   /**
    * 字符串拓展字段52
    * @value
    */
-  extChar52: string;
+  extChar52: string
 
   /**
    * 字符串拓展字段53
    * @value
    */
-  extChar53: string;
+  extChar53: string
 
   /**
    * 字符串拓展字段54
    * @value
    */
-  extChar54: string;
+  extChar54: string
 
   /**
    * 字符串拓展字段55
    * @value
    */
-  extChar55: string;
+  extChar55: string
 
   /**
    * 字符串拓展字段56
    * @value
    */
-  extChar56: string;
+  extChar56: string
 
   /**
    * 字符串拓展字段57
    * @value
    */
-  extChar57: string;
+  extChar57: string
 
   /**
    * 字符串拓展字段58
    * @value
    */
-  extChar58: string;
+  extChar58: string
 
   /**
    * 字符串拓展字段59
    * @value
    */
-  extChar59: string;
+  extChar59: string
 
   /**
    * 字符串拓展字段6
    * @value
    */
-  extChar6: string;
+  extChar6: string
 
   /**
    * 字符串拓展字段60
    * @value
    */
-  extChar60: string;
+  extChar60: string
 
   /**
    * 字符串拓展字段61
    * @value
    */
-  extChar61: string;
+  extChar61: string
 
   /**
    * 字符串拓展字段62
    * @value
    */
-  extChar62: string;
+  extChar62: string
 
   /**
    * 字符串拓展字段63
    * @value
    */
-  extChar63: string;
+  extChar63: string
 
   /**
    * 字符串拓展字段64
    * @value
    */
-  extChar64: string;
+  extChar64: string
 
   /**
    * 字符串拓展字段65
    * @value
    */
-  extChar65: string;
+  extChar65: string
 
   /**
    * 字符串拓展字段66
    * @value
    */
-  extChar66: string;
+  extChar66: string
 
   /**
    * 字符串拓展字段67
    * @value
    */
-  extChar67: string;
+  extChar67: string
 
   /**
    * 字符串拓展字段68
    * @value
    */
-  extChar68: string;
+  extChar68: string
 
   /**
    * 字符串拓展字段69
    * @value
    */
-  extChar69: string;
+  extChar69: string
 
   /**
    * 字符串拓展字段7
    * @value
    */
-  extChar7: string;
+  extChar7: string
 
   /**
    * 字符串拓展字段70
    * @value
    */
-  extChar70: string;
+  extChar70: string
 
   /**
    * 字符串拓展字段71
    * @value
    */
-  extChar71: string;
+  extChar71: string
 
   /**
    * 字符串拓展字段72
    * @value
    */
-  extChar72: string;
+  extChar72: string
 
   /**
    * 字符串拓展字段73
    * @value
    */
-  extChar73: string;
+  extChar73: string
 
   /**
    * 字符串拓展字段74
    * @value
    */
-  extChar74: string;
+  extChar74: string
 
   /**
    * 字符串拓展字段75
    * @value
    */
-  extChar75: string;
+  extChar75: string
 
   /**
    * 字符串拓展字段76
    * @value
    */
-  extChar76: string;
+  extChar76: string
 
   /**
    * 字符串拓展字段77
    * @value
    */
-  extChar77: string;
+  extChar77: string
 
   /**
    * 字符串拓展字段78
    * @value
    */
-  extChar78: string;
+  extChar78: string
 
   /**
    * 字符串拓展字段79
    * @value
    */
-  extChar79: string;
+  extChar79: string
 
   /**
    * 字符串拓展字段8
    * @value
    */
-  extChar8: string;
+  extChar8: string
 
   /**
    * 字符串拓展字段80
    * @value
    */
-  extChar80: string;
+  extChar80: string
 
   /**
    * 字符串拓展字段9
    * @value
    */
-  extChar9: string;
+  extChar9: string
 
   /**
    * 日期拓展字段1
    * @value #datetime()
    */
-  extDate1: string;
+  extDate1: string
 
   /**
    * 日期拓展字段10
    * @value #datetime()
    */
-  extDate10: string;
+  extDate10: string
 
   /**
    * 日期拓展字段2
    * @value #datetime()
    */
-  extDate2: string;
+  extDate2: string
 
   /**
    * 日期拓展字段3
    * @value #datetime()
    */
-  extDate3: string;
+  extDate3: string
 
   /**
    * 日期拓展字段4
    * @value #datetime()
    */
-  extDate4: string;
+  extDate4: string
 
   /**
    * 日期拓展字段5
    * @value #datetime()
    */
-  extDate5: string;
+  extDate5: string
 
   /**
    * 日期拓展字段6
    * @value #datetime()
    */
-  extDate6: string;
+  extDate6: string
 
   /**
    * 日期拓展字段7
    * @value #datetime()
    */
-  extDate7: string;
+  extDate7: string
 
   /**
    * 日期拓展字段8
    * @value #datetime()
    */
-  extDate8: string;
+  extDate8: string
 
   /**
    * 日期拓展字段9
    * @value #datetime()
    */
-  extDate9: string;
+  extDate9: string
 
   /**
    * 家庭成员Json
    * @value
    */
-  familyMember: string;
+  familyMember: string
 
   /**
    * 表单编码
    * @value
    */
-  formCode: string;
+  formCode: string
 
   /**
    * 表单ID
-   * @value #integer(64)
+   * @value
    */
-  formId: number;
+  formId: number
 
   /**
    * 毕业学校
    * @value
    */
-  graduationSchool: string;
+  graduationSchool: string
 
   /**
    * 头像
    * @value
    */
-  headImg: string;
+  headImg: string
 
   /**
    * 身高（cm）
    * @value
    */
-  height: string;
+  height: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份号码
    * @value
    */
-  identityNo: string;
+  identityNo: string
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 专业编码
    * @value
    */
-  majorCode: string;
+  majorCode: string
 
   /**
    * 专业名称
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 手机号
    * @value
    */
-  mobileNo: string;
+  mobileNo: string
 
   /**
    * 民族
    * @value
    */
-  nation: string;
+  nation: string
 
   /**
    *
    * @value
    */
-  nationName: string;
+  nationName: string
 
   /**
    * 籍贯(省份)
    * @value
    */
-  nativePlace: string;
+  nativePlace: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 政治面貌
    * @value
    */
-  politicalStatus: string;
+  politicalStatus: string
 
   /**
    *
    * @value
    */
-  politicalStatusName: string;
+  politicalStatusName: string
 
   /**
    * 邮政编码
    * @value
    */
-  postalCode: string;
+  postalCode: string
 
   /**
    * 省份编码
    * @value
    */
-  provinceCode: string;
+  provinceCode: string
 
   /**
    * 省名称
    * @value
    */
-  provinceName: string;
+  provinceName: string
 
   /**
    * QQ号
    * @value
    */
-  qq: string;
+  qq: string
 
   /**
    * 招生年份
    * @value
    */
-  recruitYear: string;
+  recruitYear: string
 
   /**
    * 登记状态：0-已登记，1-未登记
-   * @value #integer(32)
+   * @value
    */
-  registerStatus: number;
+  registerStatus: number
 
   /**
    * 登记时间
    * @value #datetime()
    */
-  registerTime: string;
+  registerTime: string
 
   /**
    * 宗教信仰
    * @value
    */
-  religion: string;
+  religion: string
 
   /**
    *
    * @value
    */
-  religionName: string;
+  religionName: string
 
   /**
    * 报道码
    * @value
    */
-  reportCode: string;
+  reportCode: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 分数
-   * @value #integer(32)
+   * @value
    */
-  score: number;
+  score: number
 
   /**
    * 性别
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
+  sex: number
 
   /**
    *
    * @value
    */
-  sexName: string;
+  sexName: string
 
   /**
    * 状态：1-启用，0-禁用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 学生ID
-   * @value #integer(64)
+   * @value
    */
-  studentId: number;
+  studentId: number
 
   /**
    * 新生标题字段映射JSON
    * @value
    */
-  titleFieldMapping: string;
+  titleFieldMapping: string
 
   /**
    * 修改人id
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 修改人姓名
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    *
    * @value
    */
-  updateTimeStr: string;
+  updateTimeStr: string
 
   /**
    * 用户ID
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 用户姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 微信号
    * @value
    */
-  wechat: string;
+  wechat: string
 
   /**
    * 体重（kg）
    * @value
    */
-  weight: string;
-};
+  weight: string
+}
 
 /**
  * --
@@ -31246,992 +31490,992 @@ export type WnFormUserVO = {
    * 详细地址
    * @value
    */
-  address: string;
+  address: string
 
   /**
    * 是否调剂：0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  adjustFlag: number;
+  adjustFlag: number
 
   /**
    *
    * @value
    */
-  adjustFlagName: string;
+  adjustFlagName: string
 
   /**
    * 准考生号
    * @value
    */
-  admissionNo: string;
+  admissionNo: string
 
   /**
    * 年龄
-   * @value #integer(32)
+   * @value
    */
-  age: number;
+  age: number
 
   /**
    * 区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 生日
    * @value #datetime()
    */
-  birthday: string;
+  birthday: string
 
   /**
    *
    * @value
    */
-  birthdayStr: string;
+  birthdayStr: string
 
   /**
    * 业务编码
    * @value
    */
-  bizCode: string;
+  bizCode: string
 
   /**
    * 业务ID
    * @value
    */
-  bizId: string;
+  bizId: string
 
   /**
    * 证件类型
    * @value
    */
-  certificateType: string;
+  certificateType: string
 
   /**
    *
    * @value
    */
-  certificateTypeName: string;
+  certificateTypeName: string
 
   /**
    * 市编码
    * @value
    */
-  cityCode: string;
+  cityCode: string
 
   /**
    * 市名称
    * @value
    */
-  cityName: string;
+  cityName: string
 
   /**
    * 班级编码
    * @value
    */
-  classCode: string;
+  classCode: string
 
   /**
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 创建人id
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建人姓名
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
    * @value
    */
-  createTimeStr: string;
+  createTimeStr: string
 
   /**
    * 删除状态 0 :正常 1 :删除
-   * @value #integer(32)
+   * @value
    */
-  deleteFlag: number;
+  deleteFlag: number
 
   /**
    * 院系编码
    * @value
    */
-  departmentCode: string;
+  departmentCode: string
 
   /**
    * 院系名称
    * @value
    */
-  departmentName: string;
+  departmentName: string
 
   /**
    * 学历
    * @value
    */
-  diploma: string;
+  diploma: string
 
   /**
    *
    * @value
    */
-  diplomaName: string;
+  diplomaName: string
 
   /**
    * 邮箱
    * @value
    */
-  email: string;
+  email: string
 
   /**
    * 考生号
    * @value
    */
-  examNo: string;
+  examNo: string
 
   /**
    * 考生类型
    * @value
    */
-  examineesType: string;
+  examineesType: string
 
   /**
    *
    * @value
    */
-  examineesTypeName: string;
+  examineesTypeName: string
 
   /**
    * 字符串拓展字段1
    * @value
    */
-  extChar1: string;
+  extChar1: string
 
   /**
    * 字符串拓展字段10
    * @value
    */
-  extChar10: string;
+  extChar10: string
 
   /**
    * 字符串拓展字段11
    * @value
    */
-  extChar11: string;
+  extChar11: string
 
   /**
    * 字符串拓展字段12
    * @value
    */
-  extChar12: string;
+  extChar12: string
 
   /**
    * 字符串拓展字段13
    * @value
    */
-  extChar13: string;
+  extChar13: string
 
   /**
    * 字符串拓展字段14
    * @value
    */
-  extChar14: string;
+  extChar14: string
 
   /**
    * 字符串拓展字段15
    * @value
    */
-  extChar15: string;
+  extChar15: string
 
   /**
    * 字符串拓展字段16
    * @value
    */
-  extChar16: string;
+  extChar16: string
 
   /**
    * 字符串拓展字段17
    * @value
    */
-  extChar17: string;
+  extChar17: string
 
   /**
    * 字符串拓展字段18
    * @value
    */
-  extChar18: string;
+  extChar18: string
 
   /**
    * 字符串拓展字段19
    * @value
    */
-  extChar19: string;
+  extChar19: string
 
   /**
    * 字符串拓展字段2
    * @value
    */
-  extChar2: string;
+  extChar2: string
 
   /**
    * 字符串拓展字段20
    * @value
    */
-  extChar20: string;
+  extChar20: string
 
   /**
    * 字符串拓展字段21
    * @value
    */
-  extChar21: string;
+  extChar21: string
 
   /**
    * 字符串拓展字段22
    * @value
    */
-  extChar22: string;
+  extChar22: string
 
   /**
    * 字符串拓展字段23
    * @value
    */
-  extChar23: string;
+  extChar23: string
 
   /**
    * 字符串拓展字段24
    * @value
    */
-  extChar24: string;
+  extChar24: string
 
   /**
    * 字符串拓展字段25
    * @value
    */
-  extChar25: string;
+  extChar25: string
 
   /**
    * 字符串拓展字段26
    * @value
    */
-  extChar26: string;
+  extChar26: string
 
   /**
    * 字符串拓展字段27
    * @value
    */
-  extChar27: string;
+  extChar27: string
 
   /**
    * 字符串拓展字段28
    * @value
    */
-  extChar28: string;
+  extChar28: string
 
   /**
    * 字符串拓展字段29
    * @value
    */
-  extChar29: string;
+  extChar29: string
 
   /**
    * 字符串拓展字段3
    * @value
    */
-  extChar3: string;
+  extChar3: string
 
   /**
    * 字符串拓展字段30
    * @value
    */
-  extChar30: string;
+  extChar30: string
 
   /**
    * 字符串拓展字段31
    * @value
    */
-  extChar31: string;
+  extChar31: string
 
   /**
    * 字符串拓展字段32
    * @value
    */
-  extChar32: string;
+  extChar32: string
 
   /**
    * 字符串拓展字段33
    * @value
    */
-  extChar33: string;
+  extChar33: string
 
   /**
    * 字符串拓展字段34
    * @value
    */
-  extChar34: string;
+  extChar34: string
 
   /**
    * 字符串拓展字段35
    * @value
    */
-  extChar35: string;
+  extChar35: string
 
   /**
    * 字符串拓展字段36
    * @value
    */
-  extChar36: string;
+  extChar36: string
 
   /**
    * 字符串拓展字段37
    * @value
    */
-  extChar37: string;
+  extChar37: string
 
   /**
    * 字符串拓展字段38
    * @value
    */
-  extChar38: string;
+  extChar38: string
 
   /**
    * 字符串拓展字段39
    * @value
    */
-  extChar39: string;
+  extChar39: string
 
   /**
    * 字符串拓展字段4
    * @value
    */
-  extChar4: string;
+  extChar4: string
 
   /**
    * 字符串拓展字段40
    * @value
    */
-  extChar40: string;
+  extChar40: string
 
   /**
    * 字符串拓展字段41
    * @value
    */
-  extChar41: string;
+  extChar41: string
 
   /**
    * 字符串拓展字段42
    * @value
    */
-  extChar42: string;
+  extChar42: string
 
   /**
    * 字符串拓展字段43
    * @value
    */
-  extChar43: string;
+  extChar43: string
 
   /**
    * 字符串拓展字段44
    * @value
    */
-  extChar44: string;
+  extChar44: string
 
   /**
    * 字符串拓展字段45
    * @value
    */
-  extChar45: string;
+  extChar45: string
 
   /**
    * 字符串拓展字段46
    * @value
    */
-  extChar46: string;
+  extChar46: string
 
   /**
    * 字符串拓展字段47
    * @value
    */
-  extChar47: string;
+  extChar47: string
 
   /**
    * 字符串拓展字段48
    * @value
    */
-  extChar48: string;
+  extChar48: string
 
   /**
    * 字符串拓展字段49
    * @value
    */
-  extChar49: string;
+  extChar49: string
 
   /**
    * 字符串拓展字段5
    * @value
    */
-  extChar5: string;
+  extChar5: string
 
   /**
    * 字符串拓展字段50
    * @value
    */
-  extChar50: string;
+  extChar50: string
 
   /**
    * 字符串拓展字段51
    * @value
    */
-  extChar51: string;
+  extChar51: string
 
   /**
    * 字符串拓展字段52
    * @value
    */
-  extChar52: string;
+  extChar52: string
 
   /**
    * 字符串拓展字段53
    * @value
    */
-  extChar53: string;
+  extChar53: string
 
   /**
    * 字符串拓展字段54
    * @value
    */
-  extChar54: string;
+  extChar54: string
 
   /**
    * 字符串拓展字段55
    * @value
    */
-  extChar55: string;
+  extChar55: string
 
   /**
    * 字符串拓展字段56
    * @value
    */
-  extChar56: string;
+  extChar56: string
 
   /**
    * 字符串拓展字段57
    * @value
    */
-  extChar57: string;
+  extChar57: string
 
   /**
    * 字符串拓展字段58
    * @value
    */
-  extChar58: string;
+  extChar58: string
 
   /**
    * 字符串拓展字段59
    * @value
    */
-  extChar59: string;
+  extChar59: string
 
   /**
    * 字符串拓展字段6
    * @value
    */
-  extChar6: string;
+  extChar6: string
 
   /**
    * 字符串拓展字段60
    * @value
    */
-  extChar60: string;
+  extChar60: string
 
   /**
    * 字符串拓展字段61
    * @value
    */
-  extChar61: string;
+  extChar61: string
 
   /**
    * 字符串拓展字段62
    * @value
    */
-  extChar62: string;
+  extChar62: string
 
   /**
    * 字符串拓展字段63
    * @value
    */
-  extChar63: string;
+  extChar63: string
 
   /**
    * 字符串拓展字段64
    * @value
    */
-  extChar64: string;
+  extChar64: string
 
   /**
    * 字符串拓展字段65
    * @value
    */
-  extChar65: string;
+  extChar65: string
 
   /**
    * 字符串拓展字段66
    * @value
    */
-  extChar66: string;
+  extChar66: string
 
   /**
    * 字符串拓展字段67
    * @value
    */
-  extChar67: string;
+  extChar67: string
 
   /**
    * 字符串拓展字段68
    * @value
    */
-  extChar68: string;
+  extChar68: string
 
   /**
    * 字符串拓展字段69
    * @value
    */
-  extChar69: string;
+  extChar69: string
 
   /**
    * 字符串拓展字段7
    * @value
    */
-  extChar7: string;
+  extChar7: string
 
   /**
    * 字符串拓展字段70
    * @value
    */
-  extChar70: string;
+  extChar70: string
 
   /**
    * 字符串拓展字段71
    * @value
    */
-  extChar71: string;
+  extChar71: string
 
   /**
    * 字符串拓展字段72
    * @value
    */
-  extChar72: string;
+  extChar72: string
 
   /**
    * 字符串拓展字段73
    * @value
    */
-  extChar73: string;
+  extChar73: string
 
   /**
    * 字符串拓展字段74
    * @value
    */
-  extChar74: string;
+  extChar74: string
 
   /**
    * 字符串拓展字段75
    * @value
    */
-  extChar75: string;
+  extChar75: string
 
   /**
    * 字符串拓展字段76
    * @value
    */
-  extChar76: string;
+  extChar76: string
 
   /**
    * 字符串拓展字段77
    * @value
    */
-  extChar77: string;
+  extChar77: string
 
   /**
    * 字符串拓展字段78
    * @value
    */
-  extChar78: string;
+  extChar78: string
 
   /**
    * 字符串拓展字段79
    * @value
    */
-  extChar79: string;
+  extChar79: string
 
   /**
    * 字符串拓展字段8
    * @value
    */
-  extChar8: string;
+  extChar8: string
 
   /**
    * 字符串拓展字段80
    * @value
    */
-  extChar80: string;
+  extChar80: string
 
   /**
    * 字符串拓展字段9
    * @value
    */
-  extChar9: string;
+  extChar9: string
 
   /**
    * 日期拓展字段1
    * @value #datetime()
    */
-  extDate1: string;
+  extDate1: string
 
   /**
    * 日期拓展字段10
    * @value #datetime()
    */
-  extDate10: string;
+  extDate10: string
 
   /**
    * 日期拓展字段2
    * @value #datetime()
    */
-  extDate2: string;
+  extDate2: string
 
   /**
    * 日期拓展字段3
    * @value #datetime()
    */
-  extDate3: string;
+  extDate3: string
 
   /**
    * 日期拓展字段4
    * @value #datetime()
    */
-  extDate4: string;
+  extDate4: string
 
   /**
    * 日期拓展字段5
    * @value #datetime()
    */
-  extDate5: string;
+  extDate5: string
 
   /**
    * 日期拓展字段6
    * @value #datetime()
    */
-  extDate6: string;
+  extDate6: string
 
   /**
    * 日期拓展字段7
    * @value #datetime()
    */
-  extDate7: string;
+  extDate7: string
 
   /**
    * 日期拓展字段8
    * @value #datetime()
    */
-  extDate8: string;
+  extDate8: string
 
   /**
    * 日期拓展字段9
    * @value #datetime()
    */
-  extDate9: string;
+  extDate9: string
 
   /**
    * 家庭成员Json
    * @value
    */
-  familyMember: string;
+  familyMember: string
 
   /**
    * 表单编码
    * @value
    */
-  formCode: string;
+  formCode: string
 
   /**
    * 表单ID
-   * @value #integer(64)
+   * @value
    */
-  formId: number;
+  formId: number
 
   /**
    * 毕业学校
    * @value
    */
-  graduationSchool: string;
+  graduationSchool: string
 
   /**
    * 头像
    * @value
    */
-  headImg: string;
+  headImg: string
 
   /**
    * 身高（cm）
    * @value
    */
-  height: string;
+  height: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份号码
    * @value
    */
-  identityNo: string;
+  identityNo: string
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 专业编码
    * @value
    */
-  majorCode: string;
+  majorCode: string
 
   /**
    * 专业名称
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 手机号
    * @value
    */
-  mobileNo: string;
+  mobileNo: string
 
   /**
    * 民族
    * @value
    */
-  nation: string;
+  nation: string
 
   /**
    *
    * @value
    */
-  nationName: string;
+  nationName: string
 
   /**
    * 籍贯(省份)
    * @value
    */
-  nativePlace: string;
+  nativePlace: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 政治面貌
    * @value
    */
-  politicalStatus: string;
+  politicalStatus: string
 
   /**
    *
    * @value
    */
-  politicalStatusName: string;
+  politicalStatusName: string
 
   /**
    * 邮政编码
    * @value
    */
-  postalCode: string;
+  postalCode: string
 
   /**
    * 省份编码
    * @value
    */
-  provinceCode: string;
+  provinceCode: string
 
   /**
    * 省名称
    * @value
    */
-  provinceName: string;
+  provinceName: string
 
   /**
    * QQ号
    * @value
    */
-  qq: string;
+  qq: string
 
   /**
    * 招生年份
    * @value
    */
-  recruitYear: string;
+  recruitYear: string
 
   /**
    * 登记状态：0-已登记，1-未登记
-   * @value #integer(32)
+   * @value
    */
-  registerStatus: number;
+  registerStatus: number
 
   /**
    * 登记时间
    * @value #datetime()
    */
-  registerTime: string;
+  registerTime: string
 
   /**
    * 宗教信仰
    * @value
    */
-  religion: string;
+  religion: string
 
   /**
    *
    * @value
    */
-  religionName: string;
+  religionName: string
 
   /**
    * 报道码
    * @value
    */
-  reportCode: string;
+  reportCode: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 分数
-   * @value #integer(32)
+   * @value
    */
-  score: number;
+  score: number
 
   /**
    * 性别
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
+  sex: number
 
   /**
    *
    * @value
    */
-  sexName: string;
+  sexName: string
 
   /**
    * 状态：1-启用，0-禁用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 学生ID
-   * @value #integer(64)
+   * @value
    */
-  studentId: number;
+  studentId: number
 
   /**
    * 修改人id
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 修改人姓名
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    *
    * @value
    */
-  updateTimeStr: string;
+  updateTimeStr: string
 
   /**
    * 用户ID
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 用户姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 微信号
    * @value
    */
-  wechat: string;
+  wechat: string
 
   /**
    * 体重（kg）
    * @value
    */
-  weight: string;
-};
+  weight: string
+}
 
 /**
  * --
@@ -32239,166 +32483,166 @@ export type WnFormUserVO = {
 export type WnGenerateStudentNoVO = {
   /**
    * 班级
-   * @value #integer(64)
+   * @value
    */
-  classId: number;
+  classId: number
 
   /**
    *
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
    * @value
    */
-  createTimeStr: string;
+  createTimeStr: string
 
   /**
    * 院系
-   * @value #integer(64)
+   * @value
    */
-  departmentId: number;
+  departmentId: number
 
   /**
    *
    * @value
    */
-  departmentName: string;
+  departmentName: string
 
   /**
    * 生成规则
    * @value
    */
-  generateRule: string;
+  generateRule: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 序号初始值
    * @value
    */
-  initSerialNumber: string;
+  initSerialNumber: string
 
   /**
    * 专业
-   * @value #integer(64)
+   * @value
    */
-  majorId: number;
+  majorId: number
 
   /**
    *
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 是否覆盖旧学号：0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  overwriteFlag: number;
+  overwriteFlag: number
 
   /**
    * 固定代码
    * @value
    */
-  partFixed: string;
+  partFixed: string
 
   /**
    * 组成年份
    * @value
    */
-  partYear: string;
+  partYear: string
 
   /**
    * 招生年份
    * @value
    */
-  recruitYear: string;
+  recruitYear: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 成功人数
-   * @value #integer(32)
+   * @value
    */
-  successCount: number;
+  successCount: number
 
   /**
    * 任务名称
    * @value
    */
-  taskName: string;
+  taskName: string
 
   /**
    * 任务状态
-   * @value #integer(32)
+   * @value
    */
-  taskStatus: number;
+  taskStatus: number
 
   /**
    *
    * @value
    */
-  taskStatusName: string;
+  taskStatusName: string
 
   /**
    * 任务总人数
-   * @value #integer(32)
+   * @value
    */
-  totalCount: number;
+  totalCount: number
 
   /**
    * 校区
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    *
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -32408,116 +32652,116 @@ export type WnHallApplicationConfigVO = {
    * 应用链接
    * @value
    */
-  applicationUrl: string;
+  applicationUrl: string
 
   /**
    * 应用编码
    * @value
    */
-  code: string;
+  code: string
 
   /**
    * 是否默认应用：0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  defaultFlag: number;
+  defaultFlag: number
 
   /**
    * 应用显示名称
    * @value
    */
-  displayName: string;
+  displayName: string
 
   /**
    * 显示端口: 1-学生，2-教师
-   * @value #integer(32)
+   * @value
    */
-  displayType: number;
+  displayType: number
 
   /**
    * 表单id
-   * @value #integer(64)
+   * @value
    */
-  formId: number;
+  formId: number
 
   /**
    * 图标
    * @value
    */
-  iconUrl: string;
+  iconUrl: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 应用名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 开启条件
    * @value
    */
-  openCondition: string;
+  openCondition: string
 
   /**
    * 是否关联流程: 0-是, 1-否
-   * @value #integer(32)
+   * @value
    */
-  processType: number;
+  processType: number
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 是否展示批次: 0-是, 1-否
-   * @value #integer(32)
+   * @value
    */
-  showBatch: number;
+  showBatch: number
 
   /**
    * 是否展示页面配置: 0-是, 1-否
-   * @value #integer(32)
+   * @value
    */
-  showForm: number;
+  showForm: number
 
   /**
    * 排序
-   * @value #integer(32)
+   * @value
    */
-  sort: number;
+  sort: number
 
   /**
    * 状态
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 类型; 1表单类型, 2链接类型
-   * @value #integer(32)
+   * @value
    */
-  type: number;
-};
+  type: number
+}
 
 /**
  * --
@@ -32527,56 +32771,56 @@ export type WnHallFormVO = {
    * 表单内容,
    * @value
    */
-  formContent: string;
+  formContent: string
 
   /**
    * 表单id
-   * @value #integer(64)
+   * @value
    */
-  formId: number;
+  formId: number
 
   /**
    * 表单名称
    * @value
    */
-  formName: string;
+  formName: string
 
   /**
    * 表单id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否导入新生信息, 0是, 1否
-   * @value #integer(32)
+   * @value
    */
-  isWnImport: number;
+  isWnImport: number
 
   /**
    * 是否自动登记, 0是, 1否
-   * @value #integer(32)
+   * @value
    */
-  registerFlag: number;
+  registerFlag: number
 
   /**
    * 学生ID
-   * @value #integer(64)
+   * @value
    */
-  studentId: number;
+  studentId: number
 
   /**
    * 新生信息字段
    * @value
    */
-  studentInfo: string;
+  studentInfo: string
 
   /**
    * 是否有新生提交数据, 0是, 1否
-   * @value #integer(32)
+   * @value
    */
-  studentSubmitFlag: number;
-};
+  studentSubmitFlag: number
+}
 
 /**
  * --
@@ -32584,130 +32828,130 @@ export type WnHallFormVO = {
 export type WnHallProcessConfigVO = {
   /**
    * 是否关联应用ID
-   * @value #integer(64)
+   * @value
    */
-  applicationId: number;
+  applicationId: number
 
   /**
    *
    * @value
    */
-  applicationName: string;
+  applicationName: string
 
   /**
    * 流程编码
    * @value
    */
-  code: string;
+  code: string
 
   /**
    * 完成状态
    * @value
    */
-  completeLabel: string;
+  completeLabel: string
 
   /**
    * 显示名称
    * @value
    */
-  displayName: string;
+  displayName: string
 
   /**
    * 显示端口
-   * @value #integer(32)
+   * @value
    */
-  displayType: number;
+  displayType: number
 
   /**
    *
    * @value
    */
-  displayTypeName: string;
+  displayTypeName: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 初始状态
    * @value
    */
-  initLabel: string;
+  initLabel: string
 
   /**
    * 关联应用
-   * @value #integer(32)
+   * @value
    */
-  linkApplication: number;
+  linkApplication: number
 
   /**
    * 流程名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 是否缴费
-   * @value #integer(32)
+   * @value
    */
-  needPay: number;
+  needPay: number
 
   /**
    *
    * @value
    */
-  needPayName: string;
+  needPayName: string
 
   /**
    * 是否前置流程, 0是, 1否
-   * @value #integer(32)
+   * @value
    */
-  openConditionFlag: number;
+  openConditionFlag: number
 
   /**
    * 平台类型
-   * @value #integer(32)
+   * @value
    */
-  platform: number;
+  platform: number
 
   /**
    *
    * @value
    */
-  platformName: string;
+  platformName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 类型; 0平台流程, 1自定义流程(必须是应用)
-   * @value #integer(32)
+   * @value
    */
-  type: number;
-};
+  type: number
+}
 
 /**
  * --
@@ -32717,26 +32961,26 @@ export type WnHallVO = {
    * 表单编码
    * @value
    */
-  formCode: string;
+  formCode: string
 
   /**
    * 表单内容
    * @value
    */
-  formContent: string;
+  formContent: string
 
   /**
    * 表单名称
    * @value
    */
-  formName: string;
+  formName: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
-};
+  id: number
+}
 
 /**
  * --
@@ -32744,82 +32988,82 @@ export type WnHallVO = {
 export type WnInClassInfoVO = {
   /**
    * 楼栋ID
-   * @value #integer(64)
+   * @value
    */
-  buildingId: number;
+  buildingId: number
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 床位信息
    * @rule 2
    */
-  bunkList: BunkInfoVO[];
+  bunkList: BunkInfoVO[]
 
   /**
    * 已住人数
-   * @value #integer(32)
+   * @value
    */
-  checkNum: number;
+  checkNum: number
 
   /**
    * 空余人数
-   * @value #integer(32)
+   * @value
    */
-  emptyRoomNum: number;
+  emptyRoomNum: number
 
   /**
    * 楼层ID
-   * @value #integer(64)
+   * @value
    */
-  floorId: number;
+  floorId: number
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    * 房间混住状态 0:是 1:否
-   * @value #integer(32)
+   * @value
    */
-  isMixture: number;
+  isMixture: number
 
   /**
    * 入住房间 : 楼栋+楼层+房间名
    * @value
    */
-  roomFullName: string;
+  roomFullName: string
 
   /**
    * 房间id
-   * @value #integer(64)
+   * @value
    */
-  roomId: number;
+  roomId: number
 
   /**
    * 房间名称
    * @value
    */
-  roomName: string;
+  roomName: string
 
   /**
    * 可住人数
-   * @value #integer(32)
+   * @value
    */
-  roomNum: number;
+  roomNum: number
 
   /**
    * 房间状态 0:空房, 2:半空房 3:满房
-   * @value #integer(32)
+   * @value
    */
-  roomStatus: number;
-};
+  roomStatus: number
+}
 
 /**
  * --
@@ -32827,112 +33071,112 @@ export type WnInClassInfoVO = {
 export type WnInClassVO = {
   /**
    * 楼栋id
-   * @value #integer(64)
+   * @value
    */
-  buildingId: number;
+  buildingId: number
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 已入住人数
-   * @value #integer(32)
+   * @value
    */
-  checkNum: number;
+  checkNum: number
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  classId: number;
+  classId: number
 
   /**
    * 班级
    * @value
    */
-  className: string;
+  className: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  floorId: number;
+  floorId: number
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 同住原则
    * @value
    */
-  isMixtureStr: string;
+  isMixtureStr: string
 
   /**
    * 招生年份
    * @value
    */
-  recruitYear: string;
+  recruitYear: string
 
   /**
    * 房间全名称
    * @value
    */
-  roomFullName: string;
+  roomFullName: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  roomId: number;
+  roomId: number
 
   /**
    * 房间名称
    * @value
    */
-  roomName: string;
+  roomName: string
 
   /**
    * 几人间，即最大入住人数
-   * @value #integer(32)
+   * @value
    */
-  roomNum: number;
+  roomNum: number
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  roomSex: number;
+  roomSex: number
 
   /**
    * 房间性别
    * @value
    */
-  roomSexStr: string;
+  roomSexStr: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -32940,172 +33184,172 @@ export type WnInClassVO = {
 export type WnInStudentRoomVO = {
   /**
    * 允许选择床位：0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  allowSelectBed: number;
+  allowSelectBed: number
 
   /**
    * 楼栋id
-   * @value #integer(64)
+   * @value
    */
-  buildingId: number;
+  buildingId: number
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 床位
-   * @value #integer(32)
+   * @value
    */
-  bunk: number;
+  bunk: number
 
   /**
    * 入住状态：0-已确认，1-已分配，2-未分配
-   * @value #integer(32)
+   * @value
    */
-  checkInStatus: number;
+  checkInStatus: number
 
   /**
    *
    * @value
    */
-  checkInStatusName: string;
+  checkInStatusName: string
 
   /**
    * 班级id
-   * @value #integer(64)
+   * @value
    */
-  classId: number;
+  classId: number
 
   /**
    * 班级
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 院系id
-   * @value #integer(64)
+   * @value
    */
-  departmentId: number;
+  departmentId: number
 
   /**
    * 院系名称
    * @value
    */
-  departmentName: string;
+  departmentName: string
 
   /**
    * 楼层id
-   * @value #integer(64)
+   * @value
    */
-  floorId: number;
+  floorId: number
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    * 入住记录ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证
    * @value
    */
-  identityId: string;
+  identityId: string
 
   /**
    * 专业id
-   * @value #integer(64)
+   * @value
    */
-  majorId: number;
+  majorId: number
 
   /**
    * 专业名称
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 籍贯
    * @value
    */
-  natives: string;
+  natives: string
 
   /**
    * 入住房间 : 楼栋+楼层+房间名
    * @value
    */
-  roomFullName: string;
+  roomFullName: string
 
   /**
    * 房间ID
-   * @value #integer(64)
+   * @value
    */
-  roomId: number;
+  roomId: number
 
   /**
    * 房间信息
    * @rule 2
    */
-  roomList: WnInClassInfoVO[];
+  roomList: WnInClassInfoVO[]
 
   /**
    * 房间名称
    * @value
    */
-  roomName: string;
+  roomName: string
 
   /**
    * 房间类型：几人间
-   * @value #integer(32)
+   * @value
    */
-  roomType: number;
+  roomType: number
 
   /**
    * 学生性别
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
+  sex: number
 
   /**
    * 学生id
-   * @value #integer(64)
+   * @value
    */
-  studentId: number;
+  studentId: number
 
   /**
    * 学生姓名
    * @value
    */
-  studentName: string;
+  studentName: string
 
   /**
    * 唯一标识
    * @value
    */
-  uniqueId: string;
+  uniqueId: string
 
   /**
    * 是否根据班级分配房间 0:是, 1:否
-   * @value #integer(32)
+   * @value
    */
-  withClass: number;
+  withClass: number
 
   /**
    * 校区id
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
-};
+  zoneId: number
+}
 
 /**
  * --
@@ -33113,244 +33357,244 @@ export type WnInStudentRoomVO = {
 export type WnInStudentVO = {
   /**
    * 批次
-   * @value #integer(64)
+   * @value
    */
-  batchId: number;
+  batchId: number
 
   /**
    *
    * @value
    */
-  batchName: string;
+  batchName: string
 
   /**
    * 楼栋id
-   * @value #integer(64)
+   * @value
    */
-  buildingId: number;
+  buildingId: number
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 床位
-   * @value #integer(32)
+   * @value
    */
-  bunk: number;
+  bunk: number
 
   /**
    * 学生入住状态：0-已确认，1-已分配，2-未分配
-   * @value #integer(32)
+   * @value
    */
-  checkInStatus: number;
+  checkInStatus: number
 
   /**
    *
    * @value
    */
-  checkInStatusStr: string;
+  checkInStatusStr: string
 
   /**
    * 班级ID
-   * @value #integer(64)
+   * @value
    */
-  classId: number;
+  classId: number
 
   /**
    * 班级
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 确认时间
    * @value #datetime()
    */
-  confirmTime: string;
+  confirmTime: string
 
   /**
    *
    * @value
    */
-  confirmTimeStr: string;
+  confirmTimeStr: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
    * @value
    */
-  createTimeStr: string;
+  createTimeStr: string
 
   /**
    * 院系名称
    * @value
    */
-  departName: string;
+  departName: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  departmentId: number;
+  departmentId: number
 
   /**
    * 楼层id
-   * @value #integer(64)
+   * @value
    */
-  floorId: number;
+  floorId: number
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
-
-  /**
-   * 确认状态：0-已确认，1-未确认
-   * @value #integer(32)
-   */
-  inStatus: number;
+  floorName: string
 
   /**
    *
    * @value
    */
-  inStatusStr: string;
+  id: number
+
+  /**
+   * 确认状态：0-已确认，1-未确认
+   * @value
+   */
+  inStatus: number
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  majorId: number;
+  inStatusStr: string
+
+  /**
+   *
+   * @value
+   */
+  majorId: number
 
   /**
    * 专业
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 籍贯
    * @value
    */
-  nativePlace: string;
+  nativePlace: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 招生年份
    * @value
    */
-  recruitYear: string;
+  recruitYear: string
 
   /**
    * 入住房间 : 楼栋+楼层+房间名
    * @value
    */
-  roomFullName: string;
+  roomFullName: string
 
   /**
    * 房间ID
-   * @value #integer(64)
+   * @value
    */
-  roomId: number;
+  roomId: number
 
   /**
    * 房间名称
    * @value
    */
-  roomName: string;
+  roomName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 性别
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
+  sex: number
 
   /**
    *
    * @value
    */
-  sexStr: string;
+  sexStr: string
 
   /**
    * 状态
    * @value
    */
-  status: string;
+  status: string
 
   /**
    * 学生记录ID
-   * @value #integer(64)
+   * @value
    */
-  studentId: number;
+  studentId: number
 
   /**
    * 姓名
    * @value
    */
-  studentName: string;
+  studentName: string
 
   /**
    * 唯一标识
    * @value
    */
-  uniqueId: string;
+  uniqueId: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    *
    * @value
    */
-  updateTimeStr: string;
+  updateTimeStr: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -33358,22 +33602,22 @@ export type WnInStudentVO = {
 export type WnMajorStudentCountVO = {
   /**
    * 已分班的人数
-   * @value #integer(32)
+   * @value
    */
-  assignedStudentNum: number;
+  assignedStudentNum: number
 
   /**
    * 未分班的学生人数
-   * @value #integer(32)
+   * @value
    */
-  notAssignStudentNum: number;
+  notAssignStudentNum: number
 
   /**
    * 学生总人数
-   * @value #integer(32)
+   * @value
    */
-  totalStudentNum: number;
-};
+  totalStudentNum: number
+}
 
 /**
  * --
@@ -33381,166 +33625,166 @@ export type WnMajorStudentCountVO = {
 export type WnOpenBankCardVO = {
   /**
    * 班级ID
-   * @value #integer(64)
+   * @value
    */
-  classId: number;
+  classId: number
 
   /**
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 创建人ID
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建人姓名
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 学院ID
-   * @value #integer(64)
+   * @value
    */
-  departmentId: number;
+  departmentId: number
 
   /**
    * 学院名称
    * @value
    */
-  departmentName: string;
+  departmentName: string
 
   /**
    * 失败原因
    * @value
    */
-  failMsg: string;
+  failMsg: string
 
   /**
    * 上传资料
    * @value
    */
-  filePath: string;
+  filePath: string
 
   /**
    * 用户姓名-名
    * @value
    */
-  firstName: string;
+  firstName: string
 
   /**
    * 用户姓名-全称
    * @value
    */
-  fullName: string;
+  fullName: string
 
   /**
    * 处理状态：0-成功，1-上传中，2-失败
-   * @value #integer(32)
+   * @value
    */
-  handleStatus: number;
+  handleStatus: number
 
   /**
    *
    * @value
    */
-  handleStatusName: string;
+  handleStatusName: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证反面照片
    * @value
    */
-  idCardBack: string;
+  idCardBack: string
 
   /**
    * 身份证正面照片
    * @value
    */
-  idCardFront: string;
+  idCardFront: string
 
   /**
    * 证件号码
    * @value
    */
-  identityNo: string;
+  identityNo: string
 
   /**
    * 用户姓名-姓
    * @value
    */
-  lastName: string;
+  lastName: string
 
   /**
    * 专业ID
-   * @value #integer(64)
+   * @value
    */
-  majorId: number;
+  majorId: number
 
   /**
    * 专业名称
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 手机号
    * @value
    */
-  mobileNo: string;
+  mobileNo: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 更新人ID
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 更新人姓名
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    *
    * @value
    */
-  updateTimeStr: string;
-};
+  updateTimeStr: string
+}
 
 /**
  * --
@@ -33548,94 +33792,94 @@ export type WnOpenBankCardVO = {
 export type WnPayConfigDetailVO = {
   /**
    * 院系id
-   * @value #integer(64)
+   * @value
    */
-  departmentId: number;
+  departmentId: number
 
   /**
    * 院系名称
    * @value
    */
-  departmentName: string;
+  departmentName: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否生成缴费单 0否 1是
-   * @value #integer(32)
+   * @value
    */
-  isGenerateBill: number;
+  isGenerateBill: number
 
   /**
    *
    * @value
    */
-  isGenerateBillStr: string;
+  isGenerateBillStr: string
 
   /**
    * 缴费项目数
-   * @value #integer(32)
+   * @value
    */
-  itemCount: number;
+  itemCount: number
 
   /**
    * 关联缴费项目
    * @rule 2
    */
-  itemList: WnPayItemDetailVO[];
+  itemList: WnPayItemDetailVO[]
 
   /**
    * 专业id
-   * @value #integer(64)
+   * @value
    */
-  majorId: number;
+  majorId: number
 
   /**
    * 专业名称
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 状态 0未启用 1已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 入学年份
-   * @value #integer(32)
+   * @value
    */
-  studyYear: number;
+  studyYear: number
 
   /**
    * 学期（0、上学期  1、下学期）
-   * @value #integer(32)
+   * @value
    */
-  term: number;
+  term: number
 
   /**
    *
    * @value
    */
-  termStr: string;
+  termStr: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
-};
+  zoneId: number
+}
 
 /**
  * --
@@ -33643,88 +33887,88 @@ export type WnPayConfigDetailVO = {
 export type WnPayConfigVO = {
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  departmentId: number;
+  departmentId: number
 
   /**
    * 院系名称
    * @value
    */
-  departmentName: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
-
-  /**
-   * 是否生成缴费单 0否 1是 2处理中 3异常
-   * @value #integer(32)
-   */
-  isGenerateBill: number;
+  departmentName: string
 
   /**
    *
    * @value
    */
-  isGenerateBillStr: string;
+  id: number
 
   /**
-   * 缴费项目数
-   * @value #integer(32)
+   * 是否生成缴费单 0否 1是 2处理中 3异常
+   * @value
    */
-  itemCount: number;
+  isGenerateBill: number
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  majorId: number;
+  isGenerateBillStr: string
+
+  /**
+   * 缴费项目数
+   * @value
+   */
+  itemCount: number
+
+  /**
+   *
+   * @value
+   */
+  majorId: number
 
   /**
    * 专业名称
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    *
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    *
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 入学年份
-   * @value #integer(32)
+   * @value
    */
-  studyYear: number;
+  studyYear: number
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
-};
+  zoneId: number
+}
 
 /**
  * --
@@ -33734,38 +33978,38 @@ export type WnPayItemDetailVO = {
    * 二级分类费用
    * @value
    */
-  dicFullStr: string;
+  dicFullStr: string
 
   /**
    * 二级分类id
-   * @value #integer(64)
+   * @value
    */
-  dicId: number;
+  dicId: number
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 缴费金额
    * @value
    */
-  payAmount: number;
+  payAmount: number
 
   /**
    * 缴费项目id
-   * @value #integer(64)
+   * @value
    */
-  projectId: number;
+  projectId: number
 
   /**
    * 缴费项目
    * @value
    */
-  projectName: string;
-};
+  projectName: string
+}
 
 /**
  * 迎新缴费统计
@@ -33773,34 +34017,34 @@ export type WnPayItemDetailVO = {
 export type WnPayStatVO = {
   /**
    * 项目id
-   * @value #integer(64)
+   * @value
    */
-  proId: number;
+  proId: number
 
   /**
    * 项目名称
    * @value
    */
-  proName: string;
+  proName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 金额
    * @value
    */
-  totalAmount: number;
+  totalAmount: number
 
   /**
    * 笔数
-   * @value #integer(64)
+   * @value
    */
-  totalCount: number;
-};
+  totalCount: number
+}
 
 /**
  * --
@@ -33810,176 +34054,176 @@ export type WnProcessConfigVO = {
    * 关联应用编码
    * @value
    */
-  applicationCode: string;
+  applicationCode: string
 
   /**
    * 关联应用ID
-   * @value #integer(64)
+   * @value
    */
-  applicationId: number;
+  applicationId: number
 
   /**
    * 关联应用名称
    * @value
    */
-  applicationName: string;
+  applicationName: string
 
   /**
    * 关联应用链接
    * @value
    */
-  applicationUrl: string;
+  applicationUrl: string
 
   /**
    * 流程编码
    * @value
    */
-  code: string;
+  code: string
 
   /**
    * 完成状态
    * @value
    */
-  completeLabel: string;
+  completeLabel: string
 
   /**
    * 创建姓名
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 默认流程
-   * @value #integer(32)
+   * @value
    */
-  defaultFlag: number;
+  defaultFlag: number
 
   /**
    *
    * @value
    */
-  defaultFlagName: string;
+  defaultFlagName: string
 
   /**
    * 显示名称
    * @value
    */
-  displayName: string;
+  displayName: string
 
   /**
    * 显示端口
-   * @value #integer(32)
+   * @value
    */
-  displayType: number;
+  displayType: number
 
   /**
    *
    * @value
    */
-  displayTypeName: string;
+  displayTypeName: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 初始状态
    * @value
    */
-  initLabel: string;
+  initLabel: string
 
   /**
    * 关联应用
-   * @value #integer(32)
+   * @value
    */
-  linkApplication: number;
+  linkApplication: number
 
   /**
    * 流程名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 排序
-   * @value #integer(32)
+   * @value
    */
-  sort: number;
+  sort: number
 
   /**
    * 类型：1-平台，2-学校
-   * @value #integer(32)
+   * @value
    */
-  source: number;
+  source: number
 
   /**
    *
    * @value
    */
-  sourceName: string;
+  sourceName: string
 
   /**
    * 状态
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 更新姓名
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -33989,26 +34233,26 @@ export type WnProcessCountTableHeaderVO = {
    * 索引列
    * @value
    */
-  dataIndex: string;
+  dataIndex: string
 
   /**
    * key值
    * @value
    */
-  key: string;
+  key: string
 
   /**
    * 流程id
-   * @value #integer(64)
+   * @value
    */
-  processId: number;
+  processId: number
 
   /**
    * 表头名称
    * @value
    */
-  title: string;
-};
+  title: string
+}
 
 /**
  * --
@@ -34016,130 +34260,130 @@ export type WnProcessCountTableHeaderVO = {
 export type WnProductAndPicVO = {
   /**
    * 已申领数量（已经申请但未领取）
-   * @value #integer(32)
+   * @value
    */
-  applyNumber: number;
+  applyNumber: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否需要支付： 0、是 1、否
-   * @value #integer(32)
+   * @value
    */
-  needPay: number;
+  needPay: number
 
   /**
    * 商品图片
    * @value
    */
-  picAddress: string;
+  picAddress: string
 
   /**
    * 商品名称
    * @value
    */
-  productName: string;
+  productName: string
 
   /**
    * 规格标题（名称）
    * @value
    */
-  productTitle: string;
-
-  /**
-   * 商品类型
-   * @value #integer(32)
-   */
-  productType: number;
+  productTitle: string
 
   /**
    * 商品类型
    * @value
    */
-  productTypeStr: string;
+  productType: number
+
+  /**
+   * 商品类型
+   * @value
+   */
+  productTypeStr: string
 
   /**
    * 已领取数量
-   * @value #integer(32)
+   * @value
    */
-  receivedNumber: number;
+  receivedNumber: number
 
   /**
    * 入学年份
    * @value
    */
-  recruitYear: string;
+  recruitYear: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 学期 0上学期  1下学期
-   * @value #integer(32)
+   * @value
    */
-  semester: number;
+  semester: number
 
   /**
    * 学期
    * @value
    */
-  semesterStr: string;
+  semesterStr: string
 
   /**
    * 商品明细
    * @value
    */
-  specsName: string;
+  specsName: string
 
   /**
    * 状态:0、未启用  1、已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 库存数量
-   * @value #integer(32)
+   * @value
    */
-  surplusNumber: number;
+  surplusNumber: number
 
   /**
    * 总数量
-   * @value #integer(32)
+   * @value
    */
-  totalNumber: number;
+  totalNumber: number
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -34149,26 +34393,26 @@ export type WnProductPicVO = {
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 图片地址
    * @value
    */
-  picAddress: string;
+  picAddress: string
 
   /**
    * 商品ID
-   * @value #integer(64)
+   * @value
    */
-  productId: number;
-};
+  productId: number
+}
 
 /**
  * --
@@ -34176,58 +34420,58 @@ export type WnProductPicVO = {
 export type WnProductSpecsVO = {
   /**
    * 已申请领取数量（已经申请但未领取）
-   * @value #integer(32)
+   * @value
    */
-  applyNumber: number;
+  applyNumber: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 商品ID
-   * @value #integer(64)
+   * @value
    */
-  productId: number;
+  productId: number
 
   /**
    * 已领取数量
-   * @value #integer(32)
+   * @value
    */
-  receivedNumber: number;
+  receivedNumber: number
 
   /**
    * 规格名称
    * @value
    */
-  specName: string;
+  specName: string
 
   /**
    * 规格价格
    * @value
    */
-  specPrice: number;
+  specPrice: number
 
   /**
    * 剩余数量
-   * @value #integer(32)
+   * @value
    */
-  surplusNumber: number;
+  surplusNumber: number
 
   /**
    * 总数量
-   * @value #integer(32)
+   * @value
    */
-  totalNumber: number;
-};
+  totalNumber: number
+}
 
 /**
  * --
@@ -34237,170 +34481,170 @@ export type WnProductVO = {
    * 封面图地址
    * @value
    */
-  coverUrl: string;
+  coverUrl: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 限领数量
-   * @value #integer(32)
+   * @value
    */
-  limitReceiveNum: number;
+  limitReceiveNum: number
 
   /**
    * 是否需要支付： 0、是 1、否
-   * @value #integer(32)
+   * @value
    */
-  needPay: number;
+  needPay: number
 
   /**
    * 是否需要收货 0、是  1、否
-   * @value #integer(32)
+   * @value
    */
-  needReceive: number;
+  needReceive: number
 
   /**
    * 支付商户编码
    * @value
    */
-  payCpCode: string;
+  payCpCode: string
 
   /**
    * 支付商户密钥
    * @value
    */
-  payCpSecret: string;
+  payCpSecret: string
 
   /**
    * 商品描述
    * @value
    */
-  productDes: string;
+  productDes: string
 
   /**
    * 商品名称
    * @value
    */
-  productName: string;
+  productName: string
 
   /**
    * 规格标题（名称）
    * @value
    */
-  productTitle: string;
-
-  /**
-   * 商品类型
-   * @value #integer(32)
-   */
-  productType: number;
+  productTitle: string
 
   /**
    * 商品类型
    * @value
    */
-  productTypeStr: string;
+  productType: number
+
+  /**
+   * 商品类型
+   * @value
+   */
+  productTypeStr: string
 
   /**
    * 已领物品订单列表
    * @rule 2
    */
-  receiveOrderVOList: WnReceiveOrderVO[];
+  receiveOrderVOList: WnReceiveOrderVO[]
 
   /**
    * 领取状态：0、未领取 1、已申领  2、已领取 -1、领取结束
-   * @value #integer(32)
+   * @value
    */
-  receiveStatus: number;
+  receiveStatus: number
 
   /**
    * 领取状态名
    * @value
    */
-  receiveStatusStr: string;
+  receiveStatusStr: string
 
   /**
    * 入学年份
    * @value
    */
-  recruitYear: string;
+  recruitYear: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 学期 0上学期  1下学期
-   * @value #integer(32)
+   * @value
    */
-  semester: number;
+  semester: number
 
   /**
    * 学期
    * @value
    */
-  semesterStr: string;
+  semesterStr: string
 
   /**
    * 商品明细
    * @value
    */
-  specsName: string;
+  specsName: string
 
   /**
    * 状态:0、未启用  1、已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 仅查看： 0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  viewOnly: number;
+  viewOnly: number
 
   /**
    * 图片地址列表
    * @rule 2
    */
-  wnProductPicVOList: WnProductPicVO[];
+  wnProductPicVOList: WnProductPicVO[]
 
   /**
    * 迎新商品规格列表
    * @rule 2
    */
-  wnProductSpecsVOList: WnProductSpecsVO[];
-};
+  wnProductSpecsVOList: WnProductSpecsVO[]
+}
 
 /**
  * --
@@ -34408,16 +34652,16 @@ export type WnProductVO = {
 export type WnReceiveNumberTotalVO = {
   /**
    * 条数
-   * @value #integer(32)
+   * @value
    */
-  count: number;
+  count: number
 
   /**
    * 领取总数量
-   * @value #integer(32)
+   * @value
    */
-  receiveNumberTotal: number;
-};
+  receiveNumberTotal: number
+}
 
 /**
  * --
@@ -34427,206 +34671,206 @@ export type WnReceiveOrderVO = {
    * 收货地址
    * @value
    */
-  address: string;
+  address: string
 
   /**
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 收货人
    * @value
    */
-  consignee: string;
+  consignee: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
-
-  /**
-   * 发货状态 0、未发货  1、已发货
-   * @value #integer(32)
-   */
-  deliveryStatus: number;
+  createTime: string
 
   /**
    * 发货状态 0、未发货  1、已发货
    * @value
    */
-  deliveryStatusStr: string;
+  deliveryStatus: number
+
+  /**
+   * 发货状态 0、未发货  1、已发货
+   * @value
+   */
+  deliveryStatusStr: string
 
   /**
    * 发货时间
    * @value #datetime()
    */
-  deliveryTime: string;
+  deliveryTime: string
 
   /**
    * 院系名称
    * @value
    */
-  departName: string;
+  departName: string
 
   /**
    * 费率金额
    * @value
    */
-  feeMoney: number;
+  feeMoney: number
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 专业名称
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 是否需要支付 0：是  1：否
-   * @value #integer(32)
+   * @value
    */
-  needPay: number;
+  needPay: number
 
   /**
    * 支付金额
    * @value
    */
-  payMoney: number;
+  payMoney: number
 
   /**
    * 支付订单号
    * @value
    */
-  payNo: string;
+  payNo: string
 
   /**
    * 支付方式
    * @value
    */
-  payType: string;
+  payType: string
 
   /**
    * 商品ID
-   * @value #integer(64)
+   * @value
    */
-  productId: number;
+  productId: number
 
   /**
    * 商品名称
    * @value
    */
-  productName: string;
+  productName: string
 
   /**
    * 商品规格id
-   * @value #integer(64)
+   * @value
    */
-  productSpecsId: number;
+  productSpecsId: number
 
   /**
    * 规格名称
    * @value
    */
-  productSpecsName: string;
+  productSpecsName: string
 
   /**
    * 商品类型: 1、军训用品  2、生活用品  3、床上用品
-   * @value #integer(32)
+   * @value
    */
-  productType: number;
+  productType: number
 
   /**
    * 商品类型名
    * @value
    */
-  productTypeStr: string;
+  productTypeStr: string
 
   /**
    * 领取数量
-   * @value #integer(32)
+   * @value
    */
-  receiveNumber: number;
+  receiveNumber: number
 
   /**
    * 领取时间
    * @value #datetime()
    */
-  receiveTime: string;
+  receiveTime: string
 
   /**
    * 招生年份
    * @value
    */
-  recruitYear: string;
+  recruitYear: string
 
   /**
    * 红包金额
    * @value
    */
-  redMoney: number;
+  redMoney: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态：0、未领取  1、已领取
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态名
    * @value
    */
-  statusStr: string;
-
-  /**
-   * 学生姓名
-   * @value #integer(64)
-   */
-  studentId: number;
+  statusStr: string
 
   /**
    * 学生姓名
    * @value
    */
-  studentName: string;
+  studentId: number
+
+  /**
+   * 学生姓名
+   * @value
+   */
+  studentName: string
 
   /**
    * 到账金额
    * @value
    */
-  totalMoney: number;
+  totalMoney: number
 
   /**
    * 证件号码
    * @value
    */
-  uniqueId: string;
+  uniqueId: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -34634,76 +34878,76 @@ export type WnReceiveOrderVO = {
 export type WnRoomAccommodateCountShowVO = {
   /**
    * 男生已分配人数
-   * @value #integer(32)
+   * @value
    */
-  boysAllocatedCount: number;
+  boysAllocatedCount: number
 
   /**
    * 男生已入住人数
-   * @value #integer(32)
+   * @value
    */
-  boysCheckedInCount: number;
+  boysCheckedInCount: number
 
   /**
    * 男生新生人数
-   * @value #integer(32)
+   * @value
    */
-  boysCount: number;
+  boysCount: number
 
   /**
    * 男生房间可入住人数
-   * @value #integer(32)
+   * @value
    */
-  boysMoveIntoCount: number;
+  boysMoveIntoCount: number
 
   /**
    * 女生已分配人数
-   * @value #integer(32)
+   * @value
    */
-  girlsAllocatedCount: number;
+  girlsAllocatedCount: number
 
   /**
    * 女生已入住人数
-   * @value #integer(32)
+   * @value
    */
-  girlsCheckedInCount: number;
+  girlsCheckedInCount: number
 
   /**
    * 女生新生人数
-   * @value #integer(32)
+   * @value
    */
-  girlsCount: number;
+  girlsCount: number
 
   /**
    * 女生房间可入住人数
-   * @value #integer(32)
+   * @value
    */
-  girlsMoveIntoCount: number;
+  girlsMoveIntoCount: number
 
   /**
    * 已分配总人数
-   * @value #integer(32)
+   * @value
    */
-  totalAllocatedCount: number;
+  totalAllocatedCount: number
 
   /**
    * 已入住总人数
-   * @value #integer(32)
+   * @value
    */
-  totalCheckedInCount: number;
+  totalCheckedInCount: number
 
   /**
    * 房间可入住总人数
-   * @value #integer(32)
+   * @value
    */
-  totalMoveIntoCount: number;
+  totalMoveIntoCount: number
 
   /**
    * 新生总人数
-   * @value #integer(32)
+   * @value
    */
-  totalStudentsCount: number;
-};
+  totalStudentsCount: number
+}
 
 /**
  * --
@@ -34713,44 +34957,44 @@ export type WnRoomFeeConfigVO = {
    * 费用名称
    * @value
    */
-  feeName: string;
+  feeName: string
 
   /**
    * 费用价格
    * @value
    */
-  feePrice: number;
+  feePrice: number
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态:0、未启用  1、已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
-};
+  statusStr: string
+}
 
 /**
  * --
@@ -34758,58 +35002,58 @@ export type WnRoomFeeConfigVO = {
 export type WnRoomTreeVO = {
   /**
    * 楼栋id
-   * @value #integer(64)
+   * @value
    */
-  buildingId: number;
+  buildingId: number
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 楼层Id
-   * @value #integer(64)
+   * @value
    */
-  floorId: number;
+  floorId: number
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    * 房间
    * @rule 2
    */
-  roomVOList: WnRoomVO[];
+  roomVOList: WnRoomVO[]
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -34817,118 +35061,118 @@ export type WnRoomTreeVO = {
 export type WnRoomVO = {
   /**
    * 楼栋ID
-   * @value #integer(64)
+   * @value
    */
-  buildingId: number;
+  buildingId: number
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 楼层Id
-   * @value #integer(64)
+   * @value
    */
-  floorId: number;
+  floorId: number
 
   /**
    * 楼层名称
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 房间全名称
    * @value
    */
-  roomFullName: string;
+  roomFullName: string
 
   /**
    * 房间名称
    * @value
    */
-  roomName: string;
+  roomName: string
 
   /**
    * 房间标识：  -1、禁止入住  0、全空房  1、预分配（已分配）  2、半空房 3、已住满
-   * @value #integer(32)
+   * @value
    */
-  roomTab: number;
+  roomTab: number
 
   /**
    * 房间标识
    * @value
    */
-  roomTabStr: string;
+  roomTabStr: string
 
   /**
    * 房间类型（几人间）
-   * @value #integer(32)
+   * @value
    */
-  roomType: number;
+  roomType: number
 
   /**
    * 房间是否已使用：0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  roomUsed: number;
+  roomUsed: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 性别：0、女  1、男
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
+  sex: number
 
   /**
    * 性别
    * @value
    */
-  sexStr: string;
+  sexStr: string
 
   /**
    * 状态:0、未启用  1、已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -34938,164 +35182,164 @@ export type WnSchoolAllDashboardVO = {
    * 入住统计
    * @value
    */
-  checkInReportStr: string;
+  checkInReportStr: string
 
   /**
    * 市区报到
    * @value
    */
-  cityReportStr: string;
+  cityReportStr: string
 
   /**
    * 市地区展示类型 0:全国 1:省份
-   * @value #integer(32)
+   * @value
    */
-  cityViewType: number;
+  cityViewType: number
 
   /**
    * 班级报到率Top5
    * @value
    */
-  classReportStr: string;
+  classReportStr: string
 
   /**
    * 班级报到视图是否展示 0:展示 1:不展示
-   * @value #integer(32)
+   * @value
    */
-  classViewEnable: number;
+  classViewEnable: number
 
   /**
    * 环节办理统计视图是否展示 0:展示 1:不展示
-   * @value #integer(32)
+   * @value
    */
-  dealViewEnable: number;
+  dealViewEnable: number
 
   /**
    * 学院女生比率Top5
    * @value
    */
-  departmentFemaleStr: string;
+  departmentFemaleStr: string
 
   /**
    * 各学院报到率排行
    * @value
    */
-  departmentReportStr: string;
+  departmentReportStr: string
 
   /**
    * 学院报到视图是否展示 0:展示 1:不展示
-   * @value #integer(32)
+   * @value
    */
-  departmentViewEnable: number;
+  departmentViewEnable: number
 
   /**
    * 学院女生视图是否展示 0:展示 1:不展示
-   * @value #integer(32)
+   * @value
    */
-  femaleViewEnable: number;
+  femaleViewEnable: number
 
   /**
    * 缴费情况
    * @value
    */
-  jiaofeiReportStr: string;
+  jiaofeiReportStr: string
 
   /**
    * 缴费视图是否展示 0:展示 1:不展示
-   * @value #integer(32)
+   * @value
    */
-  jiaofeiViewEnable: number;
+  jiaofeiViewEnable: number
 
   /**
    * 最新学生报到视图是否展示 0:展示 1:不展示
-   * @value #integer(32)
+   * @value
    */
-  latestViewEnable: number;
+  latestViewEnable: number
 
   /**
    * 各学院报到率排行
    * @value
    */
-  majorReportStr: string;
+  majorReportStr: string
 
   /**
    * 专业报到率Top5
    * @value
    */
-  majorTop5ReportStr: string;
+  majorTop5ReportStr: string
 
   /**
    * 专业Top5报到视图是否展示 0:展示 1:不展示
-   * @value #integer(32)
+   * @value
    */
-  majorTop5ViewEnable: number;
+  majorTop5ViewEnable: number
 
   /**
    * 专业报到视图是否展示 0:展示 1:不展示
-   * @value #integer(32)
+   * @value
    */
-  majorViewEnable: number;
+  majorViewEnable: number
 
   /**
    * 男女人数比例
    * @value
    */
-  maleAndFemaleStr: string;
+  maleAndFemaleStr: string
 
   /**
    * 学校所在的省份
    * @value
    */
-  province: string;
+  province: string
 
   /**
    * 省份报到
    * @value
    */
-  provinceReportStr: string;
+  provinceReportStr: string
 
   /**
    * 地区展示类型 0:全国 1:省份
-   * @value #integer(32)
+   * @value
    */
-  provinceViewType: number;
+  provinceViewType: number
 
   /**
    * (已报到人数,今日报到, 占比)
    * @value
    */
-  schoolReportStr: string;
+  schoolReportStr: string
 
   /**
    * 时段报到率视图是否展示 0:展示 1:不展示
-   * @value #integer(32)
+   * @value
    */
-  timeFrameRatioViewEnable: number;
+  timeFrameRatioViewEnable: number
 
   /**
    * 时段报到率
    * @value
    */
-  timeFrameReportRatioStr: string;
+  timeFrameReportRatioStr: string
 
   /**
    * 时段报到人数
    * @value
    */
-  timeFrameReportStr: string;
+  timeFrameReportStr: string
 
   /**
    * 时段报到视图是否展示 0:展示 1:不展示
-   * @value #integer(32)
+   * @value
    */
-  timeViewEnable: number;
+  timeViewEnable: number
 
   /**
    * 环节办理统计
    * @value
    */
-  toDealWithStr: string;
-};
+  toDealWithStr: string
+}
 
 /**
  * --
@@ -35103,34 +35347,34 @@ export type WnSchoolAllDashboardVO = {
 export type WnSchoolOrganizationTreeVO = {
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 编码
    * @value
    */
-  key: string;
+  key: string
 
   /**
    * 级别 1高校学院 2高校专业 3高校班级
-   * @value #integer(32)
+   * @value
    */
-  level: number;
+  level: number
 
   /**
    * 人数
-   * @value #integer(32)
+   * @value
    */
-  num: number;
+  num: number
 
   /**
    * 部门名称
    * @value
    */
-  title: string;
-};
+  title: string
+}
 
 /**
  * --
@@ -35140,110 +35384,110 @@ export type WnSchoolOrganizationVO = {
    * 学制
    * @value
    */
-  academicSystem: string;
+  academicSystem: string
 
   /**
    * 别名, 简称
    * @value
    */
-  aliasName: string;
+  aliasName: string
 
   /**
    * 渠道0基础
-   * @value #integer(32)
+   * @value
    */
-  channel: number;
+  channel: number
 
   /**
    * 学历
-   * @value #integer(32)
+   * @value
    */
-  degree: number;
+  degree: number
 
   /**
    * 删除标记: 0-正常，1-删除
-   * @value #integer(32)
+   * @value
    */
-  deleteFlag: number;
+  deleteFlag: number
 
   /**
    * 招生年份
-   * @value #integer(32)
+   * @value
    */
-  entranceYear: number;
+  entranceYear: number
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 级别 1高校学院 2高校专业 3高校班级 4K12年级 5K12班级
-   * @value #integer(32)
+   * @value
    */
-  level: number;
+  level: number
 
   /**
    * 部门名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 代码
    * @value
    */
-  organizationCode: string;
+  organizationCode: string
 
   /**
    * 父级ID
-   * @value #integer(64)
+   * @value
    */
-  parentId: number;
+  parentId: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态 0未启用,1已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 用户人数
-   * @value #integer(32)
+   * @value
    */
-  userNum: number;
+  userNum: number
 
   /**
    * 关联校区
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
-};
+  zoneId: number
+}
 
 /**
  * --
@@ -35253,80 +35497,80 @@ export type WnSchoolZoneVO = {
    * 校区地址
    * @value
    */
-  address: string;
+  address: string
 
   /**
    * 地区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 所属于地区中文
    * @value
    */
-  areaCodeStr: string;
+  areaCodeStr: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 纬度
-   * @value #integer(double)
+   * @value
    */
-  latitude: number;
+  latitude: number
 
   /**
    * 经度
-   * @value #integer(double)
+   * @value
    */
-  longitude: number;
+  longitude: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态 0未启用 1已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态名称
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -35336,80 +35580,80 @@ export type WnSelectPhoneOperatorVO = {
    * 确认提示
    * @value
    */
-  confirmTips: string;
+  confirmTips: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否需要预充值 0、是  1、否
-   * @value #integer(32)
+   * @value
    */
-  needRecharge: number;
+  needRecharge: number
 
   /**
    * 是否需要预充值
    * @value
    */
-  needRechargeStr: string;
+  needRechargeStr: string
 
   /**
    * 运营商名称
    * @value
    */
-  operatorName: string;
+  operatorName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 排序
-   * @value #integer(32)
+   * @value
    */
-  sort: number;
+  sort: number
 
   /**
    * 状态 0、未启用 1、已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 校区id
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -35419,254 +35663,254 @@ export type WnSelectPhoneOrderVO = {
    * 详细地址
    * @value
    */
-  address: string;
+  address: string
 
   /**
    * 区
    * @value
    */
-  area: string;
+  area: string
 
   /**
    * 返充金额
    * @value
    */
-  backAmount: number;
+  backAmount: number
 
   /**
    * 市
    * @value
    */
-  city: string;
+  city: string
 
   /**
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 合约期（月）
-   * @value #integer(32)
+   * @value
    */
-  contractPeriod: number;
+  contractPeriod: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 创建时间
    * @value
    */
-  createTimeStr: string;
+  createTimeStr: string
 
   /**
    * 院系名称
    * @value
    */
-  departName: string;
+  departName: string
 
   /**
    * 费率金额
    * @value
    */
-  feeMoney: number;
+  feeMoney: number
 
   /**
    * 订单编号
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证号
    * @value
    */
-  identityId: string;
+  identityId: string
 
   /**
    * 专业名称
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 已选手机号
    * @value
    */
-  mobilePhone: string;
+  mobilePhone: string
 
   /**
    * 月租（元）
    * @value
    */
-  monthlyRent: number;
+  monthlyRent: number
 
   /**
    * 运营商id
-   * @value #integer(64)
+   * @value
    */
-  operatorId: number;
+  operatorId: number
 
   /**
    * 运营商名称
    * @value
    */
-  operatorName: string;
+  operatorName: string
 
   /**
    * 套餐ID（套餐新增输入）
    * @value
    */
-  packageCode: string;
+  packageCode: string
 
   /**
    * 套餐id（自增）
-   * @value #integer(64)
+   * @value
    */
-  packageId: number;
+  packageId: number
 
   /**
    * 套餐名称
    * @value
    */
-  packageName: string;
+  packageName: string
 
   /**
    * 套餐副标题
    * @value
    */
-  packageSubName: string;
+  packageSubName: string
 
   /**
    * 支付金额
    * @value
    */
-  payMoney: number;
+  payMoney: number
 
   /**
    * 支付订单号
    * @value
    */
-  payNo: string;
+  payNo: string
 
   /**
    * 支付状态
-   * @value #integer(32)
+   * @value
    */
-  payStatus: number;
+  payStatus: number
 
   /**
    *
    * @value
    */
-  payStatusStr: string;
+  payStatusStr: string
 
   /**
    * 支付时间
    * @value #datetime()
    */
-  payTime: string;
+  payTime: string
 
   /**
    * 支付时间
    * @value
    */
-  payTimeStr: string;
+  payTimeStr: string
 
   /**
    * 支付方式
    * @value
    */
-  payType: string;
+  payType: string
 
   /**
    * 支付方式
    * @value
    */
-  payTypeStr: string;
+  payTypeStr: string
 
   /**
    * 联系电话
    * @value
    */
-  phone: string;
+  phone: string
 
   /**
    * 预充金额
    * @value
    */
-  prechargeAmount: number;
+  prechargeAmount: number
 
   /**
    * 省
    * @value
    */
-  province: string;
+  province: string
 
   /**
    * 充值详情
    * @value
    */
-  rechargeInfo: string;
+  rechargeInfo: string
 
   /**
    * 红包金额
    * @value
    */
-  redbagMoney: number;
+  redbagMoney: number
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
-
-  /**
-   * 状态
-   * @value #integer(32)
-   */
-  status: number;
+  schoolName: string
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  status: number
+
+  /**
+   * 状态
+   * @value
+   */
+  statusStr: string
 
   /**
    * 学生姓名
    * @value
    */
-  studentName: string;
+  studentName: string
 
   /**
    * 到账金额
    * @value
    */
-  totalMoney: number;
+  totalMoney: number
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -35676,140 +35920,140 @@ export type WnSelectPhonePackageVO = {
    * 返充金额
    * @value
    */
-  backAmount: string;
+  backAmount: string
 
   /**
    * 合约期（月）
-   * @value #integer(32)
+   * @value
    */
-  contractPeriod: number;
+  contractPeriod: number
 
   /**
    * 封面
    * @value
    */
-  cover: string;
+  cover: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 月租（元）
    * @value
    */
-  monthlyRent: string;
-
-  /**
-   * 是否需要预充值 0、是  1、否
-   * @value #integer(32)
-   */
-  needRecharge: number;
+  monthlyRent: string
 
   /**
    * 是否需要预充值 0、是  1、否
    * @value
    */
-  needRechargeStr: string;
+  needRecharge: number
+
+  /**
+   * 是否需要预充值 0、是  1、否
+   * @value
+   */
+  needRechargeStr: string
 
   /**
    * 运营商id
-   * @value #integer(64)
+   * @value
    */
-  operatorId: number;
+  operatorId: number
 
   /**
    * 运营商名称
    * @value
    */
-  operatorName: string;
+  operatorName: string
 
   /**
    * 套餐内容
    * @value
    */
-  packageContent: string;
+  packageContent: string
 
   /**
    * 套餐id
    * @value
    */
-  packageId: string;
+  packageId: string
 
   /**
    * 套餐名称
    * @value
    */
-  packageName: string;
+  packageName: string
 
   /**
    * 套餐副名称
    * @value
    */
-  packageSubName: string;
+  packageSubName: string
 
   /**
    * 预充金额
    * @value
    */
-  prechargeAmount: string;
+  prechargeAmount: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 排序
-   * @value #integer(32)
+   * @value
    */
-  sort: number;
+  sort: number
 
   /**
    * 状态 0、未启用  1、已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态名
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 校区id
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -35819,122 +36063,122 @@ export type WnSelectPhoneVO = {
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否靓号 0、是  1、否
-   * @value #integer(32)
+   * @value
    */
-  isPretty: number;
+  isPretty: number
 
   /**
    * 是否靓号
    * @value
    */
-  isPrettyStr: string;
+  isPrettyStr: string
 
   /**
    * 手机号
    * @value
    */
-  mobilePhone: string;
-
-  /**
-   * 是否需要预充值 0、是  1、否
-   * @value #integer(32)
-   */
-  needRecharge: number;
+  mobilePhone: string
 
   /**
    * 是否需要预充值 0、是  1、否
    * @value
    */
-  needRechargeStr: string;
+  needRecharge: number
+
+  /**
+   * 是否需要预充值 0、是  1、否
+   * @value
+   */
+  needRechargeStr: string
 
   /**
    * 开卡状态 0、未申领  1、申领中  2、已申领
-   * @value #integer(32)
+   * @value
    */
-  openStatus: number;
+  openStatus: number
 
   /**
    * 开卡状态
    * @value
    */
-  openStatusStr: string;
+  openStatusStr: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 运营商ID
-   * @value #integer(64)
+   * @value
    */
-  operatorId: number;
+  operatorId: number
 
   /**
    * 运营商名称
    * @value
    */
-  operatorName: string;
+  operatorName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态 0、未启用 1、已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -35944,596 +36188,1381 @@ export type WnStudentBaseApiVO = {
    * 详细地址
    * @value
    */
-  address: string;
+  address: string
 
   /**
    * 是否调剂：0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  adjustFlag: number;
+  adjustFlag: number
 
   /**
    * 是否调剂名称
    * @value
    */
-  adjustFlagName: string;
+  adjustFlagName: string
 
   /**
    * 准考生号
    * @value
    */
-  admissionNo: string;
+  admissionNo: string
 
   /**
    * 年龄
-   * @value #integer(32)
+   * @value
    */
-  age: number;
+  age: number
 
   /**
    * 区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
-   * 批次ID
-   * @value #integer(64)
+   * 分配状态：0-已分配，1-未分配
+   * @value
    */
-  batchId: number;
+  assignStatus: number
 
   /**
    *
    * @value
    */
-  batchName: string;
+  assignStatusName: string
+
+  /**
+   * 分配时间
+   * @value #datetime()
+   */
+  assignTime: string
+
+  /**
+   *
+   * @value
+   */
+  assignTimeStr: string
+
+  /**
+   * 批次ID
+   * @value
+   */
+  batchId: number
+
+  /**
+   *
+   * @value
+   */
+  batchName: string
 
   /**
    * 生日
    * @value #datetime()
    */
-  birthday: string;
+  birthday: string
 
   /**
    * 生日(格式化)
    * @value
    */
-  birthdayStr: string;
+  birthdayStr: string
 
   /**
    * 证件类型
    * @value
    */
-  certificateType: string;
+  certificateType: string
 
   /**
    * 证件类型名称
    * @value
    */
-  certificateTypeName: string;
+  certificateTypeName: string
+
+  /**
+   * 入住确认状态：0-确认入住，1-未确认注入
+   * @value
+   */
+  checkInStatus: number
 
   /**
    * 市编码
    * @value
    */
-  cityCode: string;
+  cityCode: string
 
   /**
    * 市名称
    * @value
    */
-  cityName: string;
+  cityName: string
 
   /**
    * 班级编码
    * @value
    */
-  classCode: string;
+  classCode: string
+
+  /**
+   *
+   * @value
+   */
+  classId: number
 
   /**
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 创建人id
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建人姓名
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
    * @value
    */
-  createTimeStr: string;
+  createTimeStr: string
 
   /**
    * 删除状态 0 :正常 1 :删除
-   * @value #integer(32)
+   * @value
    */
-  deleteFlag: number;
+  deleteFlag: number
 
   /**
    * 院系编码
    * @value
    */
-  departmentCode: string;
+  departmentCode: string
+
+  /**
+   *
+   * @value
+   */
+  departmentId: number
 
   /**
    * 院系名称
    * @value
    */
-  departmentName: string;
+  departmentName: string
 
   /**
    * 学历
    * @value
    */
-  diploma: string;
+  diploma: string
 
   /**
    * 学历名称
    * @value
    */
-  diplomaName: string;
+  diplomaName: string
 
   /**
    * 邮箱
    * @value
    */
-  email: string;
+  email: string
 
   /**
    * 考生号
    * @value
    */
-  examNo: string;
+  examNo: string
 
   /**
    * 考生类型
    * @value
    */
-  examineesType: string;
+  examineesType: string
 
   /**
    * 考生类型名称
    * @value
    */
-  examineesTypeName: string;
+  examineesTypeName: string
 
   /**
    * 字符串拓展字段1
    * @value
    */
-  extChar1: string;
+  extChar1: string
 
   /**
    * 字符串拓展字段10
    * @value
    */
-  extChar10: string;
+  extChar10: string
 
   /**
    * 字符串拓展字段11
    * @value
    */
-  extChar11: string;
+  extChar11: string
 
   /**
    * 字符串拓展字段12
    * @value
    */
-  extChar12: string;
+  extChar12: string
 
   /**
    * 字符串拓展字段13
    * @value
    */
-  extChar13: string;
+  extChar13: string
 
   /**
    * 字符串拓展字段14
    * @value
    */
-  extChar14: string;
+  extChar14: string
 
   /**
    * 字符串拓展字段15
    * @value
    */
-  extChar15: string;
+  extChar15: string
 
   /**
    * 字符串拓展字段16
    * @value
    */
-  extChar16: string;
+  extChar16: string
 
   /**
    * 字符串拓展字段17
    * @value
    */
-  extChar17: string;
+  extChar17: string
 
   /**
    * 字符串拓展字段18
    * @value
    */
-  extChar18: string;
+  extChar18: string
 
   /**
    * 字符串拓展字段19
    * @value
    */
-  extChar19: string;
+  extChar19: string
 
   /**
    * 字符串拓展字段2
    * @value
    */
-  extChar2: string;
+  extChar2: string
 
   /**
    * 字符串拓展字段20
    * @value
    */
-  extChar20: string;
+  extChar20: string
 
   /**
    * 字符串拓展字段3
    * @value
    */
-  extChar3: string;
+  extChar3: string
 
   /**
    * 字符串拓展字段4
    * @value
    */
-  extChar4: string;
+  extChar4: string
 
   /**
    * 字符串拓展字段5
    * @value
    */
-  extChar5: string;
+  extChar5: string
 
   /**
    * 字符串拓展字段6
    * @value
    */
-  extChar6: string;
+  extChar6: string
 
   /**
    * 字符串拓展字段7
    * @value
    */
-  extChar7: string;
+  extChar7: string
 
   /**
    * 字符串拓展字段8
    * @value
    */
-  extChar8: string;
+  extChar8: string
 
   /**
    * 字符串拓展字段9
    * @value
    */
-  extChar9: string;
+  extChar9: string
 
   /**
    * 家庭成员JSON
    * @value
    */
-  familyMember: string;
+  familyMember: string
 
   /**
    * 头像
    * @value
    */
-  headImg: string;
+  headImg: string
 
   /**
    * 身高（cm）
    * @value
    */
-  height: string;
+  height: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份号码
    * @value
    */
-  identityNo: string;
+  identityNo: string
 
   /**
    * 导入记录ID
-   * @value #integer(64)
+   * @value
    */
-  importId: number;
+  importId: number
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 专业编码
    * @value
    */
-  majorCode: string;
+  majorCode: string
+
+  /**
+   *
+   * @value
+   */
+  majorId: number
 
   /**
    * 专业名称
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 手机号
    * @value
    */
-  mobileNo: string;
+  mobileNo: string
 
   /**
    * 民族
    * @value
    */
-  nation: string;
+  nation: string
 
   /**
    * 民族名称
    * @value
    */
-  nationName: string;
+  nationName: string
 
   /**
    * 籍贯(省份)
    * @value
    */
-  nativePlace: string;
+  nativePlace: string
 
   /**
    * 政治面貌
    * @value
    */
-  politicalStatus: string;
+  politicalStatus: string
 
   /**
    * 政治面貌名称
    * @value
    */
-  politicalStatusName: string;
+  politicalStatusName: string
 
   /**
    * 邮政编码
    * @value
    */
-  postalCode: string;
+  postalCode: string
 
   /**
    * 省份编码
    * @value
    */
-  provinceCode: string;
+  provinceCode: string
 
   /**
    * 省份名称
    * @value
    */
-  provinceName: string;
+  provinceName: string
 
   /**
    * QQ号
    * @value
    */
-  qq: string;
+  qq: string
 
   /**
    * 学年
    * @value
    */
-  recruitYear: string;
+  recruitYear: string
 
   /**
    * 状态：1-启用，0-禁用
-   * @value #integer(32)
+   * @value
    */
-  registerStatus: number;
+  registerStatus: number
 
   /**
    * 登记状态名称
    * @value
    */
-  registerStatusName: string;
+  registerStatusName: string
 
   /**
    * 登记时间
    * @value #datetime()
    */
-  registerTime: string;
+  registerTime: string
 
   /**
    *
    * @value
    */
-  registerTimeStr: string;
+  registerTimeStr: string
 
   /**
    * 宗教信仰
    * @value
    */
-  religion: string;
+  religion: string
 
   /**
    * 宗教信仰名称
    * @value
    */
-  religionName: string;
+  religionName: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 报道码
    * @value
    */
-  reportCode: string;
+  reportCode: string
+
+  /**
+   * 报道状态：0-已报到，1-未报道
+   * @value
+   */
+  reportStatus: number
+
+  /**
+   *
+   * @value
+   */
+  reportStatusName: string
+
+  /**
+   * 报道时间
+   * @value #datetime()
+   */
+  reportTime: string
+
+  /**
+   *
+   * @value
+   */
+  reportTimeStr: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 分数
-   * @value #integer(32)
+   * @value
    */
-  score: number;
+  score: number
 
   /**
    * 性别
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
+  sex: number
 
   /**
    * 性别名称
    * @value
    */
-  sexName: string;
+  sexName: string
 
   /**
    * 状态：1-启用，0-禁用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态名称
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 同步认证状态：0-已同步，1-未同步
-   * @value #integer(32)
+   * @value
    */
-  syncAuthStatus: number;
+  syncAuthStatus: number
 
   /**
    *
    * @value
    */
-  syncAuthStatusName: string;
+  syncAuthStatusName: string
 
   /**
    * 新生标题字段映射JSON
    * @value
    */
-  titleFieldMapping: string;
+  titleFieldMapping: string
 
   /**
    * 唯一标识
    * @value
    */
-  uniqueId: string;
+  uniqueId: string
 
   /**
    * 修改人id
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 修改人姓名
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    *
    * @value
    */
-  updateTimeStr: string;
+  updateTimeStr: string
 
   /**
    * 用户ID
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 用户姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 微信号
    * @value
    */
-  wechat: string;
+  wechat: string
 
   /**
    * 体重（kg）
    * @value
    */
-  weight: string;
+  weight: string
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
+
+/**
+ * --
+ */
+export type WnStudentBaseVO = {
+  /**
+   * 详细地址
+   * @value
+   */
+  address: string
+
+  /**
+   * 是否调剂：0-是，1-否
+   * @value
+   */
+  adjustFlag: number
+
+  /**
+   * 是否调剂名称
+   * @value
+   */
+  adjustFlagName: string
+
+  /**
+   * 准考证号
+   * @value
+   */
+  admissionNo: string
+
+  /**
+   * 年龄
+   * @value
+   */
+  age: number
+
+  /**
+   * 区编码
+   * @value
+   */
+  areaCode: string
+
+  /**
+   * 区名称
+   * @value
+   */
+  areaName: string
+
+  /**
+   * 分配状态：0-已分配，1-未分配
+   * @value
+   */
+  assignStatus: number
+
+  /**
+   *
+   * @value
+   */
+  assignStatusName: string
+
+  /**
+   * 分配时间
+   * @value #datetime()
+   */
+  assignTime: string
+
+  /**
+   *
+   * @value
+   */
+  assignTimeStr: string
+
+  /**
+   * 批次ID
+   * @value
+   */
+  batchId: number
+
+  /**
+   *
+   * @value
+   */
+  batchName: string
+
+  /**
+   * 生日
+   * @value #datetime()
+   */
+  birthday: string
+
+  /**
+   * 生日(格式化)
+   * @value
+   */
+  birthdayStr: string
+
+  /**
+   * 证件类型
+   * @value
+   */
+  certificateType: string
+
+  /**
+   * 证件类型名称
+   * @value
+   */
+  certificateTypeName: string
+
+  /**
+   * 入住确认状态：0-确认入住，1-未确认注入
+   * @value
+   */
+  checkInStatus: number
+
+  /**
+   *
+   * @value
+   */
+  checkInStatusName: string
+
+  /**
+   * 报道时间
+   * @value #datetime()
+   */
+  checkInTime: string
+
+  /**
+   *
+   * @value
+   */
+  checkInTimeStr: string
+
+  /**
+   * 市编码
+   * @value
+   */
+  cityCode: string
+
+  /**
+   * 市名称
+   * @value
+   */
+  cityName: string
+
+  /**
+   * 班级编码
+   * @value
+   */
+  classCode: string
+
+  /**
+   * 班级ID
+   * @value
+   */
+  classId: number
+
+  /**
+   * 班级名称
+   * @value
+   */
+  className: string
+
+  /**
+   * 创建人id
+   * @value
+   */
+  createId: number
+
+  /**
+   * 创建人姓名
+   * @value
+   */
+  createName: string
+
+  /**
+   * 创建时间
+   * @value #datetime()
+   */
+  createTime: string
+
+  /**
+   *
+   * @value
+   */
+  createTimeStr: string
+
+  /**
+   * 删除状态 0 :正常 1 :删除
+   * @value
+   */
+  deleteFlag: number
+
+  /**
+   * 院系编码
+   * @value
+   */
+  departmentCode: string
+
+  /**
+   * 院系ID
+   * @value
+   */
+  departmentId: number
+
+  /**
+   * 院系名称
+   * @value
+   */
+  departmentName: string
+
+  /**
+   * 学历
+   * @value
+   */
+  diploma: string
+
+  /**
+   * 学历名称
+   * @value
+   */
+  diplomaName: string
+
+  /**
+   * 邮箱
+   * @value
+   */
+  email: string
+
+  /**
+   * 考生号
+   * @value
+   */
+  examNo: string
+
+  /**
+   * 考生类型
+   * @value
+   */
+  examineesType: string
+
+  /**
+   * 考生类型名称
+   * @value
+   */
+  examineesTypeName: string
+
+  /**
+   * 字符串拓展字段1
+   * @value
+   */
+  extChar1: string
+
+  /**
+   * 字符串拓展字段10
+   * @value
+   */
+  extChar10: string
+
+  /**
+   * 字符串拓展字段11
+   * @value
+   */
+  extChar11: string
+
+  /**
+   * 字符串拓展字段12
+   * @value
+   */
+  extChar12: string
+
+  /**
+   * 字符串拓展字段13
+   * @value
+   */
+  extChar13: string
+
+  /**
+   * 字符串拓展字段14
+   * @value
+   */
+  extChar14: string
+
+  /**
+   * 字符串拓展字段15
+   * @value
+   */
+  extChar15: string
+
+  /**
+   * 字符串拓展字段16
+   * @value
+   */
+  extChar16: string
+
+  /**
+   * 字符串拓展字段17
+   * @value
+   */
+  extChar17: string
+
+  /**
+   * 字符串拓展字段18
+   * @value
+   */
+  extChar18: string
+
+  /**
+   * 字符串拓展字段19
+   * @value
+   */
+  extChar19: string
+
+  /**
+   * 字符串拓展字段2
+   * @value
+   */
+  extChar2: string
+
+  /**
+   * 字符串拓展字段20
+   * @value
+   */
+  extChar20: string
+
+  /**
+   * 字符串拓展字段3
+   * @value
+   */
+  extChar3: string
+
+  /**
+   * 字符串拓展字段4
+   * @value
+   */
+  extChar4: string
+
+  /**
+   * 字符串拓展字段5
+   * @value
+   */
+  extChar5: string
+
+  /**
+   * 字符串拓展字段6
+   * @value
+   */
+  extChar6: string
+
+  /**
+   * 字符串拓展字段7
+   * @value
+   */
+  extChar7: string
+
+  /**
+   * 字符串拓展字段8
+   * @value
+   */
+  extChar8: string
+
+  /**
+   * 字符串拓展字段9
+   * @value
+   */
+  extChar9: string
+
+  /**
+   * 家庭成员JSON
+   * @value
+   */
+  familyMember: string
+
+  /**
+   * 姓名首字母
+   * @value
+   */
+  firstChar: string
+
+  /**
+   * 头像
+   * @value
+   */
+  headImg: string
+
+  /**
+   * 身高（cm）
+   * @value
+   */
+  height: string
+
+  /**
+   * 主键
+   * @value
+   */
+  id: number
+
+  /**
+   * 身份号码
+   * @value
+   */
+  identityNo: string
+
+  /**
+   * 导入记录ID
+   * @value
+   */
+  importId: number
+
+  /**
+   * 学工号
+   * @value
+   */
+  jobNo: string
+
+  /**
+   * 专业编码
+   * @value
+   */
+  majorCode: string
+
+  /**
+   * 专业ID
+   * @value
+   */
+  majorId: number
+
+  /**
+   * 专业名称
+   * @value
+   */
+  majorName: string
+
+  /**
+   * 手机号
+   * @value
+   */
+  mobileNo: string
+
+  /**
+   * 姓名拼音
+   * @value
+   */
+  namePinYin: string
+
+  /**
+   * 民族
+   * @value
+   */
+  nation: string
+
+  /**
+   * 民族名称
+   * @value
+   */
+  nationName: string
+
+  /**
+   * 籍贯(省份)
+   * @value
+   */
+  nativePlace: string
+
+  /**
+   * 操作
+   * @value
+   */
+  operates: string[]
+
+  /**
+   * 政治面貌
+   * @value
+   */
+  politicalStatus: string
+
+  /**
+   * 政治面貌名称
+   * @value
+   */
+  politicalStatusName: string
+
+  /**
+   * 邮政编码
+   * @value
+   */
+  postalCode: string
+
+  /**
+   * 省份编码
+   * @value
+   */
+  provinceCode: string
+
+  /**
+   * 省份名称
+   * @value
+   */
+  provinceName: string
+
+  /**
+   * QQ号
+   * @value
+   */
+  qq: string
+
+  /**
+   * 学年
+   * @value
+   */
+  recruitYear: string
+
+  /**
+   * 登记状态
+   * @value
+   */
+  registerStatus: number
+
+  /**
+   * 登记状态名称
+   * @value
+   */
+  registerStatusName: string
+
+  /**
+   * 登记时间
+   * @value #datetime()
+   */
+  registerTime: string
+
+  /**
+   *
+   * @value
+   */
+  registerTimeStr: string
+
+  /**
+   * 宗教信仰
+   * @value
+   */
+  religion: string
+
+  /**
+   * 宗教信仰名称
+   * @value
+   */
+  religionName: string
+
+  /**
+   * 备注
+   * @value
+   */
+  remark: string
+
+  /**
+   * 报道码
+   * @value
+   */
+  reportCode: string
+
+  /**
+   * 报道状态：0-已报到，1-未报道
+   * @value
+   */
+  reportStatus: number
+
+  /**
+   *
+   * @value
+   */
+  reportStatusName: string
+
+  /**
+   * 报道时间
+   * @value #datetime()
+   */
+  reportTime: string
+
+  /**
+   *
+   * @value
+   */
+  reportTimeStr: string
+
+  /**
+   * 学校编码
+   * @value
+   */
+  schoolCode: string
+
+  /**
+   * 学校名称
+   * @value
+   */
+  schoolName: string
+
+  /**
+   * 分数
+   * @value
+   */
+  score: number
+
+  /**
+   * 性别
+   * @value
+   */
+  sex: number
+
+  /**
+   * 性别名称
+   * @value
+   */
+  sexName: string
+
+  /**
+   * 状态：1-启用，0-禁用
+   * @value
+   */
+  status: number
+
+  /**
+   * 状态名称
+   * @value
+   */
+  statusName: string
+
+  /**
+   * 同步认证状态：0-已同步，1-未同步
+   * @value
+   */
+  syncAuthStatus: number
+
+  /**
+   *
+   * @value
+   */
+  syncAuthStatusName: string
+
+  /**
+   * 第三方系统同步时间
+   * @value #datetime()
+   */
+  thirdUpdateTime: string
+
+  /**
+   * 唯一标识
+   * @value
+   */
+  uniqueId: string
+
+  /**
+   * 修改人id
+   * @value
+   */
+  updateId: number
+
+  /**
+   * 修改人姓名
+   * @value
+   */
+  updateName: string
+
+  /**
+   * 修改时间
+   * @value #datetime()
+   */
+  updateTime: string
+
+  /**
+   *
+   * @value
+   */
+  updateTimeStr: string
+
+  /**
+   * 用户ID
+   * @value
+   */
+  userId: number
+
+  /**
+   * 用户姓名
+   * @value
+   */
+  userName: string
+
+  /**
+   * 微信号
+   * @value
+   */
+  wechat: string
+
+  /**
+   * 体重（kg）
+   * @value
+   */
+  weight: string
+
+  /**
+   * 校区编码
+   * @value
+   */
+  zoneCode: string
+
+  /**
+   * 校区ID
+   * @value
+   */
+  zoneId: number
+
+  /**
+   * 校区名称
+   * @value
+   */
+  zoneName: string
+}
 
 /**
  * --
@@ -36543,44 +37572,44 @@ export type WnStudentDashboardViewVO = {
    * 地区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 地区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 地区展示类型 0:全国 1:省份
-   * @value #integer(32)
+   * @value
    */
-  areaViewType: number;
+  areaViewType: number
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 经纬度
    * @value
    */
-  location: string;
+  location: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 视图是否展示
    * @value
    */
-  viewEnableJson: string;
-};
+  viewEnableJson: string
+}
 
 /**
  * --
@@ -36590,56 +37619,56 @@ export type WnStudentImportVO = {
    * 导入时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 导入结果 0 :成功 1 :失败
-   * @value #integer(32)
+   * @value
    */
-  importStatus: number;
+  importStatus: number
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 招生学年
    * @value
    */
-  recruitYear: string;
+  recruitYear: string
 
   /**
    * 导入结果解析
    * @value
    */
-  resultExplain: string;
+  resultExplain: string
 
   /**
    * 招生学期 0上学期  1下学期
-   * @value #integer(32)
+   * @value
    */
-  semester: number;
+  semester: number
 
   /**
    * 数据来源
    * @value
    */
-  sourceCode: string;
+  sourceCode: string
 
   /**
    * 学生人数
-   * @value #integer(32)
+   * @value
    */
-  stuNum: number;
-};
+  stuNum: number
+}
 
 /**
  * --
@@ -36647,94 +37676,94 @@ export type WnStudentImportVO = {
 export type WnStudentInCountVO = {
   /**
    * 批次
-   * @value #integer(64)
+   * @value
    */
-  batchId: number;
+  batchId: number
 
   /**
    *
    * @value
    */
-  batchName: string;
+  batchName: string
 
   /**
    * 楼栋id
-   * @value #integer(64)
+   * @value
    */
-  buildingId: number;
+  buildingId: number
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 已确认人数
-   * @value #integer(32)
+   * @value
    */
-  confirmNum: number;
+  confirmNum: number
 
   /**
    * 确认比例
-   * @value #integer(double)
+   * @value
    */
-  confirmScale: number;
+  confirmScale: number
 
   /**
    *
    * @value
    */
-  confirmScaleStr: string;
+  confirmScaleStr: string
 
   /**
    * 确认状态： 0-已确认,1-未确认
-   * @value #integer(32)
+   * @value
    */
-  confirmStatus: number;
+  confirmStatus: number
 
   /**
    * 未确认人数
-   * @value #integer(32)
+   * @value
    */
-  notConfirmNum: number;
+  notConfirmNum: number
 
   /**
    * 入学年份
-   * @value #integer(32)
+   * @value
    */
-  recruitYear: number;
+  recruitYear: number
 
   /**
    * 学期 ,0-上学期  1-下学期
-   * @value #integer(32)
+   * @value
    */
-  semester: number;
+  semester: number
 
   /**
    *
    * @value
    */
-  semesterStr: string;
+  semesterStr: string
 
   /**
    * 性别
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
+  sex: number
 
   /**
    *
    * @value
    */
-  sexStr: string;
+  sexStr: string
 
   /**
    * 总人数
-   * @value #integer(32)
+   * @value
    */
-  totalNum: number;
-};
+  totalNum: number
+}
 
 /**
  * --
@@ -36744,20 +37773,20 @@ export type WnStudentLatestRegisterVO = {
    * 院系名称
    * @value
    */
-  departName: string;
+  departName: string
 
   /**
    * 登记时间
    * @value
    */
-  registerTime: string;
+  registerTime: string
 
   /**
    * 姓名
    * @value
    */
-  studentName: string;
-};
+  studentName: string
+}
 
 /**
  * --
@@ -36767,26 +37796,26 @@ export type WnStudentProcessCountVO = {
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 部门名称
    * @value
    */
-  departmentName: string;
+  departmentName: string
 
   /**
    * 专业名称
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 招生年份
    * @value
    */
-  recruitYear: string;
-};
+  recruitYear: string
+}
 
 /**
  * --
@@ -36796,86 +37825,86 @@ export type WnStudentProcessDetailVO = {
    *
    * @value
    */
-  classCode: string;
+  classCode: string
 
   /**
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
    * @value
    */
-  createTimeStr: string;
+  createTimeStr: string
 
   /**
    *
    * @value
    */
-  departmentCode: string;
+  departmentCode: string
 
   /**
    * 部门名称
    * @value
    */
-  departmentName: string;
+  departmentName: string
 
   /**
    *
    * @value
    */
-  majorCode: string;
+  majorCode: string
 
   /**
    * 专业名称
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 流程编码
    * @value
    */
-  processCode: string;
+  processCode: string
 
   /**
    * 流程名称
    * @value
    */
-  processName: string;
+  processName: string
 
   /**
    * 招生年份
    * @value
    */
-  recruitYear: string;
+  recruitYear: string
 
   /**
    * 学生记录ID
-   * @value #integer(64)
+   * @value
    */
-  studentId: number;
+  studentId: number
 
   /**
    * 姓名
    * @value
    */
-  studentName: string;
+  studentName: string
 
   /**
    * 身份唯一标识
    * @value
    */
-  uniqueId: string;
-};
+  uniqueId: string
+}
 
 /**
  * --
@@ -36885,746 +37914,746 @@ export type WnStudentRegisterBaseApiVO = {
    * 详细地址
    * @value
    */
-  address: string;
+  address: string
 
   /**
    * 是否调剂：0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  adjustFlag: number;
+  adjustFlag: number
 
   /**
    *
    * @value
    */
-  adjustFlagName: string;
+  adjustFlagName: string
 
   /**
    * 准考生号
    * @value
    */
-  admissionNo: string;
+  admissionNo: string
 
   /**
    * 年龄
-   * @value #integer(32)
+   * @value
    */
-  age: number;
+  age: number
 
   /**
    * 区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 到达时间
    * @value #datetime()
    */
-  arriveTime: string;
+  arriveTime: string
 
   /**
    *
    * @value
    */
-  arriveTimeStr: string;
+  arriveTimeStr: string
 
   /**
    * 批次ID
-   * @value #integer(64)
+   * @value
    */
-  batchId: number;
+  batchId: number
 
   /**
    *
    * @value
    */
-  batchName: string;
+  batchName: string
 
   /**
    * 生日
    * @value #datetime()
    */
-  birthday: string;
+  birthday: string
 
   /**
    *
    * @value
    */
-  birthdayStr: string;
+  birthdayStr: string
 
   /**
    * 证件类型
    * @value
    */
-  certificateType: string;
+  certificateType: string
 
   /**
    *
    * @value
    */
-  certificateTypeName: string;
+  certificateTypeName: string
 
   /**
    * 市编码
    * @value
    */
-  cityCode: string;
+  cityCode: string
 
   /**
    * 市名称
    * @value
    */
-  cityName: string;
+  cityName: string
 
   /**
    * 班级编码
    * @value
    */
-  classCode: string;
+  classCode: string
 
   /**
    *
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 确认状态：0-已确认，1-未确认
-   * @value #integer(32)
+   * @value
    */
-  confirmStatus: number;
+  confirmStatus: number
 
   /**
    *
    * @value
    */
-  confirmStatusName: string;
+  confirmStatusName: string
 
   /**
    * 确认时间
    * @value #datetime()
    */
-  confirmTime: string;
+  confirmTime: string
 
   /**
    *
    * @value
    */
-  confirmTimeStr: string;
+  confirmTimeStr: string
 
   /**
    * 创建人id
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建人姓名
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    *
    * @value
    */
-  createTimeStr: string;
+  createTimeStr: string
 
   /**
    * 删除状态 0 :正常 1 :删除
-   * @value #integer(32)
+   * @value
    */
-  deleteFlag: number;
+  deleteFlag: number
 
   /**
    * 院系编码
    * @value
    */
-  departmentCode: string;
+  departmentCode: string
 
   /**
    *
    * @value
    */
-  departmentName: string;
+  departmentName: string
 
   /**
    * 学历
    * @value
    */
-  diploma: string;
+  diploma: string
 
   /**
    *
    * @value
    */
-  diplomaName: string;
+  diplomaName: string
 
   /**
    * 邮箱
    * @value
    */
-  email: string;
+  email: string
 
   /**
    * 考生号
    * @value
    */
-  examNo: string;
+  examNo: string
 
   /**
    * 考生类型
    * @value
    */
-  examineesType: string;
+  examineesType: string
 
   /**
    *
    * @value
    */
-  examineesTypeName: string;
+  examineesTypeName: string
 
   /**
    * 字符串拓展字段1
    * @value
    */
-  extChar1: string;
+  extChar1: string
 
   /**
    * 字符串拓展字段10
    * @value
    */
-  extChar10: string;
+  extChar10: string
 
   /**
    * 字符串拓展字段11
    * @value
    */
-  extChar11: string;
+  extChar11: string
 
   /**
    * 字符串拓展字段12
    * @value
    */
-  extChar12: string;
+  extChar12: string
 
   /**
    * 字符串拓展字段13
    * @value
    */
-  extChar13: string;
+  extChar13: string
 
   /**
    * 字符串拓展字段14
    * @value
    */
-  extChar14: string;
+  extChar14: string
 
   /**
    * 字符串拓展字段15
    * @value
    */
-  extChar15: string;
+  extChar15: string
 
   /**
    * 字符串拓展字段2
    * @value
    */
-  extChar2: string;
+  extChar2: string
 
   /**
    * 字符串拓展字段3
    * @value
    */
-  extChar3: string;
+  extChar3: string
 
   /**
    * 字符串拓展字段4
    * @value
    */
-  extChar4: string;
+  extChar4: string
 
   /**
    * 字符串拓展字段5
    * @value
    */
-  extChar5: string;
+  extChar5: string
 
   /**
    * 字符串拓展字段6
    * @value
    */
-  extChar6: string;
+  extChar6: string
 
   /**
    * 字符串拓展字段7
    * @value
    */
-  extChar7: string;
+  extChar7: string
 
   /**
    * 字符串拓展字段8
    * @value
    */
-  extChar8: string;
+  extChar8: string
 
   /**
    * 字符串拓展字段9
    * @value
    */
-  extChar9: string;
+  extChar9: string
 
   /**
    * 日期拓展字段1
    * @value #datetime()
    */
-  extDate1: string;
+  extDate1: string
 
   /**
    * 日期拓展字段10
    * @value #datetime()
    */
-  extDate10: string;
+  extDate10: string
 
   /**
    * 日期拓展字段2
    * @value #datetime()
    */
-  extDate2: string;
+  extDate2: string
 
   /**
    * 日期拓展字段3
    * @value #datetime()
    */
-  extDate3: string;
+  extDate3: string
 
   /**
    * 日期拓展字段4
    * @value #datetime()
    */
-  extDate4: string;
+  extDate4: string
 
   /**
    * 日期拓展字段5
    * @value #datetime()
    */
-  extDate5: string;
+  extDate5: string
 
   /**
    * 日期拓展字段6
    * @value #datetime()
    */
-  extDate6: string;
+  extDate6: string
 
   /**
    * 日期拓展字段7
    * @value #datetime()
    */
-  extDate7: string;
+  extDate7: string
 
   /**
    * 日期拓展字段8
    * @value #datetime()
    */
-  extDate8: string;
+  extDate8: string
 
   /**
    * 日期拓展字段9
    * @value #datetime()
    */
-  extDate9: string;
+  extDate9: string
 
   /**
    * 家庭成员Json
    * @value
    */
-  familyMember: string;
+  familyMember: string
 
   /**
    * 表单ID
-   * @value #integer(64)
+   * @value
    */
-  formId: number;
+  formId: number
 
   /**
    * 毕业学校
    * @value
    */
-  graduationSchool: string;
+  graduationSchool: string
 
   /**
    * 头像
    * @value
    */
-  headImg: string;
+  headImg: string
 
   /**
    *
    * @value
    */
-  headImgName: string;
+  headImgName: string
 
   /**
    * 身高（cm）
    * @value
    */
-  height: string;
+  height: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份号码
    * @value
    */
-  identityNo: string;
+  identityNo: string
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 专业编码
    * @value
    */
-  majorCode: string;
+  majorCode: string
 
   /**
    *
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 手机号
    * @value
    */
-  mobileNo: string;
+  mobileNo: string
 
   /**
    * 民族
    * @value
    */
-  nation: string;
+  nation: string
 
   /**
    *
    * @value
    */
-  nationName: string;
+  nationName: string
 
   /**
    * 籍贯(省份)
    * @value
    */
-  nativePlace: string;
+  nativePlace: string
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 政治面貌
    * @value
    */
-  politicalStatus: string;
+  politicalStatus: string
 
   /**
    *
    * @value
    */
-  politicalStatusName: string;
+  politicalStatusName: string
 
   /**
    * 邮政编码
    * @value
    */
-  postalCode: string;
+  postalCode: string
 
   /**
    * 省份编码
    * @value
    */
-  provinceCode: string;
+  provinceCode: string
 
   /**
    * 省名称
    * @value
    */
-  provinceName: string;
+  provinceName: string
 
   /**
    * QQ号
    * @value
    */
-  qq: string;
+  qq: string
 
   /**
    * 招生年份
    * @value
    */
-  recruitYear: string;
+  recruitYear: string
 
   /**
    * 宗教信仰
    * @value
    */
-  religion: string;
+  religion: string
 
   /**
    *
    * @value
    */
-  religionName: string;
+  religionName: string
 
   /**
    * 备注
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 报道码
    * @value
    */
-  reportCode: string;
+  reportCode: string
 
   /**
    * 现场确认方式
-   * @value #integer(32)
+   * @value
    */
-  reportConfirmType: number;
+  reportConfirmType: number
 
   /**
    *
    * @value
    */
-  reportConfirmTypeName: string;
+  reportConfirmTypeName: string
 
   /**
    * 随性人员数量
-   * @value #integer(32)
+   * @value
    */
-  retinueNum: number;
+  retinueNum: number
 
   /**
    * 行程登记状态：0-已登记，1-未登记
-   * @value #integer(32)
+   * @value
    */
-  routeStatus: number;
+  routeStatus: number
 
   /**
    *
    * @value
    */
-  routeStatusName: string;
+  routeStatusName: string
 
   /**
    * 行程登记时间
    * @value #datetime()
    */
-  routeTime: string;
+  routeTime: string
 
   /**
    *
    * @value
    */
-  routeTimeStr: string;
+  routeTimeStr: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 分数
-   * @value #integer(32)
+   * @value
    */
-  score: number;
+  score: number
 
   /**
    * 性别
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
+  sex: number
 
   /**
    *
    * @value
    */
-  sexName: string;
+  sexName: string
 
   /**
    * 到达站点
    * @value
    */
-  station: string;
+  station: string
 
   /**
    *
    * @value
    */
-  stationName: string;
+  stationName: string
 
   /**
    * 状态：1-启用，0-禁用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 新生记录ID
-   * @value #integer(64)
+   * @value
    */
-  studentId: number;
+  studentId: number
 
   /**
    * 学生在校状态
-   * @value #integer(32)
+   * @value
    */
-  studentSchoolStatus: number;
+  studentSchoolStatus: number
 
   /**
    *
    * @value
    */
-  studentSchoolStatusName: string;
+  studentSchoolStatusName: string
 
   /**
    * 新生标题字段映射JSON
    * @value
    */
-  titleFieldMapping: string;
+  titleFieldMapping: string
 
   /**
    * 交通方式
    * @value
    */
-  trafficType: string;
+  trafficType: string
 
   /**
    *
    * @value
    */
-  trafficTypeName: string;
+  trafficTypeName: string
 
   /**
    * 车次/航班次/车牌号
    * @value
    */
-  trainNumber: string;
+  trainNumber: string
 
   /**
    * 唯一标识
    * @value
    */
-  uniqueId: string;
+  uniqueId: string
 
   /**
    * 修改人id
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 修改人姓名
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    *
    * @value
    */
-  updateTimeStr: string;
+  updateTimeStr: string
 
   /**
    * 用户ID
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 用户姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 经停站点
    * @value
    */
-  wayPoint: string;
+  wayPoint: string
 
   /**
    * 微信号
    * @value
    */
-  wechat: string;
+  wechat: string
 
   /**
    * 体重（kg）
    * @value
    */
-  weight: string;
+  weight: string
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    *
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -37632,142 +38661,142 @@ export type WnStudentRegisterBaseApiVO = {
 export type WnStudentReportCountExportVO = {
   /**
    * 批次ID
-   * @value #integer(64)
+   * @value
    */
-  batchId: number;
+  batchId: number
 
   /**
    * 批次
    * @value
    */
-  batchName: string;
+  batchName: string
 
   /**
    * 班级编码
    * @value
    */
-  classCode: string;
+  classCode: string
 
   /**
    * 班级名称
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 院系编码
    * @value
    */
-  departmentCode: string;
+  departmentCode: string
 
   /**
    * 院系名称
    * @value
    */
-  departmentName: string;
+  departmentName: string
 
   /**
    * 学历
    * @value
    */
-  diploma: string;
+  diploma: string
 
   /**
    * 学历名称
    * @value
    */
-  diplomaName: string;
+  diplomaName: string
 
   /**
    * 专业编码
    * @value
    */
-  majorCode: string;
+  majorCode: string
 
   /**
    * 专业名称
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 民族
    * @value
    */
-  nation: string;
+  nation: string
 
   /**
    *
    * @value
    */
-  nationName: string;
+  nationName: string
 
   /**
    * 未报到人数
-   * @value #integer(32)
+   * @value
    */
-  notReportedNum: number;
+  notReportedNum: number
 
   /**
    *
    * @value
    */
-  provinceCode: string;
+  provinceCode: string
 
   /**
    * 省名称
    * @value
    */
-  provinceName: string;
+  provinceName: string
 
   /**
    * 入学年份
-   * @value #integer(32)
+   * @value
    */
-  recruitYear: number;
+  recruitYear: number
 
   /**
    * 已报到人数
-   * @value #integer(32)
+   * @value
    */
-  reportedNum: number;
+  reportedNum: number
 
   /**
    * 报到率(保留小数点后两位)
    * @value
    */
-  reportedRate: string;
+  reportedRate: string
 
   /**
    * 性别
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
+  sex: number
 
   /**
    *
    * @value
    */
-  sexName: string;
+  sexName: string
 
   /**
    * 总人数
-   * @value #integer(32)
+   * @value
    */
-  totalStudentNum: number;
+  totalStudentNum: number
 
   /**
    * 校区id
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -37777,50 +38806,50 @@ export type WnStudentReportNumCountVO = {
    * 校区/院系/专业/班级/民族编码
    * @value
    */
-  commonCode: string;
+  commonCode: string
 
   /**
    * 校区/院系/专业/班级/民族名称
    * @value
    */
-  commonName: string;
+  commonName: string
 
   /**
    * 未报到人数
-   * @value #integer(32)
+   * @value
    */
-  notReportedNum: number;
+  notReportedNum: number
 
   /**
    * 未报到人数比例
    * @value
    */
-  notReportedNumPercent: string;
+  notReportedNumPercent: string
 
   /**
    * 省份
    * @value
    */
-  provinceName: string;
+  provinceName: string
 
   /**
    * 已报到人数
-   * @value #integer(32)
+   * @value
    */
-  reportedNum: number;
+  reportedNum: number
 
   /**
    * 已报到人数比例
    * @value
    */
-  reportedNumPercent: string;
+  reportedNumPercent: string
 
   /**
    * 总人数
-   * @value #integer(32)
+   * @value
    */
-  totalStudentNum: number;
-};
+  totalStudentNum: number
+}
 
 /**
  * --
@@ -37830,50 +38859,50 @@ export type WnStudentReportSexCountVO = {
    * 校区/院系/专业/班级/民族编码
    * @value
    */
-  commonCode: string;
+  commonCode: string
 
   /**
    * 校区/院系/专业/班级/民族名称
    * @value
    */
-  commonName: string;
+  commonName: string
 
   /**
    * 女生人数
-   * @value #integer(32)
+   * @value
    */
-  femaleNum: number;
+  femaleNum: number
 
   /**
    * 女生人数比例
    * @value
    */
-  femalePercent: string;
+  femalePercent: string
 
   /**
    * 男生人数
-   * @value #integer(32)
+   * @value
    */
-  maleNum: number;
+  maleNum: number
 
   /**
    * 男生人数比例
    * @value
    */
-  malePercent: string;
+  malePercent: string
 
   /**
    * 省份
    * @value
    */
-  provinceName: string;
+  provinceName: string
 
   /**
    * 总人数
-   * @value #integer(32)
+   * @value
    */
-  totalStudentNum: number;
-};
+  totalStudentNum: number
+}
 
 /**
  * --
@@ -37883,92 +38912,92 @@ export type WnStudentToClassOrganizationVO = {
    * 学制
    * @value
    */
-  academicSystem: string;
+  academicSystem: string
 
   /**
    * 别名, 简称
    * @value
    */
-  aliasName: string;
+  aliasName: string
 
   /**
    * 学历
-   * @value #integer(32)
+   * @value
    */
-  degree: number;
+  degree: number
 
   /**
    * 招生年份
-   * @value #integer(32)
+   * @value
    */
-  entranceYear: number;
+  entranceYear: number
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 级别 1高校学院 2高校专业 3高校班级 4K12年级 5K12班级
-   * @value #integer(32)
+   * @value
    */
-  level: number;
+  level: number
 
   /**
    * 部门名称
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 代码
    * @value
    */
-  organizationCode: string;
+  organizationCode: string
 
   /**
    * 父级ID
-   * @value #integer(64)
+   * @value
    */
-  parentId: number;
+  parentId: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态 0未启用,1已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 已有人数
-   * @value #integer(32)
+   * @value
    */
-  studentNum: number;
+  studentNum: number
 
   /**
    * 计划招生人数
-   * @value #integer(32)
+   * @value
    */
-  userNum: number;
+  userNum: number
 
   /**
    * 关联校区
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
-};
+  zoneId: number
+}
 
 /**
  * --
@@ -37976,196 +39005,196 @@ export type WnStudentToClassOrganizationVO = {
 export type WnStudentToClassVO = {
   /**
    * 当前任务执行的已分班的学生数
-   * @value #integer(32)
+   * @value
    */
-  assignedStudentNum: number;
+  assignedStudentNum: number
 
   /**
    * 分班规则类型,默认值=0,参考WnStudentClassRuleTypeEnum枚举
-   * @value #integer(32)
+   * @value
    */
-  classRuleType: number;
+  classRuleType: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 院系编码
    * @value
    */
-  departCode: string;
+  departCode: string
 
   /**
    * 院系id
-   * @value #integer(64)
+   * @value
    */
-  departId: number;
+  departId: number
 
   /**
    * 院系名称
    * @value
    */
-  departName: string;
+  departName: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 序号初始值
    * @value
    */
-  initSerialNumber: string;
+  initSerialNumber: string
 
   /**
    * 是否创建学号,0-是 1-否
-   * @value #integer(32)
+   * @value
    */
-  isCreateUserNo: number;
+  isCreateUserNo: number
 
   /**
    * 分班是否限制条件；0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  isLimitCondition: number;
+  isLimitCondition: number
 
   /**
    * 分班限制条件列表,json字符串
    * @value
    */
-  limitConditionJson: string;
+  limitConditionJson: string
 
   /**
    * 专业下的未分班男生人数
-   * @value #integer(32)
+   * @value
    */
-  majorBoysStudentNum: number;
+  majorBoysStudentNum: number
 
   /**
    * 专业编码
    * @value
    */
-  majorCode: string;
+  majorCode: string
 
   /**
    * 专业下的未分班女生人数
-   * @value #integer(32)
+   * @value
    */
-  majorGirlsStudentNum: number;
+  majorGirlsStudentNum: number
 
   /**
    * 专业id
-   * @value #integer(64)
+   * @value
    */
-  majorId: number;
+  majorId: number
 
   /**
    * 专业名称
    * @value
    */
-  majorName: string;
+  majorName: string
 
   /**
    * 专业下的未分班总人数
-   * @value #integer(32)
+   * @value
    */
-  majorTotalStudentNum: number;
+  majorTotalStudentNum: number
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 操作
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 是否覆盖已有学号：0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  overwriteUserNo: number;
+  overwriteUserNo: number
 
   /**
    * 组成年份
    * @value
    */
-  partYear: string;
+  partYear: string
 
   /**
    * 招生年份
-   * @value #integer(32)
+   * @value
    */
-  recruitYear: number;
+  recruitYear: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 分配班级列表,json字符串
    * @value
    */
-  studentClassJson: string;
+  studentClassJson: string
 
   /**
    * 分班学生信息列表,json字符串
    * @value
    */
-  studentListJson: string;
+  studentListJson: string
 
   /**
    * 任务名称
    * @value
    */
-  taskName: string;
+  taskName: string
 
   /**
    * 任务状态,0-未执行,1-执行中,2-执行成功,9-执行失败
-   * @value #integer(32)
+   * @value
    */
-  taskStatus: number;
+  taskStatus: number
 
   /**
    * 专业下的可分配班级个数
-   * @value #integer(32)
+   * @value
    */
-  taskTotalClassNum: number;
+  taskTotalClassNum: number
 
   /**
    * 该任务下的已分班总人数
-   * @value #integer(32)
+   * @value
    */
-  taskTotalStudentNum: number;
+  taskTotalStudentNum: number
 
   /**
    * 创建学号规则,创建学号规则, 固定数字, 五位以内
-   * @value #integer(32)
+   * @value
    */
-  userNoNumber: number;
+  userNoNumber: number
 
   /**
    * 校区id
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -38175,20 +39204,20 @@ export type WnStudentTrafficCountVO = {
    * 日期,格式=yyyy-MM-dd
    * @value
    */
-  date: string;
+  date: string
 
   /**
    * 时间段到站人数,与timeList顺序对应
-   * @value #integer(32)
+   * @value
    */
-  numList: number[];
+  numList: number[]
 
   /**
    * 时间段列表 1:(00:00-01:00),2:(01:00-02:00),3:(02:00-03:00)...
    * @value
    */
-  timeList: string[];
-};
+  timeList: string[]
+}
 
 /**
  * --
@@ -38196,88 +39225,88 @@ export type WnStudentTrafficCountVO = {
 export type WnTeacherAppRoleVO = {
   /**
    * 创建人ID
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 关联的应用组
    * @value
    */
-  groupIdList: string;
+  groupIdList: string
 
   /**
    *
    * @value
    */
-  groupNameList: string;
+  groupNameList: string
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 关联的员工数量
-   * @value #integer(32)
+   * @value
    */
-  linkUserCount: number;
+  linkUserCount: number
 
   /**
    * 操作
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    * 角色名称
    * @value
    */
-  roleName: string;
+  roleName: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态：1-启用，0-禁用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    *
    * @value
    */
-  statusName: string;
+  statusName: string
 
   /**
    * 更新人ID
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -38285,106 +39314,106 @@ export type WnTeacherAppRoleVO = {
 export type WnTeacherAppUserApiVO = {
   /**
    * 创建人id
-   * @value #integer(64)
+   * @value
    */
-  createId: number;
+  createId: number
 
   /**
    * 创建姓名
    * @value
    */
-  createName: string;
+  createName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 删除状态 0未删除 1删除
-   * @value #integer(32)
+   * @value
    */
-  deleteFlag: number;
+  deleteFlag: number
 
   /**
    * 主键
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 手机号
    * @value
    */
-  mobileNo: string;
+  mobileNo: string
 
   /**
    * 角色名称
    * @value
    */
-  roleId: string;
+  roleId: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态：1-启用，0-禁用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 修改人id
-   * @value #integer(64)
+   * @value
    */
-  updateId: number;
+  updateId: number
 
   /**
    * 修改人姓名
    * @value
    */
-  updateName: string;
+  updateName: string
 
   /**
    * 修改时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 基础用户ID
    * @value
    */
-  userBaseId: string;
+  userBaseId: string
 
   /**
    * 用户姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 用户类型：1-学生，2-教职工
-   * @value #integer(32)
+   * @value
    */
-  userType: number;
+  userType: number
 
   /**
    *
    * @value
    */
-  userTypeName: string;
-};
+  userTypeName: string
+}
 
 /**
  * --
@@ -38394,14 +39423,14 @@ export type WnTitleFormVO = {
    * 导出字段相关信息{filed1:label1,filed2:label2}
    * @value
    */
-  exportInfo: string;
+  exportInfo: string
 
   /**
    * 查询列表字段相关信息{filed1:label1,filed2:label2}
    * @value
    */
-  queryInfo: string;
-};
+  queryInfo: string
+}
 
 /**
  * --
@@ -38409,64 +39438,64 @@ export type WnTitleFormVO = {
 export type WnUnitVO = {
   /**
    * 楼栋Id
-   * @value #integer(64)
+   * @value
    */
-  buildingId: number;
+  buildingId: number
 
   /**
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 状态:0、未启用  1、已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 单元名称
    * @value
    */
-  unitName: string;
+  unitName: string
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
+  zoneId: number
 
   /**
    * 校区名称
    * @value
    */
-  zoneName: string;
-};
+  zoneName: string
+}
 
 /**
  * --
@@ -38476,26 +39505,26 @@ export type WnZoneRoomApiVO = {
    * 楼栋名称
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 楼层列表
    * @rule 2
    */
-  floorList: WnFloorApiVO[];
+  floorList: WnFloorApiVO[]
 
   /**
    * 楼栋ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 楼栋性别
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
-};
+  sex: number
+}
 
 /**
  * --
@@ -38505,614 +39534,614 @@ export type 健康状况日报VO = {
    * 目前居住地
    * @value
    */
-  areaStr: string;
+  areaStr: string
 
   /**
    * 返还地
    * @value
    */
-  backAreaStr: string;
+  backAreaStr: string
 
   /**
    * 返还地-市
    * @value
    */
-  backCity: string;
+  backCity: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  backCityCode: number;
+  backCityCode: number
 
   /**
    * 返还地-区/县
    * @value
    */
-  backDistrict: string;
+  backDistrict: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  backDistrictCode: number;
+  backDistrictCode: number
 
   /**
    * 返还地-省份
    * @value
    */
-  backProvince: string;
+  backProvince: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  backProvinceCode: number;
+  backProvinceCode: number
 
   /**
    * 返校备注：车次或航班号
    * @value
    */
-  backRemark: string;
+  backRemark: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  backWay: number;
+  backWay: number
 
   /**
    * 返校方式
    * @value
    */
-  backWayStr: string;
+  backWayStr: string
 
   /**
    * 楼栋
    * @value
    */
-  building: string;
+  building: string
 
   /**
    * 后台备注
    * @value
    */
-  centerRemark: string;
+  centerRemark: string
 
   /**
    * 备注人姓名
    * @value
    */
-  centerRemarkUpdateName: string;
+  centerRemarkUpdateName: string
 
   /**
    * 市
    * @value
    */
-  city: string;
+  city: string
 
   /**
    * 市编码
-   * @value #integer(64)
+   * @value
    */
-  cityCode: number;
+  cityCode: number
 
   /**
    * 班级/部门编码
    * @value
    */
-  classCode: string;
+  classCode: string
 
   /**
    * 班级/部门
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 是否接触过高发地区 0是1否
-   * @value #integer(32)
+   * @value
    */
-  contactArea: number;
+  contactArea: number
 
   /**
    * 是否去过高发地区
    * @value
    */
-  contactAreaStr: string;
+  contactAreaStr: string
 
   /**
    * 接触日期
    * @value #datetime()
    */
-  contactDate: string;
+  contactDate: string
 
   /**
    * 接触日期 yyyy-MM-dd
    * @value
    */
-  contactDateStr: string;
+  contactDateStr: string
 
   /**
    * 是否接触过确诊者 0是1否
-   * @value #integer(32)
+   * @value
    */
-  contactPatient: number;
+  contactPatient: number
 
   /**
    * 是否接触过确诊者
    * @value
    */
-  contactPatientStr: string;
+  contactPatientStr: string
 
   /**
    * 国家
    * @value
    */
-  country: string;
+  country: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 创建时间 yyyy-MM-dd HH:mm:ss
    * @value
    */
-  createTimeStr: string;
+  createTimeStr: string
 
   /**
    * 院系
    * @value
    */
-  department: string;
+  department: string
 
   /**
    * 院系编码
    * @value
    */
-  departmentCode: string;
+  departmentCode: string
 
   /**
    * 设备id
    * @value
    */
-  deviceId: string;
+  deviceId: string
 
   /**
    * 区/县
    * @value
    */
-  district: string;
+  district: string
 
   /**
    * 区/县编码
-   * @value #integer(64)
+   * @value
    */
-  districtCode: number;
+  districtCode: number
 
   /**
    * 招生年份（年级）
-   * @value #integer(32)
+   * @value
    */
-  entranceYear: number;
+  entranceYear: number
 
   /**
    * 拓展字段
    * @value
    */
-  extField: string;
+  extField: string
 
   /**
    * 楼层
    * @value
    */
-  floor: string;
+  floor: string
 
   /**
    * 是否全日制 0是1否
-   * @value #integer(32)
+   * @value
    */
-  fullTimeFlag: number;
+  fullTimeFlag: number
 
   /**
    * 全日制类型
    * @value
    */
-  fullTimeFlagStr: string;
+  fullTimeFlagStr: string
 
   /**
    * 健康情况 1正常2发烧/咳嗽等症状3其它
-   * @value #integer(32)
+   * @value
    */
-  healthStatus: number;
+  healthStatus: number
 
   /**
    * 健康情况 1正常2发烧3咳嗽4乏力5腹泻6头晕头痛
    * @value
    */
-  healthStatusNew: string;
+  healthStatusNew: string
 
   /**
    * 健康情况new
    * @value
    */
-  healthStatusNewStr: string;
+  healthStatusNewStr: string
 
   /**
    * 健康情况
    * @value
    */
-  healthStatusStr: string;
+  healthStatusStr: string
 
   /**
    * 是否春节期间在校 0是1否
-   * @value #integer(32)
+   * @value
    */
-  holidayInSchool: number;
+  holidayInSchool: number
 
   /**
    * 是否春节期间在校
    * @value
    */
-  holidayInSchoolStr: string;
+  holidayInSchoolStr: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证号
    * @value
    */
-  identity: string;
+  identity: string
 
   /**
    * 身份二级分类 11内地学生12港澳台学生13留学生14实习生15应征入伍16延期毕业 21内地教职工22港澳台教职工23外籍教职工24离退休教职工
    * @value
    */
-  identitySecondType: string;
+  identitySecondType: string
 
   /**
    * 身份二级分类
    * @value
    */
-  identitySecondTypeStr: string;
+  identitySecondTypeStr: string
 
   /**
    * 身份类型 1学生2教职工
-   * @value #integer(32)
+   * @value
    */
-  identityType: number;
+  identityType: number
 
   /**
    * 身份类型
    * @value
    */
-  identityTypeStr: string;
+  identityTypeStr: string
 
   /**
    * 是否政府定点集中隔离 0是1否
-   * @value #integer(32)
+   * @value
    */
-  inGovQuarantine: number;
+  inGovQuarantine: number
 
   /**
    *
    * @value
    */
-  inGovQuarantineStr: string;
+  inGovQuarantineStr: string
 
   /**
    * 是否居家健康监测或隔离 0是1否
-   * @value #integer(32)
+   * @value
    */
-  inHomeQuarantine: number;
+  inHomeQuarantine: number
 
   /**
    *
    * @value
    */
-  inHomeQuarantineStr: string;
+  inHomeQuarantineStr: string
 
   /**
    * 是否在校 0是1否
-   * @value #integer(32)
+   * @value
    */
-  inSchool: number;
+  inSchool: number
 
   /**
    * 是否校内集中隔离 0是1否
-   * @value #integer(32)
+   * @value
    */
-  inSchoolQuarantine: number;
+  inSchoolQuarantine: number
 
   /**
    *
    * @value
    */
-  inSchoolQuarantineStr: string;
+  inSchoolQuarantineStr: string
 
   /**
    * 是否在校
    * @value
    */
-  inSchoolStr: string;
+  inSchoolStr: string
 
   /**
    * 居住区是否有确诊、无症状、疑似 0是 1否
-   * @value #integer(32)
+   * @value
    */
-  isCommunityPatient: number;
+  isCommunityPatient: number
 
   /**
    * 居住区是否有确诊、无症状、疑似
    * @value
    */
-  isCommunityPatientStr: string;
+  isCommunityPatientStr: string
 
   /**
    * 家庭成员是否有确诊、疑似、感染者 0是 1否
-   * @value #integer(32)
+   * @value
    */
-  isFamiliyPatient: number;
+  isFamiliyPatient: number
 
   /**
    * 家庭成员是否有确诊、疑似、感染者
    * @value
    */
-  isFamiliyPatientStr: string;
+  isFamiliyPatientStr: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  isInCompany: number;
+  isInCompany: number
 
   /**
    * 今日是否在实习单位
    * @value
    */
-  isInCompanyStr: string;
+  isInCompanyStr: string
 
   /**
    * 是否确诊、无症状 0是1否
-   * @value #integer(32)
+   * @value
    */
-  isPatient: number;
+  isPatient: number
 
   /**
    * 是否确诊、无症状
    * @value
    */
-  isPatientStr: string;
+  isPatientStr: string
 
   /**
    * 是否为疑似病例 0是1否
-   * @value #integer(32)
+   * @value
    */
-  isSuspected: number;
+  isSuspected: number
 
   /**
    * 是否为疑似病例
    * @value
    */
-  isSuspectedStr: string;
+  isSuspectedStr: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  isTodayBack: number;
+  isTodayBack: number
 
   /**
    * 今日是否返校
    * @value
    */
-  isTodayBackStr: string;
+  isTodayBackStr: string
 
   /**
    * 隔离地点
    * @value
    */
-  isolatedPlace: string;
+  isolatedPlace: string
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 最近一次核酸检测日期（yyyy-MM-dd）
    * @value
    */
-  lastNucleicAcidDate: string;
+  lastNucleicAcidDate: string
 
   /**
    * 现在联系方式
    * @value
    */
-  linkPhone: string;
+  linkPhone: string
 
   /**
    * 定位信息
    * @value
    */
-  locationInfo: string;
+  locationInfo: string
 
   /**
    * 经纬度
    * @value
    */
-  longitudeAndLatitude: string;
+  longitudeAndLatitude: string
 
   /**
    * 登录手机号
    * @value
    */
-  mobilePhone: string;
+  mobilePhone: string
 
   /**
    * 姓名
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 未接种疫苗原因
    * @value
    */
-  noVaccineReasonStr: string;
+  noVaccineReasonStr: string
 
   /**
    * 近七日是否有核酸检测 0是1否
-   * @value #integer(32)
+   * @value
    */
-  nucleicAcidFlag: number;
+  nucleicAcidFlag: number
 
   /**
    *
    * @value
    */
-  nucleicAcidFlagStr: string;
+  nucleicAcidFlagStr: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 家长联系方式
    * @value
    */
-  parentsPhone: string;
+  parentsPhone: string
 
   /**
    * 就诊医院
    * @value
    */
-  patientHospital: string;
+  patientHospital: string
 
   /**
    * 省
    * @value
    */
-  province: string;
+  province: string
 
   /**
    * 省编码
-   * @value #integer(64)
+   * @value
    */
-  provinceCode: number;
+  provinceCode: number
 
   /**
    * 其它情况说明
    * @value
    */
-  remark: string;
+  remark: string
 
   /**
    * 共同居住人员健康情况 1正常2发烧3咳嗽4乏力5腹泻6头晕头痛7出疹8水疱9其它
    * @value
    */
-  roommateHealthStatus: string;
+  roommateHealthStatus: string
 
   /**
    * 共同居住人员健康情况
    * @value
    */
-  roommateHealthStatusStr: string;
+  roommateHealthStatusStr: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 专业
    * @value
    */
-  specialities: string;
+  specialities: string
 
   /**
    * 专业编码
    * @value
    */
-  specialitiesCode: string;
+  specialitiesCode: string
 
   /**
    * 今日体温
    * @value
    */
-  temperature: string;
+  temperature: string
 
   /**
    * 今日下午体温
    * @value
    */
-  temperatureAfter: string;
+  temperatureAfter: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 更新时间 yyyy-MM-dd HH:mm:ss
    * @value
    */
-  updateTimeStr: string;
+  updateTimeStr: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 疫苗第一针接种时间（yyyy-MM-dd HH:mm:ss）
    * @value
    */
-  vaccineOneTime: string;
+  vaccineOneTime: string
 
   /**
    * 疫苗接种情况
    * @value
    */
-  vaccineStatusStr: string;
+  vaccineStatusStr: string
 
   /**
    * 疫苗第三针接种时间（yyyy-MM-dd HH:mm:ss）
    * @value
    */
-  vaccineThreeTime: string;
+  vaccineThreeTime: string
 
   /**
    * 疫苗第二针接种时间（yyyy-MM-dd HH:mm:ss）
    * @value
    */
-  vaccineTwoTime: string;
-};
+  vaccineTwoTime: string
+}
 
 /**
  * --
@@ -39122,584 +40151,584 @@ export type 健康状况登记VO = {
    * 目前居住地
    * @value
    */
-  areaStr: string;
+  areaStr: string
 
   /**
    * 返还地
    * @value
    */
-  backAreaStr: string;
+  backAreaStr: string
 
   /**
    * 返还地-市
    * @value
    */
-  backCity: string;
+  backCity: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  backCityCode: number;
+  backCityCode: number
 
   /**
    * 返还地-区/县
    * @value
    */
-  backDistrict: string;
+  backDistrict: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  backDistrictCode: number;
+  backDistrictCode: number
 
   /**
    * 返还地-省份
    * @value
    */
-  backProvince: string;
+  backProvince: string
 
   /**
    *
-   * @value #integer(64)
+   * @value
    */
-  backProvinceCode: number;
+  backProvinceCode: number
 
   /**
    * 返校备注：车次或航班号
    * @value
    */
-  backRemark: string;
+  backRemark: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  backWay: number;
+  backWay: number
 
   /**
    * 返校方式
    * @value
    */
-  backWayStr: string;
+  backWayStr: string
 
   /**
    * 楼栋
    * @value
    */
-  building: string;
+  building: string
 
   /**
    * 市
    * @value
    */
-  city: string;
+  city: string
 
   /**
    * 市编码
-   * @value #integer(64)
+   * @value
    */
-  cityCode: number;
+  cityCode: number
 
   /**
    * 班级/部门编码
    * @value
    */
-  classCode: string;
+  classCode: string
 
   /**
    * 班级/部门
    * @value
    */
-  className: string;
+  className: string
 
   /**
    * 是否接触中高风险地区 0是1否
-   * @value #integer(32)
+   * @value
    */
-  contactArea: number;
+  contactArea: number
 
   /**
    * 是否接触中高风险地区
    * @value
    */
-  contactAreaStr: string;
+  contactAreaStr: string
 
   /**
    * 接触日期
    * @value #datetime()
    */
-  contactDate: string;
+  contactDate: string
 
   /**
    * 接触日期 yyyy-MM-dd
    * @value
    */
-  contactDateStr: string;
+  contactDateStr: string
 
   /**
    * 是否接触确诊、无症状、疑似 0是1否
-   * @value #integer(32)
+   * @value
    */
-  contactPatient: number;
+  contactPatient: number
 
   /**
    * 是否接触确诊、无症状、疑似
    * @value
    */
-  contactPatientStr: string;
+  contactPatientStr: string
 
   /**
    * 国家
    * @value
    */
-  country: string;
+  country: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 创建时间 yyyy-MM-dd HH:mm:ss
    * @value
    */
-  createTimeStr: string;
+  createTimeStr: string
 
   /**
    * 院系
    * @value
    */
-  department: string;
+  department: string
 
   /**
    * 院系编码
    * @value
    */
-  departmentCode: string;
+  departmentCode: string
 
   /**
    * 区/县
    * @value
    */
-  district: string;
+  district: string
 
   /**
    * 区/县编码
-   * @value #integer(64)
+   * @value
    */
-  districtCode: number;
+  districtCode: number
 
   /**
    * 招生年份（年级）
-   * @value #integer(32)
+   * @value
    */
-  entranceYear: number;
+  entranceYear: number
 
   /**
    * 拓展字段
    * @value
    */
-  extField: string;
+  extField: string
 
   /**
    * 楼层
    * @value
    */
-  floor: string;
+  floor: string
 
   /**
    * 是否全日制 0是1否
-   * @value #integer(32)
+   * @value
    */
-  fullTimeFlag: number;
+  fullTimeFlag: number
 
   /**
    * 健康情况 1正常2发烧/咳嗽等症状3其它
-   * @value #integer(32)
+   * @value
    */
-  healthStatus: number;
+  healthStatus: number
 
   /**
    * 健康情况 1正常2发烧3咳嗽4乏力5腹泻6头晕头痛
    * @value
    */
-  healthStatusNew: string;
+  healthStatusNew: string
 
   /**
    * 健康情况
    * @value
    */
-  healthStatusNewStr: string;
+  healthStatusNewStr: string
 
   /**
    * 健康情况
    * @value
    */
-  healthStatusStr: string;
+  healthStatusStr: string
 
   /**
    * 是否春节期间在校 0是1否
-   * @value #integer(32)
+   * @value
    */
-  holidayInSchool: number;
+  holidayInSchool: number
 
   /**
    * 是否春节期间在校
    * @value
    */
-  holidayInSchoolStr: string;
+  holidayInSchoolStr: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证号
    * @value
    */
-  identity: string;
+  identity: string
 
   /**
    * 身份二级分类 11内地学生12港澳台学生13留学生14实习生15应征入伍16延期毕业 21内地教职工22港澳台教职工23外籍教职工24离退休教职工
    * @value
    */
-  identitySecondType: string;
+  identitySecondType: string
 
   /**
    * 身份二级分类
    * @value
    */
-  identitySecondTypeStr: string;
+  identitySecondTypeStr: string
 
   /**
    * 身份类型 1学生2教职工
-   * @value #integer(32)
+   * @value
    */
-  identityType: number;
+  identityType: number
 
   /**
    * 身份类型
    * @value
    */
-  identityTypeStr: string;
+  identityTypeStr: string
 
   /**
    * 是否政府定点集中隔离 0是1否
-   * @value #integer(32)
+   * @value
    */
-  inGovQuarantine: number;
+  inGovQuarantine: number
 
   /**
    *
    * @value
    */
-  inGovQuarantineStr: string;
+  inGovQuarantineStr: string
 
   /**
    * 是否居家健康监测或隔离 0是1否
-   * @value #integer(32)
+   * @value
    */
-  inHomeQuarantine: number;
+  inHomeQuarantine: number
 
   /**
    *
    * @value
    */
-  inHomeQuarantineStr: string;
+  inHomeQuarantineStr: string
 
   /**
    * 是否在校 0是1否
-   * @value #integer(32)
+   * @value
    */
-  inSchool: number;
+  inSchool: number
 
   /**
    * 是否校内集中隔离 0是1否
-   * @value #integer(32)
+   * @value
    */
-  inSchoolQuarantine: number;
+  inSchoolQuarantine: number
 
   /**
    *
    * @value
    */
-  inSchoolQuarantineStr: string;
+  inSchoolQuarantineStr: string
 
   /**
    * 是否在校
    * @value
    */
-  inSchoolStr: string;
+  inSchoolStr: string
 
   /**
    * 居住区是否有确诊、无症状、疑似 0是 1否
-   * @value #integer(32)
+   * @value
    */
-  isCommunityPatient: number;
+  isCommunityPatient: number
 
   /**
    * 居住区是否有确诊、无症状、疑似
    * @value
    */
-  isCommunityPatientStr: string;
+  isCommunityPatientStr: string
 
   /**
    * 家庭成员是否有确诊、疑似、感染者 0是 1否
-   * @value #integer(32)
+   * @value
    */
-  isFamiliyPatient: number;
+  isFamiliyPatient: number
 
   /**
    * 家庭成员是否有确诊、疑似、感染者
    * @value
    */
-  isFamiliyPatientStr: string;
+  isFamiliyPatientStr: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  isInCompany: number;
+  isInCompany: number
 
   /**
    * 今日是否在实习单位
    * @value
    */
-  isInCompanyStr: string;
+  isInCompanyStr: string
 
   /**
    * 是否确诊、无症状 0是1否
-   * @value #integer(32)
+   * @value
    */
-  isPatient: number;
+  isPatient: number
 
   /**
    * 是否确诊、无症状
    * @value
    */
-  isPatientStr: string;
+  isPatientStr: string
 
   /**
    * 是否为疑似病例 0是1否
-   * @value #integer(32)
+   * @value
    */
-  isSuspected: number;
+  isSuspected: number
 
   /**
    * 是否为疑似病例
    * @value
    */
-  isSuspectedStr: string;
+  isSuspectedStr: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  isTodayBack: number;
+  isTodayBack: number
 
   /**
    * 今日是否返校
    * @value
    */
-  isTodayBackStr: string;
+  isTodayBackStr: string
 
   /**
    * 隔离地点
    * @value
    */
-  isolatedPlace: string;
+  isolatedPlace: string
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 最近一次核酸检测日期（yyyy-MM-dd）
    * @value
    */
-  lastNucleicAcidDate: string;
+  lastNucleicAcidDate: string
 
   /**
    * 现在联系方式
    * @value
    */
-  linkPhone: string;
+  linkPhone: string
 
   /**
    * 定位信息
    * @value
    */
-  locationInfo: string;
+  locationInfo: string
 
   /**
    * 经纬度
    * @value
    */
-  longitudeAndLatitude: string;
+  longitudeAndLatitude: string
 
   /**
    * 登录手机号
    * @value
    */
-  mobilePhone: string;
+  mobilePhone: string
 
   /**
    * 姓名
    * @value
    */
-  name: string;
+  name: string
 
   /**
    * 未接种疫苗原因
    * @value
    */
-  noVaccineReasonStr: string;
+  noVaccineReasonStr: string
 
   /**
    * 近七日是否有核酸检测 0是1否
-   * @value #integer(32)
+   * @value
    */
-  nucleicAcidFlag: number;
+  nucleicAcidFlag: number
 
   /**
    *
    * @value
    */
-  nucleicAcidFlagStr: string;
+  nucleicAcidFlagStr: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  operates: string[]
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    * 家长联系方式
    * @value
    */
-  parentsPhone: string;
+  parentsPhone: string
 
   /**
    * 就诊医院
    * @value
    */
-  patientHospital: string;
+  patientHospital: string
 
   /**
    * 省
    * @value
    */
-  province: string;
+  province: string
 
   /**
    * 省编码
-   * @value #integer(64)
+   * @value
    */
-  provinceCode: number;
+  provinceCode: number
 
   /**
    * 共同居住人员健康情况 1正常2发烧3咳嗽4乏力5腹泻6头晕头痛7出疹8水疱9其它
    * @value
    */
-  roommateHealthStatus: string;
+  roommateHealthStatus: string
 
   /**
    * 共同居住人员健康情况
    * @value
    */
-  roommateHealthStatusStr: string;
+  roommateHealthStatusStr: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 专业
    * @value
    */
-  specialities: string;
+  specialities: string
 
   /**
    * 专业编码
    * @value
    */
-  specialitiesCode: string;
+  specialitiesCode: string
 
   /**
    * 今日体温
    * @value
    */
-  temperature: string;
+  temperature: string
 
   /**
    * 今日下午体温
    * @value
    */
-  temperatureAfter: string;
+  temperatureAfter: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
+  updateTime: string
 
   /**
    * 更新时间 yyyy-MM-dd HH:mm:ss
    * @value
    */
-  updateTimeStr: string;
+  updateTimeStr: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 疫苗第一针接种时间（yyyy-MM-dd HH:mm:ss）
    * @value
    */
-  vaccineOneTime: string;
+  vaccineOneTime: string
 
   /**
    * 疫苗接种情况
    * @value
    */
-  vaccineStatusStr: string;
+  vaccineStatusStr: string
 
   /**
    * 疫苗第三针接种时间（yyyy-MM-dd HH:mm:ss）
    * @value
    */
-  vaccineThreeTime: string;
+  vaccineThreeTime: string
 
   /**
    * 疫苗第二针接种时间（yyyy-MM-dd HH:mm:ss）
    * @value
    */
-  vaccineTwoTime: string;
-};
+  vaccineTwoTime: string
+}
 
 /**
  * --
@@ -39707,28 +40736,28 @@ export type 健康状况登记VO = {
 export type 健康状况登记地区统计VO = {
   /**
    * 地区编码
-   * @value #integer(64)
+   * @value
    */
-  areaCode: number;
+  areaCode: number
 
   /**
    * 地区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 总登记数
-   * @value #integer(32)
+   * @value
    */
-  checkNum: number;
+  checkNum: number
 
   /**
    * 总确诊数
-   * @value #integer(32)
+   * @value
    */
-  patientNum: number;
-};
+  patientNum: number
+}
 
 /**
  * --
@@ -39736,40 +40765,40 @@ export type 健康状况登记地区统计VO = {
 export type 健康状况登记地区统计VOroute = {
   /**
    * 签到总人数
-   * @value #integer(32)
+   * @value
    */
-  checkIn: number;
+  checkIn: number
 
   /**
    * 打卡率
    * @value
    */
-  checkInRadio: string;
+  checkInRadio: string
 
   /**
    * 部门
    * @value
    */
-  department: string;
+  department: string
 
   /**
    * 部门编码
    * @value
    */
-  departmentCode: string;
+  departmentCode: string
 
   /**
    * 部门人数
-   * @value #integer(32)
+   * @value
    */
-  departmentNum: number;
+  departmentNum: number
 
   /**
    * 未签到总人数
-   * @value #integer(32)
+   * @value
    */
-  notCheckIn: number;
-};
+  notCheckIn: number
+}
 
 /**
  * --
@@ -39777,748 +40806,748 @@ export type 健康状况登记地区统计VOroute = {
 export type 健康状况登记地区统计VO_1 = {
   /**
    * 签到总人数
-   * @value #integer(32)
+   * @value
    */
-  checkIn: number;
+  checkIn: number
 
   /**
    * 签到人数-内地生
-   * @value #integer(32)
+   * @value
    */
-  checkIn11: number;
+  checkIn11: number
 
   /**
    * 签到人数-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  checkIn12: number;
+  checkIn12: number
 
   /**
    * 签到人数-留学生
-   * @value #integer(32)
+   * @value
    */
-  checkIn13: number;
+  checkIn13: number
 
   /**
    * 签到人数-实习生
-   * @value #integer(32)
+   * @value
    */
-  checkIn14: number;
+  checkIn14: number
 
   /**
    * 签到人数-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  checkIn15: number;
+  checkIn15: number
 
   /**
    * 签到人数-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  checkIn16: number;
+  checkIn16: number
 
   /**
    * 打卡率
    * @value
    */
-  checkInRadio: string;
+  checkInRadio: string
 
   /**
    * 当日中高风险地区有较密集接触-总人数
-   * @value #integer(32)
+   * @value
    */
-  contactArea: number;
+  contactArea: number
 
   /**
    * 当日中高风险地区有较密集接触-内地生
-   * @value #integer(32)
+   * @value
    */
-  contactArea11: number;
+  contactArea11: number
 
   /**
    * 当日中高风险地区有较密集接触-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  contactArea12: number;
+  contactArea12: number
 
   /**
    * 当日中高风险地区有较密集接触-留学生
-   * @value #integer(32)
+   * @value
    */
-  contactArea13: number;
+  contactArea13: number
 
   /**
    * 当日中高风险地区有较密集接触-实习生
-   * @value #integer(32)
+   * @value
    */
-  contactArea14: number;
+  contactArea14: number
 
   /**
    * 当日中高风险地区有较密集接触-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  contactArea15: number;
+  contactArea15: number
 
   /**
    * 当日中高风险地区有较密集接触-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  contactArea16: number;
+  contactArea16: number
 
   /**
    * 当日与确诊病例、无症状感染者或疑似病例有密切接触-总人数
-   * @value #integer(32)
+   * @value
    */
-  contactPatient: number;
+  contactPatient: number
 
   /**
    * 当日与确诊病例、无症状感染者或疑似病例有密切接触-内地生
-   * @value #integer(32)
+   * @value
    */
-  contactPatient11: number;
+  contactPatient11: number
 
   /**
    * 当日与确诊病例、无症状感染者或疑似病例有密切接触-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  contactPatient12: number;
+  contactPatient12: number
 
   /**
    * 当日与确诊病例、无症状感染者或疑似病例有密切接触-留学生
-   * @value #integer(32)
+   * @value
    */
-  contactPatient13: number;
+  contactPatient13: number
 
   /**
    * 当日与确诊病例、无症状感染者或疑似病例有密切接触-实习生
-   * @value #integer(32)
+   * @value
    */
-  contactPatient14: number;
+  contactPatient14: number
 
   /**
    * 当日与确诊病例、无症状感染者或疑似病例有密切接触-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  contactPatient15: number;
+  contactPatient15: number
 
   /**
    * 当日与确诊病例、无症状感染者或疑似病例有密切接触-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  contactPatient16: number;
+  contactPatient16: number
 
   /**
    * 部门
    * @value
    */
-  department: string;
+  department: string
 
   /**
    * 部门编码
    * @value
    */
-  departmentCode: string;
+  departmentCode: string
 
   /**
    * 部门人数
-   * @value #integer(32)
+   * @value
    */
-  departmentNum: number;
+  departmentNum: number
 
   /**
    * 当日发热、咳嗽、呼吸困难等可疑症状-总人数
-   * @value #integer(32)
+   * @value
    */
-  healthStatusNew: number;
+  healthStatusNew: number
 
   /**
    * 当日发热、咳嗽、呼吸困难等可疑症状-内地生
-   * @value #integer(32)
+   * @value
    */
-  healthStatusNew11: number;
+  healthStatusNew11: number
 
   /**
    * 当日发热、咳嗽、呼吸困难等可疑症状-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  healthStatusNew12: number;
+  healthStatusNew12: number
 
   /**
    * 当日发热、咳嗽、呼吸困难等可疑症状-留学生
-   * @value #integer(32)
+   * @value
    */
-  healthStatusNew13: number;
+  healthStatusNew13: number
 
   /**
    * 当日发热、咳嗽、呼吸困难等可疑症状-实习生
-   * @value #integer(32)
+   * @value
    */
-  healthStatusNew14: number;
+  healthStatusNew14: number
 
   /**
    * 当日发热、咳嗽、呼吸困难等可疑症状-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  healthStatusNew15: number;
+  healthStatusNew15: number
 
   /**
    * 当日发热、咳嗽、呼吸困难等可疑症状-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  healthStatusNew16: number;
+  healthStatusNew16: number
 
   /**
    * 春节期间在校总数
-   * @value #integer(32)
+   * @value
    */
-  holidayInSchool: number;
+  holidayInSchool: number
 
   /**
    * 春节期间在校-内地生
-   * @value #integer(32)
+   * @value
    */
-  holidayInSchool11: number;
+  holidayInSchool11: number
 
   /**
    * 春节期间在校-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  holidayInSchool12: number;
+  holidayInSchool12: number
 
   /**
    * 春节期间在校-留学生
-   * @value #integer(32)
+   * @value
    */
-  holidayInSchool13: number;
+  holidayInSchool13: number
 
   /**
    * 春节期间在校-实习生
-   * @value #integer(32)
+   * @value
    */
-  holidayInSchool14: number;
+  holidayInSchool14: number
 
   /**
    * 春节期间在校-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  holidayInSchool15: number;
+  holidayInSchool15: number
 
   /**
    * 春节期间在校-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  holidayInSchool16: number;
+  holidayInSchool16: number
 
   /**
    * 今日政府定点集中隔离人数-总人数
-   * @value #integer(32)
+   * @value
    */
-  inGovQuarantine: number;
+  inGovQuarantine: number
 
   /**
    * 今日政府定点集中隔离人数-内地生
-   * @value #integer(32)
+   * @value
    */
-  inGovQuarantine11: number;
+  inGovQuarantine11: number
 
   /**
    * 今日政府定点集中隔离人数-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  inGovQuarantine12: number;
+  inGovQuarantine12: number
 
   /**
    * 今日政府定点集中隔离人数-留学生
-   * @value #integer(32)
+   * @value
    */
-  inGovQuarantine13: number;
+  inGovQuarantine13: number
 
   /**
    * 今日政府定点集中隔离人数-实习生
-   * @value #integer(32)
+   * @value
    */
-  inGovQuarantine14: number;
+  inGovQuarantine14: number
 
   /**
    * 今日政府定点集中隔离人数-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  inGovQuarantine15: number;
+  inGovQuarantine15: number
 
   /**
    * 今日政府定点集中隔离人数-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  inGovQuarantine16: number;
+  inGovQuarantine16: number
 
   /**
    * 今日居家健康监测或隔离人数-总人数
-   * @value #integer(32)
+   * @value
    */
-  inHomeQuarantine: number;
+  inHomeQuarantine: number
 
   /**
    * 今日居家健康监测或隔离人数-内地生
-   * @value #integer(32)
+   * @value
    */
-  inHomeQuarantine11: number;
+  inHomeQuarantine11: number
 
   /**
    * 今日居家健康监测或隔离人数-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  inHomeQuarantine12: number;
+  inHomeQuarantine12: number
 
   /**
    * 今日居家健康监测或隔离人数-留学生
-   * @value #integer(32)
+   * @value
    */
-  inHomeQuarantine13: number;
+  inHomeQuarantine13: number
 
   /**
    * 今日居家健康监测或隔离人数-实习生
-   * @value #integer(32)
+   * @value
    */
-  inHomeQuarantine14: number;
+  inHomeQuarantine14: number
 
   /**
    * 今日居家健康监测或隔离人数-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  inHomeQuarantine15: number;
+  inHomeQuarantine15: number
 
   /**
    * 今日居家健康监测或隔离人数-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  inHomeQuarantine16: number;
+  inHomeQuarantine16: number
 
   /**
    * 当日在校-内地生
-   * @value #integer(32)
+   * @value
    */
-  inSchool11: number;
+  inSchool11: number
 
   /**
    * 当日在校-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  inSchool12: number;
+  inSchool12: number
 
   /**
    * 当日在校-留学生
-   * @value #integer(32)
+   * @value
    */
-  inSchool13: number;
+  inSchool13: number
 
   /**
    * 当日当日在校-实习生
-   * @value #integer(32)
+   * @value
    */
-  inSchool14: number;
+  inSchool14: number
 
   /**
    * 当日在校-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  inSchool15: number;
+  inSchool15: number
 
   /**
    * 当日当日在校-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  inSchool16: number;
+  inSchool16: number
 
   /**
    * 今日校内集中隔离人数-总人数
-   * @value #integer(32)
+   * @value
    */
-  inSchoolQuarantine: number;
+  inSchoolQuarantine: number
 
   /**
    * 今日校内集中隔离人数-内地生
-   * @value #integer(32)
+   * @value
    */
-  inSchoolQuarantine11: number;
+  inSchoolQuarantine11: number
 
   /**
    * 今日校内集中隔离人数-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  inSchoolQuarantine12: number;
+  inSchoolQuarantine12: number
 
   /**
    * 今日校内集中隔离人数-留学生
-   * @value #integer(32)
+   * @value
    */
-  inSchoolQuarantine13: number;
+  inSchoolQuarantine13: number
 
   /**
    * 今日校内集中隔离人数-实习生
-   * @value #integer(32)
+   * @value
    */
-  inSchoolQuarantine14: number;
+  inSchoolQuarantine14: number
 
   /**
    * 今日校内集中隔离人数-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  inSchoolQuarantine15: number;
+  inSchoolQuarantine15: number
 
   /**
    * 今日校内集中隔离人数-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  inSchoolQuarantine16: number;
+  inSchoolQuarantine16: number
 
   /**
    * 当日确诊病例或无症状感染者-总人数
-   * @value #integer(32)
+   * @value
    */
-  isDayPatient: number;
+  isDayPatient: number
 
   /**
    * 确诊或无症状感染总人数
-   * @value #integer(32)
+   * @value
    */
-  isPatient: number;
+  isPatient: number
 
   /**
    * 当日确诊病例或无症状感染者-内地生
-   * @value #integer(32)
+   * @value
    */
-  isPatient11: number;
+  isPatient11: number
 
   /**
    * 当日确诊病例或无症状感染者-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  isPatient12: number;
+  isPatient12: number
 
   /**
    * 当日确诊病例或无症状感染者-留学生
-   * @value #integer(32)
+   * @value
    */
-  isPatient13: number;
+  isPatient13: number
 
   /**
    * 当日确诊病例或无症状感染者-实习生
-   * @value #integer(32)
+   * @value
    */
-  isPatient14: number;
+  isPatient14: number
 
   /**
    * 当日确诊病例或无症状感染者-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  isPatient15: number;
+  isPatient15: number
 
   /**
    * 当日确诊病例或无症状感染者-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  isPatient16: number;
+  isPatient16: number
 
   /**
    * 当日疑似病例-总人数
-   * @value #integer(32)
+   * @value
    */
-  isSuspected: number;
+  isSuspected: number
 
   /**
    * 当日疑似病例-内地生
-   * @value #integer(32)
+   * @value
    */
-  isSuspected11: number;
+  isSuspected11: number
 
   /**
    * 当日疑似病例-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  isSuspected12: number;
+  isSuspected12: number
 
   /**
    * 当日疑似病例-留学生
-   * @value #integer(32)
+   * @value
    */
-  isSuspected13: number;
+  isSuspected13: number
 
   /**
    * 当日疑似病例-实习生
-   * @value #integer(32)
+   * @value
    */
-  isSuspected14: number;
+  isSuspected14: number
 
   /**
    * 当日疑似病例-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  isSuspected15: number;
+  isSuspected15: number
 
   /**
    * 当日疑似病例-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  isSuspected16: number;
+  isSuspected16: number
 
   /**
    * 今日从外地返校-总人数
-   * @value #integer(32)
+   * @value
    */
-  isTodayBack: number;
+  isTodayBack: number
 
   /**
    * 今日从外地返校-内地生
-   * @value #integer(32)
+   * @value
    */
-  isTodayBack11: number;
+  isTodayBack11: number
 
   /**
    * 今日从外地返校-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  isTodayBack12: number;
+  isTodayBack12: number
 
   /**
    * 今日从外地返校-留学生
-   * @value #integer(32)
+   * @value
    */
-  isTodayBack13: number;
+  isTodayBack13: number
 
   /**
    * 今日从外地返校-实习生
-   * @value #integer(32)
+   * @value
    */
-  isTodayBack14: number;
+  isTodayBack14: number
 
   /**
    * 今日从外地返校-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  isTodayBack15: number;
+  isTodayBack15: number
 
   /**
    * 今日从外地返校-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  isTodayBack16: number;
+  isTodayBack16: number
 
   /**
    * 未接种新冠疫苗人数-总人数
-   * @value #integer(32)
+   * @value
    */
-  noVaccine: number;
+  noVaccine: number
 
   /**
    * 未接种新冠疫苗人数-内地生
-   * @value #integer(32)
+   * @value
    */
-  noVaccine11: number;
+  noVaccine11: number
 
   /**
    * 未接种新冠疫苗人数-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  noVaccine12: number;
+  noVaccine12: number
 
   /**
    * 未接种新冠疫苗人数-留学生
-   * @value #integer(32)
+   * @value
    */
-  noVaccine13: number;
+  noVaccine13: number
 
   /**
    * 未接种新冠疫苗人数-实习生
-   * @value #integer(32)
+   * @value
    */
-  noVaccine14: number;
+  noVaccine14: number
 
   /**
    * 未接种新冠疫苗人数-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  noVaccine15: number;
+  noVaccine15: number
 
   /**
    * 未接种新冠疫苗人数-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  noVaccine16: number;
+  noVaccine16: number
 
   /**
    * 当日不在校人数
-   * @value #integer(32)
+   * @value
    */
-  notInSchool: number;
+  notInSchool: number
 
   /**
    * 近七日核酸检测人数-总人数
-   * @value #integer(32)
+   * @value
    */
-  nucleicAcidFlag: number;
+  nucleicAcidFlag: number
 
   /**
    * 近七日核酸检测人数-内地生
-   * @value #integer(32)
+   * @value
    */
-  nucleicAcidFlag11: number;
+  nucleicAcidFlag11: number
 
   /**
    * 近七日核酸检测人数-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  nucleicAcidFlag12: number;
+  nucleicAcidFlag12: number
 
   /**
    * 近七日核酸检测人数-留学生
-   * @value #integer(32)
+   * @value
    */
-  nucleicAcidFlag13: number;
+  nucleicAcidFlag13: number
 
   /**
    * 近七日核酸检测人数-实习生
-   * @value #integer(32)
+   * @value
    */
-  nucleicAcidFlag14: number;
+  nucleicAcidFlag14: number
 
   /**
    * 近七日核酸检测人数-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  nucleicAcidFlag15: number;
+  nucleicAcidFlag15: number
 
   /**
    * 近七日核酸检测人数-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  nucleicAcidFlag16: number;
+  nucleicAcidFlag16: number
 
   /**
    * 已接种一针新冠疫苗人数-总人数
-   * @value #integer(32)
+   * @value
    */
-  vaccineOne: number;
+  vaccineOne: number
 
   /**
    * 已接种一针新冠疫苗人数-内地生
-   * @value #integer(32)
+   * @value
    */
-  vaccineOne11: number;
+  vaccineOne11: number
 
   /**
    * 已接种一针新冠疫苗人数-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  vaccineOne12: number;
+  vaccineOne12: number
 
   /**
    * 已接种一针新冠疫苗人数-留学生
-   * @value #integer(32)
+   * @value
    */
-  vaccineOne13: number;
+  vaccineOne13: number
 
   /**
    * 已接种一针新冠疫苗人数-实习生
-   * @value #integer(32)
+   * @value
    */
-  vaccineOne14: number;
+  vaccineOne14: number
 
   /**
    * 已接种一针新冠疫苗人数-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  vaccineOne15: number;
+  vaccineOne15: number
 
   /**
    * 已接种一针新冠疫苗人数-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  vaccineOne16: number;
+  vaccineOne16: number
 
   /**
    * 已接种三针新冠疫苗人数-总人数
-   * @value #integer(32)
+   * @value
    */
-  vaccineThree: number;
+  vaccineThree: number
 
   /**
    * 已接种三针新冠疫苗人数-内地生
-   * @value #integer(32)
+   * @value
    */
-  vaccineThree11: number;
+  vaccineThree11: number
 
   /**
    * 已接种三针新冠疫苗人数-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  vaccineThree12: number;
+  vaccineThree12: number
 
   /**
    * 已接种三针新冠疫苗人数-留学生
-   * @value #integer(32)
+   * @value
    */
-  vaccineThree13: number;
+  vaccineThree13: number
 
   /**
    * 已接种三针新冠疫苗人数-实习生
-   * @value #integer(32)
+   * @value
    */
-  vaccineThree14: number;
+  vaccineThree14: number
 
   /**
    * 已接种三针新冠疫苗人数-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  vaccineThree15: number;
+  vaccineThree15: number
 
   /**
    * 已接种三针新冠疫苗人数-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  vaccineThree16: number;
+  vaccineThree16: number
 
   /**
    * 已接种两针新冠疫苗人数-总人数
-   * @value #integer(32)
+   * @value
    */
-  vaccineTwo: number;
+  vaccineTwo: number
 
   /**
    * 已接种两针新冠疫苗人数-内地生
-   * @value #integer(32)
+   * @value
    */
-  vaccineTwo11: number;
+  vaccineTwo11: number
 
   /**
    * 已接种两针新冠疫苗人数-港澳台学生
-   * @value #integer(32)
+   * @value
    */
-  vaccineTwo12: number;
+  vaccineTwo12: number
 
   /**
    * 已接种两针新冠疫苗人数-留学生
-   * @value #integer(32)
+   * @value
    */
-  vaccineTwo13: number;
+  vaccineTwo13: number
 
   /**
    * 已接种两针新冠疫苗人数-实习生
-   * @value #integer(32)
+   * @value
    */
-  vaccineTwo14: number;
+  vaccineTwo14: number
 
   /**
    * 已接种两针新冠疫苗人数-应征入伍
-   * @value #integer(32)
+   * @value
    */
-  vaccineTwo15: number;
+  vaccineTwo15: number
 
   /**
    * 已接种两针新冠疫苗人数-延期毕业
-   * @value #integer(32)
+   * @value
    */
-  vaccineTwo16: number;
-};
+  vaccineTwo16: number
+}
 
 /**
  * --
@@ -40526,124 +41555,124 @@ export type 健康状况登记地区统计VO_1 = {
 export type 健康状况登记统计VO = {
   /**
    * 总登记数
-   * @value #integer(32)
+   * @value
    */
-  checkNum: number;
+  checkNum: number
 
   /**
    * 总去过疫区人数
-   * @value #integer(32)
+   * @value
    */
-  contactAreaNum: number;
+  contactAreaNum: number
 
   /**
    * 总接触过确诊者人数
-   * @value #integer(32)
+   * @value
    */
-  contactPatientNum: number;
+  contactPatientNum: number
 
   /**
    * 咳嗽人数
-   * @value #integer(32)
+   * @value
    */
-  healthCoughNum: number;
+  healthCoughNum: number
 
   /**
    * 腹泻人数
-   * @value #integer(32)
+   * @value
    */
-  healthDiarrhoeaNum: number;
+  healthDiarrhoeaNum: number
 
   /**
    * 发热人数
-   * @value #integer(32)
+   * @value
    */
-  healthFeverNum: number;
+  healthFeverNum: number
 
   /**
    * 头晕头痛人数
-   * @value #integer(32)
+   * @value
    */
-  healthHeadacheNum: number;
+  healthHeadacheNum: number
 
   /**
    * 正常人数
-   * @value #integer(32)
+   * @value
    */
-  healthNormalNum: number;
+  healthNormalNum: number
 
   /**
    * 乏力人数
-   * @value #integer(32)
+   * @value
    */
-  healthWeakNum: number;
+  healthWeakNum: number
 
   /**
    * 在校师生
-   * @value #integer(32)
+   * @value
    */
-  inSchoolNum: number;
+  inSchoolNum: number
 
   /**
    * 居住社区村有确诊病例人数
-   * @value #integer(32)
+   * @value
    */
-  isCommunityPatientNum: number;
+  isCommunityPatientNum: number
 
   /**
    * 家庭成员有确诊或疑似病例人数
-   * @value #integer(32)
+   * @value
    */
-  isFamiliyPatientNum: number;
+  isFamiliyPatientNum: number
 
   /**
    * 离校师生
-   * @value #integer(32)
+   * @value
    */
-  outSchoolNum: number;
+  outSchoolNum: number
 
   /**
    * 总确诊数
-   * @value #integer(32)
+   * @value
    */
-  patientNum: number;
+  patientNum: number
 
   /**
    * 按省统计列表
    * @rule 2
    */
-  provinceStatsList: 健康状况登记地区统计VO[];
+  provinceStatsList: 健康状况登记地区统计VO[]
 
   /**
    * 今日总登记数
-   * @value #integer(32)
+   * @value
    */
-  todayCheckNum: number;
+  todayCheckNum: number
 
   /**
    * 今日去过疫区人数
-   * @value #integer(32)
+   * @value
    */
-  todayContactAreaNum: number;
+  todayContactAreaNum: number
 
   /**
    * 今日接触过确诊者人数
-   * @value #integer(32)
+   * @value
    */
-  todayContactPatientNum: number;
+  todayContactPatientNum: number
 
   /**
    * 今日总签到数
-   * @value #integer(32)
+   * @value
    */
-  todayDetailNum: number;
+  todayDetailNum: number
 
   /**
    * 今日总确诊数
-   * @value #integer(32)
+   * @value
    */
-  todayPatientNum: number;
-};
+  todayPatientNum: number
+}
 
 /**
  * --
@@ -40653,26 +41682,26 @@ export type 安全风控类 = {
    * 图形验证码内容
    * @value
    */
-  imageCaptchaValue: string;
+  imageCaptchaValue: string
 
   /**
    * 安全级别 0:普通，1：风险级别低  2：风险级别高
-   * @value #integer(32)
+   * @value
    */
-  level: number;
+  level: number
 
   /**
    * 安全表示
    * @value
    */
-  securityToken: string;
+  securityToken: string
 
   /**
    * 会话id
    * @value
    */
-  sessionId: string;
-};
+  sessionId: string
+}
 
 /**
  * --
@@ -40683,92 +41712,92 @@ export type 手抄表账单返回数据这是rows里的内容外面还有一层r
      * 应缴金额
      * @value
      */
-    amountPayable: string;
+    amountPayable: string
 
     /**
      * 校区名称
      * @value
      */
-    areaName: string;
+    areaName: string
 
     /**
      * 楼栋名称
      * @value
      */
-    buildingName: string;
+    buildingName: string
 
     /**
      * 缴费完成时间
      * @value #datetime()
      */
-    completeTime: string;
+    completeTime: string
 
     /**
      * 楼层名称
      * @value
      */
-    floorName: string;
+    floorName: string
 
     /**
      * id
-     * @value #integer(64)
+     * @value
      */
-    id: number;
+    id: number
 
     /**
      * 上次抄表时间
      * @value
      */
-    lastSettlingTime: string;
+    lastSettlingTime: string
 
     /**
      * 缴费状态： 0、未缴费  1、已缴费
-     * @value #integer(32)
+     * @value
      */
-    payStatus: number;
+    payStatus: number
 
     /**
      * 缴费状态名
      * @value
      */
-    payStatusStr: string;
+    payStatusStr: string
 
     /**
      * 房间名称
      * @value
      */
-    roomName: string;
+    roomName: string
 
     /**
      * 学校名称
      * @value
      */
-    schoolName: string;
+    schoolName: string
 
     /**
      * 本次抄表时间
      * @value
      */
-    thisSettlingTime: string;
+    thisSettlingTime: string
 
     /**
      * 类型： 1、电费 2、水费
-     * @value #integer(32)
+     * @value
      */
-    type: number;
+    type: number
 
     /**
      * 类型名称
      * @value
      */
-    typeStr: string;
+    typeStr: string
 
     /**
      * 用电度数
      * @value
      */
-    usageQuantity: string;
-  };
+    usageQuantity: string
+  }
 
 /**
  * --
@@ -40778,38 +41807,38 @@ export type 支付订单列表下方的汇总数据 = {
    * 月份：yyyy-dd
    * @value
    */
-  months: string;
+  months: string
 
   /**
    * 交易总笔数
-   * @value #integer(64)
+   * @value
    */
-  totalCount: number;
+  totalCount: number
 
   /**
    * 支付总金额
    * @value
    */
-  totalRealMoney: string;
+  totalRealMoney: string
 
   /**
    * 退款总笔数
    * @value
    */
-  totalRefundCount: string;
+  totalRefundCount: string
 
   /**
    * 退款总金额
    * @value
    */
-  totalRefundMoney: string;
+  totalRefundMoney: string
 
   /**
    * 交易总金额
    * @value
    */
-  totalTranMoney: string;
-};
+  totalTranMoney: string
+}
 
 /**
  * --
@@ -40819,152 +41848,152 @@ export type 支付订单详情 = {
    * 优惠券抵扣金额
    * @value
    */
-  couponMoney: string;
+  couponMoney: string
 
   /**
    * 商户编号
    * @value
    */
-  cpCode: string;
+  cpCode: string
 
   /**
    * 商户名称
    * @value
    */
-  cpName: string;
+  cpName: string
 
   /**
    * 商户订单号
    * @value
    */
-  cpTranNo: string;
+  cpTranNo: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 费率金额
    * @value
    */
-  feeMoney: string;
+  feeMoney: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 学工号
    * @value
    */
-  jobNo: string;
-
-  /**
-   * 通知状态
-   * @value #integer(32)
-   */
-  notifyState: number;
+  jobNo: string
 
   /**
    * 通知状态
    * @value
    */
-  notifyStateName: string;
+  notifyState: number
+
+  /**
+   * 通知状态
+   * @value
+   */
+  notifyStateName: string
 
   /**
    * 支付渠道
    * @value
    */
-  payName: string;
+  payName: string
 
   /**
    * 支付时间
    * @value #datetime()
    */
-  payTime: string;
+  payTime: string
 
   /**
    * 产品名称
    * @value
    */
-  prodName: string;
+  prodName: string
 
   /**
    * 实际支付金额
    * @value
    */
-  realMoney: string;
+  realMoney: string
 
   /**
    * 红包抵扣金额
    * @value
    */
-  redbagMoney: string;
+  redbagMoney: string
 
   /**
    * 退款金额
    * @value
    */
-  refundMoney: string;
+  refundMoney: string
 
   /**
    * 退款状态，0 退款提交 1 退款处理中 2 退款成功 3退款失败
-   * @value #integer(32)
+   * @value
    */
-  refundState: number;
+  refundState: number
 
   /**
    * 退款状态
    * @value
    */
-  refundStateName: string;
+  refundStateName: string
 
   /**
    * 支付费率类别，1支付费率，2扣除费率
-   * @value #integer(32)
+   * @value
    */
-  settlefeeType: number;
+  settlefeeType: number
 
   /**
    * 官方订单号
    * @value
    */
-  topTranNo: string;
+  topTranNo: string
 
   /**
    * 订单金额
    * @value
    */
-  tranMoney: string;
+  tranMoney: string
 
   /**
    * 支付订单号
    * @value
    */
-  tranNo: string;
+  tranNo: string
 
   /**
    * 交易状态,1等待支付、2支付成功、3支付失败、4订单关闭
-   * @value #integer(32)
+   * @value
    */
-  tranState: number;
+  tranState: number
 
   /**
    * 交易状态（文字）
    * @value
    */
-  tranStateName: string;
+  tranStateName: string
 
   /**
    * 付款人姓名
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * --
@@ -40975,224 +42004,224 @@ export type 支付订单返回数据这是rows里的内容外面还有一层ret_
      * 水电费校区编码
      * @value
      */
-    areaCode: string;
+    areaCode: string
 
     /**
      * 水电费校区名称
      * @value
      */
-    areaName: string;
+    areaName: string
 
     /**
      * 水电费楼栋编码
      * @value
      */
-    buildingCode: string;
+    buildingCode: string
 
     /**
      * 水电费楼栋名称
      * @value
      */
-    buildingName: string;
+    buildingName: string
 
     /**
      * 创建时间
      * @value #datetime()
      */
-    createTime: string;
+    createTime: string
 
     /**
      * 费率金额
      * @value
      */
-    feeMoney: number;
+    feeMoney: number
 
     /**
      * 水电费楼层编码
      * @value
      */
-    floorCode: string;
+    floorCode: string
 
     /**
      * 水电费楼层名称
      * @value
      */
-    floorName: string;
+    floorName: string
 
     /**
      * id
-     * @value #integer(64)
+     * @value
      */
-    id: number;
+    id: number
 
     /**
      * 学号
      * @value
      */
-    jobNo: string;
+    jobNo: string
 
     /**
      * 手机号
      * @value
      */
-    mobilePhone: string;
+    mobilePhone: string
 
     /**
      * 订单编号
      * @value
      */
-    orderNo: string;
+    orderNo: string
 
     /**
      * 外部订单号
      * @value
      */
-    outTradeNo: string;
-
-    /**
-     * 外部充值状态 0未充值 1充值中 2充值完成 3充值失败 4充值关闭
-     * @value #integer(32)
-     */
-    outTradeStatus: number;
+    outTradeNo: string
 
     /**
      * 外部充值状态 0未充值 1充值中 2充值完成 3充值失败 4充值关闭
      * @value
      */
-    outTradeStatusStr: string;
+    outTradeStatus: number
 
     /**
-     * 缴费模式：1、智能电表  2、老电表
-     * @value #integer(32)
+     * 外部充值状态 0未充值 1充值中 2充值完成 3充值失败 4充值关闭
+     * @value
      */
-    pattern: number;
+    outTradeStatusStr: string
 
     /**
      * 缴费模式：1、智能电表  2、老电表
      * @value
      */
-    patternStr: string;
+    pattern: number
+
+    /**
+     * 缴费模式：1、智能电表  2、老电表
+     * @value
+     */
+    patternStr: string
 
     /**
      * 支付金额
      * @value
      */
-    payMoney: number;
+    payMoney: number
 
     /**
      * 支付单号
      * @value
      */
-    payNo: string;
-
-    /**
-     * 支付状态：1等待支付、2支付成功、3支付失败、4订单关闭
-     * @value #integer(32)
-     */
-    payStatus: number;
+    payNo: string
 
     /**
      * 支付状态：1等待支付、2支付成功、3支付失败、4订单关闭
      * @value
      */
-    payStatusStr: string;
+    payStatus: number
+
+    /**
+     * 支付状态：1等待支付、2支付成功、3支付失败、4订单关闭
+     * @value
+     */
+    payStatusStr: string
 
     /**
      * 支付时间
      * @value #datetime()
      */
-    payTime: string;
+    payTime: string
 
     /**
      * 支付方式 ：ALIPAY:支付宝支付 WXPAY:微信支付 UNIONPAY:银联支付 LONGPAY:建行龙支付  CARDPAY:一卡通支付
      * @value
      */
-    payType: string;
+    payType: string
 
     /**
      * 商品名
      * @value
      */
-    prodName: string;
+    prodName: string
 
     /**
      * 红包金额
      * @value
      */
-    redbagMoney: number;
+    redbagMoney: number
 
     /**
      * 订单备注
      * @value
      */
-    remark: string;
+    remark: string
 
     /**
      * 水电费房间编码
      * @value
      */
-    roomCode: string;
+    roomCode: string
 
     /**
      * 水电费房间名称
      * @value
      */
-    roomName: string;
+    roomName: string
 
     /**
      * 学校名称
      * @value
      */
-    schoolName: string;
+    schoolName: string
 
     /**
      * 来源：app：易校园APP  wechat：微信  yxapp：越秀APP  wxapp:微信小程序
      * @value
      */
-    source: string;
+    source: string
 
     /**
      * 来源名称
      * @value
      */
-    sourceStr: string;
+    sourceStr: string
 
     /**
      * 订单状态：0处理中 1已完成
      * @value
      */
-    status: string;
+    status: string
 
     /**
      * 业务类型：电费、网费、水费
      * @value
      */
-    subType: string;
+    subType: string
 
     /**
      * 到账金额
      * @value
      */
-    totalMoney: number;
+    totalMoney: number
 
     /**
      * 订单类型
      * @value
      */
-    type: string;
+    type: string
 
     /**
      * 修改时间
      * @value #datetime()
      */
-    updateTime: string;
+    updateTime: string
 
     /**
      * 姓名
      * @value
      */
-    userName: string;
-  };
+    userName: string
+  }
 
 /**
  * --
@@ -41203,140 +42232,140 @@ export type 支付订单返回数据这是rows里的内容外面还有一层ret_
      * 商户号
      * @value
      */
-    cpCode: string;
+    cpCode: string
 
     /**
      * 主商户名称
      * @value
      */
-    cpMainName: string;
+    cpMainName: string
 
     /**
      * 商户名称
      * @value
      */
-    cpName: string;
+    cpName: string
 
     /**
      * 商户订单号
      * @value
      */
-    cpTranNo: string;
+    cpTranNo: string
 
     /**
      * 创建时间
      * @value
      */
-    createTime: string;
+    createTime: string
 
     /**
      * 费率金额
      * @value
      */
-    feeMoney: string;
+    feeMoney: string
 
     /**
      * id
-     * @value #integer(64)
+     * @value
      */
-    id: number;
+    id: number
 
     /**
      * 学号
      * @value
      */
-    jobNo: string;
+    jobNo: string
 
     /**
      * 支付渠道
      * @value
      */
-    payName: string;
+    payName: string
 
     /**
      * 支付时间
      * @value #datetime()
      */
-    payTime: string;
+    payTime: string
 
     /**
      * 产品名称
      * @value
      */
-    prodName: string;
+    prodName: string
 
     /**
      * 支付金额
      * @value
      */
-    realMoney: string;
+    realMoney: string
 
     /**
      * 红包金额
      * @value
      */
-    redbagMoney: string;
+    redbagMoney: string
 
     /**
      * 退款金额
      * @value
      */
-    refundMoney: string;
+    refundMoney: string
 
     /**
      * 退款状态，0 退款提交 1 退款处理中 2 退款成功 3退款失败
-     * @value #integer(32)
+     * @value
      */
-    refundState: number;
+    refundState: number
 
     /**
      * 退款状态
      * @value
      */
-    refundStateName: string;
+    refundStateName: string
 
     /**
      * 支付费率类别，1支付费率，2扣除费率
-     * @value #integer(32)
+     * @value
      */
-    settlefeeType: number;
+    settlefeeType: number
 
     /**
      * 官方单号
      * @value
      */
-    topTranNo: string;
+    topTranNo: string
 
     /**
      * 交易金额
      * @value
      */
-    tranMoney: string;
+    tranMoney: string
 
     /**
      * 支付单号
      * @value
      */
-    tranNo: string;
+    tranNo: string
 
     /**
      * 交易状态,1等待支付、2支付成功、3支付失败、4订单关闭
-     * @value #integer(32)
+     * @value
      */
-    tranState: number;
+    tranState: number
 
     /**
      * 交易状态
      * @value
      */
-    tranStateName: string;
+    tranStateName: string
 
     /**
      * 用户姓名
      * @value
      */
-    userName: string;
-  };
+    userName: string
+  }
 
 /**
  * --
@@ -41346,146 +42375,146 @@ export type 文章返回参数 = {
    *
    * @value
    */
-  articleText: string;
+  articleText: string
 
   /**
    * 附件,json对象列表格式,例：{'fileName':'文件名','fileUrl':'https://oss.aliyun.com'}
    * @value
    */
-  attachment: string;
+  attachment: string
 
   /**
    *
    * @value
    */
-  author: string;
+  author: string
 
   /**
    * 文章类型 1富文本 2链接
-   * @value #integer(32)
+   * @value
    */
-  contentType: number;
+  contentType: number
 
   /**
    * 链接地址
    * @value
    */
-  contentUrl: string;
+  contentUrl: string
 
   /**
    *
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 文章截至日期
    * @value #datetime()
    */
-  endTime: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
+  endTime: string
 
   /**
    *
    * @value
    */
-  imageUrl: string;
+  id: number
+
+  /**
+   *
+   * @value
+   */
+  imageUrl: string
 
   /**
    * 是否热门问题(0是1否)
-   * @value #integer(32)
+   * @value
    */
-  isHot: number;
+  isHot: number
 
   /**
    * 是否推送到app首页 0是  1否
-   * @value #integer(32)
+   * @value
    */
-  isTop: number;
+  isTop: number
 
   /**
    *
    * @value
    */
-  operation: string;
+  operation: string
 
   /**
    *
    * @value
    */
-  platform: string;
+  platform: string
 
   /**
    *
    * @value
    */
-  platformStr: string;
+  platformStr: string
 
   /**
    * 是否弹屏 0:是  1:否
-   * @value #integer(32)
+   * @value
    */
-  popupScreenFlag: number;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  schoolId: number;
+  popupScreenFlag: number
 
   /**
    *
    * @value
    */
-  schoolName: string;
+  schoolId: number
+
+  /**
+   *
+   * @value
+   */
+  schoolName: string
 
   /**
    * 排序 ,小于5位
-   * @value #integer(32)
+   * @value
    */
-  sort: number;
-
-  /**
-   *
-   * @value #integer(32)
-   */
-  status: number;
+  sort: number
 
   /**
    *
    * @value
    */
-  statusStr: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  tagsId: number;
+  status: number
 
   /**
    *
    * @value
    */
-  tagsName: string;
+  statusStr: string
 
   /**
    *
    * @value
    */
-  title: string;
+  tagsId: number
+
+  /**
+   *
+   * @value
+   */
+  tagsName: string
+
+  /**
+   *
+   * @value
+   */
+  title: string
 
   /**
    *
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -41495,44 +42524,44 @@ export type 校区查询 = {
    * 校区编码
    * @value
    */
-  areaCode: string;
+  areaCode: string
 
   /**
    * 校区名称
    * @value
    */
-  areaName: string;
+  areaName: string
 
   /**
    * 绑定房间数量
-   * @value #integer(32)
+   * @value
    */
-  bindRoomNum: number;
+  bindRoomNum: number
 
   /**
    * 校区编码
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否充值后绑定 0、是 1、否
-   * @value #integer(32)
+   * @value
    */
-  isBindAfterRecharge: number;
+  isBindAfterRecharge: number
 
   /**
    * 支付渠道(支付渠道暂时只支持app): 1, 云马聚合支付 2, 神州浩天支付
    * @value
    */
-  paymentChannel: string;
+  paymentChannel: string
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
-};
+  schoolCode: string
+}
 
 /**
  * --
@@ -41542,309 +42571,309 @@ export type 用户信息 = {
    * 登录账户
    * @value
    */
-  account: string;
+  account: string
 
   /**
    * 激活状态 0未激活 1激活
-   * @value #integer(32)
+   * @value
    */
-  activeStatus: number;
+  activeStatus: number
 
   /**
    * 绑卡状态 1已经绑卡 0未绑卡
-   * @value #integer(32)
+   * @value
    */
-  bindCardStatus: number;
+  bindCardStatus: number
 
   /**
    * 按钮列表
    * @value
    */
-  buttonList: string[];
+  buttonList: string[]
 
   /**
    * 子商户编码,用户可以查询的子商户数据
    * @value
    */
-  childMerchantCode: string;
+  childMerchantCode: string
 
   /**
    * 子商户名称
    * @value
    */
-  childMerchantName: string;
-  currentOperatePermission: {};
+  childMerchantName: string
+  currentOperatePermission: {}
 
   /**
    * 设备id
    * @value
    */
-  deviceId: string;
+  deviceId: string
 
   /**
    * 扩展json
    * @value
    */
-  extJson: string;
+  extJson: string
 
   /**
    * 是否有密码（0有 1没有）
-   * @value #integer(32)
+   * @value
    */
-  hasPwd: number;
+  hasPwd: number
 
   /**
    * 头像
    * @value
    */
-  headImg: string;
+  headImg: string
 
   /**
    * 用户id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 身份证号
    * @value
    */
-  identityNo: string;
+  identityNo: string
 
   /**
    * 是否平台用户 0是 1否,平台用户不受数据权限控制,同超级管理员一样
-   * @value #integer(32)
+   * @value
    */
-  isPlatformUser: number;
+  isPlatformUser: number
 
   /**
    * 是否设置了安全密码：0、已设置 1、未设置
-   * @value #integer(32)
+   * @value
    */
-  isSetSecurePwd: number;
+  isSetSecurePwd: number
 
   /**
    * 是否超级管理员  0是  1否
-   * @value #integer(32)
+   * @value
    */
-  isSuper: number;
+  isSuper: number
 
   /**
    * 是否需要强制修改密码 0是 1否
-   * @value #integer(32)
+   * @value
    */
-  isUpdatePwd: number;
+  isUpdatePwd: number
 
   /**
    * 工号/学号
    * @value
    */
-  jobNo: string;
+  jobNo: string
 
   /**
    * 最后一次登录时间
    * @value #datetime()
    */
-  lastLogin: string;
+  lastLogin: string
 
   /**
    * 菜单列表
    * @rule 2
    */
-  menuList: CenterSysMenuTree4LoginVO[];
+  menuList: CenterSysMenuTree4LoginVO[]
 
   /**
    * 商户编码,所属商户只能查询自己商户的数据
    * @value
    */
-  merchantCode: string;
+  merchantCode: string
 
   /**
    * 商户名称
    * @value
    */
-  merchantName: string;
+  merchantName: string
 
   /**
    * 手机号
    * @value
    */
-  mobilePhone: string;
+  mobilePhone: string
 
   /**
    * 用户名/昵称
    * @value
    */
-  nickName: string;
+  nickName: string
 
   /**
    * openid
    * @value
    */
-  openid: string;
+  openid: string
 
   /**
    * 支付openid
    * @value
    */
-  payOpenid: string;
+  payOpenid: string
 
   /**
    * 平台,不同平台查询的数据是不一样的,目前有两个平台 易校园,意法
    * @value
    */
-  platform: string;
+  platform: string
 
   /**
    * app 身份证号
    * @value
    */
-  realIdentityNo: string;
+  realIdentityNo: string
 
   /**
    * 是否实名 0未实名 1已经实名
-   * @value #integer(32)
+   * @value
    */
-  realNameStatus: number;
+  realNameStatus: number
 
   /**
    * app真实姓名
    * @value
    */
-  realUserName: string;
+  realUserName: string
 
   /**
    * 注册时间
    * @value #datetime()
    */
-  regiserTime: string;
+  regiserTime: string
 
   /**
    * 记录请求uri,方便排查问题
    * @value
    */
-  requestUri: string;
+  requestUri: string
 
   /**
    * 登录成功，返回的页面地址
    * @value
    */
-  returnUrl: string;
+  returnUrl: string
 
   /**
    * 角色id
    * @value
    */
-  roleId: string;
+  roleId: string
 
   /**
    * 学校校徽
    * @value
    */
-  schoolBadgeImg: string;
+  schoolBadgeImg: string
 
   /**
    * 学校类别(1.学校 2.企业 3.医院 政府)
-   * @value #integer(32)
+   * @value
    */
-  schoolClasses: number;
+  schoolClasses: number
 
   /**
    * 学校编码
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    * 学校名称（中文全称）
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    *
-   * @value #integer(32)
+   * @value
    */
-  schoolNature: number;
+  schoolNature: number
 
   /**
    * sessionId
    * @value
    */
-  sessionId: string;
+  sessionId: string
 
   /**
    * 性别 1男，2女，没有值表示男
-   * @value #integer(32)
+   * @value
    */
-  sex: number;
+  sex: number
 
   /**
    *
    * @value
    */
-  shiroJid: string;
+  shiroJid: string
 
   /**
    * 是否是测试账户  0是  1否
-   * @value #integer(32)
+   * @value
    */
-  testAccount: number;
+  testAccount: number
 
   /**
    * thirdOpenid
    * @value
    */
-  thirdOpenid: string;
+  thirdOpenid: string
 
   /**
    * token
    * @value
    */
-  token: string;
+  token: string
 
   /**
    * 距上次修改密码天数
-   * @value #integer(64)
+   * @value
    */
-  updatePwdDays: number;
+  updatePwdDays: number
 
   /**
    * 班级
    * @value
    */
-  userClass: string;
+  userClass: string
 
   /**
    * 一卡通账号
    * @value
    */
-  userIdcard: string;
+  userIdcard: string
 
   /**
    * 用户真实姓名
    * @value
    */
-  userName: string;
+  userName: string
 
   /**
    * 用户状态 0冻结 1正常
-   * @value #integer(32)
+   * @value
    */
-  userStatus: number;
+  userStatus: number
 
   /**
    * 用户类型,一卡通返回的身份,易校园平台身份请查看属性school_identity_type, 1 学生 2 老师(校长和其他) 3 校友 4 家长 5其他
    * @value
    */
-  userType: string;
+  userType: string
 
   /**
    * 迎新身份证号
    * @value
    */
-  wnIdentityNo: string;
-};
+  wnIdentityNo: string
+}
 
 /**
  * --
@@ -41854,92 +42883,92 @@ export type 用户角色VO = {
    * 子商户号,多个以逗号隔开
    * @value
    */
-  childMerchantCode: string;
+  childMerchantCode: string
 
   /**
    * 子商户名称
    * @value
    */
-  childMerchantName: string;
+  childMerchantName: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * id
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 是否平台用户 0是 1否
-   * @value #integer(32)
+   * @value
    */
-  isPlatformUser: number;
+  isPlatformUser: number
 
   /**
    *
    * @value
    */
-  isPlatformUserStr: string;
+  isPlatformUserStr: string
 
   /**
    * 商户号
    * @value
    */
-  merchantCode: string;
+  merchantCode: string
 
   /**
    * 商户名称
    * @value
    */
-  merchantName: string;
+  merchantName: string
 
   /**
    * 手机
    * @value
    */
-  mobilePhone: string;
+  mobilePhone: string
 
   /**
    * 角色id
-   * @value #integer(64)
+   * @value
    */
-  roleId: number;
+  roleId: number
 
   /**
    * 角色名称
    * @value
    */
-  roleName: string;
+  roleName: string
 
   /**
    * 状态 0未启用,1已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 用户ID
-   * @value #integer(64)
+   * @value
    */
-  userId: number;
+  userId: number
 
   /**
    * 姓名
    * @value
    */
-  userName: string;
-};
+  userName: string
+}
 
 /**
  * --
@@ -41949,26 +42978,26 @@ export type 获取学校信息返回VO = {
    * 校徽图片
    * @value
    */
-  badgeImg: string;
+  badgeImg: string
 
   /**
    * 校园卡温馨提示
    * @value
    */
-  bindPwdRemind: string;
+  bindPwdRemind: string
 
   /**
    * 校园卡背景图
    * @value
    */
-  panoramagramImg: string;
+  panoramagramImg: string
 
   /**
    * 学校简介
    * @value
    */
-  schoolSummary: string;
-};
+  schoolSummary: string
+}
 
 /**
  * --
@@ -41978,14 +43007,14 @@ export type 获取预览信息返回VO = {
    * 二维码图片
    * @value
    */
-  qrCodeImage: string;
+  qrCodeImage: string
 
   /**
    * 地址
    * @value
    */
-  url: string;
-};
+  url: string
+}
 
 /**
  * --
@@ -41995,122 +43024,122 @@ export type 轮播图表返回数据参数 = {
    * 文章id
    * @value
    */
-  articleId: string;
+  articleId: string
 
   /**
    * 图片
    * @value
    */
-  bannerImg: string;
+  bannerImg: string
 
   /**
    * 创建时间
    * @value #datetime()
    */
-  createTime: string;
+  createTime: string
 
   /**
    * 结束时间
    * @value #datetime()
    */
-  endTime: string;
-
-  /**
-   *
-   * @value #integer(64)
-   */
-  id: number;
+  endTime: string
 
   /**
    *
    * @value
    */
-  operates: string[];
+  id: number
+
+  /**
+   *
+   * @value
+   */
+  operates: string[]
 
   /**
    * 链接地址
    * @value
    */
-  outUrl: string;
+  outUrl: string
 
   /**
    * 展示地方
    * @value
    */
-  position: string;
+  position: string
 
   /**
    * 展示地方编码 1000:新闻公告 2000:学校介绍 3000:迎新公告 0000:外部链接
    * @value
    */
-  positionCode: string;
+  positionCode: string
 
   /**
    *
    * @value
    */
-  schoolCode: string;
+  schoolCode: string
 
   /**
    *
    * @value
    */
-  schoolName: string;
+  schoolName: string
 
   /**
    * 排序
-   * @value #integer(32)
+   * @value
    */
-  showSort: number;
+  showSort: number
 
   /**
    * 开始时间
    * @value #datetime()
    */
-  startTime: string;
+  startTime: string
 
   /**
    * 状态  0:未启用 1:已启用
-   * @value #integer(32)
+   * @value
    */
-  status: number;
+  status: number
 
   /**
    * 状态
    * @value
    */
-  statusStr: string;
+  statusStr: string
 
   /**
    * 文章类型
    * @value
    */
-  tagType: string;
+  tagType: string
 
   /**
    * 标题
    * @value
    */
-  title: string;
-
-  /**
-   * 轮播类型 0:外部 1:内部
-   * @value #integer(32)
-   */
-  type: number;
+  title: string
 
   /**
    * 轮播类型 0:外部 1:内部
    * @value
    */
-  typeStr: string;
+  type: number
+
+  /**
+   * 轮播类型 0:外部 1:内部
+   * @value
+   */
+  typeStr: string
 
   /**
    * 更新时间
    * @value #datetime()
    */
-  updateTime: string;
-};
+  updateTime: string
+}
 
 /**
  * --
@@ -42118,70 +43147,70 @@ export type 轮播图表返回数据参数 = {
 export type 迎新房间 = {
   /**
    * 是否已经分配： 0-是，1-否
-   * @value #integer(32)
+   * @value
    */
-  assignStatus: number;
+  assignStatus: number
 
   /**
    * 楼栋ID
-   * @value #integer(64)
+   * @value
    */
-  buildingId: number;
+  buildingId: number
 
   /**
    *
    * @value
    */
-  buildingName: string;
+  buildingName: string
 
   /**
    * 床位
    * @rule 2
    */
-  bunkList: BunkInfoVO[];
+  bunkList: BunkInfoVO[]
 
   /**
    * 楼层Id
-   * @value #integer(64)
+   * @value
    */
-  floorId: number;
+  floorId: number
 
   /**
    *
    * @value
    */
-  floorName: string;
+  floorName: string
 
   /**
    * 房间ID
-   * @value #integer(64)
+   * @value
    */
-  id: number;
+  id: number
 
   /**
    * 房间名称
    * @value
    */
-  roomFullName: string;
+  roomFullName: string
 
   /**
    * 房间名称
    * @value
    */
-  roomName: string;
+  roomName: string
 
   /**
    * 房间类型（几人间）
-   * @value #integer(32)
+   * @value
    */
-  roomType: number;
+  roomType: number
 
   /**
    * 校区ID
-   * @value #integer(64)
+   * @value
    */
-  zoneId: number;
-};
+  zoneId: number
+}
 
 /**
  * --
@@ -42192,119 +43221,119 @@ export type 退款订单返回数据这是rows里的内容外面还有一层ret_
      * 渠道退款订单号
      * @value
      */
-    channelRefundTranNo: string;
+    channelRefundTranNo: string
 
     /**
      * 主商户名称
      * @value
      */
-    cpMainName: string;
+    cpMainName: string
 
     /**
      * 商户名称
      * @value
      */
-    cpName: string;
+    cpName: string
 
     /**
      * 商户退款单号
      * @value
      */
-    cpRefundTranNo: string;
+    cpRefundTranNo: string
 
     /**
      * 创建时间
      * @value #datetime()
      */
-    createTime: string;
+    createTime: string
 
     /**
      * id
-     * @value #integer(64)
+     * @value
      */
-    id: number;
+    id: number
 
     /**
      * 通知状态
-     * @value #integer(32)
+     * @value
      */
-    notifyState: number;
+    notifyState: number
 
     /**
      * 通知状态名称
      * @value
      */
-    notifyStateName: string;
+    notifyStateName: string
 
     /**
      * 支付方式
      * @value
      */
-    payType: string;
+    payType: string
 
     /**
      * 支付方式名称
      * @value
      */
-    payTypeName: string;
+    payTypeName: string
 
     /**
      * 实际支付金额
      * @value
      */
-    realMoney: string;
+    realMoney: string
 
     /**
      * 退款金额
      * @value
      */
-    refundMoney: string;
+    refundMoney: string
 
     /**
      * 退款原因
      * @value
      */
-    refundReason: string;
+    refundReason: string
 
     /**
      * 退款状态
      * @value
      */
-    refundStateName: string;
+    refundStateName: string
 
     /**
      * 退款时间
      * @value
      */
-    refundTime: string;
+    refundTime: string
 
     /**
      * 退款订单号
      * @value
      */
-    refundTranNo: string;
+    refundTranNo: string
 
     /**
      * 退款总笔数
      * @value
      */
-    totalRefundCount: string;
+    totalRefundCount: string
 
     /**
      * 退款总金额
      * @value
      */
-    totalRefundMoney: string;
+    totalRefundMoney: string
 
     /**
      * 交易金额
      * @value
      */
-    tranMoney: string;
+    tranMoney: string
 
     /**
      * 支付订单号
      * @value
      */
-    tranNo: string;
-  };
+    tranNo: string
+  }

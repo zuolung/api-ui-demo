@@ -1416,7 +1416,7 @@
 
 "api-see@file:../api-see":
   "resolved" "file:../api-see"
-  "version" "1.2.0"
+  "version" "1.2.4"
   dependencies:
     "@babel/cli" "^7.1.1"
     "@babel/core" "^7.1.1"
