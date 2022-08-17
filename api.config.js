@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   buildPath: path.join(__dirname, './build/api'),
   mock: {
-    port: 10222,
+    port: 10099,
     baseIntercept: (params) => {
       const { type, fieldName, originValue, url } = params
       if (originValue) return originValue
