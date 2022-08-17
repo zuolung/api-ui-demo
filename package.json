@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build1": "api-see file && webpack",
-    "build2": "api-see build && webpack",
-    "start": "webpack-dev-server --config ./webpack.dev.config.js",
-    "mock": "api-see watch --mock true --action true",
-    "api": "api-see watch --server true",
-    "swagger": "api-see swagger --url https://scapi.lsmart.wang/v2/api-docs"
+    "start": "yarn api:file && webpack-dev-server --config ./webpack.dev.config.js",
+    "mock": "api-see watch --path ./src/actions/api/types --mock true --action true",
+    "api:file": "api-see file --path ./src/actions/api/types --action true",
+    "api:start": "api-see watch --path ./src/actions/api/types --server true --mock true",
+    "api:build": "api-see build --path ./src/actions/api/types",
+    "swagger": "api-see swagger --path ./src/actions/swagger/types --url https://scapi.lsmart.wang/v2/api-docs"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +18,7 @@
     "@babel/preset-env": "^7.18.6",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
-    "api-see": "2.0.0",
+    "api-see": "2.0.3",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
