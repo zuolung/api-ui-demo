@@ -1826,7 +1826,7 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-api-see@2.0.4:
+api-see@^2.0.4:
   version "2.0.4"
   resolved "https://registry.npmmirror.com/api-see/-/api-see-2.0.4.tgz#26e9d1304808d6adf44dc47e92a2462c9a232151"
   integrity sha512-8HVBv/EnMrdrBjYjNWJVsnCMdacawbm0reWcPWoBO0hHDMkQnX4eKgac71G5G65BvDy7pwKdhqftkspjV8uXNw==
