@@ -66,7 +66,6 @@ export type IapplyApp = {
     uuToken?: string
     projectId?: number
   }
-
   response: ModelAndView
 }
 
@@ -136,7 +135,6 @@ export type IappDrive = {
     uuToken?: string
     projectId?: number
   }
-
   response: ModelAndView
 }
 
@@ -206,7 +204,6 @@ export type IapplyEntry = {
     uuToken?: string
     projectId?: number
   }
-
   response: ModelAndView
 }
 
@@ -264,7 +261,6 @@ export type IapplyWechat = {
     wxCode?: string
     projectId?: number
   }
-
   response: ModelAndView
 }
 
@@ -334,7 +330,6 @@ export type IapplyApp1 = {
     uuToken?: string
     projectId?: number
   }
-
   response: ModelAndView
 }
 
@@ -404,7 +399,6 @@ export type IappDrive1 = {
     uuToken?: string
     projectId?: number
   }
-
   response: ModelAndView
 }
 
@@ -474,7 +468,6 @@ export type IapplyEntry1 = {
     uuToken?: string
     projectId?: number
   }
-
   response: ModelAndView
 }
 
@@ -532,6 +525,5 @@ export type IapplyWechat1 = {
     wxCode?: string
     projectId?: number
   }
-
   response: ModelAndView
 }

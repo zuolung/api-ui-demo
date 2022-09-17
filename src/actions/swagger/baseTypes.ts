@@ -12,7 +12,7 @@ export type ApiElectricAreaVO = {
    */
   schoolName: string
 }
-export type ApiElectricBuildingVO = {
+export type piElectricBuildingVO = {
   /**
    * @description 校区编码
    */
@@ -52,7 +52,7 @@ export type ApiElectricFloorVO = {
    */
   schoolName: string
 }
-export type ApiElectricOrderBackVO = {
+export type iElectricOrderBackVO = {
   /**
    * @description 订单号状态  0、处理中 1、已完成
    */
@@ -120,13 +120,13 @@ export type ApiElectricOrderVO = {
    */
   schoolName: string
 }
-export type ApiElectricPreOrderVO = {
+export type piElectricPreOrderVO = {
   /**
    * @description 电费订单号
    */
   orderCode: string
 }
-export type ApiElectricRoomRechargeTypeVO = {
+export type icRoomRechargeTypeVO = {
   /**
    * @description 充值类型名称
    */
@@ -136,7 +136,7 @@ export type ApiElectricRoomRechargeTypeVO = {
    */
   rechargeType: string
 }
-export type ApiElectricRoomSurplusBaseVO = {
+export type ricRoomSurplusBaseVO = {
   /**
    * @description 校区编码
    */
@@ -165,7 +165,7 @@ export type ApiElectricRoomSurplusBaseVO = {
    * @value 2
    * @description 充值类型列表
    */
-  rechargeTypeList: ApiElectricRoomRechargeTypeVO[]
+  rechargeTypeList: icRoomRechargeTypeVO[]
   /**
    * @description 房间编码
    */
@@ -182,9 +182,9 @@ export type ApiElectricRoomSurplusBaseVO = {
    * @value 2
    * @description 剩余量列表
    */
-  surplusList: ApiElectricRoomSurplusVO[]
+  surplusList: lectricRoomSurplusVO[]
 }
-export type ApiElectricRoomSurplusVO = {
+export type lectricRoomSurplusVO = {
   /**
    * @description 剩余金额
    */
@@ -460,7 +460,7 @@ export type AppJiaofeiPayListVO = {
    */
   userPhone: string
 }
-export type AppJiaofeiProjectStatVO = {
+export type JiaofeiProjectStatVO = {
   /**
    * @description 全部人数
    */
@@ -572,7 +572,7 @@ export type AuthUserParam = {
    */
   ymUserId: number
 }
-export type AuthWechatmsgPushApiVO = {
+export type thWechatmsgPushApiVO = {
   /**
    * @description 内容
    */
@@ -622,7 +622,7 @@ export type AuthWechatmsgPushApiVO = {
    */
   wechatTemplateId: string
 }
-export type AuthWechatmsgSchoolApiVO = {
+export type WechatmsgSchoolApiVO = {
   /**
    * @description 详细内容
    */
@@ -708,7 +708,7 @@ export type BaseDataDO = {
 /**
  * @description 月对账报表明细返回数据参数
  */
-export type BillMonthReportInfoVO = {
+export type illMonthReportInfoVO = {
   /**
    * @description 对账日期
    */
@@ -1065,7 +1065,7 @@ export type BunkInfoVO = {
    */
   status: number
 }
-export type CCBElectricApiRoomSurplusVO = {
+export type tricApiRoomSurplusVO = {
   /**
    * @description 校区编码
    */
@@ -1103,7 +1103,7 @@ export type CCBElectricApiRoomSurplusVO = {
    * @value 2
    * @description 充值类型列表
    */
-  rechargeTypeList: ApiElectricRoomRechargeTypeVO[]
+  rechargeTypeList: icRoomRechargeTypeVO[]
   /**
    * @description 房间编码
    */
@@ -1123,7 +1123,7 @@ export type CCBElectricApiRoomSurplusVO = {
    * @value 2
    * @description 剩余量列表
    */
-  surplusList: ApiElectricRoomSurplusVO[]
+  surplusList: lectricRoomSurplusVO[]
 }
 export type CCBElectricApiVO = {
   msg: string
@@ -1133,7 +1133,7 @@ export type CCBElectricApiVO = {
   status: string
   total: string
 }
-export type CCBElectricRechargeVOResponse = {
+export type icRechargeVOResponse = {
   cpPayNo: string
   msg: string
   orderCode: string
@@ -1329,7 +1329,7 @@ export type CenterAllDashboardVO = {
    */
   totalYiqingStr: string
 }
-export type CenterAppJiaofeiAmountVO = {
+export type erAppJiaofeiAmountVO = {
   /**
    * @description 未缴金额
    */
@@ -1343,7 +1343,7 @@ export type CenterAppJiaofeiAmountVO = {
    */
   receivableAmount: number
 }
-export type CenterAppJiaofeiDetialVO = {
+export type erAppJiaofeiDetialVO = {
   /**
    * @value #datetime()
    * @description 缴费开始时间
@@ -1353,7 +1353,7 @@ export type CenterAppJiaofeiDetialVO = {
    * @value 2
    * @description 自定义缴费方式,二级分类不为空时，可能存在金额分配信息
    */
-  centerJiaofeiProDicVo: CenterJiaofeiProDicVO[]
+  centerJiaofeiProDicVo: enterJiaofeiProDicVO[]
   /**
    * @description 关闭原因
    */
@@ -1500,7 +1500,7 @@ export type CenterAppJiaofeiDetialVO = {
    */
   typeId: number
 }
-export type CenterAppJiaofeiListVO = {
+export type nterAppJiaofeiListVO = {
   /**
    * @description 未缴金额
    */
@@ -1525,7 +1525,7 @@ export type CenterAppJiaofeiListVO = {
    * @value 2
    * @description 二级分类费用
    */
-  dicList: CenterJiaofeiProDicVO[]
+  dicList: enterJiaofeiProDicVO[]
   /**
    * @description 学历
    */
@@ -1631,19 +1631,19 @@ export type CenterAppJiaofeiListVO = {
    */
   userZhuan: string
 }
-export type CenterAppJiaofeiPayableVO = {
+export type rAppJiaofeiPayableVO = {
   /**
    * @value 2
    * @description 导入名单
    */
-  importPayableList: CenterAppJiaofeiListVO[]
+  importPayableList: nterAppJiaofeiListVO[]
   /**
    * @value 2
    * @description 第三方应付款列表
    */
-  thirdPayableList: CenterAppJiaofeiThirdPayableVO[]
+  thirdPayableList: iaofeiThirdPayableVO[]
 }
-export type CenterAppJiaofeiThirdPayableVO = {
+export type iaofeiThirdPayableVO = {
   /**
    * @description 易达帐户ID
    */
@@ -1726,7 +1726,7 @@ export type CenterAppJiaofeiThirdPayableVO = {
    */
   year: string
 }
-export type CenterAppJiaofeiUnpayVO = {
+export type terAppJiaofeiUnpayVO = {
   /**
    * @description 金额
    */
@@ -1736,7 +1736,7 @@ export type CenterAppJiaofeiUnpayVO = {
    */
   count: number
 }
-export type CenterAppJiaofeiUserVO = {
+export type nterAppJiaofeiUserVO = {
   /**
    * @description 姓名
    */
@@ -1746,7 +1746,7 @@ export type CenterAppJiaofeiUserVO = {
    */
   userNo: string
 }
-export type CenterCpBillCheckResultVO = {
+export type rCpBillCheckResultVO = {
   /**
    * @description 差额
    */
@@ -1784,7 +1784,7 @@ export type CenterCpBillCheckResultVO = {
    */
   realBillCount: number
 }
-export type CenterCpBillDetailImportVO = {
+export type CpBillDetailImportVO = {
   /**
    * @description 上传失败条数
    */
@@ -1861,7 +1861,7 @@ export type CenterCpBillDetailVO = {
    */
   userName: string
 }
-export type CenterCpBillPayTypeVO = {
+export type enterCpBillPayTypeVO = {
   /**
    * @description 支付方式
    */
@@ -1915,11 +1915,15 @@ export type CenterCustomConfigVO = {
    */
   updateTime: string
 }
-export type CenterCustomElectricConfigVO = {
+export type stomElectricConfigVO = {
   /**
    * @description 楼栋显示名
    */
   buildingShowName: string
+  /**
+   * @description 楼栋显示名
+   */
+  buildingShowNameEn: string
   /**
    * @value #datetime()
    * @description 创建时间
@@ -1946,6 +1950,10 @@ export type CenterCustomElectricConfigVO = {
    */
   floorShowName: string
   /**
+   * @description 楼层显示名
+   */
+  floorShowNameEn: string
+  /**
    * @description id
    */
   id: number
@@ -1970,6 +1978,10 @@ export type CenterCustomElectricConfigVO = {
    */
   roomShowName: string
   /**
+   * @description 房间显示名
+   */
+  roomShowNameEn: string
+  /**
    * @description 状态： 0、未启用 2、已启用
    */
   status: number
@@ -1977,6 +1989,10 @@ export type CenterCustomElectricConfigVO = {
    * @description 标题显示名称
    */
   titleShowName: string
+  /**
+   * @description 标题显示名称英文
+   */
+  titleShowNameEn: string
   /**
    * @value #datetime()
    * @description 修改时间
@@ -1986,8 +2002,12 @@ export type CenterCustomElectricConfigVO = {
    * @description 校区显示名
    */
   zoneShowName: string
+  /**
+   * @description 校区显示名
+   */
+  zoneShowNameEn: string
 }
-export type CenterIndexTotalDataVO = {
+export type nterIndexTotalDataVO = {
   /**
    * @description 平均交易金额
    */
@@ -2025,7 +2045,7 @@ export type CenterIndexTotalDataVO = {
    */
   totalTranMoney: string
 }
-export type CenterJiaofeiAddedValueVO = {
+export type rJiaofeiAddedValueVO = {
   /**
    * @description 编码
    */
@@ -2035,7 +2055,7 @@ export type CenterJiaofeiAddedValueVO = {
    */
   name: string
 }
-export type CenterJiaofeiBatchRefundFormVO = {
+export type feiBatchRefundFormVO = {
   /**
    * @description 批量退款详情
    */
@@ -2079,7 +2099,7 @@ export type CenterJiaofeiBatchRefundFormVO = {
    */
   updateTime: string
 }
-export type CenterJiaofeiBatchRefundVO = {
+export type JiaofeiBatchRefundVO = {
   /**
    * @description 批量退款单id
    */
@@ -2205,7 +2225,7 @@ export type CenterJiaofeiBatchRefundVO = {
    */
   userPhone: string
 }
-export type CenterJiaofeiBillCustomVO = {
+export type rJiaofeiBillCustomVO = {
   /**
    * @description 项目批次
    */
@@ -2285,7 +2305,7 @@ export type CenterJiaofeiBillCustomVO = {
    */
   userNo: string
 }
-export type CenterJiaofeiBillItemVO = {
+export type terJiaofeiBillItemVO = {
   /**
    * @description 批次
    */
@@ -2339,7 +2359,7 @@ export type CenterJiaofeiBillItemVO = {
    */
   schoolName: string
 }
-export type CenterJiaofeiBillTemplateVO = {
+export type iaofeiBillTemplateVO = {
   /**
    * @description 票据内容
    */
@@ -2430,7 +2450,7 @@ export type CenterJiaofeiBillVO = {
    * @value 2
    * @description 项目列表
    */
-  items: CenterJiaofeiBillItemVO[]
+  items: terJiaofeiBillItemVO[]
   /**
    * @description 操作
    */
@@ -2476,7 +2496,7 @@ export type CenterJiaofeiBillVO = {
    */
   userClass: string
 }
-export type CenterJiaofeiConfigVO = {
+export type enterJiaofeiConfigVO = {
   /**
    * @description 支付商户编码
    */
@@ -2585,7 +2605,7 @@ export type CenterJiaofeiConfigVO = {
    */
   updateTime: string
 }
-export type CenterJiaofeiDeptLinkProjectVO = {
+export type feiDeptLinkProjectVO = {
   /**
    * @description 部门名称
    */
@@ -2602,7 +2622,7 @@ export type CenterJiaofeiDeptLinkProjectVO = {
    * @value 2
    * @description 项目集合
    */
-  projectList: CenterJiaofeiLinkProjectVO[]
+  projectList: JiaofeiLinkProjectVO[]
 }
 export type CenterJiaofeiDeptVO = {
   /**
@@ -2688,7 +2708,7 @@ export type CenterJiaofeiDeptVO = {
    */
   updateTime: string
 }
-export type CenterJiaofeiDictionarySonVO = {
+export type aofeiDictionarySonVO = {
   /**
    * @description 二级分类名称
    */
@@ -2702,7 +2722,7 @@ export type CenterJiaofeiDictionarySonVO = {
    */
   id: number
 }
-export type CenterJiaofeiDictionaryVO = {
+export type rJiaofeiDictionaryVO = {
   /**
    * @description 创建人
    */
@@ -2751,7 +2771,7 @@ export type CenterJiaofeiDictionaryVO = {
   /**
    * @value 2
    */
-  sonDictionaryDo: CenterJiaofeiDictionarySonVO[]
+  sonDictionaryDo: aofeiDictionarySonVO[]
   /**
    * @description 二级分类状态 0:禁用 1:启用
    */
@@ -2766,7 +2786,7 @@ export type CenterJiaofeiDictionaryVO = {
    */
   updateTime: string
 }
-export type CenterJiaofeiInvoiceCodeVO = {
+export type JiaofeiInvoiceCodeVO = {
   /**
    * @description 增值税特殊管理
    */
@@ -2866,7 +2886,7 @@ export type CenterJiaofeiInvoiceCodeVO = {
    */
   updateTime: string
 }
-export type CenterJiaofeiInvoiceConfigVO = {
+export type aofeiInvoiceConfigVO = {
   /**
    * @description appid
    */
@@ -2938,7 +2958,7 @@ export type CenterJiaofeiInvoiceConfigVO = {
    */
   url: string
 }
-export type CenterJiaofeiInvoiceInfoDO = {
+export type JiaofeiInvoiceInfoDO = {
   /**
    * @description 地址
    */
@@ -3010,7 +3030,7 @@ export type CenterJiaofeiInvoiceInfoDO = {
    */
   updateTime: string
 }
-export type CenterJiaofeiInvoiceInfoVO = {
+export type JiaofeiInvoiceInfoVO = {
   /**
    * @description 地址
    */
@@ -3090,7 +3110,7 @@ export type CenterJiaofeiInvoiceInfoVO = {
    */
   updateTime: string
 }
-export type CenterJiaofeiInvoiceItemVO = {
+export type JiaofeiInvoiceItemVO = {
   /**
    * @description 增值税特殊管理
    */
@@ -3206,7 +3226,7 @@ export type CenterJiaofeiInvoiceItemVO = {
    */
   zeroRateFlag: number
 }
-export type CenterJiaofeiInvoiceOrderVO = {
+export type iaofeiInvoiceOrderVO = {
   /**
    * @description 购买方
    */
@@ -3302,7 +3322,7 @@ export type CenterJiaofeiInvoiceOrderVO = {
    * @value 2
    * @description 明细
    */
-  itemList: CenterJiaofeiInvoiceItemVO[]
+  itemList: JiaofeiInvoiceItemVO[]
   /**
    * @description 明细名称
    */
@@ -3409,7 +3429,7 @@ export type CenterJiaofeiInvoiceOrderVO = {
    */
   userId: number
 }
-export type CenterJiaofeiInvoiceSourceVO = {
+export type aofeiInvoiceSourceVO = {
   /**
    * @description 编码
    */
@@ -3419,7 +3439,7 @@ export type CenterJiaofeiInvoiceSourceVO = {
    */
   name: string
 }
-export type CenterJiaofeiInvoiceTotalVO = {
+export type iaofeiInvoiceTotalVO = {
   /**
    * @description 总金额
    */
@@ -3429,7 +3449,7 @@ export type CenterJiaofeiInvoiceTotalVO = {
    */
   totalTax: number
 }
-export type CenterJiaofeiInvoiceTypeVO = {
+export type JiaofeiInvoiceTypeVO = {
   /**
    * @description 地址
    */
@@ -3525,7 +3545,7 @@ export type CenterJiaofeiInvoiceTypeVO = {
    */
   userTypeName: string
 }
-export type CenterJiaofeiLinkProjectVO = {
+export type JiaofeiLinkProjectVO = {
   /**
    * @description 有权限
    */
@@ -3539,7 +3559,7 @@ export type CenterJiaofeiLinkProjectVO = {
    */
   projectName: string
 }
-export type CenterJiaofeiListCountVO = {
+export type erJiaofeiListCountVO = {
   /**
    * @description 已支付
    */
@@ -3557,7 +3577,7 @@ export type CenterJiaofeiListCountVO = {
    */
   unPay: number
 }
-export type CenterJiaofeiListReductionVO = {
+export type aofeiListReductionVO = {
   /**
    * @description 数量
    */
@@ -4061,7 +4081,7 @@ export type CenterJiaofeiOrderVO = {
    */
   userPhone: string
 }
-export type CenterJiaofeiOrderVO_1 = {
+export type nterJiaofeiOrderVO_1 = {
   apiId: number
   /**
    * @description 批次
@@ -4152,7 +4172,7 @@ export type CenterJiaofeiOrderVO_1 = {
   totalNum: number
   unpaidNum: number
 }
-export type CenterJiaofeiPaymentVO = {
+export type nterJiaofeiPaymentVO = {
   /**
    * @description 缴费名单ID
    */
@@ -4178,7 +4198,7 @@ export type CenterJiaofeiPaymentVO = {
    */
   projectName: string
 }
-export type CenterJiaofeiPermissionsVO = {
+export type JiaofeiPermissionsVO = {
   /**
    * @description 创建人
    */
@@ -4238,7 +4258,7 @@ export type CenterJiaofeiPermissionsVO = {
    */
   userName: string
 }
-export type CenterJiaofeiProBatchVO = {
+export type terJiaofeiProBatchVO = {
   /**
    * @description 批次
    */
@@ -4302,7 +4322,7 @@ export type CenterJiaofeiProBatchVO = {
    */
   updateTime: string
 }
-export type CenterJiaofeiProDicVO = {
+export type enterJiaofeiProDicVO = {
   /**
    * @description 二级分类Id
    */
@@ -4348,12 +4368,12 @@ export type CenterJiaofeiProDicVO = {
    */
   schoolName: string
 }
-export type CenterJiaofeiProjectTypeVO = {
+export type JiaofeiProjectTypeVO = {
   /**
    * @value 2
    * @description 缴费项目信息
    */
-  centerJiaofeiProjectVo: CenterSchoolJiaofeiProjectVO[]
+  centerJiaofeiProjectVo: hoolJiaofeiProjectVO[]
   /**
    * @description 分类ID
    */
@@ -4367,7 +4387,7 @@ export type CenterJiaofeiProjectTypeVO = {
    */
   typeNameEn: string
 }
-export type CenterJiaofeiProjectVO = {
+export type nterJiaofeiProjectVO = {
   /**
    * @description 批次
    */
@@ -4649,7 +4669,7 @@ export type CenterJiaofeiProjectVO = {
    */
   updateTime: string
 }
-export type CenterJiaofeiRefundVO = {
+export type enterJiaofeiRefundVO = {
   /**
    * @description 批量退款id
    */
@@ -4799,7 +4819,7 @@ export type CenterJiaofeiRefundVO = {
    */
   userPhone: string
 }
-export type CenterJiaofeiReportExportVO = {
+export type iaofeiReportExportVO = {
   /**
    * @description 批次
    */
@@ -4841,7 +4861,7 @@ export type CenterJiaofeiReportExportVO = {
   totalNum: number
   unpaidNum: number
 }
-export type CenterJiaofeiSchoolConfigVO = {
+export type iaofeiSchoolConfigVO = {
   /**
    * @description 缴费配置ID
    */
@@ -4855,12 +4875,12 @@ export type CenterJiaofeiSchoolConfigVO = {
    */
   thirdName: string
 }
-export type CenterJiaofeiSchoolShowConfigVO = {
+export type eiSchoolShowConfigVO = {
   /**
    * @value 2
    * @description 接口配置
    */
-  configList: CenterJiaofeiSchoolConfigVO[]
+  configList: iaofeiSchoolConfigVO[]
   /**
    * @value #datetime()
    * @description 创建时间
@@ -4943,7 +4963,7 @@ export type CenterJiaofeiSchoolShowConfigVO = {
    */
   webIcon: string
 }
-export type CenterJiaofeiShowConfigVO = {
+export type rJiaofeiShowConfigVO = {
   /**
    * @description 是否校验一卡通信息 0否 1是
    */
@@ -5140,7 +5160,7 @@ export type CenterJiaofeiTypeVO = {
    */
   updateTime: string
 }
-export type CenterJiaofeiTypeVO_1 = {
+export type enterJiaofeiTypeVO_1 = {
   /**
    * @description 创建人
    */
@@ -5472,6 +5492,8 @@ export type CenterOrderNetVO = {
   zoneName: string
 }
 export type CenterOrderSpecialVO = {
+  configId: number
+  configName: string
   /**
    * @value #datetime()
    * @description 创建时间
@@ -5617,7 +5639,7 @@ export type CenterOrderStatsVO = {
    */
   tranMoney: string
 }
-export type CenterPincardConfigVO = {
+export type enterPincardConfigVO = {
   /**
    * @value #datetime()
    * @description 受理时间
@@ -5662,7 +5684,7 @@ export type CenterPincardConfigVO = {
    */
   transferWay: number
 }
-export type CenterPincardSubsidyVO = {
+export type nterPincardSubsidyVO = {
   /**
    * @description 打款人数
    */
@@ -5943,7 +5965,7 @@ export type CenterSchoolAreaVO = {
    */
   versionStr: string
 }
-export type CenterSchoolBuildingVO = {
+export type nterSchoolBuildingVO = {
   /**
    * @description 校区编码
    */
@@ -6059,7 +6081,7 @@ export type CenterSchoolFloorVO = {
    */
   updateTime: string
 }
-export type CenterSchoolJiaofeiConfigVO = {
+export type choolJiaofeiConfigVO = {
   /**
    * @description 支付商户编码
    */
@@ -6131,7 +6153,7 @@ export type CenterSchoolJiaofeiConfigVO = {
    */
   updateTime: string
 }
-export type CenterSchoolJiaofeiDeptVO = {
+export type rSchoolJiaofeiDeptVO = {
   /**
    * @description 商户编号
    */
@@ -6191,7 +6213,7 @@ export type CenterSchoolJiaofeiDeptVO = {
    */
   updateTime: string
 }
-export type CenterSchoolJiaofeiDictionarySonVO = {
+export type aofeiDictionarySonVO1 = {
   /**
    * @description 二级分类名称
    */
@@ -6205,7 +6227,7 @@ export type CenterSchoolJiaofeiDictionarySonVO = {
    */
   id: number
 }
-export type CenterSchoolJiaofeiDictionaryVO = {
+export type lJiaofeiDictionaryVO = {
   /**
    * @description 创建人
    */
@@ -6247,7 +6269,7 @@ export type CenterSchoolJiaofeiDictionaryVO = {
    * @value 2
    * @description 副选项信息
    */
-  sonDictionaryVo: CenterSchoolJiaofeiDictionarySonVO[]
+  sonDictionaryVo: aofeiDictionarySonVO1[]
   /**
    * @description 二级分类状态 0:禁用 1:启用
    */
@@ -6262,7 +6284,7 @@ export type CenterSchoolJiaofeiDictionaryVO = {
    */
   updateTime: string
 }
-export type CenterSchoolJiaofeiOrderVO = {
+export type SchoolJiaofeiOrderVO = {
   /**
    * @description 账户id
    */
@@ -6434,7 +6456,7 @@ export type CenterSchoolJiaofeiOrderVO = {
    * @value 2
    * @description 退款订单
    */
-  refundOrder: CenterJiaofeiRefundVO[]
+  refundOrder: enterJiaofeiRefundVO[]
   /**
    * @description 备注
    */
@@ -6502,7 +6524,7 @@ export type CenterSchoolJiaofeiOrderVO = {
    */
   userPhone: string
 }
-export type CenterSchoolJiaofeiProDicVO = {
+export type choolJiaofeiProDicVO = {
   /**
    * @description 二级分类Id
    */
@@ -6536,7 +6558,7 @@ export type CenterSchoolJiaofeiProDicVO = {
    */
   schoolName: string
 }
-export type CenterSchoolJiaofeiProjectAndAmountVO = {
+export type eiProjectAndAmountVO = {
   /**
    * @description 二级分类费用
    */
@@ -6562,7 +6584,7 @@ export type CenterSchoolJiaofeiProjectAndAmountVO = {
    */
   schoolCode: string
 }
-export type CenterSchoolJiaofeiProjectUrlVO = {
+export type lJiaofeiProjectUrlVO = {
   /**
    * @description 缴费h5url
    */
@@ -6576,7 +6598,7 @@ export type CenterSchoolJiaofeiProjectUrlVO = {
    */
   qrcodeUrl: string
 }
-export type CenterSchoolJiaofeiProjectVO = {
+export type hoolJiaofeiProjectVO = {
   /**
    * @value #datetime()
    * @description 缴费开始时间
@@ -6824,7 +6846,7 @@ export type CenterSchoolJiaofeiProjectVO = {
    */
   updateTime: string
 }
-export type CenterSchoolJiaofeiReportVO = {
+export type choolJiaofeiReportVO = {
   /**
    * @description 缴费总和
    */
@@ -6840,7 +6862,7 @@ export type CenterSchoolJiaofeiReportVO = {
   /**
    * @description 分页缴费统计数据
    */
-  page: PageResultCenterJiaofeiOrderVO_1
+  page: nterJiaofeiOrderVO_11
   /**
    * @description 退款总和
    */
@@ -6862,7 +6884,7 @@ export type CenterSchoolJiaofeiReportVO = {
    */
   tableReportCount: number
 }
-export type CenterSchoolRoomUserVO = {
+export type nterSchoolRoomUserVO = {
   /**
    * @description 校区ID
    */
@@ -7021,12 +7043,14 @@ export type CenterSchoolRoomVO = {
    */
   updateTime: string
 }
-export type CenterSpecialConfigVO = {
+export type enterSpecialConfigVO = {
   /**
    * @value #datetime()
    * @description 创建时间
    */
   createTime: string
+  display: number
+  displayStr: string
   firm: number
   /**
    * @description 厂商
@@ -7057,17 +7081,62 @@ export type CenterSpecialConfigVO = {
    */
   zoneName: string
 }
-export type CenterSysLoginQrCodeStatusVO = {
+export type enterSpecialDeviceVO = {
+  /**
+   * @description 数据
+   */
+  content: string
+  /**
+   * @value #datetime()
+   * @description 创建时间
+   */
+  createTime: string
+  /**
+   * @description 设备支付编号
+   */
+  deviceId: string
+  /**
+   * @description 主键
+   */
+  id: number
+  /**
+   * @description 操作
+   */
+  operates: string[]
+  /**
+   * @description 操作
+   */
+  operation: string
+  qrCode: string
+  /**
+   * @description 备注
+   */
+  remark: string
+  /**
+   * @description 学校编码
+   */
+  schoolCode: string
+  /**
+   * @value #datetime()
+   * @description 修改时间
+   */
+  updateTime: string
+  /**
+   * @description 机器码
+   */
+  uuid: string
+}
+export type sLoginQrCodeStatusVO = {
   /**
    * @description 二维码状态 0、生成 1、 扫码中  2、扫码成功  -1、已失效
    */
   status: number
 }
-export type CenterSysMenuTree4LoginVO = {
+export type rSysMenuTree4LoginVO = {
   /**
    * @value 2
    */
-  childMenus: CenterSysMenuTree4LoginVO[]
+  childMenus: rSysMenuTree4LoginVO[]
   code: string
   /**
    * @description 企业别名
@@ -7222,7 +7291,7 @@ export type CenterSysRoleVO = {
    */
   updateTime: string
 }
-export type CenterSysScanLoginQrCodeVO = {
+export type SysScanLoginQrCodeVO = {
   /**
    * @description 二维码
    */
@@ -7232,7 +7301,7 @@ export type CenterSysScanLoginQrCodeVO = {
    */
   qrticket: string
 }
-export type CenterSysSchoolManagerUserVO = {
+export type sSchoolManagerUserVO = {
   schoolCode: string
   userId: number
 }
@@ -7261,7 +7330,7 @@ export type CenterSysSchoolVO = {
 /**
  * @description 用户功能权限查看VO
  */
-export type CenterSysUserMenuListVO = {
+export type terSysUserMenuListVO = {
   /**
    * @description 已选中的菜单ids
    */
@@ -7277,7 +7346,7 @@ export type CenterSysUserMenuListVO = {
    */
   menuTreeList: CenterSysMenuTreeVO[]
 }
-export type CenterSysUserSchoolListVO = {
+export type rSysUserSchoolListVO = {
   /**
    * @description id、学校编码
    */
@@ -7570,23 +7639,23 @@ export type CommResponse = {
   statusCode: number
   success: boolean
 }
-export type CommResponseCenterJiaofeiInvoiceOrderVO = {
+export type iaofeiInvoiceOrderVO1 = {
   alertType: number
   bizCode: string
-  data: CenterJiaofeiInvoiceOrderVO
+  data: iaofeiInvoiceOrderVO
   message: string
   statusCode: number
   success: boolean
 }
-export type CommResponseCenterJiaofeiInvoiceTotalVO = {
+export type iaofeiInvoiceTotalVO1 = {
   alertType: number
   bizCode: string
-  data: CenterJiaofeiInvoiceTotalVO
+  data: iaofeiInvoiceTotalVO
   message: string
   statusCode: number
   success: boolean
 }
-export type CommResponseCenterJiaofeiListVO = {
+export type eCenterJiaofeiListVO = {
   alertType: number
   bizCode: string
   data: CenterJiaofeiListVO
@@ -7594,23 +7663,23 @@ export type CommResponseCenterJiaofeiListVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseCenterPincardConfigVO = {
+export type enterPincardConfigVO1 = {
   alertType: number
   bizCode: string
-  data: CenterPincardConfigVO
+  data: enterPincardConfigVO
   message: string
   statusCode: number
   success: boolean
 }
-export type CommResponseCenterPincardSubsidyVO = {
+export type nterPincardSubsidyVO1 = {
   alertType: number
   bizCode: string
-  data: CenterPincardSubsidyVO
+  data: nterPincardSubsidyVO
   message: string
   statusCode: number
   success: boolean
 }
-export type CommResponseCenterPincardVO = {
+export type ponseCenterPincardVO = {
   alertType: number
   bizCode: string
   data: CenterPincardVO
@@ -7618,7 +7687,7 @@ export type CommResponseCenterPincardVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseCenterWaterConfigVO = {
+export type eCenterWaterConfigVO = {
   alertType: number
   bizCode: string
   data: CenterWaterConfigVO
@@ -7626,7 +7695,7 @@ export type CommResponseCenterWaterConfigVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseDonateItemVO = {
+export type ResponseDonateItemVO = {
   alertType: number
   bizCode: string
   data: DonateItemVO
@@ -7634,7 +7703,7 @@ export type CommResponseDonateItemVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseDonateOrderTotalVO = {
+export type seDonateOrderTotalVO = {
   alertType: number
   bizCode: string
   data: DonateOrderTotalVO
@@ -7642,7 +7711,7 @@ export type CommResponseDonateOrderTotalVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseDonateUserOrderVO = {
+export type nseDonateUserOrderVO = {
   alertType: number
   bizCode: string
   data: DonateUserOrderVO
@@ -7650,7 +7719,7 @@ export type CommResponseDonateUserOrderVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseDonateUserVO = {
+export type ResponseDonateUserVO = {
   alertType: number
   bizCode: string
   data: DonateUserVO
@@ -7658,7 +7727,7 @@ export type CommResponseDonateUserVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseOperationLogVO = {
+export type sponseOperationLogVO = {
   alertType: number
   bizCode: string
   data: OperationLogVO
@@ -7666,15 +7735,15 @@ export type CommResponseOperationLogVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseSubsidyItemListTotalMoneyVO = {
+export type ItemListTotalMoneyVO1 = {
   alertType: number
   bizCode: string
-  data: SubsidyItemListTotalMoneyVO
+  data: ItemListTotalMoneyVO
   message: string
   statusCode: number
   success: boolean
 }
-export type CommResponseSubsidyItemListVO = {
+export type nseSubsidyItemListVO = {
   alertType: number
   bizCode: string
   data: SubsidyItemListVO
@@ -7682,7 +7751,7 @@ export type CommResponseSubsidyItemListVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseSubsidyItemVO = {
+export type esponseSubsidyItemVO = {
   alertType: number
   bizCode: string
   data: SubsidyItemVO
@@ -7690,7 +7759,7 @@ export type CommResponseSubsidyItemVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseSubsidyNoticeVO = {
+export type ponseSubsidyNoticeVO = {
   alertType: number
   bizCode: string
   data: SubsidyNoticeVO
@@ -7698,15 +7767,15 @@ export type CommResponseSubsidyNoticeVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnApplicationConfigVO = {
+export type nApplicationConfigVO1 = {
   alertType: number
   bizCode: string
-  data: WnApplicationConfigVO
+  data: nApplicationConfigVO
   message: string
   statusCode: number
   success: boolean
 }
-export type CommResponseWnBatchVO = {
+export type ommResponseWnBatchVO = {
   alertType: number
   bizCode: string
   data: WnBatchVO
@@ -7714,7 +7783,7 @@ export type CommResponseWnBatchVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnBuildingVO = {
+export type ResponseWnBuildingVO = {
   alertType: number
   bizCode: string
   data: WnBuildingVO
@@ -7722,7 +7791,7 @@ export type CommResponseWnBuildingVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnDeviceCheckInfoVO = {
+export type eWnDeviceCheckInfoVO = {
   alertType: number
   bizCode: string
   data: WnDeviceCheckInfoVO
@@ -7730,7 +7799,7 @@ export type CommResponseWnDeviceCheckInfoVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnFloorVO = {
+export type ommResponseWnFloorVO = {
   alertType: number
   bizCode: string
   data: WnFloorVO
@@ -7738,7 +7807,7 @@ export type CommResponseWnFloorVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnFormUserApiVO = {
+export type ponseWnFormUserApiVO = {
   alertType: number
   bizCode: string
   data: WnFormUserApiVO
@@ -7746,15 +7815,15 @@ export type CommResponseWnFormUserApiVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnGenerateStudentNoVO = {
+export type nGenerateStudentNoVO1 = {
   alertType: number
   bizCode: string
-  data: WnGenerateStudentNoVO
+  data: nGenerateStudentNoVO
   message: string
   statusCode: number
   success: boolean
 }
-export type CommResponseWnHallFormVO = {
+export type ResponseWnHallFormVO = {
   alertType: number
   bizCode: string
   data: WnHallFormVO
@@ -7770,7 +7839,7 @@ export type CommResponseWnHallVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnInStudentRoomVO = {
+export type nseWnInStudentRoomVO = {
   alertType: number
   bizCode: string
   data: WnInStudentRoomVO
@@ -7778,7 +7847,7 @@ export type CommResponseWnInStudentRoomVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnInStudentVO = {
+export type esponseWnInStudentVO = {
   alertType: number
   bizCode: string
   data: WnInStudentVO
@@ -7786,15 +7855,15 @@ export type CommResponseWnInStudentVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnMajorStudentCountVO = {
+export type nMajorStudentCountVO1 = {
   alertType: number
   bizCode: string
-  data: WnMajorStudentCountVO
+  data: nMajorStudentCountVO
   message: string
   statusCode: number
   success: boolean
 }
-export type CommResponseWnPayConfigDetailVO = {
+export type eWnPayConfigDetailVO = {
   alertType: number
   bizCode: string
   data: WnPayConfigDetailVO
@@ -7802,7 +7871,7 @@ export type CommResponseWnPayConfigDetailVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnProcessConfigVO = {
+export type nseWnProcessConfigVO = {
   alertType: number
   bizCode: string
   data: WnProcessConfigVO
@@ -7810,7 +7879,7 @@ export type CommResponseWnProcessConfigVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnProductVO = {
+export type mResponseWnProductVO = {
   alertType: number
   bizCode: string
   data: WnProductVO
@@ -7818,15 +7887,15 @@ export type CommResponseWnProductVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnReceiveNumberTotalVO = {
+export type ReceiveNumberTotalVO1 = {
   alertType: number
   bizCode: string
-  data: WnReceiveNumberTotalVO
+  data: ReceiveNumberTotalVO
   message: string
   statusCode: number
   success: boolean
 }
-export type CommResponseWnReceiveOrderVO = {
+export type onseWnReceiveOrderVO = {
   alertType: number
   bizCode: string
   data: WnReceiveOrderVO
@@ -7834,15 +7903,15 @@ export type CommResponseWnReceiveOrderVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnRoomAccommodateCountShowVO = {
+export type commodateCountShowVO1 = {
   alertType: number
   bizCode: string
-  data: WnRoomAccommodateCountShowVO
+  data: commodateCountShowVO
   message: string
   statusCode: number
   success: boolean
 }
-export type CommResponseWnRoomFeeConfigVO = {
+export type nseWnRoomFeeConfigVO = {
   alertType: number
   bizCode: string
   data: WnRoomFeeConfigVO
@@ -7858,15 +7927,15 @@ export type CommResponseWnRoomVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnSchoolAllDashboardVO = {
+export type SchoolAllDashboardVO1 = {
   alertType: number
   bizCode: string
-  data: WnSchoolAllDashboardVO
+  data: SchoolAllDashboardVO
   message: string
   statusCode: number
   success: boolean
 }
-export type CommResponseWnSelectPhoneOrderVO = {
+export type WnSelectPhoneOrderVO1 = {
   alertType: number
   bizCode: string
   data: WnSelectPhoneOrderVO
@@ -7874,15 +7943,15 @@ export type CommResponseWnSelectPhoneOrderVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnSelectPhonePackageVO = {
+export type SelectPhonePackageVO1 = {
   alertType: number
   bizCode: string
-  data: WnSelectPhonePackageVO
+  data: SelectPhonePackageVO
   message: string
   statusCode: number
   success: boolean
 }
-export type CommResponseWnSelectPhoneVO = {
+export type ponseWnSelectPhoneVO = {
   alertType: number
   bizCode: string
   data: WnSelectPhoneVO
@@ -7890,7 +7959,7 @@ export type CommResponseWnSelectPhoneVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnStudentBaseApiVO = {
+export type seWnStudentBaseApiVO = {
   alertType: number
   bizCode: string
   data: WnStudentBaseApiVO
@@ -7898,7 +7967,7 @@ export type CommResponseWnStudentBaseApiVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnStudentBaseVO = {
+export type ponseWnStudentBaseVO = {
   alertType: number
   bizCode: string
   data: WnStudentBaseVO
@@ -7906,23 +7975,23 @@ export type CommResponseWnStudentBaseVO = {
   statusCode: number
   success: boolean
 }
-export type CommResponseWnStudentDashboardViewVO = {
+export type udentDashboardViewVO1 = {
   alertType: number
   bizCode: string
-  data: WnStudentDashboardViewVO
+  data: udentDashboardViewVO
   message: string
   statusCode: number
   success: boolean
 }
-export type CommResponseWnStudentRegisterBaseApiVO = {
+export type entRegisterBaseApiVO1 = {
   alertType: number
   bizCode: string
-  data: WnStudentRegisterBaseApiVO
+  data: entRegisterBaseApiVO
   message: string
   statusCode: number
   success: boolean
 }
-export type CommResponseWnStudentToClassVO = {
+export type seWnStudentToClassVO = {
   alertType: number
   bizCode: string
   data: WnStudentToClassVO
@@ -7934,6 +8003,14 @@ export type CommResponseWnUnitVO = {
   alertType: number
   bizCode: string
   data: WnUnitVO
+  message: string
+  statusCode: number
+  success: boolean
+}
+export type seWnZfJiafeiStatusVO = {
+  alertType: number
+  bizCode: string
+  data: WnZfJiafeiStatusVO
   message: string
   statusCode: number
   success: boolean
@@ -7970,7 +8047,7 @@ export type CommResponse文章返回参数 = {
   statusCode: number
   success: boolean
 }
-export type CommResponse获取预览信息返回VO = {
+export type mmResponse获取预览信息返回VO = {
   alertType: number
   bizCode: string
   data: 获取预览信息返回VO
@@ -8058,7 +8135,7 @@ export type CompusArticleFaqVO = {
    */
   updateTime: string
 }
-export type CompusAssociationActivityDO = {
+export type ssociationActivityDO = {
   activityAddress: string
   /**
    * @value #datetime()
@@ -8111,7 +8188,7 @@ export type CompusAssociationActivityDO = {
    */
   updateTime: string
 }
-export type CompusAssociationActivityTypeVO = {
+export type iationActivityTypeVO = {
   /**
    * @value #datetime()
    */
@@ -8124,7 +8201,7 @@ export type CompusAssociationActivityTypeVO = {
   typeName: string
   typeSort: number
 }
-export type CompusAssociationActivityUserVO = {
+export type iationActivityUserVO = {
   /**
    * @value #datetime()
    */
@@ -8138,7 +8215,7 @@ export type CompusAssociationActivityUserVO = {
   userId: number
   userName: string
 }
-export type CompusAssociationActivityVO = {
+export type ssociationActivityVO = {
   activityName: string
   activityStatusStr: string
   activity_end_time: string
@@ -8158,7 +8235,7 @@ export type CompusAssociationActivityVO = {
   statusStr: string
   typeName: string
 }
-export type CompusAssociationBannerVO = {
+export type sAssociationBannerVO = {
   activityId: number
   activityName: string
   associationId: number
@@ -8218,7 +8295,7 @@ export type CompusAssociationDO = {
   updateTime: string
   userNum: number
 }
-export type CompusAssociationUserVO = {
+export type pusAssociationUserVO = {
   applyIntro: string
   department: string
   id: number
@@ -8836,7 +8913,7 @@ export type EncryptKeyVO = {
    */
   publicKey: string
 }
-export type FrontSchoolBuildingVO = {
+export type rontSchoolBuildingVO = {
   /**
    * @description 校区编码
    */
@@ -9343,7 +9420,7 @@ export type MarketingFormApplyVO = {
    */
   phone: string
 }
-export type MarketingFormDetailVO = {
+export type arketingFormDetailVO = {
   /**
    * @description 结束时间
    */
@@ -9420,7 +9497,7 @@ export type MarketingFormNodeVO = {
    */
   nodeType: number
 }
-export type MarketingFormSchoolSettingVO = {
+export type gFormSchoolSettingVO = {
   /**
    * @description 申请发布人类型 0:指定人 1:所有人
    */
@@ -9477,7 +9554,7 @@ export type MarketingFormVO = {
    */
   updateTime: string
 }
-export type MarketingSchoolUserNewVO = {
+export type etingSchoolUserNewVO = {
   /**
    * @description 目前居住地
    */
@@ -9855,7 +9932,7 @@ export type MarketingSchoolUserNewVO = {
    */
   vaccineTwoTime: string
 }
-export type MarketingSchoolUserVO = {
+export type arketingSchoolUserVO = {
   /**
    * @description 楼栋
    */
@@ -10046,7 +10123,7 @@ export type OperationLogVO = {
    */
   userName: string
 }
-export type PageResultApiElectricAreaVO = {
+export type ultApiElectricAreaVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10059,7 +10136,7 @@ export type PageResultApiElectricAreaVO = {
   success: boolean
   total: number
 }
-export type PageResultApiElectricBuildingVO = {
+export type piElectricBuildingVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10067,12 +10144,12 @@ export type PageResultApiElectricBuildingVO = {
   /**
    * @value 2
    */
-  rows: ApiElectricBuildingVO[]
+  rows: piElectricBuildingVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultApiElectricFloorVO = {
+export type ltApiElectricFloorVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10085,7 +10162,7 @@ export type PageResultApiElectricFloorVO = {
   success: boolean
   total: number
 }
-export type PageResultApiElectricRoomVO = {
+export type ultApiElectricRoomVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10098,7 +10175,7 @@ export type PageResultApiElectricRoomVO = {
   success: boolean
   total: number
 }
-export type PageResultApiPayCenterListVO = {
+export type ltApiPayCenterListVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10111,7 +10188,7 @@ export type PageResultApiPayCenterListVO = {
   success: boolean
   total: number
 }
-export type PageResultApiQueryOrderPageVO = {
+export type tApiQueryOrderPageVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10124,7 +10201,7 @@ export type PageResultApiQueryOrderPageVO = {
   success: boolean
   total: number
 }
-export type PageResultAppJiaofeiListStatVO = {
+export type AppJiaofeiListStatVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10137,7 +10214,7 @@ export type PageResultAppJiaofeiListStatVO = {
   success: boolean
   total: number
 }
-export type PageResultAppJiaofeiPayListVO = {
+export type tAppJiaofeiPayListVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10150,7 +10227,7 @@ export type PageResultAppJiaofeiPayListVO = {
   success: boolean
   total: number
 }
-export type PageResultAppJiaofeiProjectStatVO = {
+export type JiaofeiProjectStatVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10158,7 +10235,7 @@ export type PageResultAppJiaofeiProjectStatVO = {
   /**
    * @value 2
    */
-  rows: AppJiaofeiProjectStatVO[]
+  rows: JiaofeiProjectStatVO[]
   statusCode: number
   success: boolean
   total: number
@@ -10176,7 +10253,7 @@ export type PageResultAuthOrgVO = {
   success: boolean
   total: number
 }
-export type PageResultAuthWechatmsgPushApiVO = {
+export type thWechatmsgPushApiVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10184,12 +10261,12 @@ export type PageResultAuthWechatmsgPushApiVO = {
   /**
    * @value 2
    */
-  rows: AuthWechatmsgPushApiVO[]
+  rows: thWechatmsgPushApiVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultAuthWechatmsgSchoolApiVO = {
+export type WechatmsgSchoolApiVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10197,7 +10274,7 @@ export type PageResultAuthWechatmsgSchoolApiVO = {
   /**
    * @value 2
    */
-  rows: AuthWechatmsgSchoolApiVO[]
+  rows: WechatmsgSchoolApiVO[]
   statusCode: number
   success: boolean
   total: number
@@ -10215,7 +10292,7 @@ export type PageResultBaseDataDO = {
   success: boolean
   total: number
 }
-export type PageResultBillMonthReportInfoVO = {
+export type illMonthReportInfoVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10223,12 +10300,12 @@ export type PageResultBillMonthReportInfoVO = {
   /**
    * @value 2
    */
-  rows: BillMonthReportInfoVO[]
+  rows: illMonthReportInfoVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultBillReportInfoVO = {
+export type sultBillReportInfoVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10241,7 +10318,7 @@ export type PageResultBillReportInfoVO = {
   success: boolean
   total: number
 }
-export type PageResultBillReportVO = {
+export type geResultBillReportVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10254,7 +10331,7 @@ export type PageResultBillReportVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterCpBillDetailVO = {
+export type CenterCpBillDetailVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10267,7 +10344,7 @@ export type PageResultCenterCpBillDetailVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterCpBillPayTypeVO = {
+export type enterCpBillPayTypeVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10275,12 +10352,12 @@ export type PageResultCenterCpBillPayTypeVO = {
   /**
    * @value 2
    */
-  rows: CenterCpBillPayTypeVO[]
+  rows: enterCpBillPayTypeVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterCustomConfigVO = {
+export type CenterCustomConfigVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10293,7 +10370,7 @@ export type PageResultCenterCustomConfigVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterIndexTotalDataVO = {
+export type nterIndexTotalDataVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10301,12 +10378,12 @@ export type PageResultCenterIndexTotalDataVO = {
   /**
    * @value 2
    */
-  rows: CenterIndexTotalDataVO[]
+  rows: nterIndexTotalDataVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiBatchRefundFormVO = {
+export type feiBatchRefundFormVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10314,12 +10391,12 @@ export type PageResultCenterJiaofeiBatchRefundFormVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiBatchRefundFormVO[]
+  rows: feiBatchRefundFormVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiBatchRefundVO = {
+export type JiaofeiBatchRefundVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10327,12 +10404,12 @@ export type PageResultCenterJiaofeiBatchRefundVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiBatchRefundVO[]
+  rows: JiaofeiBatchRefundVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiBillTemplateVO = {
+export type iaofeiBillTemplateVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10340,12 +10417,12 @@ export type PageResultCenterJiaofeiBillTemplateVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiBillTemplateVO[]
+  rows: iaofeiBillTemplateVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiBillVO = {
+export type tCenterJiaofeiBillVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10358,7 +10435,7 @@ export type PageResultCenterJiaofeiBillVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiConfigVO = {
+export type enterJiaofeiConfigVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10366,12 +10443,12 @@ export type PageResultCenterJiaofeiConfigVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiConfigVO[]
+  rows: enterJiaofeiConfigVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiDeptVO = {
+export type tCenterJiaofeiDeptVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10384,7 +10461,7 @@ export type PageResultCenterJiaofeiDeptVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiDictionaryVO = {
+export type rJiaofeiDictionaryVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10392,12 +10469,12 @@ export type PageResultCenterJiaofeiDictionaryVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiDictionaryVO[]
+  rows: rJiaofeiDictionaryVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiInvoiceCodeVO = {
+export type JiaofeiInvoiceCodeVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10405,12 +10482,12 @@ export type PageResultCenterJiaofeiInvoiceCodeVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiInvoiceCodeVO[]
+  rows: JiaofeiInvoiceCodeVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiInvoiceInfoDO = {
+export type JiaofeiInvoiceInfoDO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10418,12 +10495,12 @@ export type PageResultCenterJiaofeiInvoiceInfoDO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiInvoiceInfoDO[]
+  rows: JiaofeiInvoiceInfoDO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiInvoiceInfoVO = {
+export type JiaofeiInvoiceInfoVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10431,12 +10508,12 @@ export type PageResultCenterJiaofeiInvoiceInfoVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiInvoiceInfoVO[]
+  rows: JiaofeiInvoiceInfoVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiInvoiceOrderVO = {
+export type iaofeiInvoiceOrderVO11 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10444,12 +10521,12 @@ export type PageResultCenterJiaofeiInvoiceOrderVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiInvoiceOrderVO[]
+  rows: iaofeiInvoiceOrderVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiInvoiceTypeVO = {
+export type JiaofeiInvoiceTypeVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10457,12 +10534,12 @@ export type PageResultCenterJiaofeiInvoiceTypeVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiInvoiceTypeVO[]
+  rows: JiaofeiInvoiceTypeVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiListVO = {
+export type tCenterJiaofeiListVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10475,7 +10552,7 @@ export type PageResultCenterJiaofeiListVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiOrderVO = {
+export type CenterJiaofeiOrderVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10488,7 +10565,7 @@ export type PageResultCenterJiaofeiOrderVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiOrderVO_1 = {
+export type nterJiaofeiOrderVO_11 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10496,12 +10573,12 @@ export type PageResultCenterJiaofeiOrderVO_1 = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiOrderVO_1[]
+  rows: nterJiaofeiOrderVO_1[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiPermissionsVO = {
+export type JiaofeiPermissionsVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10509,12 +10586,12 @@ export type PageResultCenterJiaofeiPermissionsVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiPermissionsVO[]
+  rows: JiaofeiPermissionsVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiProBatchVO = {
+export type terJiaofeiProBatchVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10522,12 +10599,12 @@ export type PageResultCenterJiaofeiProBatchVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiProBatchVO[]
+  rows: terJiaofeiProBatchVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiProjectTypeVO = {
+export type JiaofeiProjectTypeVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10535,12 +10612,12 @@ export type PageResultCenterJiaofeiProjectTypeVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiProjectTypeVO[]
+  rows: JiaofeiProjectTypeVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiProjectVO = {
+export type nterJiaofeiProjectVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10548,12 +10625,12 @@ export type PageResultCenterJiaofeiProjectVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiProjectVO[]
+  rows: nterJiaofeiProjectVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiRefundVO = {
+export type enterJiaofeiRefundVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10561,12 +10638,12 @@ export type PageResultCenterJiaofeiRefundVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiRefundVO[]
+  rows: enterJiaofeiRefundVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiReportExportVO = {
+export type iaofeiReportExportVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10574,12 +10651,12 @@ export type PageResultCenterJiaofeiReportExportVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiReportExportVO[]
+  rows: iaofeiReportExportVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterJiaofeiTypeVO = {
+export type tCenterJiaofeiTypeVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10587,12 +10664,12 @@ export type PageResultCenterJiaofeiTypeVO = {
   /**
    * @value 2
    */
-  rows: CenterJiaofeiTypeVO_1[]
+  rows: enterJiaofeiTypeVO_1[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterNetOperatorVO = {
+export type tCenterNetOperatorVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10605,7 +10682,7 @@ export type PageResultCenterNetOperatorVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterNetPackageVO = {
+export type ltCenterNetPackageVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10618,7 +10695,7 @@ export type PageResultCenterNetPackageVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterNetZoneVO = {
+export type esultCenterNetZoneVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10631,7 +10708,7 @@ export type PageResultCenterNetZoneVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterOrderNetVO = {
+export type sultCenterOrderNetVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10644,7 +10721,7 @@ export type PageResultCenterOrderNetVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterOrderSpecialVO = {
+export type CenterOrderSpecialVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10657,7 +10734,7 @@ export type PageResultCenterOrderSpecialVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterOrderStatsVO = {
+export type ltCenterOrderStatsVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10670,7 +10747,7 @@ export type PageResultCenterOrderStatsVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterPincardVO = {
+export type esultCenterPincardVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10683,7 +10760,7 @@ export type PageResultCenterPincardVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterSchoolAreaVO = {
+export type ltCenterSchoolAreaVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10696,7 +10773,7 @@ export type PageResultCenterSchoolAreaVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterSchoolBuildingVO = {
+export type nterSchoolBuildingVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10704,12 +10781,12 @@ export type PageResultCenterSchoolBuildingVO = {
   /**
    * @value 2
    */
-  rows: CenterSchoolBuildingVO[]
+  rows: nterSchoolBuildingVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterSchoolFloorVO = {
+export type tCenterSchoolFloorVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10722,7 +10799,7 @@ export type PageResultCenterSchoolFloorVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterSchoolJiaofeiProjectVO = {
+export type hoolJiaofeiProjectVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10730,12 +10807,12 @@ export type PageResultCenterSchoolJiaofeiProjectVO = {
   /**
    * @value 2
    */
-  rows: CenterSchoolJiaofeiProjectVO[]
+  rows: hoolJiaofeiProjectVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterSchoolRoomUserVO = {
+export type nterSchoolRoomUserVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10743,12 +10820,12 @@ export type PageResultCenterSchoolRoomUserVO = {
   /**
    * @value 2
    */
-  rows: CenterSchoolRoomUserVO[]
+  rows: nterSchoolRoomUserVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterSchoolRoomVO = {
+export type ltCenterSchoolRoomVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10761,7 +10838,7 @@ export type PageResultCenterSchoolRoomVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterSpecialConfigVO = {
+export type enterSpecialConfigVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10769,12 +10846,25 @@ export type PageResultCenterSpecialConfigVO = {
   /**
    * @value 2
    */
-  rows: CenterSpecialConfigVO[]
+  rows: enterSpecialConfigVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterSysSchoolVO = {
+export type enterSpecialDeviceVO1 = {
+  alertType: number
+  bizCode: string
+  data: {}
+  message: string
+  /**
+   * @value 2
+   */
+  rows: enterSpecialDeviceVO[]
+  statusCode: number
+  success: boolean
+  total: number
+}
+export type ultCenterSysSchoolVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10787,7 +10877,7 @@ export type PageResultCenterSysSchoolVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterSysUserSchoolListVO = {
+export type rSysUserSchoolListVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10795,12 +10885,12 @@ export type PageResultCenterSysUserSchoolListVO = {
   /**
    * @value 2
    */
-  rows: CenterSysUserSchoolListVO[]
+  rows: rSysUserSchoolListVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCenterSysUserVO = {
+export type esultCenterSysUserVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10813,7 +10903,7 @@ export type PageResultCenterSysUserVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterTaskVO = {
+export type geResultCenterTaskVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10826,7 +10916,7 @@ export type PageResultCenterTaskVO = {
   success: boolean
   total: number
 }
-export type PageResultCenterUserVO = {
+export type geResultCenterUserVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10839,7 +10929,7 @@ export type PageResultCenterUserVO = {
   success: boolean
   total: number
 }
-export type PageResultCompusArticleFaqVO = {
+export type ltCompusArticleFaqVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10852,7 +10942,7 @@ export type PageResultCompusArticleFaqVO = {
   success: boolean
   total: number
 }
-export type PageResultCompusAssociationActivityTypeVO = {
+export type iationActivityTypeVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10860,12 +10950,12 @@ export type PageResultCompusAssociationActivityTypeVO = {
   /**
    * @value 2
    */
-  rows: CompusAssociationActivityTypeVO[]
+  rows: iationActivityTypeVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCompusAssociationActivityUserVO = {
+export type iationActivityUserVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10873,12 +10963,12 @@ export type PageResultCompusAssociationActivityUserVO = {
   /**
    * @value 2
    */
-  rows: CompusAssociationActivityUserVO[]
+  rows: iationActivityUserVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCompusAssociationActivityVO = {
+export type ssociationActivityVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10886,12 +10976,12 @@ export type PageResultCompusAssociationActivityVO = {
   /**
    * @value 2
    */
-  rows: CompusAssociationActivityVO[]
+  rows: ssociationActivityVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCompusAssociationBannerVO = {
+export type sAssociationBannerVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10899,12 +10989,12 @@ export type PageResultCompusAssociationBannerVO = {
   /**
    * @value 2
    */
-  rows: CompusAssociationBannerVO[]
+  rows: sAssociationBannerVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCompusAssociationUserVO = {
+export type pusAssociationUserVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -10912,12 +11002,12 @@ export type PageResultCompusAssociationUserVO = {
   /**
    * @value 2
    */
-  rows: CompusAssociationUserVO[]
+  rows: pusAssociationUserVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultCompusAssociationVO = {
+export type tCompusAssociationVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10930,7 +11020,7 @@ export type PageResultCompusAssociationVO = {
   success: boolean
   total: number
 }
-export type PageResultCompusPushResponse = {
+export type ltCompusPushResponse = {
   alertType: number
   bizCode: string
   data: {}
@@ -10943,7 +11033,7 @@ export type PageResultCompusPushResponse = {
   success: boolean
   total: number
 }
-export type PageResultCompusTagsResponse = {
+export type ltCompusTagsResponse = {
   alertType: number
   bizCode: string
   data: {}
@@ -10956,7 +11046,7 @@ export type PageResultCompusTagsResponse = {
   success: boolean
   total: number
 }
-export type PageResultCompusTagsVO = {
+export type geResultCompusTagsVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10969,7 +11059,7 @@ export type PageResultCompusTagsVO = {
   success: boolean
   total: number
 }
-export type PageResultDonateItemVO = {
+export type geResultDonateItemVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10982,7 +11072,7 @@ export type PageResultDonateItemVO = {
   success: boolean
   total: number
 }
-export type PageResultDonateOrderClientVO = {
+export type tDonateOrderClientVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -10995,7 +11085,7 @@ export type PageResultDonateOrderClientVO = {
   success: boolean
   total: number
 }
-export type PageResultDonateUserOrderVO = {
+export type ultDonateUserOrderVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11008,7 +11098,7 @@ export type PageResultDonateUserOrderVO = {
   success: boolean
   total: number
 }
-export type PageResultDonateUserVO = {
+export type geResultDonateUserVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11021,7 +11111,7 @@ export type PageResultDonateUserVO = {
   success: boolean
   total: number
 }
-export type PageResultFrontSchoolBuildingVO = {
+export type rontSchoolBuildingVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11029,12 +11119,12 @@ export type PageResultFrontSchoolBuildingVO = {
   /**
    * @value 2
    */
-  rows: FrontSchoolBuildingVO[]
+  rows: rontSchoolBuildingVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultFrontSchoolFloorVO = {
+export type ltFrontSchoolFloorVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11047,7 +11137,7 @@ export type PageResultFrontSchoolFloorVO = {
   success: boolean
   total: number
 }
-export type PageResultFrontSchoolRoomVO = {
+export type ultFrontSchoolRoomVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11060,7 +11150,7 @@ export type PageResultFrontSchoolRoomVO = {
   success: boolean
   total: number
 }
-export type PageResultKayRoadWaterOrderVO = {
+export type tKayRoadWaterOrderVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11073,7 +11163,7 @@ export type PageResultKayRoadWaterOrderVO = {
   success: boolean
   total: number
 }
-export type PageResultKtClassTeacherVO = {
+export type sultKtClassTeacherVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11112,7 +11202,7 @@ export type PageResultKtGradeVO = {
   success: boolean
   total: number
 }
-export type PageResultKtStudentVO = {
+export type ageResultKtStudentVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11125,7 +11215,7 @@ export type PageResultKtStudentVO = {
   success: boolean
   total: number
 }
-export type PageResultKtTeacherVO = {
+export type ageResultKtTeacherVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11138,7 +11228,7 @@ export type PageResultKtTeacherVO = {
   success: boolean
   total: number
 }
-export type PageResultKtUserIdentityVO = {
+export type sultKtUserIdentityVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11151,7 +11241,7 @@ export type PageResultKtUserIdentityVO = {
   success: boolean
   total: number
 }
-export type PageResultLsCheckerVO = {
+export type ageResultLsCheckerVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11164,7 +11254,7 @@ export type PageResultLsCheckerVO = {
   success: boolean
   total: number
 }
-export type PageResultMarketingDutyUserVO = {
+export type tMarketingDutyUserVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11177,7 +11267,7 @@ export type PageResultMarketingDutyUserVO = {
   success: boolean
   total: number
 }
-export type PageResultMarketingFormApplyVO = {
+export type MarketingFormApplyVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11190,7 +11280,7 @@ export type PageResultMarketingFormApplyVO = {
   success: boolean
   total: number
 }
-export type PageResultMarketingFormVO = {
+export type esultMarketingFormVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11203,7 +11293,7 @@ export type PageResultMarketingFormVO = {
   success: boolean
   total: number
 }
-export type PageResultMarketingSchoolUserNewVO = {
+export type etingSchoolUserNewVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11211,12 +11301,12 @@ export type PageResultMarketingSchoolUserNewVO = {
   /**
    * @value 2
    */
-  rows: MarketingSchoolUserNewVO[]
+  rows: etingSchoolUserNewVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultMarketingSchoolUserVO = {
+export type arketingSchoolUserVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11224,12 +11314,12 @@ export type PageResultMarketingSchoolUserVO = {
   /**
    * @value 2
    */
-  rows: MarketingSchoolUserVO[]
+  rows: arketingSchoolUserVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultOperationLogVO = {
+export type ResultOperationLogVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11242,7 +11332,7 @@ export type PageResultOperationLogVO = {
   success: boolean
   total: number
 }
-export type PageResultPlatformEacctOpenApplyVO = {
+export type formEacctOpenApplyVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11250,12 +11340,12 @@ export type PageResultPlatformEacctOpenApplyVO = {
   /**
    * @value 2
    */
-  rows: PlatformEacctOpenApplyVO[]
+  rows: formEacctOpenApplyVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultSchoolCenterImportRecordVO = {
+export type CenterImportRecordVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11263,12 +11353,12 @@ export type PageResultSchoolCenterImportRecordVO = {
   /**
    * @value 2
    */
-  rows: SchoolCenterImportRecordVO[]
+  rows: CenterImportRecordVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultSelectResult = {
+export type geResultSelectResult = {
   alertType: number
   bizCode: string
   data: {}
@@ -11281,7 +11371,7 @@ export type PageResultSelectResult = {
   success: boolean
   total: number
 }
-export type PageResultSelectResult_1 = {
+export type ResultSelectResult_1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11294,7 +11384,7 @@ export type PageResultSelectResult_1 = {
   success: boolean
   total: number
 }
-export type PageResultSfCampusSceneryTypeVO = {
+export type fCampusSceneryTypeVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11302,12 +11392,12 @@ export type PageResultSfCampusSceneryTypeVO = {
   /**
    * @value 2
    */
-  rows: SfCampusSceneryTypeVO[]
+  rows: fCampusSceneryTypeVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultSfCampusSceneryVO = {
+export type ultSfCampusSceneryVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11333,7 +11423,7 @@ export type PageResultSfUserVO = {
   success: boolean
   total: number
 }
-export type PageResultSubsidyItemListVO = {
+export type ultSubsidyItemListVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11346,7 +11436,7 @@ export type PageResultSubsidyItemListVO = {
   success: boolean
   total: number
 }
-export type PageResultSubsidyItemVO = {
+export type eResultSubsidyItemVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11359,7 +11449,7 @@ export type PageResultSubsidyItemVO = {
   success: boolean
   total: number
 }
-export type PageResultSubsidyNoticeVO = {
+export type esultSubsidyNoticeVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11372,7 +11462,7 @@ export type PageResultSubsidyNoticeVO = {
   success: boolean
   total: number
 }
-export type PageResultSubsidyPushRecordVO = {
+export type tSubsidyPushRecordVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11385,7 +11475,7 @@ export type PageResultSubsidyPushRecordVO = {
   success: boolean
   total: number
 }
-export type PageResultSubsidySubItemVO = {
+export type sultSubsidySubItemVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11398,7 +11488,7 @@ export type PageResultSubsidySubItemVO = {
   success: boolean
   total: number
 }
-export type PageResultUpCpAccountVO = {
+export type eResultUpCpAccountVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11437,7 +11527,7 @@ export type PageResultUpCpVO = {
   success: boolean
   total: number
 }
-export type PageResultUpRedbagAccountVO = {
+export type ultUpRedbagAccountVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11450,7 +11540,7 @@ export type PageResultUpRedbagAccountVO = {
   success: boolean
   total: number
 }
-export type PageResultUpRedbagBalanceVO = {
+export type ultUpRedbagBalanceVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11463,7 +11553,7 @@ export type PageResultUpRedbagBalanceVO = {
   success: boolean
   total: number
 }
-export type PageResultUpRedbagBillVO = {
+export type ResultUpRedbagBillVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11476,7 +11566,7 @@ export type PageResultUpRedbagBillVO = {
   success: boolean
   total: number
 }
-export type PageResultUpRedbagConfigVO = {
+export type sultUpRedbagConfigVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11489,7 +11579,7 @@ export type PageResultUpRedbagConfigVO = {
   success: boolean
   total: number
 }
-export type PageResultUpRedbagNodeVO = {
+export type ResultUpRedbagNodeVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11515,7 +11605,7 @@ export type PageResultUpRedbagVO = {
   success: boolean
   total: number
 }
-export type PageResultUpUserRedbagVO = {
+export type ResultUpUserRedbagVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11528,7 +11618,7 @@ export type PageResultUpUserRedbagVO = {
   success: boolean
   total: number
 }
-export type PageResultWnAcceptanceLetterVO = {
+export type WnAcceptanceLetterVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11541,7 +11631,7 @@ export type PageResultWnAcceptanceLetterVO = {
   success: boolean
   total: number
 }
-export type PageResultWnApplicationConfigVO = {
+export type nApplicationConfigVO11 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11549,12 +11639,12 @@ export type PageResultWnApplicationConfigVO = {
   /**
    * @value 2
    */
-  rows: WnApplicationConfigVO[]
+  rows: nApplicationConfigVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnBaseConfigVO = {
+export type ResultWnBaseConfigVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11580,7 +11670,7 @@ export type PageResultWnBatchVO = {
   success: boolean
   total: number
 }
-export type PageResultWnBuildingVO = {
+export type geResultWnBuildingVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11619,7 +11709,7 @@ export type PageResultWnFloorVO = {
   success: boolean
   total: number
 }
-export type PageResultWnFormTitleVO = {
+export type eResultWnFormTitleVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11632,7 +11722,7 @@ export type PageResultWnFormTitleVO = {
   success: boolean
   total: number
 }
-export type PageResultWnFormUserVO = {
+export type geResultWnFormUserVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11645,7 +11735,7 @@ export type PageResultWnFormUserVO = {
   success: boolean
   total: number
 }
-export type PageResultWnGenerateStudentNoVO = {
+export type nGenerateStudentNoVO11 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11653,12 +11743,12 @@ export type PageResultWnGenerateStudentNoVO = {
   /**
    * @value 2
    */
-  rows: WnGenerateStudentNoVO[]
+  rows: nGenerateStudentNoVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnHallApplicationConfigVO = {
+export type lApplicationConfigVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11666,12 +11756,12 @@ export type PageResultWnHallApplicationConfigVO = {
   /**
    * @value 2
    */
-  rows: WnHallApplicationConfigVO[]
+  rows: lApplicationConfigVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnHallProcessConfigVO = {
+export type nHallProcessConfigVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11679,12 +11769,12 @@ export type PageResultWnHallProcessConfigVO = {
   /**
    * @value 2
    */
-  rows: WnHallProcessConfigVO[]
+  rows: nHallProcessConfigVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnInClassVO = {
+export type ageResultWnInClassVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11697,7 +11787,7 @@ export type PageResultWnInClassVO = {
   success: boolean
   total: number
 }
-export type PageResultWnInStudentVO = {
+export type eResultWnInStudentVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11710,7 +11800,7 @@ export type PageResultWnInStudentVO = {
   success: boolean
   total: number
 }
-export type PageResultWnOpenBankCardVO = {
+export type sultWnOpenBankCardVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11723,7 +11813,7 @@ export type PageResultWnOpenBankCardVO = {
   success: boolean
   total: number
 }
-export type PageResultWnPayConfigVO = {
+export type eResultWnPayConfigVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11736,7 +11826,7 @@ export type PageResultWnPayConfigVO = {
   success: boolean
   total: number
 }
-export type PageResultWnProcessConfigVO = {
+export type ultWnProcessConfigVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11749,7 +11839,7 @@ export type PageResultWnProcessConfigVO = {
   success: boolean
   total: number
 }
-export type PageResultWnProcessCountTableHeaderVO = {
+export type ssCountTableHeaderVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11757,12 +11847,12 @@ export type PageResultWnProcessCountTableHeaderVO = {
   /**
    * @value 2
    */
-  rows: WnProcessCountTableHeaderVO[]
+  rows: ssCountTableHeaderVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnProductAndPicVO = {
+export type ultWnProductAndPicVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11775,7 +11865,7 @@ export type PageResultWnProductAndPicVO = {
   success: boolean
   total: number
 }
-export type PageResultWnReceiveOrderVO = {
+export type sultWnReceiveOrderVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11788,7 +11878,7 @@ export type PageResultWnReceiveOrderVO = {
   success: boolean
   total: number
 }
-export type PageResultWnRoomFeeConfigVO = {
+export type ultWnRoomFeeConfigVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11801,7 +11891,7 @@ export type PageResultWnRoomFeeConfigVO = {
   success: boolean
   total: number
 }
-export type PageResultWnRoomTreeVO = {
+export type geResultWnRoomTreeVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11827,7 +11917,7 @@ export type PageResultWnRoomVO = {
   success: boolean
   total: number
 }
-export type PageResultWnSchoolOrganizationTreeVO = {
+export type olOrganizationTreeVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11835,12 +11925,12 @@ export type PageResultWnSchoolOrganizationTreeVO = {
   /**
    * @value 2
    */
-  rows: WnSchoolOrganizationTreeVO[]
+  rows: olOrganizationTreeVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnSchoolOrganizationVO = {
+export type SchoolOrganizationVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11848,12 +11938,12 @@ export type PageResultWnSchoolOrganizationVO = {
   /**
    * @value 2
    */
-  rows: WnSchoolOrganizationVO[]
+  rows: SchoolOrganizationVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnSchoolZoneVO = {
+export type ResultWnSchoolZoneVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11866,7 +11956,7 @@ export type PageResultWnSchoolZoneVO = {
   success: boolean
   total: number
 }
-export type PageResultWnSelectPhoneOperatorVO = {
+export type electPhoneOperatorVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11874,12 +11964,12 @@ export type PageResultWnSelectPhoneOperatorVO = {
   /**
    * @value 2
    */
-  rows: WnSelectPhoneOperatorVO[]
+  rows: electPhoneOperatorVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnSelectPhoneOrderVO = {
+export type WnSelectPhoneOrderVO11 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11892,7 +11982,7 @@ export type PageResultWnSelectPhoneOrderVO = {
   success: boolean
   total: number
 }
-export type PageResultWnSelectPhonePackageVO = {
+export type SelectPhonePackageVO11 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11900,12 +11990,12 @@ export type PageResultWnSelectPhonePackageVO = {
   /**
    * @value 2
    */
-  rows: WnSelectPhonePackageVO[]
+  rows: SelectPhonePackageVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnSelectPhoneVO = {
+export type esultWnSelectPhoneVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11918,7 +12008,7 @@ export type PageResultWnSelectPhoneVO = {
   success: boolean
   total: number
 }
-export type PageResultWnStudentBaseApiVO = {
+export type ltWnStudentBaseApiVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11931,7 +12021,7 @@ export type PageResultWnStudentBaseApiVO = {
   success: boolean
   total: number
 }
-export type PageResultWnStudentImportVO = {
+export type ultWnStudentImportVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11944,7 +12034,7 @@ export type PageResultWnStudentImportVO = {
   success: boolean
   total: number
 }
-export type PageResultWnStudentInCountVO = {
+export type ltWnStudentInCountVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -11957,7 +12047,7 @@ export type PageResultWnStudentInCountVO = {
   success: boolean
   total: number
 }
-export type PageResultWnStudentLatestRegisterVO = {
+export type dentLatestRegisterVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11965,12 +12055,12 @@ export type PageResultWnStudentLatestRegisterVO = {
   /**
    * @value 2
    */
-  rows: WnStudentLatestRegisterVO[]
+  rows: dentLatestRegisterVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnStudentProcessDetailVO = {
+export type udentProcessDetailVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11978,12 +12068,12 @@ export type PageResultWnStudentProcessDetailVO = {
   /**
    * @value 2
    */
-  rows: WnStudentProcessDetailVO[]
+  rows: udentProcessDetailVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnStudentRegisterBaseApiVO = {
+export type entRegisterBaseApiVO11 = {
   alertType: number
   bizCode: string
   data: {}
@@ -11991,12 +12081,12 @@ export type PageResultWnStudentRegisterBaseApiVO = {
   /**
    * @value 2
    */
-  rows: WnStudentRegisterBaseApiVO[]
+  rows: entRegisterBaseApiVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnStudentReportNumCountVO = {
+export type dentReportNumCountVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -12004,12 +12094,12 @@ export type PageResultWnStudentReportNumCountVO = {
   /**
    * @value 2
    */
-  rows: WnStudentReportNumCountVO[]
+  rows: dentReportNumCountVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnStudentReportSexCountVO = {
+export type dentReportSexCountVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -12017,12 +12107,12 @@ export type PageResultWnStudentReportSexCountVO = {
   /**
    * @value 2
    */
-  rows: WnStudentReportSexCountVO[]
+  rows: dentReportSexCountVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnStudentToClassOrganizationVO = {
+export type oClassOrganizationVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -12030,12 +12120,12 @@ export type PageResultWnStudentToClassOrganizationVO = {
   /**
    * @value 2
    */
-  rows: WnStudentToClassOrganizationVO[]
+  rows: oClassOrganizationVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnStudentToClassVO = {
+export type ltWnStudentToClassVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -12048,7 +12138,7 @@ export type PageResultWnStudentToClassVO = {
   success: boolean
   total: number
 }
-export type PageResultWnStudentTrafficCountVO = {
+export type tudentTrafficCountVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -12056,12 +12146,12 @@ export type PageResultWnStudentTrafficCountVO = {
   /**
    * @value 2
    */
-  rows: WnStudentTrafficCountVO[]
+  rows: tudentTrafficCountVO[]
   statusCode: number
   success: boolean
   total: number
 }
-export type PageResultWnTeacherAppRoleVO = {
+export type ltWnTeacherAppRoleVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -12074,7 +12164,7 @@ export type PageResultWnTeacherAppRoleVO = {
   success: boolean
   total: number
 }
-export type PageResultWnTeacherAppUserApiVO = {
+export type nTeacherAppUserApiVO1 = {
   alertType: number
   bizCode: string
   data: {}
@@ -12082,7 +12172,7 @@ export type PageResultWnTeacherAppUserApiVO = {
   /**
    * @value 2
    */
-  rows: WnTeacherAppUserApiVO[]
+  rows: nTeacherAppUserApiVO[]
   statusCode: number
   success: boolean
   total: number
@@ -12100,7 +12190,7 @@ export type PageResultWnUnitVO = {
   success: boolean
   total: number
 }
-export type PageResultWnZoneRoomApiVO = {
+export type esultWnZoneRoomApiVO = {
   alertType: number
   bizCode: string
   data: {}
@@ -12159,7 +12249,7 @@ export type PageResult健康状况登记VO = {
   success: boolean
   total: number
 }
-export type PageResult健康状况登记地区统计VOroute = {
+export type ult健康状况登记地区统计VOroute = {
   alertType: number
   bizCode: string
   data: {}
@@ -12172,7 +12262,7 @@ export type PageResult健康状况登记地区统计VOroute = {
   success: boolean
   total: number
 }
-export type PageResult健康状况登记地区统计VO = {
+export type geResult健康状况登记地区统计VO = {
   alertType: number
   bizCode: string
   data: {}
@@ -12185,48 +12275,45 @@ export type PageResult健康状况登记地区统计VO = {
   success: boolean
   total: number
 }
-export type PageResult手抄表账单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息 =
-  {
-    alertType: number
-    bizCode: string
-    data: {}
-    message: string
-    /**
-     * @value 2
-     */
-    rows: 手抄表账单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息[]
-    statusCode: number
-    success: boolean
-    total: number
-  }
-export type PageResult支付订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息 =
-  {
-    alertType: number
-    bizCode: string
-    data: {}
-    message: string
-    /**
-     * @value 2
-     */
-    rows: 支付订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息[]
-    statusCode: number
-    success: boolean
-    total: number
-  }
-export type PageResult支付订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息_1 =
-  {
-    alertType: number
-    bizCode: string
-    data: {}
-    message: string
-    /**
-     * @value 2
-     */
-    rows: 支付订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息_1[]
-    statusCode: number
-    success: boolean
-    total: number
-  }
+export type ode0表示成功ret_msg是错误消息1 = {
+  alertType: number
+  bizCode: string
+  data: {}
+  message: string
+  /**
+   * @value 2
+   */
+  rows: ode0表示成功ret_msg是错误消息[]
+  statusCode: number
+  success: boolean
+  total: number
+}
+export type ode0表示成功ret_msg是错误消息111 = {
+  alertType: number
+  bizCode: string
+  data: {}
+  message: string
+  /**
+   * @value 2
+   */
+  rows: ode0表示成功ret_msg是错误消息11[]
+  statusCode: number
+  success: boolean
+  total: number
+}
+export type e0表示成功ret_msg是错误消息_11 = {
+  alertType: number
+  bizCode: string
+  data: {}
+  message: string
+  /**
+   * @value 2
+   */
+  rows: e0表示成功ret_msg是错误消息_1[]
+  statusCode: number
+  success: boolean
+  total: number
+}
 export type PageResult文章返回参数 = {
   alertType: number
   bizCode: string
@@ -12279,21 +12366,20 @@ export type PageResult轮播图表返回数据参数 = {
   success: boolean
   total: number
 }
-export type PageResult退款订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息 =
-  {
-    alertType: number
-    bizCode: string
-    data: {}
-    message: string
-    /**
-     * @value 2
-     */
-    rows: 退款订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息[]
-    statusCode: number
-    success: boolean
-    total: number
-  }
-export type PlatformEacctOpenApplyVO = {
+export type ode0表示成功ret_msg是错误消息11111 = {
+  alertType: number
+  bizCode: string
+  data: {}
+  message: string
+  /**
+   * @value 2
+   */
+  rows: ode0表示成功ret_msg是错误消息1111[]
+  statusCode: number
+  success: boolean
+  total: number
+}
+export type formEacctOpenApplyVO = {
   applyFrom: string
   /**
    * @description 用户id
@@ -12378,7 +12464,7 @@ export type RedBagExtendVO = {
    */
   type: number
 }
-export type SchoolCenterImportRecordVO = {
+export type CenterImportRecordVO = {
   createMobilePhone: string
   createName: string
   createNickName: string
@@ -12417,7 +12503,7 @@ export type SelectResult_1 = {
    */
   text: string
 }
-export type SfCampusSceneryTypeVO = {
+export type fCampusSceneryTypeVO = {
   /**
    * @value #datetime()
    * @description 创建时间
@@ -12579,7 +12665,7 @@ export type SfUserVO = {
    */
   userName: string
 }
-export type SubsidyItemListTotalMoneyVO = {
+export type ItemListTotalMoneyVO = {
   /**
    * @description 项目名称
    */
@@ -13759,12 +13845,12 @@ export type UpUserRedbagVO = {
    */
   userName: string
 }
-export type UserOrganizationDepartVO = {
+export type OrganizationDepartVO = {
   /**
    * @value 2
    * @description 子集
    */
-  childList: UserOrganizationDepartVO[]
+  childList: OrganizationDepartVO[]
   /**
    * @description 权限id
    */
@@ -13785,7 +13871,7 @@ export type UserOrganizationDepartVO = {
 export type View = {
   contentType: string
 }
-export type WNWitnessCheckParamNew = {
+export type WitnessCheckParamNew = {
   addTime: string
   address: string
   birth: string
@@ -13821,7 +13907,7 @@ export type WnAcceptanceLetterVO = {
   semesterStr: string
   studentName: string
 }
-export type WnApplicationConfigVO = {
+export type nApplicationConfigVO = {
   /**
    * @description 应用链接
    */
@@ -14256,6 +14342,10 @@ export type WnFormTitleVO = {
    * @description 字段固定：left, right
    */
   fixed: string
+  /**
+   * @description 格式
+   */
+  format: string
   /**
    * @description 列表头是否隐藏：true-隐藏，false-不隐藏
    */
@@ -15585,7 +15675,7 @@ export type WnFormUserVO = {
    */
   weight: string
 }
-export type WnGenerateStudentNoVO = {
+export type nGenerateStudentNoVO = {
   /**
    * @description 班级
    */
@@ -15678,7 +15768,7 @@ export type WnGenerateStudentNoVO = {
   zoneId: number
   zoneName: string
 }
-export type WnHallApplicationConfigVO = {
+export type lApplicationConfigVO = {
   /**
    * @description 应用链接
    */
@@ -15791,7 +15881,7 @@ export type WnHallFormVO = {
    */
   studentSubmitFlag: number
 }
-export type WnHallProcessConfigVO = {
+export type nHallProcessConfigVO = {
   /**
    * @description 是否关联应用ID
    */
@@ -16232,7 +16322,7 @@ export type WnInStudentVO = {
    */
   zoneName: string
 }
-export type WnMajorStudentCountVO = {
+export type nMajorStudentCountVO = {
   /**
    * @description 已分班的人数
    */
@@ -16337,6 +16427,10 @@ export type WnOpenBankCardVO = {
    * @description 操作
    */
   operation: string
+  /**
+   * @description 学校编码
+   */
+  schoolCode: string
   /**
    * @description 更新人ID
    */
@@ -16596,7 +16690,7 @@ export type WnProcessConfigVO = {
    */
   updateTime: string
 }
-export type WnProcessCountTableHeaderVO = {
+export type ssCountTableHeaderVO = {
   /**
    * @description 索引列
    */
@@ -16879,7 +16973,7 @@ export type WnProductVO = {
    */
   wnProductSpecsVOList: WnProductSpecsVO[]
 }
-export type WnReceiveNumberTotalVO = {
+export type ReceiveNumberTotalVO = {
   /**
    * @description 条数
    */
@@ -17031,7 +17125,7 @@ export type WnReceiveOrderVO = {
    */
   updateTime: string
 }
-export type WnRoomAccommodateCountShowVO = {
+export type commodateCountShowVO = {
   /**
    * @description 男生已分配人数
    */
@@ -17228,7 +17322,7 @@ export type WnRoomVO = {
    */
   zoneName: string
 }
-export type WnSchoolAllDashboardVO = {
+export type SchoolAllDashboardVO = {
   /**
    * @description 入住统计
    */
@@ -17338,7 +17432,7 @@ export type WnSchoolAllDashboardVO = {
    */
   toDealWithStr: string
 }
-export type WnSchoolOrganizationTreeVO = {
+export type olOrganizationTreeVO = {
   /**
    * @description 主键
    */
@@ -17360,7 +17454,7 @@ export type WnSchoolOrganizationTreeVO = {
    */
   title: string
 }
-export type WnSchoolOrganizationVO = {
+export type SchoolOrganizationVO = {
   /**
    * @description 学制
    */
@@ -17490,7 +17584,7 @@ export type WnSchoolZoneVO = {
    */
   zoneName: string
 }
-export type WnSelectPhoneOperatorVO = {
+export type electPhoneOperatorVO = {
   /**
    * @description 确认提示
    */
@@ -17512,6 +17606,10 @@ export type WnSelectPhoneOperatorVO = {
    * @description 是否需要预充值
    */
   needRechargeStr: string
+  /**
+   * @description 运营商
+   */
+  operatorCode: string
   /**
    * @description 运营商名称
    */
@@ -17592,6 +17690,14 @@ export type WnSelectPhoneOrderVO = {
    * @description 订单编号
    */
   id: number
+  /**
+   * @description 身份证【反面】
+   */
+  idCardBack: string
+  /**
+   * @description 身份证【正面】
+   */
+  idCardFront: string
   /**
    * @description 身份证号
    */
@@ -17712,11 +17818,15 @@ export type WnSelectPhoneOrderVO = {
    */
   updateTime: string
   /**
+   * @description 学生头像
+   */
+  userImg: string
+  /**
    * @description 校区名称
    */
   zoneName: string
 }
-export type WnSelectPhonePackageVO = {
+export type SelectPhonePackageVO = {
   /**
    * @description 返充金额
    */
@@ -18761,7 +18871,7 @@ export type WnStudentBaseVO = {
    */
   zoneName: string
 }
-export type WnStudentDashboardViewVO = {
+export type udentDashboardViewVO = {
   /**
    * @description 地区编码
    */
@@ -18877,7 +18987,7 @@ export type WnStudentInCountVO = {
    */
   totalNum: number
 }
-export type WnStudentLatestRegisterVO = {
+export type dentLatestRegisterVO = {
   /**
    * @description 院系名称
    */
@@ -18891,7 +19001,7 @@ export type WnStudentLatestRegisterVO = {
    */
   studentName: string
 }
-export type WnStudentProcessCountVO = {
+export type tudentProcessCountVO = {
   /**
    * @description 班级名称
    */
@@ -18909,7 +19019,7 @@ export type WnStudentProcessCountVO = {
    */
   recruitYear: string
 }
-export type WnStudentProcessDetailVO = {
+export type udentProcessDetailVO = {
   classCode: string
   /**
    * @description 班级名称
@@ -18956,7 +19066,7 @@ export type WnStudentProcessDetailVO = {
    */
   uniqueId: string
 }
-export type WnStudentRegisterBaseApiVO = {
+export type entRegisterBaseApiVO = {
   /**
    * @description 详细地址
    */
@@ -19098,9 +19208,29 @@ export type WnStudentRegisterBaseApiVO = {
    */
   extChar15: string
   /**
+   * @description 字符串拓展字段16
+   */
+  extChar16: string
+  /**
+   * @description 字符串拓展字段17
+   */
+  extChar17: string
+  /**
+   * @description 字符串拓展字段18
+   */
+  extChar18: string
+  /**
+   * @description 字符串拓展字段19
+   */
+  extChar19: string
+  /**
    * @description 字符串拓展字段2
    */
   extChar2: string
+  /**
+   * @description 字符串拓展字段20
+   */
+  extChar20: string
   /**
    * @description 字符串拓展字段3
    */
@@ -19389,7 +19519,7 @@ export type WnStudentRegisterBaseApiVO = {
   zoneId: number
   zoneName: string
 }
-export type WnStudentReportCountExportVO = {
+export type tReportCountExportVO = {
   /**
    * @description 批次ID
    */
@@ -19474,7 +19604,7 @@ export type WnStudentReportCountExportVO = {
    */
   zoneName: string
 }
-export type WnStudentReportNumCountVO = {
+export type dentReportNumCountVO = {
   /**
    * @description 校区/院系/专业/班级/民族编码
    */
@@ -19508,7 +19638,7 @@ export type WnStudentReportNumCountVO = {
    */
   totalStudentNum: number
 }
-export type WnStudentReportSexCountVO = {
+export type dentReportSexCountVO = {
   /**
    * @description 校区/院系/专业/班级/民族编码
    */
@@ -19542,7 +19672,7 @@ export type WnStudentReportSexCountVO = {
    */
   totalStudentNum: number
 }
-export type WnStudentToClassOrganizationVO = {
+export type oClassOrganizationVO = {
   /**
    * @description 学制
    */
@@ -19735,7 +19865,7 @@ export type WnStudentToClassVO = {
    */
   zoneName: string
 }
-export type WnStudentTrafficCountVO = {
+export type tudentTrafficCountVO = {
   /**
    * @description 日期,格式=yyyy-MM-dd
    */
@@ -19803,7 +19933,7 @@ export type WnTeacherAppRoleVO = {
    */
   updateTime: string
 }
-export type WnTeacherAppUserApiVO = {
+export type nTeacherAppUserApiVO = {
   /**
    * @description 创建人id
    */
@@ -19923,6 +20053,32 @@ export type WnUnitVO = {
    * @description 校区名称
    */
   zoneName: string
+}
+export type WnZfJiafeiStatusVO = {
+  /**
+   * @description 考生号
+   */
+  examineeNo: string
+  /**
+   * @description 缴费状态: 0、未缴费 1、部分缴费 2、全部缴费
+   */
+  jiaofeiStatus: number
+  /**
+   * @description 缴费状态名: 未缴费 部分缴费 全部缴费
+   */
+  jiaofeiStatusStr: string
+  /**
+   * @description 实缴金额
+   */
+  paidAmount: number
+  /**
+   * @description 应缴金额
+   */
+  payableAmount: number
+  /**
+   * @description 姓名
+   */
+  userName: string
 }
 export type WnZoneRoomApiVO = {
   /**
@@ -21320,70 +21476,69 @@ export type 安全风控类 = {
    */
   sessionId: string
 }
-export type 手抄表账单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息 =
-  {
-    /**
-     * @description 应缴金额
-     */
-    amountPayable: string
-    /**
-     * @description 校区名称
-     */
-    areaName: string
-    /**
-     * @description 楼栋名称
-     */
-    buildingName: string
-    /**
-     * @value #datetime()
-     * @description 缴费完成时间
-     */
-    completeTime: string
-    /**
-     * @description 楼层名称
-     */
-    floorName: string
-    /**
-     * @description id
-     */
-    id: number
-    /**
-     * @description 上次抄表时间
-     */
-    lastSettlingTime: string
-    /**
-     * @description 缴费状态： 0、未缴费  1、已缴费
-     */
-    payStatus: number
-    /**
-     * @description 缴费状态名
-     */
-    payStatusStr: string
-    /**
-     * @description 房间名称
-     */
-    roomName: string
-    /**
-     * @description 学校名称
-     */
-    schoolName: string
-    /**
-     * @description 本次抄表时间
-     */
-    thisSettlingTime: string
-    /**
-     * @description 类型： 1、电费 2、水费
-     */
-    type: number
-    /**
-     * @description 类型名称
-     */
-    typeStr: string
-    /**
-     * @description 用电度数
-     */
-    usageQuantity: string
-  }
+export type ode0表示成功ret_msg是错误消息 = {
+  /**
+   * @description 应缴金额
+   */
+  amountPayable: string
+  /**
+   * @description 校区名称
+   */
+  areaName: string
+  /**
+   * @description 楼栋名称
+   */
+  buildingName: string
+  /**
+   * @value #datetime()
+   * @description 缴费完成时间
+   */
+  completeTime: string
+  /**
+   * @description 楼层名称
+   */
+  floorName: string
+  /**
+   * @description id
+   */
+  id: number
+  /**
+   * @description 上次抄表时间
+   */
+  lastSettlingTime: string
+  /**
+   * @description 缴费状态： 0、未缴费  1、已缴费
+   */
+  payStatus: number
+  /**
+   * @description 缴费状态名
+   */
+  payStatusStr: string
+  /**
+   * @description 房间名称
+   */
+  roomName: string
+  /**
+   * @description 学校名称
+   */
+  schoolName: string
+  /**
+   * @description 本次抄表时间
+   */
+  thisSettlingTime: string
+  /**
+   * @description 类型： 1、电费 2、水费
+   */
+  type: number
+  /**
+   * @description 类型名称
+   */
+  typeStr: string
+  /**
+   * @description 用电度数
+   */
+  usageQuantity: string
+}
 export type 支付订单列表下方的汇总数据 = {
   /**
    * @description 月份：yyyy-dd
@@ -21514,256 +21669,254 @@ export type 支付订单详情 = {
    */
   userName: string
 }
-export type 支付订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息 =
-  {
-    /**
-     * @description 水电费校区编码
-     */
-    areaCode: string
-    /**
-     * @description 水电费校区名称
-     */
-    areaName: string
-    /**
-     * @description 水电费楼栋编码
-     */
-    buildingCode: string
-    /**
-     * @description 水电费楼栋名称
-     */
-    buildingName: string
-    /**
-     * @value #datetime()
-     * @description 创建时间
-     */
-    createTime: string
-    /**
-     * @description 费率金额
-     */
-    feeMoney: number
-    /**
-     * @description 水电费楼层编码
-     */
-    floorCode: string
-    /**
-     * @description 水电费楼层名称
-     */
-    floorName: string
-    /**
-     * @description id
-     */
-    id: number
-    /**
-     * @description 学号
-     */
-    jobNo: string
-    /**
-     * @description 手机号
-     */
-    mobilePhone: string
-    /**
-     * @description 订单编号
-     */
-    orderNo: string
-    /**
-     * @description 外部订单号
-     */
-    outTradeNo: string
-    /**
-     * @description 外部充值状态 0未充值 1充值中 2充值完成 3充值失败 4充值关闭
-     */
-    outTradeStatus: number
-    /**
-     * @description 外部充值状态 0未充值 1充值中 2充值完成 3充值失败 4充值关闭
-     */
-    outTradeStatusStr: string
-    /**
-     * @description 缴费模式：1、智能电表  2、老电表
-     */
-    pattern: number
-    /**
-     * @description 缴费模式：1、智能电表  2、老电表
-     */
-    patternStr: string
-    /**
-     * @description 支付金额
-     */
-    payMoney: number
-    /**
-     * @description 支付单号
-     */
-    payNo: string
-    /**
-     * @description 支付状态：1等待支付、2支付成功、3支付失败、4订单关闭
-     */
-    payStatus: number
-    /**
-     * @description 支付状态：1等待支付、2支付成功、3支付失败、4订单关闭
-     */
-    payStatusStr: string
-    /**
-     * @value #datetime()
-     * @description 支付时间
-     */
-    payTime: string
-    /**
-     * @description 支付方式 ：ALIPAY:支付宝支付 WXPAY:微信支付 UNIONPAY:银联支付 LONGPAY:建行龙支付  CARDPAY:一卡通支付
-     */
-    payType: string
-    /**
-     * @description 商品名
-     */
-    prodName: string
-    /**
-     * @description 红包金额
-     */
-    redbagMoney: number
-    /**
-     * @description 订单备注
-     */
-    remark: string
-    /**
-     * @description 水电费房间编码
-     */
-    roomCode: string
-    /**
-     * @description 水电费房间名称
-     */
-    roomName: string
-    /**
-     * @description 学校名称
-     */
-    schoolName: string
-    /**
-     * @description 来源：app：易校园APP  wechat：微信  yxapp：越秀APP  wxapp:微信小程序
-     */
-    source: string
-    /**
-     * @description 来源名称
-     */
-    sourceStr: string
-    /**
-     * @description 订单状态：0处理中 1已完成
-     */
-    status: string
-    /**
-     * @description 业务类型：电费、网费、水费
-     */
-    subType: string
-    /**
-     * @description 到账金额
-     */
-    totalMoney: number
-    /**
-     * @description 订单类型
-     */
-    type: string
-    /**
-     * @value #datetime()
-     * @description 修改时间
-     */
-    updateTime: string
-    /**
-     * @description 姓名
-     */
-    userName: string
-  }
-export type 支付订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息_1 =
-  {
-    /**
-     * @description 商户号
-     */
-    cpCode: string
-    /**
-     * @description 主商户名称
-     */
-    cpMainName: string
-    /**
-     * @description 商户名称
-     */
-    cpName: string
-    /**
-     * @description 商户订单号
-     */
-    cpTranNo: string
-    /**
-     * @description 创建时间
-     */
-    createTime: string
-    /**
-     * @description 费率金额
-     */
-    feeMoney: string
-    /**
-     * @description id
-     */
-    id: number
-    /**
-     * @description 学号
-     */
-    jobNo: string
-    /**
-     * @description 支付渠道
-     */
-    payName: string
-    /**
-     * @value #datetime()
-     * @description 支付时间
-     */
-    payTime: string
-    /**
-     * @description 产品名称
-     */
-    prodName: string
-    /**
-     * @description 支付金额
-     */
-    realMoney: string
-    /**
-     * @description 红包金额
-     */
-    redbagMoney: string
-    /**
-     * @description 退款金额
-     */
-    refundMoney: string
-    /**
-     * @description 退款状态，0 退款提交 1 退款处理中 2 退款成功 3退款失败
-     */
-    refundState: number
-    /**
-     * @description 退款状态
-     */
-    refundStateName: string
-    /**
-     * @description 支付费率类别，1支付费率，2扣除费率
-     */
-    settlefeeType: number
-    /**
-     * @description 官方单号
-     */
-    topTranNo: string
-    /**
-     * @description 交易金额
-     */
-    tranMoney: string
-    /**
-     * @description 支付单号
-     */
-    tranNo: string
-    /**
-     * @description 交易状态,1等待支付、2支付成功、3支付失败、4订单关闭
-     */
-    tranState: number
-    /**
-     * @description 交易状态
-     */
-    tranStateName: string
-    /**
-     * @description 用户姓名
-     */
-    userName: string
-  }
+export type ode0表示成功ret_msg是错误消息11 = {
+  /**
+   * @description 水电费校区编码
+   */
+  areaCode: string
+  /**
+   * @description 水电费校区名称
+   */
+  areaName: string
+  /**
+   * @description 水电费楼栋编码
+   */
+  buildingCode: string
+  /**
+   * @description 水电费楼栋名称
+   */
+  buildingName: string
+  /**
+   * @value #datetime()
+   * @description 创建时间
+   */
+  createTime: string
+  /**
+   * @description 费率金额
+   */
+  feeMoney: number
+  /**
+   * @description 水电费楼层编码
+   */
+  floorCode: string
+  /**
+   * @description 水电费楼层名称
+   */
+  floorName: string
+  /**
+   * @description id
+   */
+  id: number
+  /**
+   * @description 学号
+   */
+  jobNo: string
+  /**
+   * @description 手机号
+   */
+  mobilePhone: string
+  /**
+   * @description 订单编号
+   */
+  orderNo: string
+  /**
+   * @description 外部订单号
+   */
+  outTradeNo: string
+  /**
+   * @description 外部充值状态 0未充值 1充值中 2充值完成 3充值失败 4充值关闭
+   */
+  outTradeStatus: number
+  /**
+   * @description 外部充值状态 0未充值 1充值中 2充值完成 3充值失败 4充值关闭
+   */
+  outTradeStatusStr: string
+  /**
+   * @description 缴费模式：1、智能电表  2、老电表
+   */
+  pattern: number
+  /**
+   * @description 缴费模式：1、智能电表  2、老电表
+   */
+  patternStr: string
+  /**
+   * @description 支付金额
+   */
+  payMoney: number
+  /**
+   * @description 支付单号
+   */
+  payNo: string
+  /**
+   * @description 支付状态：1等待支付、2支付成功、3支付失败、4订单关闭
+   */
+  payStatus: number
+  /**
+   * @description 支付状态：1等待支付、2支付成功、3支付失败、4订单关闭
+   */
+  payStatusStr: string
+  /**
+   * @value #datetime()
+   * @description 支付时间
+   */
+  payTime: string
+  /**
+   * @description 支付方式 ：ALIPAY:支付宝支付 WXPAY:微信支付 UNIONPAY:银联支付 LONGPAY:建行龙支付  CARDPAY:一卡通支付
+   */
+  payType: string
+  /**
+   * @description 商品名
+   */
+  prodName: string
+  /**
+   * @description 红包金额
+   */
+  redbagMoney: number
+  /**
+   * @description 订单备注
+   */
+  remark: string
+  /**
+   * @description 水电费房间编码
+   */
+  roomCode: string
+  /**
+   * @description 水电费房间名称
+   */
+  roomName: string
+  /**
+   * @description 学校名称
+   */
+  schoolName: string
+  /**
+   * @description 来源：app：易校园APP  wechat：微信  yxapp：越秀APP  wxapp:微信小程序
+   */
+  source: string
+  /**
+   * @description 来源名称
+   */
+  sourceStr: string
+  /**
+   * @description 订单状态：0处理中 1已完成
+   */
+  status: string
+  /**
+   * @description 业务类型：电费、网费、水费
+   */
+  subType: string
+  /**
+   * @description 到账金额
+   */
+  totalMoney: number
+  /**
+   * @description 订单类型
+   */
+  type: string
+  /**
+   * @value #datetime()
+   * @description 修改时间
+   */
+  updateTime: string
+  /**
+   * @description 姓名
+   */
+  userName: string
+}
+export type e0表示成功ret_msg是错误消息_1 = {
+  /**
+   * @description 商户号
+   */
+  cpCode: string
+  /**
+   * @description 主商户名称
+   */
+  cpMainName: string
+  /**
+   * @description 商户名称
+   */
+  cpName: string
+  /**
+   * @description 商户订单号
+   */
+  cpTranNo: string
+  /**
+   * @description 创建时间
+   */
+  createTime: string
+  /**
+   * @description 费率金额
+   */
+  feeMoney: string
+  /**
+   * @description id
+   */
+  id: number
+  /**
+   * @description 学号
+   */
+  jobNo: string
+  /**
+   * @description 支付渠道
+   */
+  payName: string
+  /**
+   * @value #datetime()
+   * @description 支付时间
+   */
+  payTime: string
+  /**
+   * @description 产品名称
+   */
+  prodName: string
+  /**
+   * @description 支付金额
+   */
+  realMoney: string
+  /**
+   * @description 红包金额
+   */
+  redbagMoney: string
+  /**
+   * @description 退款金额
+   */
+  refundMoney: string
+  /**
+   * @description 退款状态，0 退款提交 1 退款处理中 2 退款成功 3退款失败
+   */
+  refundState: number
+  /**
+   * @description 退款状态
+   */
+  refundStateName: string
+  /**
+   * @description 支付费率类别，1支付费率，2扣除费率
+   */
+  settlefeeType: number
+  /**
+   * @description 官方单号
+   */
+  topTranNo: string
+  /**
+   * @description 交易金额
+   */
+  tranMoney: string
+  /**
+   * @description 支付单号
+   */
+  tranNo: string
+  /**
+   * @description 交易状态,1等待支付、2支付成功、3支付失败、4订单关闭
+   */
+  tranState: number
+  /**
+   * @description 交易状态
+   */
+  tranStateName: string
+  /**
+   * @description 用户姓名
+   */
+  userName: string
+}
 export type 文章返回参数 = {
   articleText: string
   /**
@@ -21930,7 +22083,7 @@ export type 用户信息 = {
    * @value 2
    * @description 菜单列表
    */
-  menuList: CenterSysMenuTree4LoginVO[]
+  menuList: rSysMenuTree4LoginVO[]
   /**
    * @description 商户编码,所属商户只能查询自己商户的数据
    */
@@ -22258,87 +22411,86 @@ export type 迎新房间 = {
    */
   zoneId: number
 }
-export type 退款订单返回数据这是rows里的内容外面还有一层ret_code0表示成功ret_msg是错误消息 =
-  {
-    /**
-     * @description 渠道退款订单号
-     */
-    channelRefundTranNo: string
-    /**
-     * @description 主商户名称
-     */
-    cpMainName: string
-    /**
-     * @description 商户名称
-     */
-    cpName: string
-    /**
-     * @description 商户退款单号
-     */
-    cpRefundTranNo: string
-    /**
-     * @value #datetime()
-     * @description 创建时间
-     */
-    createTime: string
-    /**
-     * @description id
-     */
-    id: number
-    /**
-     * @description 通知状态
-     */
-    notifyState: number
-    /**
-     * @description 通知状态名称
-     */
-    notifyStateName: string
-    /**
-     * @description 支付方式
-     */
-    payType: string
-    /**
-     * @description 支付方式名称
-     */
-    payTypeName: string
-    /**
-     * @description 实际支付金额
-     */
-    realMoney: string
-    /**
-     * @description 退款金额
-     */
-    refundMoney: string
-    /**
-     * @description 退款原因
-     */
-    refundReason: string
-    /**
-     * @description 退款状态
-     */
-    refundStateName: string
-    /**
-     * @description 退款时间
-     */
-    refundTime: string
-    /**
-     * @description 退款订单号
-     */
-    refundTranNo: string
-    /**
-     * @description 退款总笔数
-     */
-    totalRefundCount: string
-    /**
-     * @description 退款总金额
-     */
-    totalRefundMoney: string
-    /**
-     * @description 交易金额
-     */
-    tranMoney: string
-    /**
-     * @description 支付订单号
-     */
-    tranNo: string
-  }
+export type ode0表示成功ret_msg是错误消息1111 = {
+  /**
+   * @description 渠道退款订单号
+   */
+  channelRefundTranNo: string
+  /**
+   * @description 主商户名称
+   */
+  cpMainName: string
+  /**
+   * @description 商户名称
+   */
+  cpName: string
+  /**
+   * @description 商户退款单号
+   */
+  cpRefundTranNo: string
+  /**
+   * @value #datetime()
+   * @description 创建时间
+   */
+  createTime: string
+  /**
+   * @description id
+   */
+  id: number
+  /**
+   * @description 通知状态
+   */
+  notifyState: number
+  /**
+   * @description 通知状态名称
+   */
+  notifyStateName: string
+  /**
+   * @description 支付方式
+   */
+  payType: string
+  /**
+   * @description 支付方式名称
+   */
+  payTypeName: string
+  /**
+   * @description 实际支付金额
+   */
+  realMoney: string
+  /**
+   * @description 退款金额
+   */
+  refundMoney: string
+  /**
+   * @description 退款原因
+   */
+  refundReason: string
+  /**
+   * @description 退款状态
+   */
+  refundStateName: string
+  /**
+   * @description 退款时间
+   */
+  refundTime: string
+  /**
+   * @description 退款订单号
+   */
+  refundTranNo: string
+  /**
+   * @description 退款总笔数
+   */
+  totalRefundCount: string
+  /**
+   * @description 退款总金额
+   */
+  totalRefundMoney: string
+  /**
+   * @description 交易金额
+   */
+  tranMoney: string
+  /**
+   * @description 支付订单号
+   */
+  tranNo: string
+}
