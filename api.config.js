@@ -68,7 +68,4 @@ module.exports = {
         `
     },
   },
-  swagger: {
-    modules: ['应用'],
-  },
 }

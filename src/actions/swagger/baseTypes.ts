@@ -4,39 +4,19 @@ export type MyJsonCore = {
   code: number
   error: RemoteServiceErrorInfoHttp
 }
-export type MyJson1Core = {
+export type MyJson1Core19 = {
   message: string
   msg: string
   code: number
   error: RemoteServiceErrorInfoHttp
   data: {}
 }
-export type MyJson1Core0 = {
+export type MyJson1Core5 = {
   message: string
   msg: string
   code: number
   error: RemoteServiceErrorInfoHttp
   data: string[]
-}
-export type MyJson1Core1 = {
-  message: string
-  msg: string
-  code: number
-  error: RemoteServiceErrorInfoHttp
-  /**
-   * @value 2
-   */
-  data: EnumDtoCommon[]
-}
-export type MyJson1Core2 = {
-  message: string
-  msg: string
-  code: number
-  error: RemoteServiceErrorInfoHttp
-  /**
-   * @value 2
-   */
-  data: ApiExternalParamResDtoApiCenter[]
 }
 export type MyJson1Core3 = {
   message: string
@@ -46,9 +26,29 @@ export type MyJson1Core3 = {
   /**
    * @value 2
    */
+  data: EnumDtoCommon[]
+}
+export type MyJson1Core1 = {
+  message: string
+  msg: string
+  code: number
+  error: RemoteServiceErrorInfoHttp
+  /**
+   * @value 2
+   */
+  data: ApiExternalParamResDtoApiCenter[]
+}
+export type MyJson1Core2 = {
+  message: string
+  msg: string
+  code: number
+  error: RemoteServiceErrorInfoHttp
+  /**
+   * @value 2
+   */
   data: SystemParamResDtoApiCenter[]
 }
-export type MyJson1Core4 = {
+export type MyJson1Core9 = {
   message: string
   msg: string
   code: number
@@ -58,7 +58,7 @@ export type MyJson1Core4 = {
    */
   data: DataTableFieldResDtoFormModel[]
 }
-export type MyJson1Core5 = {
+export type MyJson1Core8 = {
   message: string
   msg: string
   code: number
@@ -68,7 +68,7 @@ export type MyJson1Core5 = {
    */
   data: DataTableResDtoFormModel[]
 }
-export type MyJson1Core6 = {
+export type MyJson1Core11 = {
   message: string
   msg: string
   code: number
@@ -78,7 +78,7 @@ export type MyJson1Core6 = {
    */
   data: ModelSubResDtoFormModel[]
 }
-export type MyJson1Core7 = {
+export type MyJson1Core10 = {
   message: string
   msg: string
   code: number
@@ -88,7 +88,7 @@ export type MyJson1Core7 = {
    */
   data: PageModelResDtoFormModel[]
 }
-export type MyJson1Core8 = {
+export type MyJson1Core15 = {
   message: string
   msg: string
   code: number
@@ -98,35 +98,35 @@ export type MyJson1Core8 = {
    */
   data: FormSubResDtoFormStruct[]
 }
-export type MyJson1Core9 = {
+export type MyJson1Core13 = {
   message: string
   msg: string
   code: number
   error: RemoteServiceErrorInfoHttp
   data: string
 }
-export type MyJson1Core10 = {
+export type MyJson1Core16 = {
   message: string
   msg: string
   code: number
   error: RemoteServiceErrorInfoHttp
   data: string
 }
-export type MyJson1Core11 = {
+export type MyJson1Core = {
   message: string
   msg: string
   code: number
   error: RemoteServiceErrorInfoHttp
   data: PagedList1Core
 }
-export type MyJson1Core12 = {
+export type MyJson1Core4 = {
   message: string
   msg: string
   code: number
   error: RemoteServiceErrorInfoHttp
   data: PagedList1Core0
 }
-export type MyJson1Core13 = {
+export type MyJson1Core7 = {
   message: string
   msg: string
   code: number
@@ -140,42 +140,42 @@ export type MyJson1Core14 = {
   error: RemoteServiceErrorInfoHttp
   data: PagedList1Core2
 }
-export type MyJson1Core15 = {
+export type MyJson1Core18 = {
   message: string
   msg: string
   code: number
   error: RemoteServiceErrorInfoHttp
   data: AliyunOssStsTokenResDtoOss
 }
-export type MyJson1Core16 = {
+export type MyJson1Core20 = {
   message: string
   msg: string
   code: number
   error: RemoteServiceErrorInfoHttp
   data: SaveFormStructReqDtoFormStruct
 }
-export type MyJson1Core17 = {
+export type MyJson1Core0 = {
   message: string
   msg: string
   code: number
   error: RemoteServiceErrorInfoHttp
   data: ApiResDtoApiCenter
 }
-export type MyJson1Core18 = {
+export type MyJson1Core12 = {
   message: string
   msg: string
   code: number
   error: RemoteServiceErrorInfoHttp
   data: ModelDataPageResDtoFormModel
 }
-export type MyJson1Core19 = {
+export type MyJson1Core6 = {
   message: string
   msg: string
   code: number
   error: RemoteServiceErrorInfoHttp
   data: ModelResDtoFormModel
 }
-export type MyJson1Core20 = {
+export type MyJson1Core17 = {
   message: string
   msg: string
   code: number

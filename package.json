@@ -2,14 +2,13 @@
   "name": "api-see-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "yarn api:file && webpack-dev-server --config ./webpack.dev.config.js",
     "mock": "api-see watch --path ./src/actions/api/types --mock true --action true",
     "api:file": "api-see file --path ./src/actions/api/types --action true",
     "api:start": "api-see watch --path ./src/actions/api/types --server true --mock true",
     "api:build": "api-see build --path ./src/actions/api/types",
-    "swagger": "api-see swagger --path ./src/actions/swagger/types --url http://121.43.101.170:30002/swagger/docs/v1/UFX.SCM.Cloud.LowCodeCenter"
+    "swagger": "api-see swagger --path ./src/actions/swagger/types --action true --url http://121.43.101.170:30002/swagger/docs/v1/UFX.SCM.Cloud.LowCodeCenter"
   },
   "keywords": [],
   "author": "",
