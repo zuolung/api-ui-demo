@@ -1,6 +1,6 @@
 # api-ui-demo
 
-项目中简单的使用@antmjs/api-ui
+项目中简单的使用api-see
 
 ## 启动
 
