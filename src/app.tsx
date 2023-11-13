@@ -1,14 +1,15 @@
-// @ts-nocheck
 import React from 'react'
 import { render } from 'react-dom'
-import { userInfoAction } from './actions/api/actions/common'
-import { collectionList } from './actions/types/personal'
+import { ApiLowcodecenterFormmodelSave } from './api/ojbk/types/formModel'
+// @ts-ignore
 import { ApiUi } from 'api-see'
+// @ts-ignore
 import apiData from '../.cache/api-ui-data.json'
 import 'api-see/ui/app.less'
+import { ApiLowcodecenterFormmodelSaveService } from './api/ojbk/actions/formModel'
 
 function App() {
-  const [data, setData] = React.useState<collectionList['response']['data']>([])
+  const [data, setData] = React.useState<ApiLowcodecenterFormmodelSave['response']>()
   const goApi = () => {
     if (process.env['NODE_ENV'] === 'development') {
       window.open('http://localhost:7878')
@@ -22,11 +23,7 @@ function App() {
       alert('暂无在线mock数据')
       return
     }
-    const res = await userInfoAction({
-      userId: '324234',
-      pageSize: 20,
-      offset: 2,
-    })
+    const res = await ApiLowcodecenterFormmodelSaveService(undefined)
 
     console.info(res)
 

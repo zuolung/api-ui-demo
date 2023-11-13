@@ -17,7 +17,7 @@ import type {
 
 /** 逻辑删除表单 */
 export async function ApiLowcodecenterFormstructService(
-  params: ApiLowcodecenterFormstruct['request'],
+  params?: ApiLowcodecenterFormstruct['request'],
 ) {
   const data = await zApi.delete('/ojbk/api/lowcodecenter/form-struct', params)
   return data
@@ -25,7 +25,7 @@ export async function ApiLowcodecenterFormstructService(
 
 /** 还原逻辑删除的表单 */
 export async function ApiLowcodecenterFormstructReductionService(
-  params: ApiLowcodecenterFormstructReduction['request'],
+  params?: ApiLowcodecenterFormstructReduction['request'],
 ) {
   const data = await zApi.post(
     '/ojbk/api/lowcodecenter/form-struct/reduction',
@@ -36,7 +36,7 @@ export async function ApiLowcodecenterFormstructReductionService(
 
 /** 创建表单 */
 export async function ApiLowcodecenterFormstructSaveformService(
-  params: ApiLowcodecenterFormstructSaveform['request'],
+  params?: ApiLowcodecenterFormstructSaveform['request'],
 ) {
   const data = await zApi.post<
     ApiLowcodecenterFormstructSaveform['response']['data']
@@ -46,7 +46,7 @@ export async function ApiLowcodecenterFormstructSaveformService(
 
 /** 保存表单结构 */
 export async function ApiLowcodecenterFormstructSaveformstructService(
-  params: ApiLowcodecenterFormstructSaveformstruct['request'],
+  params?: ApiLowcodecenterFormstructSaveformstruct['request'],
 ) {
   const data = await zApi.post<
     ApiLowcodecenterFormstructSaveformstruct['response']['data']
@@ -56,7 +56,7 @@ export async function ApiLowcodecenterFormstructSaveformstructService(
 
 /** 设为当前表单版本 */
 export async function ApiLowcodecenterFormstructSetformtocurrentversionVersionIdService(
-  params: ApiLowcodecenterFormstructSetformtocurrentversionVersionId['request'],
+  params?: ApiLowcodecenterFormstructSetformtocurrentversionVersionId['request'],
   query: string,
 ) {
   const data = await zApi.post(
@@ -71,7 +71,7 @@ export async function ApiLowcodecenterFormstructSetformtocurrentversionVersionId
 
 /** 同步表单至AM，创建菜单 */
 export async function ApiLowcodecenterFormstructModuleFormIdService(
-  params: ApiLowcodecenterFormstructModuleFormId['request'],
+  params?: ApiLowcodecenterFormstructModuleFormId['request'],
   query: string,
 ) {
   const data = await zApi.post(
@@ -86,7 +86,7 @@ export async function ApiLowcodecenterFormstructModuleFormIdService(
 
 /** 判断该表单是否可外部分享 */
 export async function ApiLowcodecenterFormstructIsoutFormIdService(
-  params: ApiLowcodecenterFormstructIsoutFormId['request'],
+  params?: ApiLowcodecenterFormstructIsoutFormId['request'],
   query: string,
 ) {
   const data = await zApi.post(
@@ -101,7 +101,7 @@ export async function ApiLowcodecenterFormstructIsoutFormIdService(
 
 /** 分页获取表单列表信息 */
 export async function ApiLowcodecenterFormstructPagequeryfreeformService(
-  params: ApiLowcodecenterFormstructPagequeryfreeform['request'],
+  params?: ApiLowcodecenterFormstructPagequeryfreeform['request'],
 ) {
   const data = await zApi.post<
     ApiLowcodecenterFormstructPagequeryfreeform['response']['data']
@@ -111,7 +111,7 @@ export async function ApiLowcodecenterFormstructPagequeryfreeformService(
 
 /** 分页获取表单版本列表信息 */
 export async function ApiLowcodecenterFormstructPagequeryfreeformversionService(
-  params: ApiLowcodecenterFormstructPagequeryfreeformversion['request'],
+  params?: ApiLowcodecenterFormstructPagequeryfreeformversion['request'],
 ) {
   const data = await zApi.post<
     ApiLowcodecenterFormstructPagequeryfreeformversion['response']['data']
@@ -121,7 +121,7 @@ export async function ApiLowcodecenterFormstructPagequeryfreeformversionService(
 
 /** 获取当前版本表单的子表单列表 */
 export async function ApiLowcodecenterFormstructQueryformsublistFormIdService(
-  params: ApiLowcodecenterFormstructQueryformsublistFormId['request'],
+  params?: ApiLowcodecenterFormstructQueryformsublistFormId['request'],
   query: string,
 ) {
   const data = await zApi.get<
@@ -138,7 +138,7 @@ export async function ApiLowcodecenterFormstructQueryformsublistFormIdService(
 
 /** 检查公式正确性 */
 export async function ApiLowcodecenterFormstructCheckformulaService(
-  params: ApiLowcodecenterFormstructCheckformula['request'],
+  params?: ApiLowcodecenterFormstructCheckformula['request'],
 ) {
   const data = await zApi.post(
     '/ojbk/api/lowcodecenter/form-struct/check-formula',
@@ -149,7 +149,7 @@ export async function ApiLowcodecenterFormstructCheckformulaService(
 
 /** 获取表单的sql查询语句 */
 export async function ApiLowcodecenterFormstructFormjoinsqlFormIdService(
-  params: ApiLowcodecenterFormstructFormjoinsqlFormId['request'],
+  params?: ApiLowcodecenterFormstructFormjoinsqlFormId['request'],
   query: string,
 ) {
   const data = await zApi.get<

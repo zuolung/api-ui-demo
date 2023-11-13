@@ -8,7 +8,7 @@ import type {
 
 /** 获取短链接 */
 export async function ApiLowcodecenterOssOssshortlinkService(
-  params: ApiLowcodecenterOssOssshortlink['request'],
+  params?: ApiLowcodecenterOssOssshortlink['request'],
 ) {
   const data = await zApi.get<
     ApiLowcodecenterOssOssshortlink['response']['data']
@@ -18,7 +18,7 @@ export async function ApiLowcodecenterOssOssshortlinkService(
 
 /** 检查是否开启了OSS */
 export async function ApiLowcodecenterOssGetcheckossconfigureService(
-  params: ApiLowcodecenterOssGetcheckossconfigure['request'],
+  params?: ApiLowcodecenterOssGetcheckossconfigure['request'],
 ) {
   const data = await zApi.post(
     '/ojbk/api/lowcodecenter/oss/get-check-oss-configure',
@@ -29,7 +29,7 @@ export async function ApiLowcodecenterOssGetcheckossconfigureService(
 
 /** 获取stsToken */
 export async function ApiLowcodecenterOssAliyunossststokenService(
-  params: ApiLowcodecenterOssAliyunossststoken['request'],
+  params?: ApiLowcodecenterOssAliyunossststoken['request'],
 ) {
   const data = await zApi.get<
     ApiLowcodecenterOssAliyunossststoken['response']['data']

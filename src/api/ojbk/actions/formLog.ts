@@ -4,7 +4,7 @@ import type { ApiLowcodecenterFormlogPagequerylog } from '../types/formLog'
 
 /** 表单引擎操作日志 */
 export async function ApiLowcodecenterFormlogPagequerylogService(
-  params: ApiLowcodecenterFormlogPagequerylog['request'],
+  params?: ApiLowcodecenterFormlogPagequerylog['request'],
 ) {
   const data = await zApi.post<
     ApiLowcodecenterFormlogPagequerylog['response']['data']

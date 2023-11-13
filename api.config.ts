@@ -47,7 +47,7 @@ const config: Iconfig = {
         }
 
         SERVICES += `/** ${description} */ \n`
-        SERVICES += `export async function ${key}Service (params: ${key}['request'] ${queryParams}) {
+        SERVICES += `export async function ${key}Service (params${item.requestNull ? '?' :''}: ${key}['request'] ${queryParams}) {
           const data = await zApi.${method}${responseTT}('${url}'${ifQueryReplace}, ${item.method === 'get' ? '{ params }' : 'params'} )
           return data
         }\n\n`

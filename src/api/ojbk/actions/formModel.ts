@@ -15,7 +15,7 @@ import type {
 
 /** 保存模型 */
 export async function ApiLowcodecenterFormmodelSaveService(
-  params: ApiLowcodecenterFormmodelSave['request'],
+  params?: ApiLowcodecenterFormmodelSave['request'],
 ) {
   const data = await zApi.post(
     '/ojbk/api/lowcodecenter/form-model/save',
@@ -26,7 +26,7 @@ export async function ApiLowcodecenterFormmodelSaveService(
 
 /** 删除模型 */
 export async function ApiLowcodecenterFormmodelService(
-  params: ApiLowcodecenterFormmodel['request'],
+  params?: ApiLowcodecenterFormmodel['request'],
 ) {
   const data = await zApi.delete('/ojbk/api/lowcodecenter/form-model', params)
   return data
@@ -34,7 +34,7 @@ export async function ApiLowcodecenterFormmodelService(
 
 /** 获取模型sql的参数字段 */
 export async function ApiLowcodecenterFormmodelGetmodelsqlparamfieldService(
-  params: ApiLowcodecenterFormmodelGetmodelsqlparamfield['request'],
+  params?: ApiLowcodecenterFormmodelGetmodelsqlparamfield['request'],
 ) {
   const data = await zApi.post<
     ApiLowcodecenterFormmodelGetmodelsqlparamfield['response']['data']
@@ -44,7 +44,7 @@ export async function ApiLowcodecenterFormmodelGetmodelsqlparamfieldService(
 
 /** 获取模型数据 */
 export async function ApiLowcodecenterFormmodelIdService(
-  params: ApiLowcodecenterFormmodelId['request'],
+  params?: ApiLowcodecenterFormmodelId['request'],
   query: string,
 ) {
   const data = await zApi.get<ApiLowcodecenterFormmodelId['response']['data']>(
@@ -56,7 +56,7 @@ export async function ApiLowcodecenterFormmodelIdService(
 
 /** 分页获取表单模型列表 */
 export async function ApiLowcodecenterFormmodelPagequeryfreeformmodelService(
-  params: ApiLowcodecenterFormmodelPagequeryfreeformmodel['request'],
+  params?: ApiLowcodecenterFormmodelPagequeryfreeformmodel['request'],
 ) {
   const data = await zApi.post<
     ApiLowcodecenterFormmodelPagequeryfreeformmodel['response']['data']
@@ -66,7 +66,7 @@ export async function ApiLowcodecenterFormmodelPagequeryfreeformmodelService(
 
 /** 获取数据库所有有描述的数据表信息 */
 export async function ApiLowcodecenterFormmodelDatatablelistService(
-  params: ApiLowcodecenterFormmodelDatatablelist['request'],
+  params?: ApiLowcodecenterFormmodelDatatablelist['request'],
 ) {
   const data = await zApi.get<
     ApiLowcodecenterFormmodelDatatablelist['response']['data']
@@ -76,7 +76,7 @@ export async function ApiLowcodecenterFormmodelDatatablelistService(
 
 /** 获取表或sql的字段信息 */
 export async function ApiLowcodecenterFormmodelGetdatatablefieldService(
-  params: ApiLowcodecenterFormmodelGetdatatablefield['request'],
+  params?: ApiLowcodecenterFormmodelGetdatatablefield['request'],
 ) {
   const data = await zApi.post<
     ApiLowcodecenterFormmodelGetdatatablefield['response']['data']
@@ -86,7 +86,7 @@ export async function ApiLowcodecenterFormmodelGetdatatablefieldService(
 
 /** 获取表单模型的列表 */
 export async function ApiLowcodecenterFormmodelModellistService(
-  params: ApiLowcodecenterFormmodelModellist['request'],
+  params?: ApiLowcodecenterFormmodelModellist['request'],
 ) {
   const data = await zApi.get<
     ApiLowcodecenterFormmodelModellist['response']['data']
@@ -96,7 +96,7 @@ export async function ApiLowcodecenterFormmodelModellistService(
 
 /** 获取单个模型的字段列表 */
 export async function ApiLowcodecenterFormmodelModelsublistModelIdService(
-  params: ApiLowcodecenterFormmodelModelsublistModelId['request'],
+  params?: ApiLowcodecenterFormmodelModelsublistModelId['request'],
   query: string,
 ) {
   const data = await zApi.get<
@@ -113,7 +113,7 @@ export async function ApiLowcodecenterFormmodelModelsublistModelIdService(
 
 /** 按模型分页获取数据 */
 export async function ApiLowcodecenterFormmodelPagequerymodeldataService(
-  params: ApiLowcodecenterFormmodelPagequerymodeldata['request'],
+  params?: ApiLowcodecenterFormmodelPagequerymodeldata['request'],
 ) {
   const data = await zApi.post<
     ApiLowcodecenterFormmodelPagequerymodeldata['response']['data']

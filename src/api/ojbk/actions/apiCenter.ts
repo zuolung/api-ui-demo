@@ -11,7 +11,7 @@ import type {
 
 /** 添加修改第三方api */
 export async function ApiLowcodecenterApicenterService(
-  params: ApiLowcodecenterApicenter['request'],
+  params?: ApiLowcodecenterApicenter['request'],
 ) {
   const data = await zApi.post('/ojbk/api/lowcodecenter/api-center', params)
   return data
@@ -19,7 +19,7 @@ export async function ApiLowcodecenterApicenterService(
 
 /** 分页获取第三方api信息 */
 export async function ApiLowcodecenterApicenterPagequeryapiService(
-  params: ApiLowcodecenterApicenterPagequeryapi['request'],
+  params?: ApiLowcodecenterApicenterPagequeryapi['request'],
 ) {
   const data = await zApi.post<
     ApiLowcodecenterApicenterPagequeryapi['response']['data']
@@ -29,7 +29,7 @@ export async function ApiLowcodecenterApicenterPagequeryapiService(
 
 /** 获取第三方api信息 */
 export async function ApiLowcodecenterApicenterIdService(
-  params: ApiLowcodecenterApicenterId['request'],
+  params?: ApiLowcodecenterApicenterId['request'],
   query: string,
 ) {
   const data = await zApi.get<ApiLowcodecenterApicenterId['response']['data']>(
@@ -41,7 +41,7 @@ export async function ApiLowcodecenterApicenterIdService(
 
 /** 执行第三方api */
 export async function ApiLowcodecenterApicenterExecuteapiApiIdService(
-  params: ApiLowcodecenterApicenterExecuteapiApiId['request'],
+  params?: ApiLowcodecenterApicenterExecuteapiApiId['request'],
   query: string,
 ) {
   const data = await zApi.post(
@@ -56,7 +56,7 @@ export async function ApiLowcodecenterApicenterExecuteapiApiIdService(
 
 /** 解析json参数对象 */
 export async function ApiLowcodecenterApicenterAnalysisjsonService(
-  params: ApiLowcodecenterApicenterAnalysisjson['request'],
+  params?: ApiLowcodecenterApicenterAnalysisjson['request'],
 ) {
   const data = await zApi.post<
     ApiLowcodecenterApicenterAnalysisjson['response']['data']
@@ -66,7 +66,7 @@ export async function ApiLowcodecenterApicenterAnalysisjsonService(
 
 /** 获取系统参数 */
 export async function ApiLowcodecenterApicenterSystemparamsService(
-  params: ApiLowcodecenterApicenterSystemparams['request'],
+  params?: ApiLowcodecenterApicenterSystemparams['request'],
 ) {
   const data = await zApi.get<
     ApiLowcodecenterApicenterSystemparams['response']['data']

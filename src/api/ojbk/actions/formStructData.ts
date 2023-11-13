@@ -14,7 +14,7 @@ import type {
 
 /** 保存表单数据 */
 export async function ApiLowcodecenterFormstructdataSaveService(
-  params: ApiLowcodecenterFormstructdataSave['request'],
+  params?: ApiLowcodecenterFormstructdataSave['request'],
 ) {
   const data = await zApi.post(
     '/ojbk/api/lowcodecenter/form-struct-data/save',
@@ -25,7 +25,7 @@ export async function ApiLowcodecenterFormstructdataSaveService(
 
 /** 删除表单数据 */
 export async function ApiLowcodecenterFormstructdataService(
-  params: ApiLowcodecenterFormstructdata['request'],
+  params?: ApiLowcodecenterFormstructdata['request'],
 ) {
   const data = await zApi.delete(
     '/ojbk/api/lowcodecenter/form-struct-data',
@@ -36,7 +36,7 @@ export async function ApiLowcodecenterFormstructdataService(
 
 /** 导入数据 */
 export async function ApiLowcodecenterFormstructdataImportdataFormIdService(
-  params: ApiLowcodecenterFormstructdataImportdataFormId['request'],
+  params?: ApiLowcodecenterFormstructdataImportdataFormId['request'],
   query: string,
 ) {
   const data = await zApi.post(
@@ -51,7 +51,7 @@ export async function ApiLowcodecenterFormstructdataImportdataFormIdService(
 
 /** 发起审批 */
 export async function ApiLowcodecenterFormstructdataTriggerapprovalworkflowService(
-  params: ApiLowcodecenterFormstructdataTriggerapprovalworkflow['request'],
+  params?: ApiLowcodecenterFormstructdataTriggerapprovalworkflow['request'],
 ) {
   const data = await zApi.post(
     '/ojbk/api/lowcodecenter/form-struct-data/trigger-approval-workflow',
@@ -62,7 +62,7 @@ export async function ApiLowcodecenterFormstructdataTriggerapprovalworkflowServi
 
 /** 从1.0转移图片数据到2.0(转移完可以删了) */
 export async function ApiLowcodecenterFormstructdataTransferimgdatato3FormIdService(
-  params: ApiLowcodecenterFormstructdataTransferimgdatato3FormId['request'],
+  params?: ApiLowcodecenterFormstructdataTransferimgdatato3FormId['request'],
   query: string,
 ) {
   const data = await zApi.post(
@@ -77,7 +77,7 @@ export async function ApiLowcodecenterFormstructdataTransferimgdatato3FormIdServ
 
 /** 获取打印的数据 */
 export async function ApiLowcodecenterFormstructdataGetprintdataFormIdService(
-  params: ApiLowcodecenterFormstructdataGetprintdataFormId['request'],
+  params?: ApiLowcodecenterFormstructdataGetprintdataFormId['request'],
   query: string,
 ) {
   const data = await zApi.post<
@@ -94,7 +94,7 @@ export async function ApiLowcodecenterFormstructdataGetprintdataFormIdService(
 
 /** 获取表单分页数据 */
 export async function ApiLowcodecenterFormstructdataPagequeryfreeformdataService(
-  params: ApiLowcodecenterFormstructdataPagequeryfreeformdata['request'],
+  params?: ApiLowcodecenterFormstructdataPagequeryfreeformdata['request'],
 ) {
   const data = await zApi.post<
     ApiLowcodecenterFormstructdataPagequeryfreeformdata['response']['data']
@@ -107,7 +107,7 @@ export async function ApiLowcodecenterFormstructdataPagequeryfreeformdataService
 
 /** 导出表单数据 */
 export async function ApiLowcodecenterFormstructdataExportfreeformdataService(
-  params: ApiLowcodecenterFormstructdataExportfreeformdata['request'],
+  params?: ApiLowcodecenterFormstructdataExportfreeformdata['request'],
 ) {
   const data = await zApi.post(
     '/ojbk/api/lowcodecenter/form-struct-data/export-free-form-data',
