@@ -29,7 +29,6 @@
     "jsx": "react-jsx",
     "skipLibCheck": false
   },
-  "include": ["./src/**/*", "./global.d.ts"],
-  "exclude": ["./node_modules"],
+  "include": ["./src/", "./global.d.ts"],
   "compileOnSave": false
 }

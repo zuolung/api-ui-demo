@@ -1985,10 +1985,10 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-api-see@^3.0.13:
-  version "3.0.13"
-  resolved "https://registry.npmjs.org/api-see/-/api-see-3.0.13.tgz#578707db3bf4914ee579c70b6c0fdad1ac8f58ce"
-  integrity sha512-0/bNzjb1GUZY45W5DR6dwkQONoPTdk95MYPfcVInKA68pL065c006kqaSqol6Iq7VWF0QpQm6qi88HBIOhFSyg==
+api-see@^3.0.17:
+  version "3.0.17"
+  resolved "https://registry.npmjs.org/api-see/-/api-see-3.0.17.tgz#d33b1cdc426e55a8fa245354c20cf9005e9609de"
+  integrity sha512-fO1rwnbbgUwH3lrhI0m8bodPiEWvES+V+HPOWCcVuSfF5l0Iwc2Z3FZoQVPNviqUXuWZ9XC0lKFd2z+1ZgA7kw==
   dependencies:
     "@adonisjs/require-ts" "^2.0.13"
     "@babel/cli" "^7.1.1"
@@ -2001,7 +2001,7 @@ api-see@^3.0.13:
     babel-loader "^8.2.5"
     chalk "^2.4.2"
     chokidar "^3.5.3"
-    commander "^9.3.0"
+    commander "9.3.0"
     core-js "3"
     css-loader "^6.7.1"
     deepmerge "^4.2.2"
@@ -2624,6 +2624,11 @@ commander@*:
   resolved "https://registry.npmjs.org/commander/-/commander-11.1.0.tgz#62fdce76006a68e5c1ab3314dc92e800eb83d906"
   integrity sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==
 
+commander@9.3.0:
+  version "9.3.0"
+  resolved "https://registry.npmjs.org/commander/-/commander-9.3.0.tgz#f619114a5a2d2054e0d9ff1b31d5ccf89255e26b"
+  integrity sha512-hv95iU5uXPbK83mjrJKuZyFM/LBAoCV/XhVGkS5Je6tl7sxr6A0ITMw5WoRV46/UaJ46Nllm3Xt7IaJhXTIkzw==
+
 commander@^2.20.0:
   version "2.20.3"
   resolved "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz"
@@ -2643,11 +2648,6 @@ commander@^8.3.0:
   version "8.3.0"
   resolved "https://registry.npmmirror.com/commander/-/commander-8.3.0.tgz"
   integrity sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==
-
-commander@^9.3.0:
-  version "9.5.0"
-  resolved "https://registry.npmjs.org/commander/-/commander-9.5.0.tgz#bc08d1eb5cedf7ccb797a96199d41c7bc3e60d30"
-  integrity sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==
 
 commondir@^1.0.1:
   version "1.0.1"
